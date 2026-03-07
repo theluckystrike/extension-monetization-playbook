@@ -1,4 +1,4 @@
-# Paywall Patterns for Chrome Extensions
+Paywall Patterns for Chrome Extensions
 
 Paywalls in Chrome extensions are fundamentally different from what you see on the web or mobile apps. I learned this the hard way after several failed attempts to port web monetization strategies into extensions. The popup is tiny, the user's attention span is measured in milliseconds, and they came for a specific task, not to make a purchasing decision. Everything changes when you accept this constraint.
 
@@ -6,7 +6,7 @@ At zovo.one, we run 17 Chrome extensions and have tested more paywall variations
 
 The key insight is that extension users are task-focused. They opened your extension to accomplish something specific. A good paywall respects that context rather than interrupting it. The best patterns work WITH the user's workflow rather than AGAINST it.
 
-## The Inline Lock Pattern
+The Inline Lock Pattern
 
 Show the feature with a small lock icon directly in the interface. When the user clicks it, expand a brief explanation and a single upgrade button. This works because the user is already interested in the feature they are looking at. They do not need to navigate to a pricing page or understand a complex feature matrix.
 
@@ -16,7 +16,7 @@ We use this pattern in Tab Suspender Pro. When users click a premium suspend rul
 
 The inline lock works because it meets the user in the moment of highest intent. They have already decided the feature is valuable. You are simply giving them the option to continue using it.
 
-## The Usage Limit Pattern
+The Usage Limit Pattern
 
 Let users try premium features with a daily or weekly limit. Track their usage silently and after they hit the limit, show a gentle prompt. Something like "You have used your free allowance for this feature. Upgrade for unlimited access."
 
@@ -26,7 +26,7 @@ The tone matters here. Frame it as appreciation for trying the feature, not as a
 
 We tested this in our data export extension. Free users could export 10 rows per day. After that, a soft prompt appeared. The conversion rate was 4.2% which is high for extensions. Users who hit the limit were already dependent on the feature.
 
-## The Feature Preview Pattern
+The Feature Preview Pattern
 
 Show the output of a premium feature but blur or partially obscure it. The user sees that the feature works and produces useful results. They just need to upgrade to see the full output.
 
@@ -36,7 +36,7 @@ In our analytics extension, premium reports show the first three data points cle
 
 The blur needs to be subtle enough that users can tell the data is real, not random placeholder text. We use CSS filters rather than replacing content with lorem ipsum. Users are smart enough to tell the difference between fake demo data and real results.
 
-## The Progressive Disclosure Pattern
+The Progressive Disclosure Pattern
 
 Start free users with a simple interface. As they use the extension more, reveal that advanced options exist behind the upgrade. Power users discover premium features naturally through usage, not through marketing.
 
@@ -46,7 +46,7 @@ We implemented this in our productivity suite. Free users start with basic task 
 
 The disclosure triggers are based on actual usage patterns. When a user creates their 20th task, we show a subtle hint about folders. When they try to share a task, we mention that sharing is a Pro feature. The user discovers premium through their own behavior.
 
-## The Comparison Table Pattern
+The Comparison Table Pattern
 
 In the extension options page, show a simple two-column comparison of free versus pro features. No complex pricing grids. Just a clear visual of what they get.
 
@@ -56,7 +56,7 @@ The table should be visible but not obtrusive. We put it in the settings or opti
 
 Keep the comparison simple. Three or four features on each side is enough. More than that and it becomes overwhelming. The goal is to make the decision easy, not to overwhelm with options.
 
-## What to Avoid
+What to Avoid
 
 Full-screen modals in popups are too aggressive for the small space. Users came to do a task, not to be confronted with a wall. The extension popup is not the place for high-pressure sales tactics. If you must use a modal, keep it small and dismissible.
 
@@ -66,7 +66,7 @@ Blocking core functionality creates resentment. If the free version does not do 
 
 Requiring account creation before showing pricing adds too much friction. In the extension context, users expect immediate utility. Asking for personal information before demonstrating value loses people. Let them try the extension first.
 
-## What Works
+What Works
 
 After testing these patterns across 17 extensions at zovo.one, the inline lock pattern combined with usage limits produced the best conversion rates while keeping user satisfaction high. Users understood what they were getting, tried the feature, and upgraded when the limit hit.
 
