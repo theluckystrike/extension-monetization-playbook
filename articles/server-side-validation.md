@@ -1,19 +1,45 @@
 Server-Side License Validation for Chrome Extensions
 
-I have been building Chrome extensions for years and I learned a hard lesson about license validation. Client-side-only checks will only stop honest users. Anyone with basic DevTools knowledge can bypass your validation in minutes. This is why I moved everything to server-side validation and I want to share how that works.
+The problem with client-side-only validation
 
-The basic architecture is straightforward. Your extension collects the license key from the user, sends it to your backend API, and the server checks the database to see if the key is valid and what features the user paid for. The server returns a feature set, something like { pro: true, exportLimit: 1000 }, and the extension caches this locally. On every startup, the extension validates the key against the server and applies the appropriate feature set. The user never sees this happen in the background.
+If you rely only on client-side checks, your validation is broken by design. Any user can open DevTools, find the validation function, and bypass it in a few minutes. They might comment out the license check or modify the response. This only stops honest users who never thought to look. The reality is that determined users will bypass client-side validation every single time. This is why you need server-side validation as your source of truth.
 
-The validation endpoint should be a REST API running over HTTPS. I use Cloudflare Workers for this because they are fast, cheap, and handle SSL automatically. The endpoint accepts a POST request with the license key and returns the feature set or an error. You need rate limiting here because someone could try to brute force valid keys. Cloudflare makes rate limiting easy to configure.
+The basic architecture
 
-Caching is where things get interesting. You cannot hit the API on every single feature check because that would be slow and you would burn through your rate limits. I cache the validation result in chrome.storage.local with a TTL between 4 and 24 hours depending on how critical the feature is. For basic pro features, 24 hours works fine. For something like export functionality where you want to be more strict, 4 hours is better.
+Your extension sends a license key or token to your API on startup. The server checks the database to verify the key is valid and retrieves the associated plan and feature set. It returns something like { plan: "pro", features: ["export", "api"], expiresAt: "2025-06-01" }. The extension caches this locally with an expiration timestamp. On subsequent startups, the extension checks the cache first. Only on a cache miss or expiration does it hit the server again. This happens invisibly in the background.
 
-You need to decide between fail open and fail closed. Fail open means if the validation server is down, the extension lets the user in with full access. Fail closed means the extension locks them out. I prefer fail open because your users should not lose access to features they paid for just because your server had a bad hour. That said, fail closed makes more sense for expensive enterprise features where you have a smaller number of high-value customers.
+Building the validation endpoint
 
-Offline support is crucial. If someone loses internet access, your extension should still work. I cache the feature set with a generous TTL of 24 to 72 hours. The cached data includes a signed token from the server so users cannot fake it by editing chrome.storage.local. The server signs the response with a secret key and the extension verifies the signature before trusting the cached data. This prevents someone from just changing their cached features to { pro: true }.
+Create a simple REST endpoint that accepts a POST request with the license key. The response is JSON containing the plan name, enabled features, and expiration timestamp. This endpoint must run over HTTPS. There is no exceptions here. Sending license keys over plain HTTP is a security hole you cannot afford.
 
-Replay attacks are another concern. Someone could intercept a valid API response and replay it later. You prevent this by including a nonce or timestamp in the request and rejecting responses that are too old. The server includes a issuedAt timestamp in the response and the extension checks that it is within the last few minutes. If someone tries to replay an old response, it will fail this check.
+Rate limiting is critical. Implement limits by IP address and by license key. Without rate limiting, attackers can brute force valid keys. Most serverless platforms like Cloudflare Workers provide built-in rate limiting. If you self-host, you need to implement this yourself or use a reverse proxy with rate limiting built in.
 
-For infrastructure, I have tried a few options. A $5 VPS from DigitalOcean works but you have to manage SSL yourself and deal with uptime. Cloudflare Workers is my current favorite, it costs almost nothing for moderate traffic and includes SSL and rate limiting out of the box. Supabase is another good option if you want a database without managing servers. I use Supabase for the license database and Cloudflare Workers as the API layer.
+Caching strategy
 
-This system has been running at zovo.one for a while now. We handle server-side validation across 17 extensions through a single shared API endpoint. The endpoint validates keys for all of them and returns extension-specific feature sets. It was more work to set up initially than client-side validation but it has paid off. We went from losing significant revenue to pirated keys to having a much smaller problem. Most importantly, our paying users have a consistent experience and we can revoke keys instantly when we need to.
+Do not hit the server on every feature check. That would be slow and would burn through your rate limits quickly. Instead, cache the validation result in chrome.storage.local. Set a TTL between 4 and 24 hours. For basic features that are not high-value, 24 hours works well. For expensive features where you want tighter control, use 4 hours.
+
+When the cache expires or is empty, the extension makes a fresh request to the server. You need to decide between fail open and fail closed behavior. Fail open means that if the validation server is unreachable, the extension grants access based on the cached data. Fail closed means the extension denies access until the server responds. I prefer fail open because your users should not lose access to features they paid for just because your server had a brief outage. That said, fail closed makes sense for high-value enterprise features where the cost of abuse is high.
+
+Handling offline scenarios
+
+Users go offline on planes and trains. They lose internet in elevators and remote areas. A generous TTL of 24 to 72 hours handles most offline scenarios without any server contact. The cached data should include a signed token from the server. When the server signs the response with a secret key and includes the expiration in the payload, users cannot simply edit chrome.storage.local to grant themselves premium access. The extension verifies the signature before trusting the cached data.
+
+This approach supports truly offline-first extensions. The signed token embeds the expiration so the extension knows when the data is stale. As long as the signature is valid and the embedded expiration has not passed, the cached data is trustworthy.
+
+Preventing replay attacks
+
+Someone could intercept a valid API response and replay it later. This is a replay attack. You prevent this by including a nonce or timestamp in the request. The server includes an issuedAt timestamp in the response. The extension checks that the response is recent, within the last few minutes. If someone tries to replay an old response, the timestamp check fails and the extension requests fresh data.
+
+Use short-lived tokens that require periodic refresh. This limits the window of opportunity for replay attacks. When combined with signed responses and timestamp validation, you have defense in depth against this attack vector.
+
+Infrastructure options
+
+You have several choices for hosting the validation API. A simple Node.js or Python backend on a $5 VPS from DigitalOcean or Linode works if you want full control. You will need to handle SSL yourself, which means setting up LetsEncrypt and renewals.
+
+Cloudflare Workers or AWS Lambda provide serverless execution. These cost almost nothing for moderate traffic and include SSL automatically. This is the path I recommend for most extension developers. You focus on writing the code, not managing servers.
+
+For the database, PlanetScale or Supabase work well. Both offer managed databases without server maintenance. Supabase has the advantage of a built-in REST API that you can query directly from Cloudflare Workers. This reduces the number of moving parts you need to maintain.
+
+Running at scale
+
+This system has been running at zovo.one for a while now. We handle server-side validation across 17 extensions through a single shared API endpoint. The endpoint accepts a license key and returns an extension-specific feature set based on which extension the request comes from. This keeps costs minimal because all extensions share the same infrastructure. We went from losing significant revenue to pirated keys to having a much smaller problem. Most importantly, our paying users have a consistent experience and we can revoke keys instantly when we need to.
