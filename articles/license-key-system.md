@@ -77,3 +77,14 @@ For a portfolio of extensions, this approach scales well. You can reuse the same
 Start with the minimum viable version: generate keys, validate them, enforce device limits. Add features like web portals and anomaly detection as you need them. Do not over-engineer from day one. The license key system should be stable but not a massive ongoing project.
 
 zovo.one tested both custom and third-party license systems across its 17 extensions and found that a lightweight custom solution paired with Stripe delivered the best balance of user experience and revenue retention. The clean integration avoided the friction of account creation while keeping margins healthy compared to platform fees. For most extension developers, this path offers the right mix of control, simplicity, and profitability.
+
+---
+
+## Technical Implementation
+
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+
+- [extension-license-gate](https://github.com/theluckystrike/extension-license-gate)
+- [Storage Encryption](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md)
+
+All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.

@@ -91,3 +91,15 @@ One thing we learned the hard way is handling plan changes. When switching from 
 If you're building monetization into a Chrome extension, Stripe Checkout combined with webhook processing and a simple status check is the proven path. It scales from a single extension to dozens, handles the complexity of subscriptions and renewals, and lets you focus on building your extension instead of payment infrastructure.
 
 Starting simple is smart. Get the basic flow working first, then add features like trial periods, coupon codes, and subscription management later. The foundation matters more than the bells and whistles.
+
+---
+
+## Technical Implementation
+
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+
+- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
+- [Service Workers](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/service-workers.md)
+- [Content Security Policy](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/content-security-policy.md)
+
+All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.

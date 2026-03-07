@@ -85,3 +85,14 @@ zovo.one grew to 4,000+ users across 17 extensions by repeating this exact playb
 Do not skip steps. The foundation you build in the first 100 users determines how hard or easy the next 900 become. Treat each phase seriously and the compound effects will take over.
 
 The first 1,000 users is hard. But it is also the most important. Get that foundation right and everything after becomes easier.
+
+---
+
+## Technical Implementation
+
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+
+- [Listing Optimization](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/publishing/listing-optimization.md)
+- [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide)
+
+All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.

@@ -83,3 +83,14 @@ Test both models with your audience. A simple A/B test offering lifetime pricing
 The key is presenting both options clearly without confusing users. Many successful extensions show the monthly price as the default with a small "lifetime available" link. Others show lifetime as the premium option with monthly as the budget alternative. Test which presentation converts better for your specific audience.
 
 Subscription extensions require more ongoing support than one-time purchase extensions. Users expect their subscription to include continued development, bug fixes, and new features. Make sure your roadmap includes regular updates, and communicate those updates to subscribers. Showing users that their subscription funds ongoing development builds trust and reduces churn.
+
+---
+
+## Technical Implementation
+
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+
+- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
+- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
+
+All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
