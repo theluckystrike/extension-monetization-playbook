@@ -1,8 +1,8 @@
-# The Practical Guide to Selling a Chrome Extension on the Acquisition Market
+The Practical Guide to Selling a Chrome Extension on the Acquisition Market
 
 The extension acquisition market is more active than most developers realize. Extensions change hands regularly and buyers range from individual developers to private equity firms rolling up portfolios. Whether you sell or not, understanding the process makes you a better builder.
 
-## When to Sell
+When to Sell
 
 Knowing when to sell is just as important as knowing how. Here are the key indicators that it might be time to consider a sale.
 
@@ -16,7 +16,7 @@ Growth has plateaued and you have exhausted your ideas. You have tested every gr
 
 One important rule is to avoid selling during a growth phase unless the offer is truly exceptional. You are leaving money on the table when revenue is climbing and you exit early. Wait for a plateau or use that growth momentum to command a premium price.
 
-## Preparing for Sale
+Preparing for Sale
 
 A poorly prepared extension sells for less or does not sell at all. Buyers expect professionalism and transparency.
 
@@ -28,7 +28,7 @@ Separate extension infrastructure from personal accounts. If your extension uses
 
 Compile at least 12 months of revenue, user, and engagement data in a clear format. Charts showing growth trends, churn rates, and revenue history demonstrate traction. Include any support ticket data to show the workload involved in maintaining the extension.
 
-## Where to List
+Where to List
 
 Finding the right buyer requires knowing where to look.
 
@@ -40,7 +40,7 @@ Direct outreach to competitors or complementary extension developers often yield
 
 Twitter and indie hacker communities like IndieHackers sometimes surface serious buyers through casual posts. Mentioning you are open to selling creates inbound interest from people watching for opportunities. The acquihire market is particularly active in these circles.
 
-## The Transfer Process
+The Transfer Process
 
 Once you find a buyer, the actual transfer requires coordination across multiple systems.
 
@@ -52,7 +52,7 @@ Domain and hosting transfers follow standard registrar procedures. Ensure domain
 
 Plan a transition period where you help the buyer understand user expectations and common support issues. Brief them on recurring problems, popular feature requests, and any user complaints. This knowledge transfer maintains trust with the existing user base.
 
-## Deal Structure
+Deal Structure
 
 The structure of your deal matters as much as the price.
 
@@ -62,7 +62,7 @@ For larger deals, earnouts tied to revenue retention over 6-12 months are common
 
 Avoid seller financing where you essentially become the bank. Financing a sale to a stranger rarely ends well. Collecting payments across the internet from someone you barely know is a recipe for lost money. If the buyer cannot get traditional financing or pay upfront, question whether they are serious.
 
-## What Buyers Actually Want
+What Buyers Actually Want
 
 Understanding buyer priorities helps you prepare and price your extension.
 
@@ -76,7 +76,7 @@ Low owner involvement so the extension runs without constant attention. The idea
 
 A transferable brand that is not tied to a personal identity. Extensions branded around the creator are harder to sell. Generic, descriptive names transfer better than personal brands.
 
-## Build to Sell, Even If You Will Not Sell
+Build to Sell, Even If You Will Not Sell
 
 At zovo.one, we build each of our 17 extensions as transferable assets from day one. Clean code, independent infrastructure, and documented processes mean every extension in the portfolio could stand on its own.
 
