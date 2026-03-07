@@ -1,8 +1,8 @@
-# Legal Essentials for Chrome Extension Developers
+Legal Essentials for Chrome Extension Developers
 
 Most indie developers ignore legal requirements until something goes wrong. A Chrome Web Store takedown, a GDPR complaint, or a tax audit are not fun ways to learn these lessons. The basics are not complicated and getting them right early prevents real headaches down the road. This guide covers the legal foundations every extension developer needs before launching.
 
-## Privacy Policy
+Privacy Policy
 
 The Chrome Web Store requires a privacy policy if your extension requests certain permissions like tabs, storage, or identity. This is not optional and Google will not publish your extension without it. Your policy must be specific about what data you collect, how you store it, and who can access it. Generic policies that say "we may collect data" are both useless and increasingly risky.
 
@@ -14,7 +14,7 @@ What you actually write matters more than you might think. A good privacy policy
 
 If your extension uses any third-party services, list them. Analytics tools, payment processors, and hosting providers all handle user data in some way. Be clear about what data they receive and why. This transparency builds trust and protects you if something goes wrong.
 
-## Terms of Service
+Terms of Service
 
 Terms of service are required if you are selling anything, whether subscriptions, one-time purchases, or premium features. They establish what users get for their money, your refund policy, your liability limitations, and your right to terminate accounts. Without terms, you have no legal framework for handling disputes or problematic users.
 
@@ -28,7 +28,7 @@ Consider including a clause about account termination. What happens if a user vi
 
 Do not copy-paste terms from another source without understanding them. Your terms should reflect your actual practices. If you say you offer 14-day refunds but actually offer 30-day refunds, that discrepancy creates confusion and liability.
 
-## GDPR Compliance
+GDPR Compliance
 
 GDPR applies the moment you have any European users regardless of where you are located. This is not optional and ignoring it does not make it go away. European regulators take complaints seriously and Google cooperates fully with their requests. You do not need to actively target European users, if even one person in the EU downloads your extension, the law applies to you.
 
@@ -44,7 +44,7 @@ GDPR also requires that you have a lawful basis for processing any personal data
 
 For extensions that handle sensitive data like passwords, health information, or financial data, additional requirements may apply. Treat any data that could harm users if leaked with extra care. Encryption at rest and in transit is the minimum expectation.
 
-## Chrome Web Store Policies
+Chrome Web Store Policies
 
 Google enforces strict rules on permissions, data handling, and monetization. Understanding these policies before you build saves you from painful takedowns and reinstatement processes that can take months.
 
@@ -62,7 +62,7 @@ The policies also cover deceptive behavior and spam. Do not use your extension t
 
 Google also monitors for behavior that harms users or the ecosystem. This includes extensions that slow down browser performance, cause crashes, or consume excessive system resources. Keep your code lean and responsive.
 
-## Business Structure
+Business Structure
 
 Start as a sole proprietor because it costs nothing and gets you moving. You can begin selling extensions immediately without any formal business formation. The downside is that your personal assets are not protected if someone sues you, but for a small extension business the risk is manageable.
 
@@ -76,7 +76,7 @@ Single-member LLCs are taxed as sole proprietorships by default, which means pas
 
 For some developers, a C-corp or S-corp may make sense, particularly if you plan to raise outside investment or have complex ownership structures. Most extension developers will not need this level of complexity. An LLC provides sufficient protection and flexibility for the vast majority of use cases.
 
-## Taxes
+Taxes
 
 Extension revenue is taxable income in every jurisdiction where you operate. This is true regardless of whether you have a formal business entity, where you live, or how small the amounts are. The moment you receive your first payment, you have tax obligations.
 
@@ -96,7 +96,7 @@ If you sell to customers in different states, you may also have nexus obligation
 
 A good accountant is worth the investment. They will help you optimize your business structure, identify deductions you would miss, and prevent costly mistakes. Many accountants who work with small businesses understand the unique needs of software developers.
 
-## Why This Matters
+Why This Matters
 
 Getting the basics right early prevents headaches that would have been much harder to fix retroactively at scale. Zovo.one has legal foundations in place across all 17 extensions and 4,000 plus users. Privacy policies are specific to each extension is data practices. Terms of service cover all monetization. An LLC protects personal assets. Tax tracking happens from the first dollar earned.
 
