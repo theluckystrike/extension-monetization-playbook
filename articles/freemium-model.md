@@ -81,3 +81,14 @@ Closing
 This exact model runs across all 17 extensions at zovo.one. It is what got them to 4,000 plus users. Freemium is not a gimmick, it is how browser extensions are meant to work.
 
 The key is to respect the user while building a sustainable business. Give real value for free, ask fairly for the upgrade, and the math works out.
+
+---
+
+## Technical Implementation
+
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+
+- [Feature Flags](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/feature-flags.md)
+- [extension-ab-testing](https://github.com/theluckystrike/extension-ab-testing)
+
+All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
