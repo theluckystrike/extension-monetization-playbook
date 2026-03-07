@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Monetization Playbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #8b949e;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Cards Grid */
+        .cards-section {
+            padding: 40px 0 80px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-2px);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #e6edf3;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #8b949e;
+            margin-bottom: 20px;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .card a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #30363d;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 48px 16px 40px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .cards-section {
+                padding: 24px 0 60px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>The Complete Guide to Making Money with Browser Extensions</h1>
+            <p>From first install to sustainable revenue — everything you need to monetize your Chrome extension.</p>
+        </section>
+
+        <section class="cards-section">
+            <div class="cards-grid">
+                <article class="card">
+                    <h2>Revenue Models</h2>
+                    <p>Ads, freemium, subscriptions, one-time purchases, affiliate programs — explore the different ways to monetize your browser extension.</p>
+                    <a href="#">Read more →</a>
+                </article>
+
+                <article class="card">
+                    <h2>Payments</h2>
+                    <p>Stripe integration, PayPal, Chrome Web Store payments, licensing servers — set up secure payment processing.</p>
+                    <a href="#">Read more →</a>
+                </article>
+
+                <article class="card">
+                    <h2>Growth</h2>
+                    <p>SEO for extensions, content marketing, cross-promotion, launch strategies — scale your extension's user base.</p>
+                    <a href="#">Read more →</a>
+                </article>
+
+                <article class="card">
+                    <h2>Business</h2>
+                    <p>Legal essentials, privacy policies, terms of service, business entity setup — run your extension business properly.</p>
+                    <a href="#">Read more →</a>
+                </article>
+
+                <article class="card">
+                    <h2>Case Studies</h2>
+                    <p>Real revenue numbers and strategies from real extension developers — learn from their successes and mistakes.</p>
+                    <a href="#">Read more →</a>
+                </article>
+
+                <article class="card">
+                    <h2>Technical</h2>
+                    <p>Analytics, A/B testing, update strategies, crash reporting, performance — build a robust technical foundation.</p>
+                    <a href="#">Read more →</a>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Built by <a href="https://github.com/theluckystrike">theluckystrike</a> | <a href="https://zovo.one">zovo.one</a></p>
+    </footer>
+</body>
+</html>
