@@ -20,7 +20,7 @@ The extension should cache the validation result locally with a TTL, somewhere b
 
 Device Limits and Management
 
-Allow 2 to 3 devices per key. This is reasonable for most users who might use your extension on a work computer, personal computer, and偶尔 a laptop. Track devices by hashing the Chrome profile ID or generating a unique device fingerprint on first activation.
+Allow 2 to 3 devices per key. This is reasonable for most users who might use your extension on a work computer, personal computer, and occasionally a laptop. Track devices by hashing the Chrome profile ID or generating a unique device fingerprint on first activation.
 
 When a user hits the device limit, show a clear message explaining how to deactivate an old device. Provide a simple web portal where users can enter their key and see or deactivate their registered devices. This self-service approach saves you from handling support emails about device swaps.
 
