@@ -1,4 +1,4 @@
-# Building and Nurturing a Community Around Your Chrome Extensions as a Long-Term Competitive Moat
+Building and Nurturing a Community Around Your Chrome Extensions as a Long-Term Competitive Moat
 
 Features can be copied overnight. A community cannot. A competitor can clone your extension in a weekend, but they cannot clone the relationships you have built with thousands of users. This is the one moat that gets stronger over time, not weaker.
 
@@ -6,7 +6,7 @@ Every successful extension starts with a feature set that solves a problem. But 
 
 When someone clones your extension, they get your code, your UI, your current feature set. What they do not get is the thousands of hours of community interaction, the trust you have built, the relationships that turn users into advocates. This is why community is not just a nice-to-have, it is a strategic moat.
 
-## Where to Build Your Community
+Where to Build Your Community
 
 Choosing the right platform is the first strategic decision in community building. Discord works best for extension communities because it supports real-time conversation, screenshot sharing, and role-based channels. The informal atmosphere encourages the kind of back-and-forth that reveals real pain points and feature requests. Discord also has excellent mobile support, so users can participate from anywhere.
 
@@ -16,7 +16,7 @@ GitHub Discussions is ideal for developer tools where issues blur into feature r
 
 The key rule is simple: pick one platform and commit to it fully rather than spreading thin across three dead channels. Half-communities on multiple platforms feel abandoned. A thriving community on one platform feels alive. Choose based on where your users already spend time, not where you prefer to hang out.
 
-## What Community Gives You
+What Community Gives You
 
 Building a community around your extension unlocks advantages that no amount of advertising or premium features can replicate. You get direct, unfiltered feedback that surveys never capture, the kind of honest reactions that reveal what actually matters to users. Survey responses are filtered through the lens of what people think you want to hear. Community conversations are raw and real.
 
@@ -30,7 +30,7 @@ You get early warning when a Chrome update breaks something, because your most e
 
 And you discover feature ideas you never would have thought of yourself, because your users see use cases you did not imagine. The best product ideas often come from users who use your tool in ways you never anticipated.
 
-## Getting Your First 50 Members
+Getting Your First 50 Members
 
 The hardest part is starting. The chicken-and-egg problem of community building is real: you need members to have activity, but you need activity to attract members. Here is how to break through.
 
@@ -44,7 +44,7 @@ Welcome every single person by name for your first 100 members because that pers
 
 Ask questions in your posts to seed conversation. Do not just announce updates, ask for opinions. Ask what feature they want next. Ask what frustrates them. Ask what you should build. People engage when they are asked to contribute.
 
-## Keeping the Community Alive
+Keeping the Community Alive
 
 A community dies from neglect, not from controversy. The key is consistent, authentic engagement even when you feel like you have nothing to share.
 
@@ -60,7 +60,7 @@ Share behind-the-scenes content that you would not put in a formal update. Show 
 
 Highlight community members publicly. Feature their projects, share their use cases, thank them by name. This recognition is free for you but incredibly valuable to them.
 
-## Community-Driven Development
+Community-Driven Development
 
 The most powerful version of this moat is when your community becomes co-creators. This is when the relationship shifts from you building for them to you building with them.
 
@@ -72,7 +72,7 @@ Credit feature suggesters in release notes by name because recognition costs not
 
 Create a formal feature request channel where ideas are tracked and discussed. When you implement a requested feature, reference the original request. Close the loop on every suggestion, even if you decide not to build it.
 
-## Scaling Without Burnout
+Scaling Without Burnout
 
 Communities can become a second job if you let them. The goal is a self-sustaining ecosystem that does not require your constant attention.
 
@@ -88,7 +88,7 @@ Schedule community time deliberately. Block off time for community engagement ra
 
 A healthy community runs itself most of the time, with you as a facilitator rather than a always-on responder. Your goal is to create a virtuous cycle where engaged members attract more engaged members.
 
-## The zovo.one Approach
+The zovo.one Approach
 
 At zovo.one, we treat our 4,000+ users across 17 extensions as collaborators rather than customers. Our feedback loop between the community and extensions like BeLikeNative, with its 3,300 users and 4.62-star rating, is what drives real product improvement. Every feature request, every bug report, every conversation in our community shapes how we build.
 
