@@ -1,4 +1,9 @@
-Paywall Patterns for Chrome Extensions
+---
+title: "Paywall Patterns for Chrome Extensions"
+description: "Paywalls in Chrome extensions are fundamentally different from what you see on the web or mobile apps. I learned this the hard way after several failed attempts"
+permalink: /paywall-patterns-for-chrome-extensions
+layout: default
+---
 
 Paywalls in Chrome extensions are fundamentally different from what you see on the web or mobile apps. I learned this the hard way after several failed attempts to port web monetization strategies into extensions. The popup is tiny, the user's attention span is measured in milliseconds, and they came for a specific task, not to make a purchasing decision. Everything changes when you accept this constraint.
 

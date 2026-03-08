@@ -1,4 +1,9 @@
-# Getting Started with Extension Monetization
+---
+title: "Getting Started with Extension Monetization"
+description: "Welcome to the Extension Monetization Playbook! This guide will help you understand how to effectively monetize your browser extension. 1. **Understand Your Mod"
+permalink: /getting-started-with-extension-monetization
+layout: default
+---
 
 Welcome to the Extension Monetization Playbook! This guide will help you understand how to effectively monetize your browser extension.
 

@@ -1,4 +1,9 @@
-Why Free Trials Work
+---
+title: "Why Free Trials Work"
+description: "Free trials remain the most effective conversion tool for extension premium features. The fundamental problem with paid extensions is that users cannot evaluate"
+permalink: /why-free-trials-work
+layout: default
+---
 
 Free trials remain the most effective conversion tool for extension premium features. The fundamental problem with paid extensions is that users cannot evaluate the value of features they have not used. A trial removes this barrier completely. When someone can try your product before paying, the psychological risk of purchase disappears. The trial acts as a trust-building mechanism where the user proves to themselves that your extension delivers value.
 

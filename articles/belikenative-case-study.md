@@ -1,4 +1,9 @@
-# BeLikeNative. From Idea to 3,300 Users. A First-Person Case Study
+---
+title: "BeLikeNative. From Idea to 3,300 Users. A First-Person Case Study"
+description: "I'm the developer who built BeLikeNative. A Chrome extension that helps non-native speakers make their text sound natural in any language. 3,300 users. 4.62 sta"
+permalink: /belikenative-from-idea-to-3300-users-a-first-person-case-study
+layout: default
+---
 
 I'm the developer who built BeLikeNative. A Chrome extension that helps non-native speakers make their text sound natural in any language. 3,300 users. 4.62 stars. The most successful extension in the Zovo portfolio. This is the full story of how it got there.
 

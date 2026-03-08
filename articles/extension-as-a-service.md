@@ -1,4 +1,9 @@
-Treating your browser extension like SaaS is the mental shift that unlocks real revenue. Instead of thinking of the extension as the product, recognize that the extension is just the client. The backend is the product. The moment you make this switch, everything changes.
+---
+title: "Treating your browser extension like SaaS is the mental shift that unlocks real revenue. Instead of thinking of the extension as the product, recognize that the extension is just the client. The backend is the product. The moment you make this switch, everything changes."
+description: "You stop competing with free alternatives in the Chrome Web Store. You start competing with legitimate software services that users pay for monthly. This is the"
+permalink: /treating-your-browser-extension-like-saas-is-the-mental-shift-that-unlocks-real-revenue-instead-of-thinking-of-the-extension-as-the-product-recognize-that-the-extension-is-just-the-client-the-backend-is-the-product-the-moment-you-make-this-switch-everything-changes
+layout: default
+---
 
 You stop competing with free alternatives in the Chrome Web Store. You start competing with legitimate software services that users pay for monthly. This is the difference between a $2 extension and a $50 monthly subscription. It comes down to whether you are selling a file or a service.
 

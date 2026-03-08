@@ -1,4 +1,9 @@
-Every update is a monetization opportunity
+---
+title: "Every update is a monetization opportunity"
+description: "I used to think updates were just bug fixes and feature additions. That changed when I started treating every release as a business event. An extension that nev"
+permalink: /every-update-is-a-monetization-opportunity
+layout: default
+---
 
 I used to think updates were just bug fixes and feature additions. That changed when I started treating every release as a business event. An extension that never updates looks dead. An extension that updates regularly looks alive, and alive extensions get recommended, ranked higher, and trusted more by new users.
 

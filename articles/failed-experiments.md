@@ -1,4 +1,9 @@
-Most monetization ideas fail. I have tried enough of them to know. Running 17 Chrome extensions with over 4,000 users means you have plenty of chances to get it wrong. The difference between a struggling extension studio and a profitable one is not finding the perfect strategy on the first try. It is eliminating the bad ideas quickly so you can focus on what actually works.
+---
+title: "Most monetization ideas fail. I have tried enough of them to know. Running 17 Chrome extensions with over 4,000 users means you have plenty of chances to get it wrong. The difference between a struggling extension studio and a profitable one is not finding the perfect strategy on the first try. It is eliminating the bad ideas quickly so you can focus on what actually works."
+description: "Sharing failures is more useful than sharing successes because it saves other developers time and money. This article is about the experiments that did not work"
+permalink: /most-monetization-ideas-fail-i-have-tried-enough-of-them-to-know-running-17-chrome-extensions-with-over-4000-users-means-you-have-plenty-of-chances-to-get-it-wrong-the-difference-between-a-struggling-extension-studio-and-a-profitable-one-is-not-finding-the-perfect-strategy-on-the-first-try-it-is-eliminating-the-bad-ideas-quickly-so-you-can-focus-on-what-actually-works
+layout: default
+---
 
 Sharing failures is more useful than sharing successes because it saves other developers time and money. This article is about the experiments that did not work. Every bad idea tested became part of the learning that shaped the current Zovo Pro model.
 

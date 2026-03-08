@@ -1,4 +1,9 @@
-Handling Refunds for Chrome Extension Payments
+---
+title: "Handling Refunds for Chrome Extension Payments"
+description: "Refunds are an inevitable part of selling anything online. No matter how good your extension is, some users will want their money back. The key insight that mos"
+permalink: /handling-refunds-for-chrome-extension-payments
+layout: default
+---
 
 Refunds are an inevitable part of selling anything online. No matter how good your extension is, some users will want their money back. The key insight that most developers miss is that a generous refund policy actually reduces the total number of refund requests. When users know they can get their money back easily, they feel safe making the purchase in the first place. That psychological safety converts more visitors into paying customers than any aggressive sales tactic ever could.
 

@@ -1,4 +1,9 @@
-Stripe in Extensions
+---
+title: "Stripe in Extensions"
+description: "Why Stripe matters for Chrome extension developers When Google deprecated Chrome Web Store payments in 2020, many extension developers were left searching for a"
+permalink: /stripe-in-extensions
+layout: default
+---
 
 Why Stripe matters for Chrome extension developers
 

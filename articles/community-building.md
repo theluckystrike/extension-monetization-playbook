@@ -1,4 +1,9 @@
-Building and Nurturing a Community Around Your Chrome Extensions as a Long-Term Competitive Moat
+---
+title: "Building and Nurturing a Community Around Your Chrome Extensions as a Long-Term Competitive Moat"
+description: "Features can be copied overnight. A community cannot. A competitor can clone your extension in a weekend, but they cannot clone the relationships you have built"
+permalink: /building-and-nurturing-a-community-around-your-chrome-extensions-as-a-long-term-competitive-moat
+layout: default
+---
 
 Features can be copied overnight. A community cannot. A competitor can clone your extension in a weekend, but they cannot clone the relationships you have built with thousands of users. This is the one moat that gets stronger over time, not weaker.
 

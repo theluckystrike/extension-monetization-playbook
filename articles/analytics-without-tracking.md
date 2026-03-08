@@ -1,4 +1,9 @@
-Getting Useful Product Analytics Without Invasive User Tracking
+---
+title: "Getting Useful Product Analytics Without Invasive User Tracking"
+description: "Every extension developer faces the same tension. You need data to make informed product decisions, but you do not want to become the kind of developer who spie"
+permalink: /getting-useful-product-analytics-without-invasive-user-tracking
+layout: default
+---
 
 Every extension developer faces the same tension. You need data to make informed product decisions, but you do not want to become the kind of developer who spies on users. The good news is this is a solvable problem. You can gather everything you need to build a better extension while respecting user privacy.
 
