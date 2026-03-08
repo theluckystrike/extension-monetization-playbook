@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Content Marketing for Chrome Extensions: Growth Strategy"
-description: "Learn how content marketing drives sustainable Chrome extension growth. Discover what to write, where to publish, and how to convert readers into loyal users."
+title: "Content Marketing for Chrome Extensions: Drive Organic Growth"
+description: "Use content marketing to grow your Chrome extension. Blog posts, guides, and SEO strategies that work."
 permalink: /articles/content-marketing/
 
 ---

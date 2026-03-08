@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "Pricing Strategies for Chrome Extensions: Data-Driven Guide"
-description: "How to price your Chrome extension for maximum revenue. Price anchoring, A/B testing, regional pricing, and psychological pricing tactics."
+layout: default
+title: "Chrome Extension Pricing Strategies: Data-Driven Guide"
+description: "How to price your Chrome extension for maximum revenue. Price anchoring, tiers, and psychological pricing."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [monetization, pricing]
@@ -166,15 +166,12 @@ Pricing is just one piece of your monetization puzzle. Consider how different mo
 
 To maximize conversion from your pricing, implement a [trial implementation](/articles/trial-implementation) that lets users experience your full feature set. Use [paywall patterns](/articles/paywall-patterns) to communicate value and create natural upgrade moments. The right pricing combined with effective trial and paywall strategies creates a monetization system that scales with your user base.
 
-
-## Related Articles
-
-- [Successful Extension Businesses](docs/case-studies/successful-extension-businesses/)
-- [Freemium Model](articles/freemium-model/)
-- [In App Purchases Extensions](docs/revenue/in-app-purchases-extensions/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Subscription Model](articles/subscription-model.md)
+- [Freemium Model](articles/freemium-model.md)
+- [Trial Implementation](articles/trial-implementation.md)

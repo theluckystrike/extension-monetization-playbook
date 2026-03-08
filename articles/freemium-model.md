@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Freemium Model for Chrome Extensions: Feature Gating and Conversion Guide"
-description: "Master the freemium model for Chrome extensions. Learn feature gating, upgrade prompts, usage limits, and conversion optimization with complete TypeScript implementations."
+title: "Freemium Model for Chrome Extensions: Convert Free to Paid"
+description: "Implement a freemium model for your Chrome extension. Balance free features with premium upgrades."
 permalink: /revenue/freemium-model/
 ---
 
@@ -705,15 +705,6 @@ For more monetization strategies, see:
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
-
-
-## Related Articles
-
-- [Payment Integration Overview](articles/payment-integration-overview/)
-- [Belikenative Case Study](articles/belikenative-case-study/)
-- [Zero To 1000 Users](docs/growth/zero-to-1000-users/)
-
-
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Chrome Extension Case Studies: Real Revenue & Growth Data"
-description: "Real-world case studies of Chrome extension businesses. Revenue numbers, growth tactics, and lessons learned from solo developers."
+title: "Chrome Extension Case Studies: Real Monetization Success Stories"
+description: "Learn from successful Chrome extension businesses. Case studies covering pricing, growth, and revenue strategies."
 permalink: /articles/case-studies-overview/
 
 ---

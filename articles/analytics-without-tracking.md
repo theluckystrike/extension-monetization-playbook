@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Privacy-First Analytics for Chrome Extensions"
-description: "Get actionable product analytics without invasive user tracking. Privacy-friendly tools, custom event tracking, and ethical data collection for Chrome extension developers."
+title: "Privacy-First Chrome Extension Analytics: Complete Guide"
+description: "Track Chrome extension performance without invasive tracking. GDPR-compliant analytics that respect user privacy."
 permalink: /articles/analytics-without-tracking/
 
 ---

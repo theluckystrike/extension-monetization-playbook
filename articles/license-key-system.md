@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "License Key System for Chrome Extensions: Implementation Guide"
-description: "Build a robust license key system for your Chrome extension. Key generation, validation, activation limits, and anti-piracy strategies."
+layout: default
+title: "License Key System for Chrome Extensions: Prevent Piracy"
+description: "Implement license key validation for your Chrome extension. Server-side protection against piracy and abuse."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [technical, licensing]
@@ -209,15 +209,12 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 **Need help monetizing your extension?** [Get in touch →](https://zovo.one)
 
-
-## Related Articles
-
-- [Handling Refunds](articles/handling-refunds/)
-- [Subscription Model](articles/subscription-model/)
-- [Introduction](docs/getting-started/introduction/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Server Side Validation](articles/server-side-validation.md)
+- [Stripe In Extensions](articles/stripe-in-extensions.md)
+- [Legal Essentials](articles/legal-essentials.md)

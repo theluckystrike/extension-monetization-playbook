@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "The Freemium Model for Chrome Extensions: Complete Guide to Conversion, Feature Gating, and Pricing Psychology"
-description: "Master the freemium model for browser extensions. Detailed conversion funnels with industry benchmarks, real Chrome extension examples, TypeScript feature gating code, pricing psychology tactics, and A/B testing strategies."
+title: "Freemium Model for Browser Extensions"
+description: "Implement freemium for your browser extension. Balance free and paid features for maximum conversion."
 permalink: /docs/revenue/freemium-model/
 ---
 
@@ -608,15 +608,12 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
-
-## Related Articles
-
-- [Chrome Web Store Seo](articles/chrome-web-store-seo/)
-- [Community Building](articles/community-building/)
-- [Trial Implementation](articles/trial-implementation/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Freemium Model](articles/freemium-model.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+- [Subscription Model](articles/subscription-model.md)

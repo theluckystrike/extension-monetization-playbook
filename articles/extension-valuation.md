@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "How to Value a Chrome Extension Business"
-description: "Calculate what your Chrome extension is worth. Revenue multiples, user metrics, growth rate, and factors that increase extension valuation."
+layout: default
+title: "How to Value Your Chrome Extension Business"
+description: "Determine what your Chrome extension is worth. Valuation methods and metrics for extension businesses."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [business, exit]
@@ -80,15 +80,12 @@ Understanding the full picture of extension valuation also means recognizing tha
 
 The due diligence process in extension acquisitions typically involves verifying your user metrics, reviewing revenue data, and assessing technical complexity. Being prepared with clean financial records, clear documentation of user engagement, and well-organized code will speed up the process and give buyers confidence in your extension. Extensions with messy records or unclear ownership histories can fall out of favor quickly with serious buyers who have plenty of alternatives to consider. Take time before you plan to sell to clean up your documentation, organize your financial records, and ensure your code is maintainable. This preparation will not only increase your valuation but also make the sale process smoother and faster.
 
-
-## Related Articles
-
-- [Trial Implementation](articles/trial-implementation/)
-- [Review Acquisition](articles/review-acquisition/)
-- [Belikenative Case Study](articles/belikenative-case-study/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Selling Your Extension](articles/selling-your-extension.md)
+- [Scaling Solo](articles/scaling-solo.md)
+- [Pricing Strategies](articles/pricing-strategies.md)

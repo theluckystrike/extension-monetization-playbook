@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "Chrome Web Store SEO: Rank Higher and Get More Installs"
-description: "Chrome Web Store SEO and extension listing optimization strategies to rank higher and get more installs. Learn keyword placement, screenshot optimization, and category selection."
+layout: default
+title: "Chrome Web Store SEO: Rank Higher and Get More Downloads"
+description: "Optimize your Chrome extension for the Web Store search algorithm. Boost visibility and install rates with proven SEO tactics."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [marketing, seo]
@@ -152,15 +152,12 @@ Need help building the technical foundation for your Chrome Web Store extension?
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
-
-## Related Articles
-
-- [Server Side Validation](articles/server-side-validation/)
-- [In App Purchases Extensions](docs/revenue/in-app-purchases-extensions/)
-- [Legal Essentials](articles/legal-essentials/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Zero To 1000 Users](articles/zero-to-1000-users.md)
+- [Review Acquisition](articles/review-acquisition.md)
+- [Content Marketing](articles/content-marketing.md)

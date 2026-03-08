@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "In-App Purchases for Chrome Extensions: Complete Implementation Guide"
-description: "Master in-app purchases for Chrome extensions. Learn to implement Chrome Web Store Payments, digital goods, subscription models, and premium feature gating with practical code examples."
+title: "In-App Purchases for Chrome Extensions"
+description: "Implement in-app purchases in Chrome extensions. Sell virtual goods and premium features."
 permalink: /docs/revenue/in-app-purchases-extensions
 ---
 
@@ -770,15 +770,12 @@ Remember that monetization works best when users feel they're getting genuine va
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
-
-## Related Articles
-
-- [Zero To 1000 Users](articles/zero-to-1000-users/)
-- [Technical Guides Index](docs/technical-guides-index/)
-- [Introduction](docs/getting-started/introduction/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Stripe In Extensions](articles/stripe-in-extensions.md)
+- [Chrome Web Store Payments](articles/chrome-web-store-payments.md)
+- [Payment Integration Overview](articles/payment-integration-overview.md)

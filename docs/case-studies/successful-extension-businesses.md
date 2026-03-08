@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "10 Chrome Extensions Making $10K+/Month: Revenue Models, Growth Strategies, and Lessons Learned"
-description: "Deep analysis of 10 real Chrome extension businesses generating $10,000+ in monthly revenue. Revenue model breakdowns, growth strategies, lessons learned, and how to apply them to your own extension."
+title: "Successful Chrome Extension Businesses: Case Studies"
+description: "Study successful Chrome extension businesses. Learn from developers who built profitable extensions."
 permalink: /case-studies/successful-extension-businesses/
 ---
 
@@ -399,15 +399,12 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
-
-## Related Articles
-
-- [Handling Refunds](articles/handling-refunds/)
-- [Zero To 1000 Users](articles/zero-to-1000-users/)
-- [Stripe In Extensions](docs/payments/stripe-in-extensions/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Zovo Bundle Case Study](articles/zovo-bundle-case-study.md)
+- [Belikenative Case Study](articles/belikenative-case-study.md)
+- [Tab Suspender Pro Case Study](articles/tab-suspender-pro-case-study.md)

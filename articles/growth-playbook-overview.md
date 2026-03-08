@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Chrome Extension Growth Playbook: From 0 to 10K Users"
-description: "Proven tactics to grow your Chrome extension user base. SEO, content marketing, reviews, cross-promotion, and community building."
+title: "Chrome Extension Growth Playbook: Scale Your User Base"
+description: "Comprehensive guide to growing your Chrome extension. From zero to thousands of users with proven tactics."
 permalink: /articles/growth-playbook-overview/
 
 ---

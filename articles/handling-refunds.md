@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chrome Extension Refund Policy: Reduce Chargebacks"
-description: "Set up a refund policy that builds trust and prevents costly chargebacks. Stripe integration, partial refunds, and handling common refund reasons explained."
+title: "Chrome Extension Refund Policy: Best Practices"
+description: "Create a fair refund policy for your Chrome extension. Build trust while protecting your revenue."
 permalink: /articles/handling-refunds/
 ---
 
@@ -119,15 +119,6 @@ Need help building the technical foundation for refund handling? The [Chrome Ext
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
-
-
-## Related Articles
-
-- [Zovo Bundle Case Study](articles/zovo-bundle-case-study/)
-- [Review Acquisition](articles/review-acquisition/)
-- [Failed Experiments](articles/failed-experiments/)
-
-
 
 ---
 

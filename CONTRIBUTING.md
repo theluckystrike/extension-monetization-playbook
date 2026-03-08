@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contribute to the Extension Monetization Playbook"
-description: "Learn how to contribute articles, case studies, and improvements to the Chrome extension monetization playbook."
+description: "Contribute articles to the Extension Monetization Playbook. Share your Chrome extension monetization expertise."
 ---
 
 # Contributing to Extension Monetization Playbook
@@ -55,15 +55,12 @@ If you have questions about contributing, please open an issue in the repository
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
 
-
-## Related Articles
-
-- [Sponsorship Model](articles/sponsorship-model/)
-- [Content Marketing](articles/content-marketing/)
-- [Zero To 1000 Users](articles/zero-to-1000-users/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Index](index.md)
+- [Monetization Strategies Overview](articles/monetization-strategies-overview.md)
+- [Content Marketing](articles/content-marketing.md)

@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "How to Sell a Chrome Extension: Acquisition Market Guide"
-description: "Learn when to sell your Chrome extension, where to list it, how to transfer ownership, and structure deals. A practical guide to the extension acquisition market."
+title: "Sell Your Chrome Extension: Exit Strategies"
+description: "Sell your Chrome extension business. Find buyers, value your business, and close the deal."
 permalink: /articles/selling-your-extension/
 
 ---

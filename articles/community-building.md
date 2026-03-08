@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Community Building for Chrome Extensions: Your Moat"
-description: "Build an unbeatable competitive moat around your Chrome extension through community. Learn where to build, how to grow, and how to scale without burnout."
+title: "Build a Community Around Your Chrome Extension"
+description: "Create a loyal user community for your Chrome extension. Grow engagement and turn users into advocates."
 permalink: /articles/community-building/
 ---
 
@@ -173,15 +173,6 @@ Need help building the technical foundation for community features? The [Chrome 
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
-
-
-## Related Articles
-
-- [License Key System](articles/license-key-system/)
-- [Extension Analytics Complete Guide](docs/analytics/extension-analytics-complete-guide/)
-- [Introduction](docs/getting-started/introduction/)
-
-
 
 ---
 

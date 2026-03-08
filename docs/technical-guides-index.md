@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Technical Implementation Guides for Extension Monetization"
-description: "Complete matrix mapping every monetization model to the Chrome APIs, implementation guides, and code patterns required to build it. Cross-referenced with 200+ technical articles."
+title: "Chrome Extension Technical Guides"
+description: "Technical guides for Chrome extension development. Implementation resources and best practices."
 permalink: /technical-guides-index/
 ---
 
@@ -154,15 +154,12 @@ Get a head start with production-ready project templates that include monetizati
 
 *Built by [theluckystrike](https://github.com/theluckystrike) at [Zovo](https://zovo.one). Open-source monetization guides and tools for Chrome extension developers. Visit [zovo.one](https://zovo.one) to explore starter templates, production extensions, and the complete developer resource ecosystem.*
 
-
-## Related Articles
-
-- [Freemium Model](docs/revenue/freemium-model/)
-- [Analytics Without Tracking](articles/analytics-without-tracking/)
-- [Sponsorship Model](articles/sponsorship-model/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Technical Implementation Links](articles/technical-implementation-links.md)
+- [Server Side Validation](articles/server-side-validation.md)
+- [Stripe In Extensions](articles/stripe-in-extensions.md)

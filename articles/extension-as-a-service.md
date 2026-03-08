@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Extension as a Service: SaaS Model for Chrome Extensions"
-description: "Turn your Chrome extension into a SaaS business with recurring revenue. Architecture patterns, pricing strategies, and hybrid monetization for extension developers."
+title: "Extension as a Service (EaaS): SaaS Model for Chrome Extensions"
+description: "Treat your Chrome extension as a service. Build recurring revenue with ongoing value delivery."
 permalink: /articles/extension-as-a-service/
 
 ---

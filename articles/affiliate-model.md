@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Affiliate Revenue for Browser Extensions"
-description: "Learn how to add affiliate revenue to your Chrome extension without alienating users. Covers program selection, implementation, compliance, and realistic income expectations."
+title: "Chrome Extension Affiliate Marketing: Monetize Through Partnerships"
+description: "Learn how to monetize your Chrome extension through affiliate marketing. Partner with tools and earn commissions on referrals."
 permalink: /articles/affiliate-model/
 
 ---

@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Server-Side License Validation for Chrome Extensions"
-description: "Build secure server-side license validation for your Chrome extension. Covers API design, caching strategies, offline support, and replay attack prevention."
+title: "Server-Side Validation for Chrome Extensions"
+description: "Implement secure server-side validation for Chrome extensions. Prevent tampering and license abuse."
 permalink: /articles/server-side-validation/
 
 ---

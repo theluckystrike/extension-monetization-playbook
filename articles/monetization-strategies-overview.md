@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Chrome Extension Monetization Strategies: Complete 2026 Guide"
-description: "Every proven way to make money from Chrome extensions. Freemium, subscriptions, one-time purchases, affiliates, sponsorships, and more."
+title: "Chrome Extension Monetization Strategies: Complete Overview"
+description: "Overview of all ways to monetize Chrome extensions. Compare subscription, freemium, one-time purchase, and more."
 permalink: /articles/monetization-strategies-overview/
 
 ---

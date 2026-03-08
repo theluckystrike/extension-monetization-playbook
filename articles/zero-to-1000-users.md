@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Zero to 1,000 Users: Chrome Extension Launch Playbook"
-description: "Complete launch playbook for Chrome extensions. Marketing channels, community building, onboarding optimization, and retention strategies to reach your first 1,000 users."
+title: "Grow Your Chrome Extension from Zero to 1000 Users"
+description: "Early stage growth tactics for Chrome extensions. Get your first 1000 users with proven strategies."
 permalink: /growth/zero-to-1000-users/
 ---
 
@@ -713,15 +713,6 @@ Need help building the technical foundation for user acquisition? The [Chrome Ex
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
-
-
-## Related Articles
-
-- [Community Building](articles/community-building/)
-- [Technical Guides Index](docs/technical-guides-index/)
-- [Technical Implementation Links](articles/technical-implementation-links/)
-
-
 
 ---
 

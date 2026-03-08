@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Subscription Pricing for Browser Extensions: Complete Guide"
-description: "How to implement subscription pricing for Chrome extensions. Covers monthly vs annual plans, churn reduction, Stripe integration, and the hybrid pricing model."
+title: "Subscription Model for Chrome Extensions: Recurring Revenue"
+description: "Implement subscription billing for Chrome extensions. Monthly and annual plans that retain users."
 permalink: /articles/subscription-model/
 ---
 
@@ -220,15 +220,6 @@ Need help building the technical foundation for your subscription extension? The
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
-
-
-## Related Articles
-
-- [Chrome Web Store Payments](articles/chrome-web-store-payments/)
-- [Failed Experiments](articles/failed-experiments/)
-- [Community Building](articles/community-building/)
-
-
 
 ---
 

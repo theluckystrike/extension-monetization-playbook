@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Chrome Extension Payment Integration: Complete 2026 Guide"
-description: "How to accept payments in Chrome extensions. Stripe, license keys, server validation, and paywall patterns explained."
+title: "Chrome Extension Payment Integration: Compare Providers"
+description: "Compare payment processors for Chrome extensions. Stripe, PayPal, Paddle, and Chrome Web Store payments."
 permalink: /articles/payment-integration-overview/
 
 ---

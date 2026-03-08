@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Solo Chrome Extension Business: Scale Without a Team"
-description: "How one developer built a 17-extension portfolio with 4,000+ users. Systems for automation, support, and portfolio management as a solo creator."
+title: "Scale Your Chrome Extension Business Solo"
+description: "Grow your Chrome extension business without employees. Systems and processes for solo developers."
 permalink: /articles/scaling-solo/
 
 ---

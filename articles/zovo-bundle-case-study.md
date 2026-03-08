@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "Zovo Bundle Case Study: Extension Bundle Monetization"
-description: "How the Zovo extension bundle generates revenue through bundling multiple Chrome extensions. Strategy, pricing, and technical implementation."
+layout: default
+title: "Zovo Bundle Case Study: How 17 Extensions Generated $40K/Month"
+description: "How bundling 17 Chrome extensions created $40K/month recurring revenue. The portfolio effect explained."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [case-study, monetization]
@@ -200,15 +200,12 @@ This approach isn't for everyone. It requires patience to build up a portfolio b
 
 If you're building browser extensions and feeling the pain of managing multiple billing systems, consider whether a chrome extension bundle monetization approach could work for you. It changed everything for zovo.one.
 
-
-## Related Articles
-
-- [Technical Implementation Links](articles/technical-implementation-links/)
-- [Stripe In Extensions](docs/payments/stripe-in-extensions/)
-- [Subscription Model](articles/subscription-model/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Tab Sumper Pro Case Study](articles/tab-sumper-pro-case-study.md)
+- [Belikenative Case Study](articles/belikenative-case-study.md)
+- [Pricing Strategies](articles/pricing-strategies.md)

@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Stripe Payment Integration for Chrome Extensions: Complete Tutorial"
-description: "Step-by-step guide to integrating Stripe payments in your Chrome extension. Includes backend setup, webhook handling, and license management with TypeScript."
+title: "Stripe Integration for Chrome Extensions"
+description: "Integrate Stripe payments into your Chrome extension. Subscriptions, one-time payments, and trials."
 permalink: /payments/stripe-in-extensions/
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chrome Web Store SEO: Complete Guide to Ranking, Keywords, Localization, and Visual Optimization"
-description: "Master Chrome Web Store SEO with ranking factor analysis, keyword research methodology, 55-locale optimization, screenshot best practices with dimensions, and review management templates."
+title: "Chrome Web Store SEO Guide"
+description: "Optimize your Chrome extension listing for the Web Store. Improve visibility and get more installs."
 permalink: /docs/growth/chrome-web-store-seo/
 ---
 
@@ -365,15 +365,12 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
-
-## Related Articles
-
-- [Subscription Model](articles/subscription-model/)
-- [Monetization Strategies Overview](articles/monetization-strategies-overview/)
-- [Extension Valuation](articles/extension-valuation/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Chrome Web Store Seo](articles/chrome-web-store-seo.md)
+- [Zero To 1000 Users](articles/zero-to-1000-users.md)
+- [Review Acquisition](articles/review-acquisition.md)

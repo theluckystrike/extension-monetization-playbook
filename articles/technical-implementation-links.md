@@ -1,8 +1,8 @@
 ---
 
 layout: default
-title: "Chrome Extension Monetization: Technical Implementation Guide"
-description: "Technical reference linking every monetization strategy to implementation guides. Payment integration, license gating, analytics, growth tools, and starter templates."
+title: "Chrome Extension Technical Implementation Resources"
+description: "Technical guides for building and monetizing Chrome extensions. Implementation resources and best practices."
 permalink: /articles/technical-implementation-links/
 
 ---

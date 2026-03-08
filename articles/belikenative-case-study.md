@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "BeLikeNative Case Study: Language Extension Monetization"
-description: "How BeLikeNative built a profitable language learning Chrome extension. Growth strategy, monetization decisions, and key metrics."
+layout: default
+title: "B2B Chrome Extension Monetization: Belike Native Case Study"
+description: "How Belike Native built a successful B2B Chrome extension business. Enterprise pricing and monetization strategies."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [case-study, monetization]
@@ -126,15 +126,12 @@ The team has grown from just me to several contributors. BeLikeNative taught us 
 
 I'm building for them. And I'm just getting started.
 
-
-## Related Articles
-
-- [Growth Playbook Overview](articles/growth-playbook-overview/)
-- [Technical Guides Index](docs/technical-guides-index/)
-- [Monetization Strategies Overview](articles/monetization-strategies-overview/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Zovo Bundle Case Study](articles/zovo-bundle-case-study.md)
+- [Tab Suspender Pro Case Study](articles/tab-suspender-pro-case-study.md)
+- [Pricing Strategies](articles/pricing-strategies.md)

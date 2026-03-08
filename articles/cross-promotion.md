@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "Cross-Promotion Strategies for Chrome Extensions"
-description: "Learn how to cross-promote Chrome extensions to grow your user base. Proven strategies for extension developers to leverage existing audiences."
+layout: default
+title: "Cross-Promote Your Chrome Extensions: strategies"
+description: "Promote multiple Chrome extensions together. Bundle and cross-sell to maximize revenue per user."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [growth, marketing]
@@ -158,15 +158,12 @@ Start by identifying natural connections between your extensions or potential pa
 
 Remember that building a portfolio of related extensions creates compounding network effects. Each new extension becomes a marketing channel for your existing ones, creating a virtuous cycle of growth that becomes increasingly difficult for competitors to match.
 
-
-## Related Articles
-
-- [Extension As A Service](articles/extension-as-a-service/)
-- [Trial Implementation](articles/trial-implementation/)
-- [Chrome Web Store Seo](articles/chrome-web-store-seo/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Content Marketing](articles/content-marketing.md)
+- [Community Building](articles/community-building.md)
+- [Affiliate Model](articles/affiliate-model.md)

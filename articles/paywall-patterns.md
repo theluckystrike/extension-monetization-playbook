@@ -1,7 +1,7 @@
 ---
-layout: article
-title: "Paywall Patterns for Chrome Extensions: UX That Converts"
-description: "Design effective paywalls for browser extensions. Learn soft vs hard paywall patterns, modal design, and UX strategies that maximize conversions."
+layout: default
+title: "Chrome Extension Paywall Patterns That Convert"
+description: "Design effective paywalls for Chrome extensions. Premium gating patterns that drive upgrades."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [design, monetization]
@@ -243,15 +243,12 @@ The best paywall is one the user does not notice until they are ready. It fits i
 
 The key to successful extension paywall design is respecting user intelligence and demonstrating value before asking for payment. Extension users are task-focused and skeptical of manipulation. Meet them where they are, show them what your extension can do, and make the upgrade path natural and compelling.
 
-
-## Related Articles
-
-- [Affiliate Model](articles/affiliate-model/)
-- [Legal Essentials](articles/legal-essentials/)
-- [Zovo Bundle Case Study](articles/zovo-bundle-case-study/)
-
-
-
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Trial Implementation](articles/trial-implementation.md)
+- [Freemium Model](articles/freemium-model.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
