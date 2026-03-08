@@ -595,6 +595,11 @@ Learning from others' mistakes helps you avoid wasting time and burning subscrib
 
 ---
 
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for storing email addresses and preferences
+- [Message Passing](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/message-passing/) — for communication between components
+
 ## Related Articles
 
 - [Zero to 1,000 Users](/articles/zero-to-1000-users/) — Launch playbook for Chrome extensions

@@ -359,6 +359,14 @@ function scheduleReEngagement() {
 
 ---
 
+---
+
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for tracking onboarding state
+- [Runtime Events](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime/) — for detecting extension installation
+- [Notifications API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/notifications/) — for re-engagement prompts
+
 ## Related Articles
 
 - [Zero to 1,000 Users](/articles/zero-to-1000-users) - Launch strategies for gaining your first users

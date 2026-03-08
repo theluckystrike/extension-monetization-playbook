@@ -172,6 +172,13 @@ MIT
 ---
 
 *This README was rewritten from source code to provide comprehensive documentation.*
+---
+
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome DNS API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/dns/) — for DNS resolution in extensions
+- [Manifest Permissions](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/manifest/) — configuring required permissions
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

@@ -123,6 +123,13 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 *Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one)*
+---
+
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for storing user preferences and state
+- [Message Passing](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/message-passing/) — for communication between extension components
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

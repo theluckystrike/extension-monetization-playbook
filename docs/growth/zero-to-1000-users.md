@@ -789,12 +789,11 @@ Focus on channels that compound. Everything else is noise. The goal is to build 
 
 ---
 
-For technical implementation details on the strategies mentioned in this playbook, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for tracking user installs and preferences
+- [Chrome Web Store Listing Optimization](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/publishing/) — for store listing best practices
 
-- [Listing Optimization](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/publishing/listing-optimization.md)
-- [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide)
-
----
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

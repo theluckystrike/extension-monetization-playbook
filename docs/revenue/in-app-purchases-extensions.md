@@ -767,6 +767,13 @@ Start with a single premium tier offering clear value differentiation. Measure c
 Remember that monetization works best when users feel they're getting genuine value. Build features worth paying for, communicate that value clearly, and make the purchase experience frictionless. Do this well, and your extension becomes self-sustaining rather than dependent on constant new user acquisition.
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+---
+
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Web Store Payments API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/payments/) — for in-app purchase implementation
+- [License Validation](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/license-validation/) — for secure purchase verification
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
