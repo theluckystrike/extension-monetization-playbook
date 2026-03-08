@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "Chrome Web Store SEO: Rank Higher and Get More Installs"
-description: "Chrome Web Store SEO and extension listing optimization strategies to rank higher and get more installs. Learn keyword placement, screenshot optimization, and category selection."
+title: "Chrome Web Store SEO: Complete Optimization Guide for Extensions"
+description: "Master Chrome Web Store SEO to rank higher and get more installs. Learn keyword research, listing optimization, locale strategy, and CWS algorithm factors."
 date: 2026-03-08
 last_modified_at: 2026-03-08
 categories: [marketing, seo]
@@ -10,126 +10,458 @@ author: theluckystrike
 canonical_url: "https://extensionmonetization.com/articles/chrome-web-store-seo"
 ---
 
-# Chrome Web Store SEO: The Complete Guide to Extension Search Optimization
+# Chrome Web Store SEO: Complete Optimization Guide for Extensions
 
-The Chrome Web Store has its own search algorithm, and most developers completely ignore it. While you are busy building features and chasing external marketing, your extension is quietly losing visibility to competitors who understand how CWS search works. For extensions that solve a searchable problem, CWS SEO is the single most important growth lever. It costs nothing, it compounds over time, and once you figure it out, the organic traffic flows on autopilot.
+The Chrome Web Store functions as its own search engine with over 180 million users browsing for extensions daily. Yet most developers completely neglect CWS SEO, focusing instead on external marketing or feature building. This represents a massive opportunity for those who understand how the algorithm works. While competitors ignore organic search, you can capture high-intent users actively looking for solutions your extension provides—at no additional cost.
 
-This guide covers everything you need to know about Chrome Web Store SEO and extension listing optimization. We will look at how the CWS algorithm works, how to research the right keywords, how to structure your name and description for maximum visibility, how the feedback loop between installs and ranking can work for you instead of against you, and how to track your ranking progress over time.
+This definitive guide covers every aspect of Chrome Web Store SEO. You'll learn how the CWS algorithm ranks extensions, conduct keyword research specific to the Chrome Web Store, optimize each element of your listing for maximum visibility, implement locale strategies to reach global audiences, and track performance over time. By the end, you'll have a complete framework for building sustainable, organic growth through CWS search.
 
-## How CWS Search Works
+## How the CWS Algorithm Works
 
-The Chrome Web Store search algorithm weighs multiple factors to determine which extensions appear in search results and in what order. The most important signals are your extension name, short description, full description, and category selection. These tell the algorithm what your extension actually does and who it serves.
+The Chrome Web Store search algorithm determines which extensions appear in search results and in what order. Unlike Google Search, which considers hundreds of factors, CWS has a more defined set of ranking signals. Understanding these factors allows you to optimize deliberately rather than guess.
 
-Beyond relevance, the algorithm considers authority signals: total user count, average rating, weekly install trend, and engagement metrics like active users versus total installs. The key insight here is that weekly install velocity matters more than raw total installs. A newer extension gaining 50 installs per week can outrank an older one with 10,000 total installs but flat growth. The algorithm rewards momentum.
+### Keyword Relevance (Estimated Weight: 25%)
 
-The category you choose also plays a role. Selecting the most relevant category helps the algorithm understand your use case, but there is some strategic flexibility. A productivity extension could reasonably fit in both Productivity and Accessibility categories. Test different placements to see which drives better visibility. When choosing a category, consider where your target audience is most likely to browse. The Chrome Web Store categories include Accessibility, Blogging, Bookmarks, Calendar, Developer Tools, Education, Entertainment, Fashion, Food and Drink, Games, Health and Fitness, News and Weather, Photos, Productivity, Shopping, Social and Communication, Sports, Themes, Travel, and Utilities. Each category has different competition levels and search volumes, so research your specific category before committing.
+The algorithm scans your extension name, short description, and full description for keywords matching user queries. Your name carries the highest weight, followed by the short description, then the full description. Include your primary keyword in all three fields, but naturally—keyword stuffing triggers penalties.
 
-One more factor worth mentioning is update frequency. Extensions that receive regular updates signal active maintenance, which the algorithm views favorably. This does not mean shipping meaningless updates, but keeping your listing fresh and your extension current matters for more than just security patches. When you push a new version, your listing gets a minor boost in search results as the algorithm treats recent updates as a sign of an active project.
+### Install Count and Velocity (Estimated Weight: 30%)
 
-This is why many established extensions with huge install bases get beaten by newer, more relevant listings. The algorithm is trying to surface the extensions users are actually engaging with right now, not the ones that were popular two years ago.
+Total install count establishes baseline authority, but weekly install velocity matters more for ranking. The algorithm rewards recent engagement over historical totals. An extension gaining 100 installs weekly can outrank one with 50,000 total installs but flat growth. This is why the install-tracking feedback loop is critical—momentum begets more visibility.
 
-## Keyword Research
+### User Ratings (Estimated Weight: 20%)
 
-Before you optimize anything, you need to know what people are actually searching for. Start by searching the Chrome Web Store for your category and note what the top-ranked extensions use in their names and descriptions. Look for patterns. What words keep coming up? What problems do they claim to solve?
+Both the number of ratings and the average rating influence ranking. A higher rating improves both conversion rate and algorithmic ranking. Extensions with 4.5+ stars rank measurably better than those below 4.0. The rating threshold matters: below 3.5 stars, your extension may be excluded from certain rankings entirely.
 
-Next, use a tool like Google Keyword Planner or Ubersuggest to check monthly search volume for related terms. You are looking for keywords that have real search volume but are not so competitive that you will never rank. The sweet spot is keywords with several thousand monthly searches where the top results are not all massive, established extensions.
+### Uninstall Rate and Retention (Estimated Weight: 15%)
 
-Pick three to five primary keywords that meet two criteria: they have meaningful search volume, and they accurately describe what your extension does. This second criterion is crucial. Do not chase keywords that sound popular but do not match your product. You will attract the wrong users, get poor reviews, and train the algorithm that your extension is not relevant.
+The algorithm tracks how many users uninstall your extension and how quickly. High uninstall rates signal poor user experience, resulting in lower rankings. Extensions that retain users over time demonstrate value and receive algorithmic preference. This metric has grown in importance as Google prioritizes quality over quantity.
 
-Long-tail keywords deserve attention as well. These are longer, more specific phrases that may have lower search volume but often higher intent. Someone searching for "best dark mode extension for developers" is further along in their decision process than someone searching for "dark mode extension."
+### Extension Update Frequency (Estimated Weight: 5%)
 
-Secondary keywords matter too. These are variations and related terms that support your primary keywords. Include them naturally throughout your description, but do not force them. The goal is comprehensive coverage without sounding artificial.
+Regular updates signal active maintenance. When you publish a new version, your listing receives a temporary boost—the algorithm interprets recent updates as signs of an active project. Monthly updates represent the minimum cadence; extensions going six+ months without updates see declining visibility.
 
-Monitor your keyword performance over time. Check which search terms drive installs in your developer dashboard. If you find unexpected keywords generating traffic, consider whether your listing should emphasize them more prominently.
+### Category Relevance (Estimated Weight: 3%)
 
-## Optimizing the Extension Name
+Your category selection helps the algorithm understand your use case. Choosing the most relevant category ensures your extension appears in appropriate browse paths. However, there's strategic flexibility—a productivity tool could reasonably fit in Productivity or Accessibility. Test different placements to maximize visibility.
 
-Your extension name is the most powerful ranking signal. Include your primary keyword directly in the name. Tab Suspender Pro ranks naturally for tab suspender searches because the keyword is right in the name. This is not coincidence, it is intentional.
+### Regional Popularity (Estimated Weight: 2%)
 
-Avoid clever or cute names that have zero search volume. Unless you are building a brand that users will search for by name, you are throwing away free organic traffic. Think about what someone would type into the search bar if they had the problem your extension solves.
+The algorithm considers install patterns by region. Extensions popular in certain countries may receive preferential ranking in those regions. This factor is less controllable but reinforces the importance of localization—you can't build regional popularity if you're only visible in English.
 
-If you want personality, you can add a tagline after a dash. Something like "Keyword Tool - The Ultimate Productivity Suite" lets you lead with the search term while adding flavor. But the keyword comes first, and that is what matters for ranking.
+## Keyword Research for Extensions
 
-The length of your name matters too. Shorter names with one clear keyword tend to perform better than long, convoluted names. The algorithm parses your name to understand the core topic, and clarity wins over cleverness every time.
+Effective CWS SEO starts with understanding what users actually search for. Unlike general SEO, extension keyword research requires understanding the specific queries Chrome Web Store users make.
 
-Do not stuff multiple keywords into your name hoping to rank for everything. This looks spammy to both users and the algorithm. One clear primary keyword in the name is more effective than five keywords that make no sense together.
+### CWS Search Autocomplete Mining
 
-## Optimizing the Description
+Start by typing relevant terms into the Chrome Web Store search bar. Note the autocomplete suggestions—these represent queries the algorithm considers important enough to predict. List the top 20 suggestions for your primary category, then repeat with variations like "best [category]," "free [category]," and "[category] for [use case]."
 
-The first two lines of your description appear in search results, so they function as your headline. Front-load them with your strongest value proposition and your primary keyword. Write in clear, natural language that a human can understand. Do not write for robots.
+### Google Keyword Planner
 
-In the body, use bullet points for features. This makes your description scannable and helps users quickly understand what you are offering. But keep the opening as a clear sentence or two that explains what problem you solve and why someone should care.
+Use Google Keyword Planner to find search volume data for extension-related queries. Search for "[your keyword] chrome extension" and related terms. Focus on keywords with 1,000-10,000 monthly searches—high enough volume to drive meaningful traffic, low enough competition to rank.
 
-Never stuff keywords. Google penalizes keyword stuffing in web search, and the Chrome Web Store algorithm does the same thing in extension search. If your description reads like a spammer wrote it, your ranking will suffer. Write for humans first, and let the keywords appear naturally where they fit.
+### Competitor Analysis
 
-Also update your description regularly. As you add features, revise the description to reflect what your extension does now. An outdated description with old feature lists signals to both users and the algorithm that your extension is not actively maintained.
+Study top-ranked extensions in your category. Note their names, how they structure descriptions, and what keywords they emphasize. Look for patterns: what words appear across multiple successful listings? What problems do they claim to solve? This reveals what works in your market.
 
-The short description field deserves attention too. This appears right below your name in search results and carries weight. Include your primary keyword here as well, and keep it concise. Think of it as a second chance to make your relevance clear.
+### Long-Tail Keywords
 
-When placing keywords throughout your description, aim for natural distribution. Your primary keyword should appear in the first sentence, a few times in the body, and once more near the end. Secondary keywords can be sprinkled throughout different sections. The key is making it read naturally while ensuring your target terms are present.
+Long-tail keywords—specific phrases with lower volume but higher intent—often convert better. "Dark mode extension for developers" has less search volume than "dark mode extension" but signals users further along in their decision process.
 
-## Screenshots and Promotional Images
+### Keyword Research Template
 
-Screenshots and promotional videos do not directly affect search ranking. The algorithm does not read your screenshots to determine relevance. But they massively affect conversion rate, and conversion rate affects ranking indirectly.
+Use this template to organize your keyword research:
 
-When someone sees your extension in search results, they are deciding whether to click and install. Your screenshots and video are the deciding factor. Higher conversion means more installs per impression. More installs per impression means higher install velocity. Higher install velocity means better ranking.
+| Keyword | Search Volume | Competition | Relevance | Primary/Secondary | Target Location |
+|---------|---------------|-------------|-----------|-------------------|-----------------|
+| [primary keyword] | High | Medium-High | Direct | Primary | Name, Short Desc, First Para |
+| [primary variant 1] | Medium | Medium | Direct | Primary | Name, Short Desc |
+| [primary variant 2] | Medium | Low-Medium | Related | Secondary | Full Description |
+| [long-tail 1] | Low | Low | Direct | Secondary | Full Description |
+| [long-tail 2] | Low | Low | Related | Secondary | Full Description |
+| [use case 1] | Medium | Medium | Direct | Primary | Short Desc, Description |
+| [use case 2] | Low-Medium | Low | Direct | Secondary | Description Body |
+| [problem keyword] | Medium | Low | Direct | Secondary | Description Body |
+| [comparison keyword] | Low | Low | Related | Secondary | Description Body |
+| [localized keyword] | Varies | Low | Direct | Primary (Localized) | Translated Listings |
 
-So while screenshots do not directly move the algorithm, they move everything else. Invest in clear, attractive screenshots that show your extension in action. Include annotations that highlight key features. A good screenshot can double your conversion rate, and that doubling compounds through the entire ranking system.
+## Optimizing Your CWS Listing
 
-Video matters too. A short promotional video showing your extension in use can dramatically increase conversion. Not many developers take the time to create one, so it stands out when you do.
+With keyword research complete, optimize each element of your listing. Every component contributes to both search visibility and conversion rate.
 
-Aim for five to eight screenshots. Show the key features, the onboarding experience, and the main interface. Skip generic marketing fluff. Users want to see the actual product.
+### Extension Name (30 Character Limit)
 
-Your promotional tile image is equally important. This 1280x800 image appears at the top of your listing and serves as a first impression. Make it visually appealing, include your extension name, and highlight the main value proposition. Avoid clutter and ensure text is readable at smaller sizes.
+Your name is the most powerful ranking signal. Include your primary keyword directly—Tab Suspender ranks for "tab suspender" searches because the keyword appears in the name. This is intentional optimization, not coincidence.
 
-For screenshots specifically, show real use cases rather than idealized scenarios. If your extension adds a button to the browser toolbar, show exactly how it looks in Chrome. If it provides a popup interface, capture that popup in action. Users want to see what they will actually get.
+**Best Practices:**
+- Lead with your primary keyword
+- Keep names under 30 characters for full visibility
+- Avoid clever names without search volume
+- One clear keyword outperforms five stuffed keywords
 
-## Localization for SEO
+### Short Description (132 Characters)
 
-One often-overlooked aspect of Chrome Web Store SEO is localization. The Chrome Web Store supports multiple languages, and providing translated listings can significantly expand your reach. When you localize your extension listing, you become visible to users searching in those languages, often with less competition than English keywords.
+The short description appears directly below your name in search results. Front-load your value proposition and primary keyword. This is your second chance to establish relevance after the name.
 
-Start with languages that have high search volume in your niche. Spanish, German, French, Portuguese, and Japanese are good starting points for many extensions. Use native speakers or professional translation services rather than machine translation, as poor translations can hurt your credibility and conversion rate.
+**Before:**
+> "A productivity tool that helps you manage tabs and improve your workflow with advanced features."
 
-When localizing, do not simply translate your existing English listing word for word. Adapt the keywords as well. The most popular search terms in your category may differ by language and region. Research what users in different countries are searching for and adjust your localized keywords accordingly.
+**After:**
+> "Tab Suspender: Auto-suspend idle tabs to reduce memory usage and speed up Chrome by 80%."
 
-The Chrome Web Store dashboard provides a way to manage translations for your listing. You can add translations for the name, short description, and full description, as well as screenshots with localized text. Each localized version becomes a separate listing that can rank independently in searches for that language.
+### Full Description (16,000 Characters)
 
-Localization also impacts your global ranking in unexpected ways. Users in non-English-speaking countries often search in their native language, and having a properly localized listing gives you a significant advantage over extensions that only have English descriptions.
+Your full description provides space for comprehensive coverage. Structure it with:
+- Opening paragraph with primary keyword and value proposition
+- Bullet points for scannable feature lists
+- Secondary keywords naturally distributed throughout
+- Call-to-action encouraging installation
 
-## The Install-Ranking Feedback Loop
+**Keyword Density:** Aim for 1-2% keyword density for primary terms. Excessive keyword density triggers penalties.
 
-This is the most important concept in CWS SEO: the feedback loop between installs and ranking. More installs lead to higher ranking, which leads to more installs. It is a flywheel, and once you get it spinning, growth becomes self-sustaining.
+**Before:**
+> "Our extension is the best productivity tool. It has many features including productivity, productivity tools, productivity extension, and productivity management. Download the best productivity extension now for productivity and more productivity features."
 
-Reviews accelerate this loop because higher ratings improve both ranking and conversion. A 4.8-star extension converts better than a 3.5-star one, and the algorithm also factors rating into ranking. So every positive review does not just build social proof, it directly improves your visibility.
+**After:**
+> "Boost your productivity with automatic tab suspension that saves memory and speeds up Chrome. Features include: auto-suspend after configurable idle time, exclude pinned tabs, whitelist specific sites, one-click restore all tabs, and detailed memory usage stats. Perfect for developers, researchers, and anyone working with many open tabs."
 
-Ask for reviews at the right moment. After a user successfully completes a task using your extension, a gentle prompt works well. Do not ask too often or in annoying ways. Respect the user experience.
+### Category Selection Strategy
 
-Building your initial reviews takes time, but there are proven strategies. Focus on delivering excellent user experience and making review requests intuitive. Many successful developers use in-extension prompts that ask for reviews after positive interactions. For more detailed strategies on building reviews, check our guide on [review acquisition](/articles/review-acquisition).
+Choose the most relevant category for your primary use case. The Chrome Web Store categories include Accessibility, Blogging, Bookmarks, Calendar, Developer Tools, Education, Entertainment, Fashion, Food and Drink, Games, Health and Fitness, News and Weather, Photos, Productivity, Shopping, Social and Communication, Sports, Themes, Travel, and Utilities.
 
-The goal is to reach the point where organic CWS search drives enough installs to sustain growth without external marketing. You should not need to tweet about your extension or post on Reddit. The listing should do the work. That is when the flywheel is spinning, and that is when you have built something truly scalable.
+Test different category placements. Some categories have lower competition—your extension might rank higher in a related but less crowded category.
 
-For a comprehensive approach to early-stage growth, our article on [zero to 1000 users](/articles/zero-to-1000-users) covers strategies that work well alongside CWS SEO optimization.
+### Screenshots (1280x800 or 640x400)
 
-## Tracking Search Ranking Over Time
+Screenshots don't directly affect search ranking but dramatically impact conversion rate. Higher conversion means more installs per impression, which improves install velocity and indirectly boosts ranking.
 
-Measuring your SEO performance is essential for understanding what works and what needs adjustment. The Chrome Web Store does not provide built-in ranking tracking, so you need external tools and processes to monitor your progress.
+**Best Practices:**
+- Use 5-8 screenshots showing real use cases
+- Include annotations highlighting key features
+- Show actual extension interface, not idealized scenarios
+- Test A/B variations to optimize conversion
 
-Create a spreadsheet to track your ranking for your target keywords. Check your position weekly, noting any changes. Over time, you will see trends emerge. If your ranking improves after a description update, that change likely had a positive impact. If rankings drop after a competitor updates their listing, you may need to respond.
+### Promotional Images
 
-Automated tools can help with tracking. Some developers use scripts that query the Chrome Web Store search results programmatically, though this requires careful implementation to avoid triggering rate limits. Various paid SEO tools also offer Chrome Web Store tracking, though coverage varies.
+Your promotional tile (1280x800) appears at the top of your listing. Create visual appeal with your extension name, main value proposition, and readable text at smaller sizes.
 
-Beyond tracking your own rankings, monitor your competitors. Note when they update their listings, change their keywords, or launch new features. Their changes can impact your relative ranking even if your position has not changed in absolute terms.
+The small promotional tile (440x280) appears in search results—ensure critical information remains visible at small sizes.
 
-Track not just rankings but also installs from CWS search. Your developer dashboard shows install sources. If you see installs increasing from search while rankings stay flat, you may be benefiting from new search queries you were not previously ranking for.
+## Locale Strategy: Going Global
 
-Content marketing can amplify your SEO efforts. When you create blog posts, tutorials, or guides that mention your extension with links, you build external signals that can reinforce your CWS presence. Our guide on [content marketing](/articles/content-marketing) explores how to build a content strategy that supports your extension growth.
+The Chrome Web Store supports 55 locales. Ignoring localization means you're invisible to non-English speakers—a massive missed opportunity.
 
-Cross-promotion with complementary extensions can also boost visibility. Partner with developers whose extensions serve a similar but non-competing audience. Feature each other in your listings or promotional materials. Our article on [cross promotion](/articles/cross-promotion) provides detailed strategies for effective partnerships.
+### Top 10 Highest-Value Locales
 
-## Real-World Example
+By install potential, prioritize these locales:
 
-BeLikeNative at zovo.one grew to 3,300 users largely through Chrome Web Store search optimization. They did not run ads. They did not have a viral launch. They iterated on their listing multiple times, testing different keywords in their name and description, improving screenshots to boost conversion rate, and earning reviews that pushed their rating higher.
+1. **English (US)** - Highest volume, most competitive
+2. **German** - High conversion, less competition than English
+3. **French** - Large user base, moderate competition
+4. **Spanish** - Massive reach across Spain and Latin America
+5. **Portuguese (Brazil)** - Large population, growing market
+6. **Japanese** - High conversion rate, quality users
+7. **Korean** - Tech-savvy users, high engagement
+8. **Italian** - Moderate competition, good volume
+9. **Dutch** - Small but wealthy market
+10. **Polish** - Growing Eastern European market
 
-Each improvement in conversion rate compounded into faster growth. More installs meant better ranking, which meant more installs. By the time they had optimized the flywheel, they were adding hundreds of users per month with zero marketing spend. That is the power of CWS SEO when it is done right.
+### Using the _locales/ Directory
 
-Getting started is straightforward. Identify your primary keyword, update your name and description to include it prominently, create compelling screenshots, and then monitor your results. Iterate based on what you learn. The feedback loop takes time to build, but once it is spinning, the organic growth requires minimal ongoing effort. Your listing becomes an asset that works for you around the clock.
+Your extension's `manifest.json` references locale-specific messages:
+
+```json
+{
+  "default_locale": "en",
+  "locales": {
+    "de": { "message.json": {} },
+    "fr": { "message.json": {} },
+    "es": { "message.json": {} },
+    "ja": { "message.json": {} },
+    "pt_BR": { "message.json": {} }
+  }
+}
+```
+
+### messages.json Structure
+
+Each locale requires a `messages.json` file in the `_locales/` directory:
+
+```json
+// _locales/en/messages.json
+{
+  "extensionName": {
+    "message": "Tab Suspender Pro",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Auto-suspend idle tabs to save memory and speed up Chrome",
+    "description": "The description of the extension"
+  },
+  "suspendTab": {
+    "message": "Suspend Tab",
+    "description": "Label for suspend action"
+  },
+  "restoreTab": {
+    "message": "Restore Tab",
+    "description": "Label for restore action"
+  }
+}
+```
+
+```json
+// _locales/de/messages.json
+{
+  "extensionName": {
+    "message": "Tab Suspender Pro",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Automatisch inaktive Tabs aussetzen, um Speicher zu sparen und Chrome zu beschleunigen",
+    "description": "The description of the extension"
+  },
+  "suspendTab": {
+    "message": "Tab aussetzen",
+    "description": "Label for suspend action"
+  },
+  "restoreTab": {
+    "message": "Tab wiederherstellen",
+    "description": "Label for restore action"
+  }
+}
+```
+
+### Translating CWS Listing Descriptions
+
+The Chrome Web Store dashboard provides separate fields for translated listings. Translate your name, short description, and full description for each locale—not just the extension UI. Adapt keywords for local search behavior; popular terms may differ by language.
+
+### Translation Tools
+
+- **Professional translation:** Higher quality, better conversion, recommended for top 5 locales
+- **AI-assisted translation:** Cost-effective for additional locales, review for accuracy
+- **Community contributions:** Some extensions involve users in translation
+
+## Ranking Signals You Can Control
+
+Certain factors directly influence ranking—and you can actively improve them.
+
+### Smart Review Prompting
+
+Ask for reviews at the right moment: after successful task completion. Use TypeScript to implement timing logic:
+
+```typescript
+interface ReviewPromptConfig {
+  minDaysSinceInstall: number;
+  minUsesBeforePrompt: number;
+  promptDelayDays: number;
+  shouldShowReviewPrompt: () => Promise<boolean>;
+}
+
+class ReviewPromptManager {
+  private config: ReviewPromptConfig;
+  private usageCount: number = 0;
+  private installTimestamp: number;
+  private lastPromptTimestamp: number = 0;
+
+  constructor(config: ReviewPromptConfig) {
+    this.config = config;
+    this.installTimestamp = Date.now();
+    this.loadUsageData();
+  }
+
+  async trackUsage(): Promise<void> {
+    this.usageCount++;
+    await this.saveUsageData();
+    
+    if (await this.shouldShowPrompt()) {
+      this.showReviewPrompt();
+    }
+  }
+
+  private async shouldShowPrompt(): Promise<boolean> {
+    const daysSinceInstall = this.getDaysSinceInstall();
+    if (daysSinceInstall < this.config.minDaysSinceInstall) {
+      return false;
+    }
+
+    if (this.usageCount < this.config.minUsesBeforePrompt) {
+      return false;
+    }
+
+    const daysSinceLastPrompt = this.getDaysSinceLastPrompt();
+    if (daysSinceLastPrompt < this.config.promptDelayDays) {
+      return false;
+    }
+
+    return await this.config.shouldShowReviewPrompt();
+  }
+
+  private showReviewPrompt(): void {
+    chrome.storage.local.set({ lastPromptTimestamp: Date.now() });
+    chrome.runtime.sendMessage({ action: "showReviewPrompt" });
+  }
+
+  private getDaysSinceInstall(): number {
+    return Math.floor((Date.now() - this.installTimestamp) / (1000 * 60 * 60 * 24));
+  }
+
+  private getDaysSinceLastPrompt(): number {
+    return Math.floor((Date.now() - this.lastPromptTimestamp) / (1000 * 60 * 60 * 24));
+  }
+
+  private async loadUsageData(): Promise<void> {
+    const data = await chrome.storage.local.get(['usageCount', 'installTimestamp', 'lastPromptTimestamp']);
+    this.usageCount = data.usageCount || 0;
+    this.installTimestamp = data.installTimestamp || Date.now();
+    this.lastPromptTimestamp = data.lastPromptTimestamp || 0;
+  }
+
+  private async saveUsageData(): Promise<void> {
+    await chrome.storage.local.set({ usageCount: this.usageCount });
+  }
+}
+
+// Usage in your extension
+const reviewManager = new ReviewPromptManager({
+  minDaysSinceInstall: 7,
+  minUsesBeforePrompt: 10,
+  promptDelayDays: 30,
+  shouldShowReviewPrompt: async () => {
+    // Check if user has had positive interactions
+    const data = await chrome.storage.local.get(['positiveInteractions']);
+    return (data.positiveInteractions || 0) > 5;
+  }
+});
+```
+
+### Reduce Uninstall Rate
+
+Onboard users effectively to reduce uninstalls:
+- Clear value proposition on first launch
+- Walkthrough for key features
+- Avoid overwhelming configuration on initial install
+
+### Update Frequency Cadence
+
+Publish updates at least monthly. Each update triggers a temporary ranking boost. Use updates to:
+- Add features mentioned in user feedback
+- Fix reported bugs
+- Update description with new capabilities
+
+### Respond to User Reviews
+
+The Chrome Web Store dashboard allows direct responses to reviews. Responding to reviews—even negative ones—signals active maintenance and improves perceived quality. Address legitimate complaints and thank positive reviewers.
+
+### Build Backlinks
+
+While less impactful than internal CWS factors, external links to your CWS listing can help. Build a landing page that links to your extension, get featured in "best extension" listicles, and earn mentions from related content.
+
+## CWS Listing A/B Testing
+
+Testing variations systematically reveals what drives more installs.
+
+### Change One Element at a Time
+
+Test screenshot variations first, then description copy, then other elements. Isolating variables ensures you know what caused changes.
+
+### Track Over 2-Week Periods
+
+Install patterns fluctuate weekly. Run tests for minimum two weeks to account for variance. Track:
+- Install rate (installs per impression)
+- Conversion rate (installs per view)
+- Rating changes
+
+### Test These Elements
+
+- **Screenshots:** Different feature emphasis, annotated vs. plain, color schemes
+- **Description copy:** Different value propositions, bullet vs. paragraph format
+- **Name variations:** If renaming is possible, test different approaches
+
+### Key Metrics to Track
+
+Monitor your developer dashboard for:
+- Install sources (CWS search vs. direct)
+- Daily install velocity
+- Rating distribution
+- Uninstall rate trends
+
+## Advanced: Google Search Visibility
+
+Your CWS listing can appear in Google Search results for extension-related queries.
+
+### Optimizing for "Chrome Extension For" Queries
+
+When users search "[use case] chrome extension," Google may display your CWS listing in results. Ensure your listing clearly states what problem you solve. Use the full 16,000-character description to include relevant phrases.
+
+### Build a Landing Page
+
+Create a landing page that:
+- Explains your extension's value proposition
+- Links directly to your CWS listing
+- Includes schema markup for software applications
+
+### Schema Markup
+
+Add structured data to your landing page:
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Tab Suspender Pro",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Chrome",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Auto-suspend idle tabs to save memory and speed up Chrome by 80%."
+}
+</script>
+```
+
+### Get Featured in Best-Extension Listicles
+
+Reach out to blogs that publish "best [category] extensions" lists. Offer your extension for inclusion. These backlinks improve Google authority and drive direct traffic.
+
+## Common CWS SEO Mistakes
+
+Avoid these pitfalls that hurt many extensions:
+
+### Keyword Stuffing
+
+Stuffing keywords into your description triggers algorithmic penalties. Write naturally for humans—keyword placement matters, but readability matters more.
+
+### Ignoring Localization
+
+English-only listings miss 70%+ of potential global users. Prioritize your top 5 locales, then expand gradually.
+
+### Poor Screenshots
+
+Generic or unclear screenshots destroy conversion. Users won't install what they don't understand. Invest in showing real functionality.
+
+### Not Responding to Reviews
+
+Ignoring reviews signals abandonment. Even brief responses to negative reviews can recover dissatisfied users.
+
+### Infrequent Updates
+
+Going months without updates signals neglect. Maintain monthly update cadence even if changes are minor.
+
+### Wrong Category Selection
+
+Choosing a category for SEO rather than relevance attracts wrong users. Prioritize accuracy—users who find your extension through appropriate browse paths convert better.
+
+## Building Sustainable Growth
+
+The ultimate goal is reaching organic sustainability—where CWS search drives enough installs to sustain growth without external marketing. Each improvement compounds: better keywords lead to more visibility, more visibility leads to more installs, more installs improve ranking, and the flywheel spins faster.
+
+For a comprehensive approach to early-stage growth, our guide on [zero to 1000 users](/articles/zero-to-1000-users) covers strategies that work alongside CWS SEO. Once you've built initial traction, [community building](/articles/community-building) helps create loyal users who advocate for your extension.
+
+The real power of CWS SEO is compounding returns. Unlike paid marketing that stops when you stop spending, organic search improvements continue generating traffic indefinitely. Your optimized listing works 24/7, capturing users actively searching for solutions you provide. That sustainable growth pipeline is what separates successful extensions from those that fade away.
+
+---
+
+Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
