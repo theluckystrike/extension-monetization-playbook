@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theluckystrike.github.io/extension-monetization-playbook/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /_/
+Disallow: /assets/
