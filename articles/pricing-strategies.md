@@ -1,9 +1,11 @@
 ---
-title: "Pricing Strategies for Chrome Extensions"
-description: "Pricing is the single hardest decision for extension developers. Most indie developers underprice out of fear that nobody will pay. I understand the discomfort."
-permalink: /pricing-strategies-for-chrome-extensions
 layout: default
+title: "Chrome Extension Pricing Strategies: The $5 Floor & Beyond"
+description: "Proven pricing strategies for Chrome extensions. Learn market research, the $5 price floor, tier anchoring, launch pricing, and when to raise prices for maximum revenue."
+permalink: /articles/pricing-strategies/
 ---
+
+# Pricing Strategies for Chrome Extensions
 
 Pricing is the single hardest decision for extension developers. Most indie developers underprice out of fear that nobody will pay. I understand the discomfort. I have been there myself. This article distills lessons learned from pricing 17 extensions across the Chrome Web Store. The goal is not just to maximize revenue, but to build a sustainable business with users who value your work.
 
@@ -88,3 +90,9 @@ Paying users become advocates. They recommend your product to colleagues. They f
 Price with confidence. Your work has value. The right price attracts the right users and builds a sustainable business. Underpricing attracts the wrong users and burns you out. Choose the price that lets you keep building.
 
 Do not apologize for your pricing. Do not explain why it costs what it costs. State the price confidently. Let the product speak for itself. Users who belong in your customer base will pay. Users who will never pay were never your customers anyway. Focus on the ones who see your value.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

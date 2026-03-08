@@ -1,9 +1,11 @@
 ---
-title: "Paywall Patterns for Chrome Extensions"
-description: "Paywalls in Chrome extensions are fundamentally different from what you see on the web or mobile apps. I learned this the hard way after several failed attempts"
-permalink: /paywall-patterns-for-chrome-extensions
 layout: default
+title: "Paywall Patterns That Convert in Chrome Extensions"
+description: "Proven paywall patterns for Chrome extensions including inline locks, usage limits, feature previews, and progressive disclosure. Real conversion data from 17 extensions."
+permalink: /articles/paywall-patterns/
 ---
+
+Paywall Patterns for Chrome Extensions
 
 Paywalls in Chrome extensions are fundamentally different from what you see on the web or mobile apps. I learned this the hard way after several failed attempts to port web monetization strategies into extensions. The popup is tiny, the user's attention span is measured in milliseconds, and they came for a specific task, not to make a purchasing decision. Everything changes when you accept this constraint.
 
@@ -78,3 +80,9 @@ After testing these patterns across 17 extensions at zovo.one, the inline lock p
 The progression from inline lock to usage limit to feature preview works as a natural funnel. Users who want the feature immediately see the lock and upgrade. Users who want to try first hit the usage limit and upgrade. Users who want to see results first get the preview and upgrade.
 
 The best paywall is one the user does not notice until they are ready. It fits into their workflow, respects their time, and offers value at the right moment. When done correctly, users feel like they discovered the premium features rather than being sold to.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

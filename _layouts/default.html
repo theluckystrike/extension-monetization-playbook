@@ -7,6 +7,25 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {% seo %}
+  {% if page.title %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "author": {
+      "@type": "Person",
+      "name": "theluckystrike"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zovo.one"
+    },
+    "url": "{{ page.url | absolute_url }}"
+  }
+  </script>
+  {% endif %}
 </head>
 <body>
   <div class="container">

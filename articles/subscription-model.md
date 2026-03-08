@@ -1,9 +1,11 @@
 ---
-title: "Making Subscription Pricing Work for Browser Extensions"
-description: "Subscriptions are harder to sell for browser extensions than for SaaS applications. Users resist recurring charges for something that lives in their browser too"
-permalink: /making-subscription-pricing-work-for-browser-extensions
 layout: default
+title: "Subscription Pricing for Browser Extensions: Complete Guide"
+description: "How to implement subscription pricing for Chrome extensions. Covers monthly vs annual plans, churn reduction, Stripe integration, and the hybrid pricing model."
+permalink: /articles/subscription-model/
 ---
+
+# Making Subscription Pricing Work for Browser Extensions
 
 Subscriptions are harder to sell for browser extensions than for SaaS applications. Users resist recurring charges for something that lives in their browser toolbar, often perceived as a one-time convenience rather than an ongoing service. But when your extension genuinely delivers continuous value, subscriptions create the most sustainable revenue model available.
 
@@ -99,3 +101,9 @@ For the code behind these strategies, see the companion [Chrome Extension Guide]
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

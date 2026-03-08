@@ -1,9 +1,11 @@
 ---
-title: "The Practical Guide to Selling a Chrome Extension on the Acquisition Market"
-description: "The extension acquisition market is more active than most developers realize. Extensions change hands regularly and buyers range from individual developers to p"
-permalink: /the-practical-guide-to-selling-a-chrome-extension-on-the-acquisition-market
 layout: default
+title: "How to Sell a Chrome Extension: Acquisition Market Guide"
+description: "Learn when to sell your Chrome extension, where to list it, how to transfer ownership, and structure deals. A practical guide to the extension acquisition market."
+permalink: /articles/selling-your-extension/
 ---
+
+The Practical Guide to Selling a Chrome Extension on the Acquisition Market
 
 The extension acquisition market is more active than most developers realize. Extensions change hands regularly and buyers range from individual developers to private equity firms rolling up portfolios. Whether you sell or not, understanding the process makes you a better builder.
 
@@ -23,27 +25,59 @@ One important rule is to avoid selling during a growth phase unless the offer is
 
 Preparing for Sale
 
-A poorly prepared extension sells for less or does not sell at all. Buyers expect professionalism and transparency.
+A poorly prepared extension sells for less or does not sell at all. Buyers expect professionalism and transparency. Taking time to prepare properly often increases your sale price by 20-50% compared to a hasty listing.
 
-Clean up the codebase. Remove dead code, commented-out experiments, and temporary debugging statements. Buyers need to feel confident they can maintain and improve the extension without digging through your mess. A clean codebase signals professionalism.
+**Codebase Cleanup**
+
+Clean up the codebase. Remove dead code, commented-out experiments, and temporary debugging statements. Buyers need to feel confident they can maintain and improve the extension without digging through your mess. A clean codebase signals professionalism. Consider running a linter and formatter before listing to ensure consistent code style.
+
+If your extension uses any proprietary algorithms or special techniques, document how they work. Buyers want to understand the "secret sauce" without spending weeks reverse engineering your code.
+
+**Documentation**
 
 Document everything. Create documentation covering architecture decisions, deployment procedures, support workflows, and any non-obvious implementation details. Documentation proves you built something worth keeping and helps the buyer hit the ground running.
 
+Create a README specifically for the buyer that covers:
+- How to deploy and update the extension
+- Common user issues and how to resolve them
+- Contact information for any third-party service providers
+- Known limitations and areas for improvement
+
+**Infrastructure Separation**
+
 Separate extension infrastructure from personal accounts. If your extension uses APIs, hosting, domains, or payment processing tied to your personal email, create dedicated accounts now. Buyers want transferability, not a complicated migration from your personal Google account.
+
+This includes setting up a dedicated Google Developer account if you have not already, separate Stripe account for payments, and distinct hosting infrastructure if applicable.
+
+**Financial Records**
 
 Compile at least 12 months of revenue, user, and engagement data in a clear format. Charts showing growth trends, churn rates, and revenue history demonstrate traction. Include any support ticket data to show the workload involved in maintaining the extension.
 
-Where to List
+Prepare a simple spreadsheet or PDF that presents this data professionally. Buyers appreciate clean summaries they can share with their investors or stakeholders.
 
-Finding the right buyer requires knowing where to look.
+Where to List Your Extension for Sale
 
-Acquire.com provides a structured process with verified buyers and NDAs. They specialize in small software businesses and understand the unique aspects of extension sales. The platform handles escrow and mediates disputes, adding security for both parties.
+Finding the right buyer requires knowing where to look. The extension acquisition market has several established channels, each with different advantages.
 
-Flippa works for auction-style sales and attracts bargain hunters. You can set a reserve price or let the market decide. Expect to field questions from buyers looking for underpriced assets, but serious buyers use Flippa too.
+### Specialized Marketplaces
+
+[Acquire.com](https://acquire.com) provides a structured process with verified buyers and NDAs. They specialize in small software businesses and understand the unique aspects of extension sales. The platform handles escrow and mediates disputes, adding security for both parties.
+
+[Flippa](https://flippa.com) works for auction-style sales and attracts bargain hunters. You can set a reserve price or let the market decide. Expect to field questions from buyers looking for underpriced assets, but serious buyers use Flippa too.
+
+### Brokers and Advisors
+
+For larger deals (typically $100K+), consider working with a broker who specializes in software acquisitions. They have networks of pre-qualified buyers and can often negotiate better terms than you could on your own. The commission is worth it for significant transactions.
+
+### Direct Outreach
 
 Direct outreach to competitors or complementary extension developers often yields the best prices. They see strategic value in acquiring a rival or adding a complementary product to their portfolio. A competitor knows exactly what your extension is worth because they compete against it.
 
+### Community Channels
+
 Twitter and indie hacker communities like IndieHackers sometimes surface serious buyers through casual posts. Mentioning you are open to selling creates inbound interest from people watching for opportunities. The acquihire market is particularly active in these circles.
+
+For more on valuation methods that affect which channel works best for your extension, see our [Extension Valuation Guide](/articles/extension-valuation/).
 
 The Transfer Process
 
@@ -59,11 +93,23 @@ Plan a transition period where you help the buyer understand user expectations a
 
 Deal Structure
 
-The structure of your deal matters as much as the price.
+The structure of your deal matters as much as the price. The right structure protects both parties and ensures a smooth transition.
 
-For deals under $50K, push for full cash upfront to keep things simple. Smaller deals rarely justify the complexity of earnouts, and collecting payments later creates unnecessary risk.
+**Small Deals (Under $50K)**
+
+For deals under $50K, push for full cash upfront to keep things simple. Smaller deals rarely justify the complexity of earnouts, and collecting payments later creates unnecessary risk. Use an escrow service like Escrow.com to protect both parties while the transfer completes.
+
+**Medium Deals ($50K - $250K)**
 
 For larger deals, earnouts tied to revenue retention over 6-12 months are common. The buyer wants assurance that users will not cancel immediately after the sale. However, earnouts add complexity and potential disputes. Keep terms clear and measurable.
+
+Consider a hybrid structure: 70% upfront and 30% tied to performance metrics. This aligns incentives and provides some protection for the buyer.
+
+**Large Deals ($250K+)**
+
+For significant transactions, involve a lawyer who specializes in software acquisitions. They can help structure earnouts, handle escrows, and ensure intellectual property transfers properly. At this level, the cost of professional guidance is negligible compared to the deal size.
+
+**Avoid Seller Financing**
 
 Avoid seller financing where you essentially become the bank. Financing a sale to a stranger rarely ends well. Collecting payments across the internet from someone you barely know is a recipe for lost money. If the buyer cannot get traditional financing or pay upfront, question whether they are serious.
 
@@ -81,10 +127,48 @@ Low owner involvement so the extension runs without constant attention. The idea
 
 A transferable brand that is not tied to a personal identity. Extensions branded around the creator are harder to sell. Generic, descriptive names transfer better than personal brands.
 
+Due Diligence Checklist for Buyers
+
+When a serious buyer evaluates your extension, they will investigate several areas. Understanding this process helps you prepare and address potential concerns before they become deal-breakers.
+
+**Revenue and Financials**
+- At least 12 months of revenue data through Stripe or other payment processors
+- User count trends over time (not just current users)
+- Churn rate and customer lifetime value estimates
+- Any revenue concentration (is one customer responsible for most revenue?)
+
+**Technical Due Diligence**
+- Code quality and architecture review
+- Whether the extension is on Manifest V2 or V3
+- Infrastructure dependencies and costs
+- Security history and any past vulnerabilities
+
+**Legal and Compliance**
+- Terms of service and privacy policy status
+- Data collection practices and GDPR compliance
+- Any past or pending legal issues
+- Ownership of branding and domain names
+
+**Operational Review**
+- Support ticket volume and common issues
+- Update frequency and roadmap
+- Dependencies on third-party APIs
+- Documentation completeness
+
+Being proactive about these areas speeds up the sale process and often increases your asking price. For more details on legal considerations during a sale, see our [Legal Essentials Guide](/articles/legal-essentials/).
+
 Build to Sell, Even If You Will Not Sell
 
 At zovo.one, we build each of our 17 extensions as transferable assets from day one. Clean code, independent infrastructure, and documented processes mean every extension in the portfolio could stand on its own.
 
 This approach is good business practice whether you plan to sell or not. Separating personal identity from your products creates operational resilience. If you get hit by a bus, someone else could run your business. It also forces discipline in documentation and architecture that makes your extensions better.
 
+For technical implementation details on building your extension with transferability in mind, see the [Chrome Extension Guide](/articles/chrome-extension-guide/). This covers Manifest V3 best practices, service worker patterns, and architecture decisions that make your extension more valuable to potential buyers.
+
 The extension market is more active than you might think. Whether you ever sell or not, understanding this market makes you a better builder. Build something worth buying, and the options take care of themselves.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

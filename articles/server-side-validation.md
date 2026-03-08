@@ -1,9 +1,62 @@
 ---
-title: "Server-Side License Validation for Chrome Extensions"
-description: "The problem with client-side-only validation If you rely only on client-side checks, your validation is broken by design. Any user can open DevTools, find the v"
-permalink: /server-side-license-validation-for-chrome-extensions
 layout: default
+title: "Server-Side License Validation for Chrome Extensions"
+description: "Build secure server-side license validation for your Chrome extension. Covers API design, caching strategies, offline support, and replay attack prevention."
+permalink: /articles/server-side-validation/
 ---
+
+Server-Side License Validation for Chrome Extensions
+
+### Architecture Diagram
+
+The validation flow follows a clear client-to-server pattern that ensures security while maintaining a good user experience:
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        VALIDATION FLOW                                  │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  ┌──────────────┐         ┌──────────────┐         ┌──────────────┐   │
+│  │   Extension  │         │   Your API   │         │  Database    │   │
+│  │   (Client)   │────────▶│   Server     │────────▶│  (License    │   │
+│  │              │         │              │         │   Keys)      │   │
+│  └──────────────┘         └──────────────┘         └──────────────┘   │
+│        │                        │                        │           │
+│        │ 1. Send license        │                        │           │
+│  ──────▶ key + device ID        │                        │           │
+│        │                        │                        │           │
+│        │              ┌──────────▼──────────┐             │           │
+│        │              │  Validate key       │             │           │
+│        │              │  Check expiration   │             │           │
+│        │              │  Generate response  │             │           │
+│        │              └──────────┬──────────┘             │           │
+│        │                        │                        │           │
+│        │ 2. Return signed       │                        │           │
+│  ◀─────│ response with        │                        │           │
+│        │ features + expiry     │                        │           │
+│        │                        │                        │           │
+│        │ 3. Cache locally in   │                        │           │
+│  ──────▶ chrome.storage.local │                        │           │
+│        │                        │                        │           │
+│        │ 4. On subsequent      │                        │           │
+│  ──────▶ runs: check cache    │                        │           │
+│        │ first, only validate │                        │           │
+│        │ if cache expired     │                        │           │
+│        │                        │                        │           │
+│        └────────────────────────┴────────────────────────┘           │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Step-by-step flow:**
+
+1. **Initial Validation Request**: Extension sends license key, device identifier, and extension version to your validation endpoint
+2. **Server Processing**: API validates the key against database, checks expiration, retrieves associated plan and features
+3. **Response Generation**: Server signs the response with HMAC and returns plan details, features, and expiration
+4. **Local Caching**: Extension caches the signed response in chrome.storage.local with TTL
+5. **Subsequent Requests**: On startup, extension checks cache first; only validates with server if cache is expired or missing
+
+This architecture provides defense in depth: the server is the source of truth, the signed response prevents local tampering, and caching ensures good performance.
 
 The problem with client-side-only validation
 
@@ -45,6 +98,48 @@ And for an invalid or expired key:
 
 Rate limiting is critical. Implement limits by IP address and by license key. Without rate limiting, attackers can brute force valid keys. Most serverless platforms like Cloudflare Workers provide built-in rate limiting. If you self-host, you need to implement this yourself or use a reverse proxy with rate limiting built in.
 
+Rate Limiting & Abuse Prevention
+
+Protecting your validation endpoint is critical because attackers will attempt to abuse it. Without proper safeguards, your system becomes vulnerable to brute force attacks, key harvesting, and service disruption.
+
+### Types of Attacks to Prevent
+
+**Brute Force Attacks**: Attackers try thousands of license keys hoping to find valid ones. Without rate limiting, they can test millions of combinations quickly.
+
+**Key Sharing**: One valid key used by hundreds or thousands of users simultaneously. The same key being used across many devices within a short timeframe indicates sharing.
+
+**Denial of Service**: Malicious actors flood your endpoint with requests to make it unavailable for legitimate users.
+
+### Implementing Rate Limits
+
+Implement limits at multiple levels:
+
+**IP-Based Rate Limiting**: Allow a certain number of requests per IP address per minute. Common thresholds include 60 requests per minute for normal users, with stricter limits for suspected attackers. Cloudflare Workers and AWS Lambda@Edge provide built-in rate limiting that integrates easily.
+
+**License Key-Based Rate Limiting**: Each license key should have a maximum number of validation requests per hour. Even legitimate users rarely need to validate more than a few times per day. If a key is being validated constantly, it may be compromised.
+
+**Device-Based Tracking**: Track unique devices per license key. If the same key is used on more than 3-5 devices simultaneously, flag it for investigation. You can store device fingerprints and validate them against known devices during each check.
+
+### Abuse Detection Patterns
+
+Look for these warning signs:
+
+- Sudden spike in validation requests from a single IP
+- Many failed validation attempts followed by a success (indicates found key)
+- Same key validating from dozens of different IPs in one hour
+- Validation requests at exactly the same second (automated abuse)
+
+### Response to Abuse
+
+When you detect abuse, have a response plan:
+
+1. **Soft Block**: Temporarily require additional verification for the suspicious key
+2. **Hard Block**: Revoke the license key immediately for confirmed abuse
+3. **IP Block**: Block the attacking IP or IP range at your firewall or CDN level
+4. **Notify User**: Send an email to the license key owner if you suspect unauthorized use
+
+For more on implementing license keys in your extension, see our [License Key System Guide](/articles/license-key-system/). For integrating payments that work alongside validation, see [Stripe in Extensions](/articles/stripe-in-extensions/).
+
 Caching strategy
 
 Do not hit the server on every feature check. That would be slow and would burn through your rate limits quickly. Instead, cache the validation result in chrome.storage.local. Set a TTL between 4 and 24 hours. For basic features that are not high-value, 24 hours works well. For expensive features where you want tighter control, use 4 hours.
@@ -77,6 +172,16 @@ For the database, PlanetScale or Supabase work well. Both offer managed database
 
 If you need simpler storage, consider Redis through Upstash. It integrates naturally with Cloudflare Workers via HTTP and pricing starts at free with 10,000 commands per day. Redis is excellent for rate limiting counters and quick validation lookups.
 
+For paywall implementation patterns that work well with server-side validation, see [Paywall Patterns for Extensions](/articles/paywall-patterns/).
+
 Running at scale
 
 This system has been running at zovo.one for a while now. We handle server-side validation across 17 extensions through a single shared API endpoint. The endpoint accepts a license key and returns an extension-specific feature set based on which extension the request comes from. This keeps costs minimal because all extensions share the same infrastructure. We went from losing significant revenue to pirated keys to having a much smaller problem. Most importantly, our paying users have a consistent experience and we can revoke keys instantly when we need to.
+
+For implementing this validation in a Manifest V3 extension with background service workers, see the [Chrome Extension Guide](/articles/chrome-extension-guide/).
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

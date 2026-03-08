@@ -1,9 +1,11 @@
 ---
-title: "Getting Started with Extension Monetization"
-description: "Welcome to the Extension Monetization Playbook! This guide will help you understand how to effectively monetize your browser extension. 1. **Understand Your Mod"
-permalink: /getting-started-with-extension-monetization
 layout: default
+title: "Getting Started with Extension Monetization"
+description: "Introduction to the Extension Monetization Playbook — learn proven strategies to make money from Chrome extensions."
+permalink: /docs/getting-started/
 ---
+
+# Getting Started with Extension Monetization
 
 Welcome to the Extension Monetization Playbook! This guide will help you understand how to effectively monetize your browser extension.
 
@@ -35,3 +37,9 @@ Welcome to the Extension Monetization Playbook! This guide will help you underst
 - Read our [Pricing Strategies](articles/pricing-strategies.md) guide
 - Learn about [Subscription Models](articles/subscription-model.md)
 - Explore [Legal Requirements](articles/legal-essentials.md)
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

@@ -18,6 +18,7 @@ defaults:
       type: "articles"
     values:
       layout: default
+      image: /assets/og-default.png
   - scope:
       path: "docs"
       type: "pages"

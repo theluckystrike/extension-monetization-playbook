@@ -1,9 +1,11 @@
 ---
-title: "Scaling Solo - The Art of Running a One-Person Chrome Extension Business"
-description: "One developer can build, ship, and monetize an entire portfolio of Chrome extensions without meetings, approvals, or coordination overhead. That is not a limita"
-permalink: /scaling-solo-the-art-of-running-a-one-person-chrome-extension-business
 layout: default
+title: "Solo Chrome Extension Business: Scale Without a Team"
+description: "How one developer built a 17-extension portfolio with 4,000+ users. Systems for automation, support, and portfolio management as a solo creator."
+permalink: /articles/scaling-solo/
 ---
+
+Scaling Solo - The Art of Running a One-Person Chrome Extension Business
 
 One developer can build, ship, and monetize an entire portfolio of Chrome extensions without meetings, approvals, or coordination overhead. That is not a limitation. It is a superpower if you build the right systems.
 
@@ -88,3 +90,9 @@ One developer with the right systems can build a sustainable business without a 
 zovo.one runs as a solo studio with 17 extensions and over 4,000 users. Not because of superhuman effort, but because of systems that work. The same approach is available to anyone willing to put in the initial work to build those systems.
 
 The solo path is not for everyone. It requires tolerance for uncertainty, discipline in self-management, and comfort with being the only person responsible for success or failure. For those who thrive in this environment, the rewards extend beyond revenue. There is something valuable about owning what you build, making your own decisions, and knowing that what you have was created by your own hands.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
