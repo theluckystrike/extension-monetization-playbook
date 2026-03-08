@@ -1,4 +1,12 @@
 Affiliate Revenue for Browser Extensions
+---
+title: "Affiliate Revenue for Browser Extensions"
+description: "Affiliate revenue works best as a passive supplement to your primary monetization strategy, not as the foundation of your business model. Layer it on top of an "
+permalink: /affiliate-revenue-for-browser-extensions
+layout: default
+---
+
+
 
 Affiliate revenue works best as a passive supplement to your primary monetization strategy, not as the foundation of your business model. Layer it on top of an already-monetized extension, freemium or paid, and it becomes nearly free money. On its own, affiliate commissions rarely generate enough to sustain ongoing development, maintenance, and support.
 

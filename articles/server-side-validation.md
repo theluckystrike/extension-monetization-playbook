@@ -1,4 +1,12 @@
 Server-Side License Validation for Chrome Extensions
+---
+title: "Server-Side License Validation for Chrome Extensions"
+description: "The problem with client-side-only validation If you rely only on client-side checks, your validation is broken by design. Any user can open DevTools, find the v"
+permalink: /server-side-license-validation-for-chrome-extensions
+layout: default
+---
+
+
 
 The problem with client-side-only validation
 

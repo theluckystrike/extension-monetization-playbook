@@ -1,4 +1,12 @@
 Why freemium fits extensions better than most software
+---
+title: "Why freemium fits extensions better than most software"
+description: "The browser is a different world. Users expect free in the browser in a way they never would for desktop software or mobile apps. When someone installs an exten"
+permalink: /why-freemium-fits-extensions-better-than-most-software
+layout: default
+---
+
+
 
 The browser is a different world. Users expect free in the browser in a way they never would for desktop software or mobile apps. When someone installs an extension, they are already in a sandbox that feels lightweight and temporary. Asking for money upfront feels wrong in that context.
 

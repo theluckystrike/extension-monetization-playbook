@@ -1,4 +1,12 @@
 Cross-Promoting Chrome Extensions: The Most Underrated Growth Strategy
+---
+title: "Cross-Promoting Chrome Extensions: The Most Underrated Growth Strategy"
+description: "Cross-promotion is the most underrated growth strategy for developers who maintain more than one extension. Every user you already have is a warm lead for your "
+permalink: /cross-promoting-chrome-extensions-the-most-underrated-growth-strategy
+layout: default
+---
+
+
 
 Cross-promotion is the most underrated growth strategy for developers who maintain more than one extension.
 Every user you already have is a warm lead for your other tools.

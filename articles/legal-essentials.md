@@ -1,4 +1,12 @@
 Legal Essentials for Chrome Extension Developers
+---
+title: "Legal Essentials for Chrome Extension Developers"
+description: "Most indie developers ignore legal requirements until something goes wrong. A Chrome Web Store takedown, a GDPR complaint, or a tax audit are not fun ways to le"
+permalink: /legal-essentials-for-chrome-extension-developers
+layout: default
+---
+
+
 
 Most indie developers ignore legal requirements until something goes wrong. A Chrome Web Store takedown, a GDPR complaint, or a tax audit are not fun ways to learn these lessons. The basics are not complicated and getting them right early prevents real headaches down the road. This guide covers the legal foundations every extension developer needs before launching.
 

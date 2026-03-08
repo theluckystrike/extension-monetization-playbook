@@ -1,4 +1,12 @@
 Scaling Solo - The Art of Running a One-Person Chrome Extension Business
+---
+title: "Scaling Solo - The Art of Running a One-Person Chrome Extension Business"
+description: "One developer can build, ship, and monetize an entire portfolio of Chrome extensions without meetings, approvals, or coordination overhead. That is not a limita"
+permalink: /scaling-solo-the-art-of-running-a-one-person-chrome-extension-business
+layout: default
+---
+
+
 
 One developer can build, ship, and monetize an entire portfolio of Chrome extensions without meetings, approvals, or coordination overhead. That is not a limitation. It is a superpower if you build the right systems.
 

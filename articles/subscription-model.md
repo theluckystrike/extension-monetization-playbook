@@ -1,4 +1,12 @@
 # Making Subscription Pricing Work for Browser Extensions
+---
+title: "Making Subscription Pricing Work for Browser Extensions"
+description: "Subscriptions are harder to sell for browser extensions than for SaaS applications. Users resist recurring charges for something that lives in their browser too"
+permalink: /making-subscription-pricing-work-for-browser-extensions
+layout: default
+---
+
+
 
 Subscriptions are harder to sell for browser extensions than for SaaS applications. Users resist recurring charges for something that lives in their browser toolbar, often perceived as a one-time convenience rather than an ongoing service. But when your extension genuinely delivers continuous value, subscriptions create the most sustainable revenue model available.
 

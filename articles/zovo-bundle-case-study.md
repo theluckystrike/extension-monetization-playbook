@@ -1,4 +1,12 @@
 # How Bundling 17 Extensions Changed Everything
+---
+title: "How Bundling 17 Extensions Changed Everything"
+description: "I've been running zovo.one for three years now, building browser extensions as a solo developer. Today, the studio has 17 extensions and over 4,000 users. The s"
+permalink: /how-bundling-17-extensions-changed-everything
+layout: default
+---
+
+
 
 I've been running zovo.one for three years now, building browser extensions as a solo developer. Today, the studio has 17 extensions and over 4,000 users. The single most important business decision I made was bundling everything under one subscription called Zovo Pro, available at $4.99 per month or $99 for lifetime access.
 

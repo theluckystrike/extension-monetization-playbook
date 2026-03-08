@@ -1,4 +1,12 @@
 # Technical Implementation Reference
+---
+title: "Technical Implementation Reference"
+description: "This article maps every monetization strategy in this playbook to the exact technical guide that shows you how to build it. Each link points to the Chrome Exten"
+permalink: /technical-implementation-reference
+layout: default
+---
+
+
 
 This article maps every monetization strategy in this playbook to the exact technical guide that shows you how to build it. Each link points to the Chrome Extension Guide repository, which contains 200+ implementation articles.
 

@@ -1,4 +1,12 @@
 # Chrome Web Store SEO The Complete Guide to Extension Search Optimization
+---
+title: "Chrome Web Store SEO The Complete Guide to Extension Search Optimization"
+description: "The Chrome Web Store has its own search algorithm, and most developers completely ignore it. While you are busy building features and chasing external marketing"
+permalink: /chrome-web-store-seo-the-complete-guide-to-extension-search-optimization
+layout: default
+---
+
+
 
 The Chrome Web Store has its own search algorithm, and most developers completely ignore it. While you are busy building features and chasing external marketing, your extension is quietly losing visibility to competitors who understand how CWS search works. For extensions that solve a searchable problem, CWS SEO is the single most important growth lever. It costs nothing, it compounds over time, and once you figure it out, the organic traffic flows on autopilot.
 
