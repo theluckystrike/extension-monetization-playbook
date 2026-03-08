@@ -1,5 +1,4 @@
 ---
-
 layout: article
 title: "Cross-Promotion Strategies for Chrome Extensions"
 description: "Learn how to cross-promote Chrome extensions to grow your user base. Proven strategies for extension developers to leverage existing audiences."
@@ -9,9 +8,7 @@ categories: [growth, marketing]
 tags: [cross-promotion, chrome-extensions, user-acquisition, growth-hacking]
 author: theluckystrike
 canonical_url: "https://extensionmonetization.com/articles/cross-promotion"
-
 ---
-
 
 Cross-promotion is the most underrated growth strategy for developers who maintain more than one extension. Every user you already have is a warm lead for your other tools. Most developers never take advantage of this because they treat each extension as an isolated product. I have seen portfolios grow 3x faster when extensions start promoting each other. The acquisition cost is zero because you already paid to acquire those users. When you build multiple extensions, each one becomes a marketing channel for the rest. This is the simplest growth hack that almost nobody uses properly.
 
@@ -161,12 +158,15 @@ Start by identifying natural connections between your extensions or potential pa
 
 Remember that building a portfolio of related extensions creates compounding network effects. Each new extension becomes a marketing channel for your existing ones, creating a virtuous cycle of growth that becomes increasingly difficult for competitors to match.
 
----
-
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Chrome Web Store Seo](articles/chrome-web-store-seo.md)
-- [Community Building](articles/community-building.md)
-- [Content Marketing](articles/content-marketing.md)
+- [Extension As A Service](articles/extension-as-a-service/)
+- [Trial Implementation](articles/trial-implementation/)
+- [Chrome Web Store Seo](articles/chrome-web-store-seo/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

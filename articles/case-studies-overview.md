@@ -145,3 +145,16 @@ Share your story with the Zovo team and help grow the collection of extension ca
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Affiliate Model](articles/affiliate-model/)
+- [One Time Purchase](articles/one-time-purchase/)
+- [Stripe In Extensions](articles/stripe-in-extensions/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

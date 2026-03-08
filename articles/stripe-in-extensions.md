@@ -2368,3 +2368,16 @@ Part of the Extension Monetization Playbook by theluckystrike. Professional Chro
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+## Related Articles
+
+- [Zero To 1000 Users](docs/growth/zero-to-1000-users/)
+- [Update Monetization](articles/update-monetization/)
+- [Freemium Model](docs/revenue/freemium-model/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

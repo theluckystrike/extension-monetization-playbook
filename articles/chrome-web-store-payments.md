@@ -145,3 +145,16 @@ If you are starting today, the same path is available to you. Pick your payment 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Server Side Validation](articles/server-side-validation/)
+- [Selling Your Extension](articles/selling-your-extension/)
+- [One Time Purchase](articles/one-time-purchase/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -1,11 +1,8 @@
 ---
-
 layout: default
 title: Chrome Extension Monetization Playbook
 description: Complete guide to monetizing Chrome extensions - revenue models, payments, growth strategies
-
 ---
-
 
 <script type="application/ld+json">
 {
@@ -103,12 +100,15 @@ Choose a category above to dive deep into the strategy that matters most for you
 
 **Ready to monetize?** Start with our [Freemium Model](/articles/freemium-model) guide if you're just beginning, or jump to [Pricing Strategy](/articles/pricing-strategy) if you're ready to optimize your revenue.
 
----
-
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Monetization Strategies Overview](articles/monetization-strategies-overview.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-- [Zero To 1000 Users](articles/zero-to-1000-users.md)
+- [Monetization Strategies Overview](articles/monetization-strategies-overview/)
+- [Failed Experiments](articles/failed-experiments/)
+- [Zovo Bundle Case Study](articles/zovo-bundle-case-study/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

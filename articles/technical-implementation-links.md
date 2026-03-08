@@ -106,3 +106,16 @@ For full development tutorials, see the [Chrome Extension Guide](https://theluck
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Freemium Model](articles/freemium-model/)
+- [Cross Promotion](articles/cross-promotion/)
+- [Monetization Strategies Overview](articles/monetization-strategies-overview/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

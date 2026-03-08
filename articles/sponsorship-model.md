@@ -1,12 +1,9 @@
 ---
-
 layout: default
 title: "Chrome Extension Sponsorship Model: Find and Land Sponsors"
 description: "How to monetize your Chrome extension through sponsorships. Covers finding sponsors, pricing deals, placement formats, and maintaining user trust with sponsored content."
 permalink: /articles/sponsorship-model/
-
 ---
-
 
 # Sponsorship Model for Chrome Extensions
 
@@ -182,6 +179,15 @@ Need help building the technical foundation for sponsorship integration? The [Ch
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
+
+## Related Articles
+
+- [Stripe In Extensions](docs/payments/stripe-in-extensions/)
+- [Zero To 1000 Users](articles/zero-to-1000-users/)
+- [Freemium Model](articles/freemium-model/)
+
+
+
 ---
 
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

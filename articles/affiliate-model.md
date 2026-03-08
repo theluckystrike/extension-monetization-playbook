@@ -98,3 +98,16 @@ Do not build an extension around affiliate revenue. Build a solid extension with
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Content Marketing](articles/content-marketing/)
+- [Extension Analytics Complete Guide](docs/analytics/extension-analytics-complete-guide/)
+- [Tab Suspender Pro Case Study](articles/tab-suspender-pro-case-study/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

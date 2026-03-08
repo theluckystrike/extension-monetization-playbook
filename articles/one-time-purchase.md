@@ -1,12 +1,9 @@
 ---
-
 layout: default
 title: "One-Time Purchase Model for Chrome Extensions"
 description: "When to use one-time pricing for Chrome extensions, how to find the pricing sweet spot, avoid the lifetime deal trap, and generate ongoing revenue from single purchases."
 permalink: /articles/one-time-purchase/
-
 ---
-
 
 One-Time Purchase Model for Chrome Extensions
 
@@ -162,6 +159,15 @@ Need help building the technical foundation for your one-time purchase extension
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
+
+## Related Articles
+
+- [Selling Your Extension](articles/selling-your-extension/)
+- [Extension Valuation](articles/extension-valuation/)
+- [Chrome Web Store Seo](articles/chrome-web-store-seo/)
+
+
+
 ---
 
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

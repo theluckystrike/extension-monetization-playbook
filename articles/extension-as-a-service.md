@@ -170,3 +170,16 @@ See our [legal essentials](/articles/legal-essentials/) guide for detailed requi
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Paywall Patterns](articles/paywall-patterns/)
+- [Freemium Model](articles/freemium-model/)
+- [In App Purchases Extensions](docs/revenue/in-app-purchases-extensions/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -1,12 +1,9 @@
 ---
-
 layout: default
 title: "How to Integrate Stripe Payments in Chrome Extensions: Complete TypeScript Guide"
 description: "Complete guide to integrating Stripe in Chrome extensions. Checkout sessions from background service workers, webhook handling, license validation, subscription management, Stripe CLI testing, and PCI compliance."
 permalink: /docs/payments/stripe-in-extensions/
-
 ---
-
 
 # How to Integrate Stripe Payments in Chrome Extensions
 
@@ -1005,12 +1002,15 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
----
-
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Stripe In Extensions](articles/stripe-in-extensions.md)
-- [Payment Integration Overview](articles/payment-integration-overview.md)
-- [License Key System](articles/license-key-system.md)
+- [Payment Integration Overview](articles/payment-integration-overview/)
+- [Freemium Model](docs/revenue/freemium-model/)
+- [Sponsorship Model](articles/sponsorship-model/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

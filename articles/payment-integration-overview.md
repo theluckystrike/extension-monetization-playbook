@@ -111,3 +111,16 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Paywall Patterns](articles/paywall-patterns/)
+- [Paypal Integration Extensions](docs/payments/paypal-integration-extensions/)
+- [Stripe In Extensions](docs/payments/stripe-in-extensions/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -1,12 +1,9 @@
 ---
-
 layout: default
 title: "How to Integrate PayPal Payments in Chrome Extensions: Complete Developer Guide"
 description: "Complete guide to integrating PayPal in Chrome extensions. Checkout flows from background service workers, webhook handling, license validation, PayPal vs Stripe comparison, and implementation best practices."
 permalink: /docs/payments/paypal-integration-extensions/
-
 ---
-
 
 # How to Integrate PayPal Payments in Chrome Extensions
 
@@ -894,12 +891,15 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
----
-
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Stripe In Extensions](articles/stripe-in-extensions.md)
-- [Chrome Web Store Payments](articles/chrome-web-store-payments.md)
-- [Payment Integration Overview](articles/payment-integration-overview.md)
+- [Growth Playbook Overview](articles/growth-playbook-overview/)
+- [Freemium Model](docs/revenue/freemium-model/)
+- [Content Marketing](articles/content-marketing/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

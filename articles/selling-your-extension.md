@@ -182,3 +182,16 @@ The extension market is more active than you might think. Whether you ever sell 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+
+
+## Related Articles
+
+- [Trial Implementation](articles/trial-implementation/)
+- [Freemium Model](articles/freemium-model/)
+- [Introduction](docs/getting-started/introduction/)
+
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

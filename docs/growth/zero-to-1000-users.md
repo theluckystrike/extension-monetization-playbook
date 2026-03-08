@@ -1,12 +1,9 @@
 ---
-
 layout: default
 title: "Zero to 1,000 Users: Chrome Extension Launch Playbook"
 description: "Complete launch playbook for Chrome extensions. Marketing channels, community building, onboarding optimization, and retention strategies to reach your first 1,000 users."
 permalink: /growth/zero-to-1000-users/
-
 ---
-
 
 # Zero to 1,000 Users: The Chrome Extension Launch Playbook
 
@@ -813,6 +810,15 @@ For technical implementation details on the strategies mentioned in this playboo
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
+
+## Related Articles
+
+- [Scaling Solo](articles/scaling-solo/)
+- [Chrome Web Store Seo](docs/growth/chrome-web-store-seo/)
+- [Extension Analytics Complete Guide](docs/analytics/extension-analytics-complete-guide/)
+
+
+
 ---
 
-*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
