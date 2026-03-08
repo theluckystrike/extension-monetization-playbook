@@ -869,4 +869,18 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
+## Technical Implementation Guides
+
+Need help building the technical foundation for Stripe payment integration? The [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/) has comprehensive tutorials:
+
+- **[Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-content-scripts/)** - Inject functionality into web pages
+- **[Storage API Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/)** - Persist data across sessions
+- **[Messaging Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/)** - Communication between extension components
+- **[OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/)** - Secure user authentication
+- **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
+
+> **Implementation Note**: Stripe integration in extensions requires OAuth2 authentication for user identity verification and background scripts (service workers) for webhook polling. Use chrome.identity to obtain user emails, implement background service workers to receive payment status updates, and store customer IDs in chrome.storage.sync for cross-device access.
+
+---
+
+Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
