@@ -1,0 +1,27 @@
+title: "Extension Monetization Playbook by theluckystrike"
+description: "The complete guide to monetizing Chrome extensions. Proven strategies, case studies, and best practices."
+url: "https://theluckystrike.github.io"
+baseurl: "/extension-monetization-playbook"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  articles:
+    output: true
+
+defaults:
+  - scope:
+      path: "articles"
+      type: "articles"
+    values:
+      layout: default
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: default
+
+footer: "Built by theluckystrike at zovo.one"
