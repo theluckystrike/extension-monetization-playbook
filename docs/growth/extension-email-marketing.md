@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Extension Email Marketing: Building and Monetizing Your User List"
-description: "Complete guide to building email lists from Chrome extension users. Collection strategies, consent compliance, automation sequences, and monetization tactics that convert."
+description: "Complete guide to building email lists from Chrome extension users. Collection strategies, consent compliance, automation, and monetization."
 permalink: /growth/extension-email-marketing/
 ---
 
@@ -605,3 +605,7 @@ Learning from others' mistakes helps you avoid wasting time and burning subscrib
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
