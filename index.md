@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chrome Extension Monetization Playbook: Complete Guide"
-description: "The definitive guide to monetizing Chrome extensions. Proven strategies from real-world case studies."
+title: "Chrome Extension Monetization Playbook"
+description: "The definitive guide to making money from Chrome extensions. 30+ articles covering freemium, subscriptions, payments, and growth."
 ---
 
 <script type="application/ld+json">
@@ -99,13 +99,13 @@ Complete your monetization strategy with these essential guides.
 Choose a category above to dive deep into the strategy that matters most for your extension. Each article provides actionable insights, best practices, and real-world examples from successful Chrome extension developers.
 
 **Ready to monetize?** Start with our [Freemium Model](/articles/freemium-model) guide if you're just beginning, or jump to [Pricing Strategy](/articles/pricing-strategy) if you're ready to optimize your revenue.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Pricing Strategies](articles/pricing-strategies.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Zero To 1000 Users](articles/zero-to-1000-users.md)

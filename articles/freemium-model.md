@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Freemium Model for Chrome Extensions: Convert Free to Paid"
-description: "Implement a freemium model for your Chrome extension. Balance free features with premium upgrades."
-permalink: /revenue/freemium-model/
+title: "Chrome Extension Freemium Model Guide"
+description: "Build a successful freemium model for your Chrome extension. Feature gating, conversion optimization, and usage limits."
 ---
-
 # Freemium Model for Chrome Extensions: The Definitive Guide
 
 The browser extension market operates under different rules than traditional software. Users expect everything in their browser to be free—or at least freemium. When someone installs an extension, they are already in a sandbox that feels lightweight and temporary. Asking for money upfront feels wrong in that context. This is why freemium has become the dominant monetization model for browser extensions.
@@ -693,18 +691,12 @@ To maximize your free-to-paid conversion:
 - [ ] Implement win-back campaigns for users who dismissed prompts
 - [ ] Test different upgrade modal designs
 - [ ] Include social proof in every upgrade prompt
-
 ## Related Articles
 
-For more monetization strategies, see:
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-- [Subscription Model](/revenue/subscription-model/) - Recurring revenue strategies
-- [Stripe Integration](/revenue/stripe-integration/) - Payment processing setup
-- [Pricing Strategies](/revenue/pricing-strategies/) - Optimize your pricing
-
----
-
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 

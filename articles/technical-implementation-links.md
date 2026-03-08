@@ -1,13 +1,8 @@
 ---
-
 layout: default
-title: "Chrome Extension Technical Implementation Resources"
-description: "Technical guides for building and monetizing Chrome extensions. Implementation resources and best practices."
-permalink: /articles/technical-implementation-links/
-
+title: "Chrome Extension Technical Implementation"
+description: "Technical resources for Chrome extension development. Links to guides, tools, and documentation."
 ---
-
-
 # Technical Implementation Reference
 
 This article maps every monetization strategy in this playbook to the exact technical guide that shows you how to build it. Each link points to the Chrome Extension Guide repository, which contains 200+ implementation articles.
@@ -95,25 +90,11 @@ Use this checklist to systematically implement monetization for your Chrome exte
 For full development tutorials, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/).
 
 ---
-
 ## Related Articles
 
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
-
-
-## Related Articles
-
-- [Freemium Model](articles/freemium-model/)
-- [Cross Promotion](articles/cross-promotion/)
-- [Monetization Strategies Overview](articles/monetization-strategies-overview/)
-
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
 
 ---

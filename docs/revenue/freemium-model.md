@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Freemium Model for Browser Extensions"
-description: "Implement freemium for your browser extension. Balance free and paid features for maximum conversion."
-permalink: /docs/revenue/freemium-model/
+title: "Chrome Extension Freemium Model Guide"
+description: "Build a successful freemium model for your Chrome extension. Feature gating, conversion optimization, and usage limits."
 ---
-
 # The Freemium Model for Chrome Extensions
 
 The freemium model is the dominant monetization strategy in the Chrome Web Store. It works because it aligns with user expectations: browser extensions should be free to try, and upgrading should feel like a natural decision rather than a forced transaction. This guide covers every aspect of building a profitable freemium extension, from conversion funnel mechanics to pricing psychology to real-world implementation in TypeScript.
@@ -603,17 +601,13 @@ For code patterns, see the companion [Chrome Extension Guide](https://github.com
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-- [Subscription Model](articles/subscription-model.md)

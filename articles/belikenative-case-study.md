@@ -1,15 +1,8 @@
 ---
 layout: default
-title: "B2B Chrome Extension Monetization: Belike Native Case Study"
-description: "How Belike Native built a successful B2B Chrome extension business. Enterprise pricing and monetization strategies."
-date: 2026-03-08
-last_modified_at: 2026-03-08
-categories: [case-study, monetization]
-tags: [case-study, belikenative, language-extension, chrome-extension-revenue]
-author: theluckystrike
-canonical_url: "https://extensionmonetization.com/articles/belikenative-case-study"
+title: "Belike Native Case Study"
+description: "Case study: Building a successful native extension business. Strategies and lessons learned."
 ---
-
 # BeLikeNative. From Idea to 3,300 Users. A First-Person Case Study
 
 I'm the developer who built BeLikeNative. A Chrome extension that helps non-native speakers make their text sound natural in any language. 3,300 users. 4.62 stars. The most successful extension in the Zovo portfolio. This is the full story of how it got there.
@@ -125,13 +118,13 @@ This is just the beginning. The problem BeLikeNative solves isn't going away. If
 The team has grown from just me to several contributors. BeLikeNative taught us how to build, launch, and iterate on browser extensions. Those lessons apply to every new project.
 
 I'm building for them. And I'm just getting started.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Zovo Bundle Case Study](articles/zovo-bundle-case-study.md)
-- [Tab Suspender Pro Case Study](articles/tab-suspender-pro-case-study.md)
-- [Pricing Strategies](articles/pricing-strategies.md)

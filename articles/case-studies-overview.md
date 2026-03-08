@@ -1,13 +1,8 @@
 ---
-
 layout: default
-title: "Chrome Extension Case Studies: Real Monetization Success Stories"
-description: "Learn from successful Chrome extension businesses. Case studies covering pricing, growth, and revenue strategies."
-permalink: /articles/case-studies-overview/
-
+title: "Chrome Extension Monetization Case Studies"
+description: "Learn from successful Chrome extension monetization case studies. Real strategies from profitable extensions."
 ---
-
-
 # Chrome Extension Case Studies: Real Revenue & Growth Data
 
 Building a successful Chrome extension is hard. Most developers who try fail—not because the ideas are bad, but because they have no real examples to learn from. The Chrome Web Store is a black box. You can't see your competitors' numbers. You don't know what's actually working because everyone keeps their metrics private. Blog posts about "how to monetize extensions" are filled with generic advice that sounds good but doesn't translate to real results. Reddit threads devolve into complaints about how impossible it is. The few success stories that exist are buried in obscure forums or shared only among close friends.
@@ -134,25 +129,11 @@ Share your story with the Zovo team and help grow the collection of extension ca
 *This page is part of the [Extension Monetization Playbook](/)—a free resource for developers building sustainable browser extension businesses. For more case studies, tools, and tactics, visit [zovo.one](https://zovo.one).*
 
 ---
-
 ## Related Articles
 
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
-
-
-## Related Articles
-
-- [Affiliate Model](articles/affiliate-model/)
-- [One Time Purchase](articles/one-time-purchase/)
-- [Stripe In Extensions](articles/stripe-in-extensions/)
-
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
 
 ---

@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Build a Community Around Your Chrome Extension"
-description: "Create a loyal user community for your Chrome extension. Grow engagement and turn users into advocates."
-permalink: /articles/community-building/
+title: "Chrome Extension Community Building"
+description: "Build an engaged community around your Chrome extension. User groups, feedback loops, and advocacy programs."
 ---
-
 Building and Nurturing a Community Around Your Chrome Extensions as a Long-Term Competitive Moat
 
 Features can be copied overnight. A community cannot. A competitor can clone your extension in a weekend, but they cannot clone the relationships you have built with thousands of users. This is the one moat that gets stronger over time, not weaker.
@@ -149,13 +147,6 @@ Start building your community today. It is the only investment that will still b
 
 ---
 
-## Related Articles
-
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
 ---
 
 ## Technical Implementation Guides
@@ -169,10 +160,12 @@ Need help building the technical foundation for community features? The [Chrome 
 - **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
 
 > **Implementation Note**: Community features often require user authentication and data sync across devices. Implement OAuth2 for secure user identity, use chrome.storage.sync to persist user preferences and community settings, and leverage the Messaging API for real-time notifications when users interact with community features.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 

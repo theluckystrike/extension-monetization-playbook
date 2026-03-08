@@ -1,15 +1,8 @@
 ---
 layout: default
-title: "Cross-Promote Your Chrome Extensions: strategies"
-description: "Promote multiple Chrome extensions together. Bundle and cross-sell to maximize revenue per user."
-date: 2026-03-08
-last_modified_at: 2026-03-08
-categories: [growth, marketing]
-tags: [cross-promotion, chrome-extensions, user-acquisition, growth-hacking]
-author: theluckystrike
-canonical_url: "https://extensionmonetization.com/articles/cross-promotion"
+title: "Chrome Extension Cross-Promotion"
+description: "Cross-promote your Chrome extensions. Bundle deals, cross-listing, and user migration strategies."
 ---
-
 Cross-promotion is the most underrated growth strategy for developers who maintain more than one extension. Every user you already have is a warm lead for your other tools. Most developers never take advantage of this because they treat each extension as an isolated product. I have seen portfolios grow 3x faster when extensions start promoting each other. The acquisition cost is zero because you already paid to acquire those users. When you build multiple extensions, each one becomes a marketing channel for the rest. This is the simplest growth hack that almost nobody uses properly.
 
 A solid extension marketing strategy should always include cross-promotion as a core component. Unlike paid acquisition or traditional marketing channels, cross-promotion leverages assets you already own—your existing user base. This makes it one of the most cost-effective ways to grow your extension portfolio.
@@ -157,13 +150,13 @@ Cross-promotion remains one of the most powerful yet underutilized growth strate
 Start by identifying natural connections between your extensions or potential partner extensions. Implement thoughtful cross-promotion placements in high-engagement areas like settings pages and success screens. Track your results carefully and continuously optimize based on data. With patience and persistence, cross-promotion can become the cornerstone of your extension marketing strategy.
 
 Remember that building a portfolio of related extensions creates compounding network effects. Each new extension becomes a marketing channel for your existing ones, creating a virtuous cycle of growth that becomes increasingly difficult for competitors to match.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Content Marketing](articles/content-marketing.md)
-- [Community Building](articles/community-building.md)
-- [Affiliate Model](articles/affiliate-model.md)

@@ -1,13 +1,8 @@
 ---
-
 layout: default
-title: "Legal Requirements for Chrome Extensions: Terms, Privacy, Compliance"
-description: "Navigate legal requirements for Chrome extensions. Privacy policies, terms of service, and compliance."
-permalink: /articles/legal-essentials/
-
+title: "Chrome Extension Legal Essentials"
+description: "Legal requirements for Chrome extensions. Privacy policies, terms of service, and compliance guide."
 ---
-
-
 Legal Essentials for Chrome Extension Developers
 
 Most indie developers ignore legal requirements until something goes wrong. A Chrome Web Store takedown, a GDPR complaint, or a tax audit are not fun ways to learn these lessons. The basics are not complicated and getting them right early prevents real headaches down the road. This guide covers the legal foundations every extension developer needs before launching.
@@ -125,25 +120,11 @@ Do not let the legal aspects become a bottleneck to launching. The basics are st
 Do not wait until you have significant revenue to address these requirements. By then you will have more users to notify about policy changes, more data to manage, and more complexity to unwind. The low cost of doing things right early compounds into massive savings over time. Treat your extension business like a real business from day one and it will reward you accordingly.
 
 ---
-
 ## Related Articles
 
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
-
-
-## Related Articles
-
-- [Tab Suspender Pro Case Study](articles/tab-suspender-pro-case-study/)
-- [Freemium Model](articles/freemium-model/)
-- [Review Acquisition](articles/review-acquisition/)
-
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
 
 ---

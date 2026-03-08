@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "One-Time Purchase Model for Chrome Extensions"
-description: "Sell your Chrome extension with lifetime pricing. One-time payment vs subscription pros and cons."
-permalink: /articles/one-time-purchase/
+title: "Chrome Extension One-Time Purchase Model"
+description: "Implement one-time purchase pricing for browser extensions. Lifetime deals, license keys, and sustainable revenue."
 ---
-
 One-Time Purchase Model for Chrome Extensions
 
 The appeal of one-time purchases is obvious from a user perspective. Pay once, own forever. No monthly fees, no recurring charges, no surprise renewals. Users love that simplicity. They get a tool that works, they pay for it, and they move on with their lives.
@@ -134,13 +132,6 @@ For more on implementing one-time purchases and related strategies:
 
 ---
 
-## Related Articles
-
-- [License Key System](articles/license-key-system.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-- [Subscription Model](articles/subscription-model.md)
-
-
 ---
 
 ## Technical Implementation Guides
@@ -154,10 +145,12 @@ Need help building the technical foundation for your one-time purchase extension
 - **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
 
 > **Implementation Note**: One-time purchases require license key validation using the Storage API to persist activation status locally. Implement server-side validation on first activation to verify license authenticity, then cache the result locally while handling offline access gracefully.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 

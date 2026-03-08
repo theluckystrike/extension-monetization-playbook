@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Subscription Model for Chrome Extensions: Recurring Revenue"
-description: "Implement subscription billing for Chrome extensions. Monthly and annual plans that retain users."
-permalink: /articles/subscription-model/
+title: "Chrome Extension Subscription Pricing Guide"
+description: "Master subscription pricing for Chrome extensions. Learn recurring revenue strategies, churn reduction, and Stripe integration."
 ---
-
 # Making Subscription Pricing Work for Browser Extensions
 
 Subscriptions are harder to sell for browser extensions than for SaaS applications. Users resist recurring charges for something that lives in their browser toolbar, often perceived as a one-time convenience rather than an ongoing service. But when your extension genuinely delivers continuous value, subscriptions create the most sustainable revenue model available.
@@ -196,13 +194,6 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-## Related Articles
-
-- [Freemium Model](articles/freemium-model.md)
-- [Trial Implementation](articles/trial-implementation.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
 ---
 
 ## Technical Implementation Guides
@@ -216,10 +207,12 @@ Need help building the technical foundation for your subscription extension? The
 - **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
 
 > **Implementation Note**: Subscriptions require the Chrome Alarms API for scheduled license re-validation and the Storage API for caching subscription status. Implement background alarms to periodically check subscription validity against your server, ensuring users maintain or lose access based on their current billing status.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 

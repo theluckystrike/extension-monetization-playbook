@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Chrome Extension Monetization Failures: Lessons Learned"
-description: "Learn from failed monetization experiments. Avoid costly mistakes when monetizing your Chrome extension."
-permalink: /articles/failed-experiments/
+title: "Chrome Extension Monetization Failures"
+description: "Learn from failed Chrome extension monetization experiments. What not to do and common mistakes to avoid."
 ---
-
 Most monetization ideas fail. I have tried enough of them to know. Running 17 Chrome extensions with over 4,000 users means you have plenty of chances to get it wrong. The difference between a struggling extension studio and a profitable one is not finding the perfect strategy on the first try. It is eliminating the bad ideas quickly so you can focus on what actually works.
 
 Sharing failures is more useful than sharing successes because it saves other developers time and money. This article is about the experiments that did not work. Every bad idea tested became part of the learning that shaped the current Zovo Pro model.
@@ -79,13 +77,6 @@ Each failed experiment cost me time and money, but the knowledge gained was inva
 
 ---
 
-## Related Articles
-
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
 ---
 
 ## Technical Implementation Guides
@@ -99,10 +90,12 @@ Need help building the technical foundation for experimentation? The [Chrome Ext
 - **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
 
 > **Implementation Note**: Running monetization experiments requires A/B testing infrastructure and event tracking. Implement feature flags using chrome.storage to control which pricing models users see, track conversion events locally, and use the Storage API to persist experiment group assignments across sessions.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 

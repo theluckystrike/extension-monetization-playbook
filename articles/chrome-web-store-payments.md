@@ -1,13 +1,8 @@
 ---
-
 layout: default
-title: "Chrome Web Store Payments: Complete Setup Guide"
-description: "Set up payment processing in the Chrome Web Store. Accept payments via Google's billing system for extensions."
-permalink: /articles/chrome-web-store-payments/
-
+title: "Chrome Web Store Payments Setup"
+description: "Set up payments in the Chrome Web Store. Google Play Billing, payouts, and payment configuration."
 ---
-
-
 The Current State of Chrome Web Store Payments
 
 The chrome.payments API was deprecated in 2020. Google has not shipped a replacement. If you are building a paid Chrome extension today, you are on your own for payments. This is not a temporary gap. It has been years and there is no official timeline for anything new.
@@ -134,25 +129,11 @@ The initial setup took more time than using a built-in system would have but the
 If you are starting today, the same path is available to you. Pick your payment provider, build your landing page, implement license validation, and ship. The gap left by Google is real but it is also an opportunity to own your business completely.
 
 ---
-
 ## Related Articles
 
-- [Stripe In Extensions](articles/stripe-in-extensions.md)
-- [Handling Refunds](articles/handling-refunds.md)
-- [License Key System](articles/license-key-system.md)
-
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
-
-
-## Related Articles
-
-- [Server Side Validation](articles/server-side-validation/)
-- [Selling Your Extension](articles/selling-your-extension/)
-- [One Time Purchase](articles/one-time-purchase/)
-
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
 
 ---

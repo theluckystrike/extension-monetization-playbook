@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Chrome Extension Refund Policy: Best Practices"
-description: "Create a fair refund policy for your Chrome extension. Build trust while protecting your revenue."
-permalink: /articles/handling-refunds/
+title: "Chrome Extension Refund Handling"
+description: "Best practices for handling refunds in Chrome extensions. Policies, automation, and customer service."
 ---
-
 Handling Refunds for Chrome Extension Payments
 
 Refunds are an inevitable part of selling anything online. No matter how good your extension is, some users will want their money back. The key insight that most developers miss is that a generous refund policy actually reduces the total number of refund requests. When users know they can get their money back easily, they feel safe making the purchase in the first place. That psychological safety converts more visitors into paying customers than any aggressive sales tactic ever could.
@@ -95,13 +93,6 @@ Make it easy to get a refund and users will trust you enough to buy in the first
 
 ---
 
-## Related Articles
-
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
 ---
 
 ## Technical Implementation Guides
@@ -115,10 +106,12 @@ Need help building the technical foundation for refund handling? The [Chrome Ext
 - **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
 
 > **Implementation Note**: Handling refunds requires integrating with Stripe webhooks to detect refund events and automatically revoke premium access. Use chrome.storage to track license status and implement server-side webhook handlers that update user permissions when refunds are processed.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 

@@ -1,10 +1,8 @@
 ---
 layout: default
 title: "Chrome Web Store SEO Guide"
-description: "Optimize your Chrome extension listing for the Web Store. Improve visibility and get more installs."
-permalink: /docs/growth/chrome-web-store-seo/
+description: "Optimize your Chrome Web Store listing for search. Keywords, descriptions, and visibility strategies."
 ---
-
 # Chrome Web Store SEO: The Complete Optimization Guide
 
 Chrome Web Store search is the single most important growth channel for browser extensions. Extensions that rank well for relevant queries receive a steady, compounding stream of organic installs that costs nothing to maintain. Extensions that rank poorly remain invisible, regardless of how good the product is. This guide covers every factor that influences CWS ranking, a systematic methodology for keyword research, strategies for optimizing all 55 locale descriptions, visual asset best practices with exact dimensions, and templates for managing reviews effectively.
@@ -336,14 +334,6 @@ Use this checklist when publishing or updating your extension listing:
 
 ---
 
-## Related Guides
-
-- [Zero to 1,000 Users](/growth/zero-to-1000-users/) — Launch playbook for new extensions
-- [Freemium Model](/docs/revenue/freemium-model/) — Conversion optimization for freemium extensions
-- [Stripe in Extensions](/docs/payments/stripe-in-extensions/) — Payment integration guide
-- [Successful Extension Businesses](/case-studies/successful-extension-businesses/) — Revenue case studies
-- [Extension Analytics Complete Guide](/docs/analytics/extension-analytics-complete-guide/) — Tracking and measurement
-
 ---
 
 ## Technical Resources
@@ -360,17 +350,13 @@ For code patterns, see the companion [Chrome Extension Guide](https://github.com
 - [Feature Flags](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/feature-flags.md)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Web Store Seo](articles/chrome-web-store-seo.md)
-- [Zero To 1000 Users](articles/zero-to-1000-users.md)
-- [Review Acquisition](articles/review-acquisition.md)

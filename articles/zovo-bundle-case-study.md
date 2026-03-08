@@ -1,15 +1,8 @@
 ---
 layout: default
-title: "Zovo Bundle Case Study: How 17 Extensions Generated $40K/Month"
-description: "How bundling 17 Chrome extensions created $40K/month recurring revenue. The portfolio effect explained."
-date: 2026-03-08
-last_modified_at: 2026-03-08
-categories: [case-study, monetization]
-tags: [case-study, zovo, extension-bundle, chrome-extensions, bundling-strategy]
-author: theluckystrike
-canonical_url: "https://extensionmonetization.com/articles/zovo-bundle-case-study"
+title: "Zovo Bundle Case Study"
+description: "Case study: The Zovo extension bundle strategy. How multiple extensions drive revenue together."
 ---
-
 # How Bundling 17 Extensions Changed Everything
 
 I've been running zovo.one for three years now, building browser extensions as a solo developer. Today, the studio has 17 extensions and over 4,000 users. The single most important business decision I made was bundling everything under one subscription called Zovo Pro, available at $4.99 per month or $99 for lifetime access.
@@ -199,13 +192,13 @@ The bundle transforms what could be a collection of small revenue streams into s
 This approach isn't for everyone. It requires patience to build up a portfolio before launching the bundle. It demands quality across all your products since one weak link affects the whole brand. But for solo developers willing to play the long game, the bundle model offers a path to sustainable income that wouldn't exist otherwise.
 
 If you're building browser extensions and feeling the pain of managing multiple billing systems, consider whether a chrome extension bundle monetization approach could work for you. It changed everything for zovo.one.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Tab Sumper Pro Case Study](articles/tab-sumper-pro-case-study.md)
-- [Belikenative Case Study](articles/belikenative-case-study.md)
-- [Pricing Strategies](articles/pricing-strategies.md)

@@ -1,10 +1,8 @@
 ---
-title: "Complete Guide to Chrome Extension Analytics"
-description: "Implement analytics in your Chrome extension. Track events, user behavior, and key metrics."
-permalink: /docs/analytics/extension-analytics-complete-guide
 layout: default
+title: "Chrome Extension Extension Analytics Complete Guide"
+description: "# Complete Guide to Analytics for Chrome Extensions"
 ---
-
 # Complete Guide to Analytics for Chrome Extensions
 
 Data-driven decision making separates successful browser extensions from those that fade into obscurity. Understanding how users interact with your extension—what they use, what they ignore, and where they drop off—enables you to optimize every aspect of the product and business. This guide covers the technical implementation of analytics systems, privacy compliance, key metrics to track, and practical frameworks for turning data into growth.
@@ -205,13 +203,13 @@ For analytics implementation patterns, see the companion [Chrome Extension Guide
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Analytics Without Tracking](articles/analytics-without-tracking.md)
-- [Legal Essentials](articles/legal-essentials.md)
-- [Scaling Solo](articles/scaling-solo.md)

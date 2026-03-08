@@ -1,13 +1,8 @@
 ---
-
 layout: default
-title: "Sell Your Chrome Extension: Exit Strategies"
-description: "Sell your Chrome extension business. Find buyers, value your business, and close the deal."
-permalink: /articles/selling-your-extension/
-
+title: "Selling Your Chrome Extension"
+description: "Complete guide to selling your Chrome extension. Valuation, due diligence, and exit strategies for extension businesses."
 ---
-
-
 The Practical Guide to Selling a Chrome Extension on the Acquisition Market
 
 The extension acquisition market is more active than most developers realize. Extensions change hands regularly and buyers range from individual developers to private equity firms rolling up portfolios. Whether you sell or not, understanding the process makes you a better builder.
@@ -171,25 +166,11 @@ For technical implementation details on building your extension with transferabi
 The extension market is more active than you might think. Whether you ever sell or not, understanding this market makes you a better builder. Build something worth buying, and the options take care of themselves.
 
 ---
-
 ## Related Articles
 
-- [Subscription Model](articles/subscription-model.md)
-- [Freemium Model](articles/freemium-model.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
-
-
-## Related Articles
-
-- [Trial Implementation](articles/trial-implementation/)
-- [Freemium Model](articles/freemium-model/)
-- [Introduction](docs/getting-started/introduction/)
-
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
 
 ---

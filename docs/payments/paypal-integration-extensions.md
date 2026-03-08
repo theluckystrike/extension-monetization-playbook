@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "PayPal Integration for Chrome Extensions"
-description: "Add PayPal payments to your Chrome extension. Offer familiar payment options to your users."
-permalink: /docs/payments/paypal-integration-extensions/
+title: "Chrome Extension Paypal Integration Extensions"
+description: "# How to Integrate PayPal Payments in Chrome Extensions"
 ---
-
 # How to Integrate PayPal Payments in Chrome Extensions
 
 PayPal offers a compelling alternative to Stripe for Chrome extension developers seeking broader payment reach. With over 400 million active accounts worldwide, PayPal provides instant trust for international users who may hesitate to enter credit card information on unfamiliar websites. This guide covers the complete PayPal integration for Chrome extensions—from checkout session creation in your background service worker through webhook processing, license validation, and subscription management.
@@ -862,13 +860,6 @@ stripe trigger payment_intent.succeeded
 
 ---
 
-## Related Guides
-
-- [Stripe Integration Guide](/docs/payments/stripe-in-extensions/) — Complete Stripe integration for comparison
-- [Freemium Model](/docs/revenue/freemium-model/) — Feature gating and conversion optimization
-- [Chrome Web Store SEO](/docs/growth/chrome-web-store-seo/) — Organic growth strategies
-- [Extension Analytics Complete Guide](/docs/analytics/extension-analytics-complete-guide/) — Tracking and measuring everything
-
 ---
 
 ## Technical Resources
@@ -886,17 +877,13 @@ For code patterns, see the companion [Chrome Extension Guide](https://github.com
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+## Related Articles
 
----
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
-Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Stripe In Extensions](articles/stripe-in-extensions.md)
-- [Payment Integration Overview](articles/payment-integration-overview.md)
-- [Chrome Web Store Payments](articles/chrome-web-store-payments.md)

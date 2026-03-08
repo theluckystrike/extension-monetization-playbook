@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Contribute to the Extension Monetization Playbook"
-description: "Contribute articles to the Extension Monetization Playbook. Share your Chrome extension monetization expertise."
+title: "Contributing to Extension Monetization Playbook"
+description: "How to contribute to the Extension Monetization Playbook. Guidelines for submitting articles and improving the guide."
 ---
 
 # Contributing to Extension Monetization Playbook
@@ -54,13 +54,13 @@ If you have questions about contributing, please open an issue in the repository
 ## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Index](index.md)
-- [Monetization Strategies Overview](articles/monetization-strategies-overview.md)
-- [Content Marketing](articles/content-marketing.md)

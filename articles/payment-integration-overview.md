@@ -1,13 +1,8 @@
 ---
-
 layout: default
-title: "Chrome Extension Payment Integration: Compare Providers"
-description: "Compare payment processors for Chrome extensions. Stripe, PayPal, Paddle, and Chrome Web Store payments."
-permalink: /articles/payment-integration-overview/
-
+title: "Chrome Extension Payment Integration Guide"
+description: "Overview of payment integration options for Chrome extensions. Stripe, PayPal, Paddle, and more."
 ---
-
-
 # Chrome Extension Payment Integration: Complete 2026 Guide
 
 Payment integration in Chrome extensions presents unique challenges that don't exist in traditional web applications. Unlike websites that can embed payment forms directly, browser extensions operate within the constraints of Content Security Policy, limited iframe support, and sandboxed environments. This guide covers everything you need to know about accepting payments in your Chrome extension, from choosing the right payment provider to implementing secure server-side validation.
@@ -76,16 +71,6 @@ The Chrome extension itself contains the user interface for displaying subscript
 
 Background service workers in Manifest V3 handle asynchronous tasks like checking subscription status periodically, processing webhook notifications (if supported), and synchronizing state across extension contexts. This ensures premium features remain accessible even when users aren't actively interacting with your extension.
 
-## Related Implementation Guides
-
-This overview touches on concepts covered in detail in our other guides:
-
-- [Stripe in Extensions](/articles/stripe-in-extensions/) — Complete implementation guide for Stripe Checkout integration
-- [License Key System](/articles/license-key-system/) — Implementing license keys for one-time purchases
-- [Server-Side Validation](/articles/server-side-validation/) — Securing your extension's backend payment validation
-- [Paywall Patterns](/articles/paywall-patterns/) — Designing effective upgrade prompts and premium feature gating
-- [Chrome Web Store Payments](/articles/chrome-web-store-payments/) — Using Google's native payment system
-
 ---
 
 ## Technical Implementation
@@ -100,25 +85,11 @@ For the code behind these strategies, see the companion [Chrome Extension Guide]
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
-
 ## Related Articles
 
-- [Chrome Web Store Payments](articles/chrome-web-store-payments.md)
-- [Stripe In Extensions](articles/stripe-in-extensions.md)
-- [Handling Refunds](articles/handling-refunds.md)
-
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
-
-
-## Related Articles
-
-- [Paywall Patterns](articles/paywall-patterns/)
-- [Paypal Integration Extensions](docs/payments/paypal-integration-extensions/)
-- [Stripe In Extensions](docs/payments/stripe-in-extensions/)
-
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
 
 
 ---

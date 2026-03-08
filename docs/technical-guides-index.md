@@ -1,10 +1,8 @@
 ---
 layout: default
-title: "Chrome Extension Technical Guides"
-description: "Technical guides for Chrome extension development. Implementation resources and best practices."
-permalink: /technical-guides-index/
+title: "Chrome Extension Technical Guides Index"
+description: "# Technical Implementation Guides for Extension Monetization"
 ---
-
 # Technical Implementation Guides for Extension Monetization
 
 Every monetization strategy requires specific technical capabilities. A freemium model needs feature gating logic and storage management. Subscriptions demand payment integration and webhook handling. License key systems need server-side validation and tamper-resistant caching. This page maps each monetization model to the exact Chrome APIs and implementation guides you need from the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/).
@@ -153,13 +151,13 @@ Get a head start with production-ready project templates that include monetizati
 ---
 
 *Built by [theluckystrike](https://github.com/theluckystrike) at [Zovo](https://zovo.one). Open-source monetization guides and tools for Chrome extension developers. Visit [zovo.one](https://zovo.one) to explore starter templates, production extensions, and the complete developer resource ecosystem.*
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Technical Implementation Links](articles/technical-implementation-links.md)
-- [Server Side Validation](articles/server-side-validation.md)
-- [Stripe In Extensions](articles/stripe-in-extensions.md)

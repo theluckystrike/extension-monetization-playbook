@@ -1,13 +1,8 @@
 ---
-title: "Getting Started with Chrome Extension Monetization"
-description: "Introduction to monetizing Chrome extensions. Choose your revenue model and start earning."
-permalink: /getting-started-with-extension-monetization
 layout: default
-title: "Getting Started with Chrome Extension Monetization"
-description: "Introduction to monetizing Chrome extensions. Choose your revenue model and start earning."
-permalink: /docs/getting-started/
+title: "Chrome Extension Introduction"
+description: "Welcome to the Extension Monetization Playbook. This guide distills lessons learned from building and monetizing 17 browser extensions across the Chrome We"
 ---
-
 Welcome to the Extension Monetization Playbook! This guide distills lessons learned from building and monetizing 17 browser extensions across the Chrome Web Store. The strategies here come from real experience, not theory—every recommendation has been tested with actual users and revenue.
 
 Whether you are launching your first extension or looking to improve an existing one, this playbook will help you build a sustainable business.
@@ -117,13 +112,13 @@ For code patterns, see the companion [Chrome Extension Guide](https://github.com
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
+- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+
 
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Monetization Strategies Overview](articles/monetization-strategies-overview.md)
-- [Pricing Strategies](articles/pricing-strategies.md)
-- [Zero To 1000 Users](articles/zero-to-1000-users.md)
