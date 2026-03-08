@@ -5,50 +5,230 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  {% seo %}
-  {% if page.title %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{{ page.title }}",
-    "description": "{{ page.description }}",
-    "author": {
-      "@type": "Person",
-      "name": "theluckystrike"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zovo.one"
-    },
-    "url": "{{ page.url | absolute_url }}"
-  }
-  </script>
-  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 280px;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #00d9ff;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #333;
+    }
+    
+    .sidebar h3 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin: 1.5rem 0 0.75rem;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      padding: 0.5rem 0;
+      font-size: 0.95rem;
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    
+    .sidebar a:hover {
+      color: #00d9ff;
+      padding-left: 0.5rem;
+    }
+    
+    /* Mobile menu toggle */
+    .menu-toggle {
+      display: none;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1001;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      margin-left: 280px;
+      padding: 3rem;
+      max-width: 900px;
+    }
+    
+    .main-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1a1a2e;
+    }
+    
+    .main-content h2 {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #1a1a2e;
+    }
+    
+    .main-content h3 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #333;
+    }
+    
+    .main-content p {
+      margin-bottom: 1rem;
+    }
+    
+    .main-content ul, .main-content ol {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+    
+    .main-content li {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    footer a {
+      color: #00d9ff;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      
+      .sidebar.active {
+        transform: translateX(0);
+      }
+      
+      .main-content {
+        margin-left: 0;
+        padding: 4rem 1.5rem 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('active')">☰ Menu</button>
+  
   <div class="container">
     <nav class="sidebar">
-      <div class="site-title">
-        <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="{{ "/" | relative_url }}">Home</a></li>
-        <li><a href="{{ "/articles/" | relative_url }}">Articles</a></li>
-        <li><a href="https://zovo.one">zovo.one</a></li>
-        <li><a href="https://zovo.one/extensions/tab-suspender-pro">Tab Suspender Pro</a></li>
-      </ul>
+      <h2>{{ site.title }}</h2>
+      
+      <h3>Revenue Models</h3>
+      <a href="#freemium">Freemium Model</a>
+      <a href="#subscription">Subscription</a>
+      <a href="#one-time">One-Time Purchase</a>
+      <a href="#ads">Ad-Supported</a>
+      <a href="#affiliate">Affiliate Marketing</a>
+      <a href="#licensing">Enterprise Licensing</a>
+      
+      <h3>Payments</h3>
+      <a href="#stripe">Stripe Integration</a>
+      <a href="#paddle">Paddle Setup</a>
+      <a href="#paypal">PayPal</a>
+      <a href="#currency">Multi-Currency</a>
+      <a href="#tax">Tax Handling</a>
+      <a href="#refunds">Refund Policy</a>
+      
+      <h3>Growth</h3>
+      <a href="#seo">SEO Strategy</a>
+      <a href="#reviews">Review Management</a>
+      <a href="#social">Social Proof</a>
+      <a href="#email">Email Marketing</a>
+      <a href="#content">Content Marketing</a>
+      <a href="#partnerships">Partnerships</a>
+      
+      <h3>Analytics</h3>
+      <a href="#tracking">Event Tracking</a>
+      <a href="#metrics">Key Metrics</a>
+      <a href="#conversion">Conversion Funnel</a>
+      <a href="#retention">Retention Analysis</a>
+      <a href="#reporting">Reporting Dashboard</a>
+      <a href="#optimization">A/B Testing</a>
+      
+      <h3>Additional</h3>
+      <a href="#pricing">Pricing Strategy</a>
+      <a href="#launch">Launch Checklist</a>
+      <a href="#legal">Legal Compliance</a>
     </nav>
     
-    <main class="content">
+    <main class="main-content">
       {{ content }}
+      
+      <footer>
+        <p>Built by <strong>the luckystrike</strong> at <a href="https://zovo.one">zovo.one</a> | Chrome Extension Development Services</p>
+      </footer>
     </main>
   </div>
   
-  <footer class="site-footer">
-    <p>{{ site.footer }}</p>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-  </footer>
+  <script>
+    // Close sidebar when clicking outside on mobile
+    document.addEventListener('click', function(e) {
+      const sidebar = document.querySelector('.sidebar');
+      const toggle = document.querySelector('.menu-toggle');
+      if (window.innerWidth <= 768) {
+        if (!sidebar.contains(e.target) && !toggle.contains(e.target)) {
+          sidebar.classList.remove('active');
+        }
+      }
+    });
+  </script>
 </body>
 </html>
