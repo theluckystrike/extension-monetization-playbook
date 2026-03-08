@@ -1,12 +1,9 @@
-# Pricing Strategies for Chrome Extensions
 ---
 title: "Pricing Strategies for Chrome Extensions"
 description: "Pricing is the single hardest decision for extension developers. Most indie developers underprice out of fear that nobody will pay. I understand the discomfort."
 permalink: /pricing-strategies-for-chrome-extensions
 layout: default
 ---
-
-
 
 Pricing is the single hardest decision for extension developers. Most indie developers underprice out of fear that nobody will pay. I understand the discomfort. I have been there myself. This article distills lessons learned from pricing 17 extensions across the Chrome Web Store. The goal is not just to maximize revenue, but to build a sustainable business with users who value your work.
 

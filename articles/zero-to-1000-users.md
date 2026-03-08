@@ -1,12 +1,9 @@
-Getting Your First 1000 Extension Users
 ---
 title: "Getting Your First 1000 Extension Users"
 description: "The first 1,000 users are the hardest. After that threshold, the Chrome Web Store algorithm starts doing some of the work for you. Before that, you are pushing "
 permalink: /getting-your-first-1000-extension-users
 layout: default
 ---
-
-
 
 The first 1,000 users are the hardest. After that threshold, the Chrome Web Store algorithm starts doing some of the work for you. Before that, you are pushing a boulder uphill with no leverage. This is the playbook used across 17 extensions at zovo.one.
 

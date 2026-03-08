@@ -1,12 +1,9 @@
-One-Time Purchase Model for Chrome Extensions
 ---
 title: "One-Time Purchase Model for Chrome Extensions"
 description: "The appeal of one-time purchases is obvious from a user perspective. Pay once, own forever. No monthly fees, no recurring charges, no surprise renewals. Users l"
 permalink: /one-time-purchase-model-for-chrome-extensions
 layout: default
 ---
-
-
 
 The appeal of one-time purchases is obvious from a user perspective. Pay once, own forever. No monthly fees, no recurring charges, no surprise renewals. Users love that simplicity. They get a tool that works, they pay for it, and they move on with their lives.
 

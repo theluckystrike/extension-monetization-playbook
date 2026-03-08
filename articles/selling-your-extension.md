@@ -1,12 +1,9 @@
-The Practical Guide to Selling a Chrome Extension on the Acquisition Market
 ---
 title: "The Practical Guide to Selling a Chrome Extension on the Acquisition Market"
 description: "The extension acquisition market is more active than most developers realize. Extensions change hands regularly and buyers range from individual developers to p"
 permalink: /the-practical-guide-to-selling-a-chrome-extension-on-the-acquisition-market
 layout: default
 ---
-
-
 
 The extension acquisition market is more active than most developers realize. Extensions change hands regularly and buyers range from individual developers to private equity firms rolling up portfolios. Whether you sell or not, understanding the process makes you a better builder.
 

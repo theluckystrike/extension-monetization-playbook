@@ -1,12 +1,9 @@
-Earning and Maintaining Chrome Web Store Reviews
 ---
 title: "Earning and Maintaining Chrome Web Store Reviews"
 description: "Reviews are the lifeblood of Chrome Web Store growth. Both volume and quality matter. An extension with 50 reviews at 4.5 stars outperforms one with 10 reviews "
 permalink: /earning-and-maintaining-chrome-web-store-reviews
 layout: default
 ---
-
-
 
 Reviews are the lifeblood of Chrome Web Store growth. Both volume and quality matter. An extension with 50 reviews at 4.5 stars outperforms one with 10 reviews at 5 stars in both ranking and user trust. Most developers either never ask for reviews or ask at the wrong time. Getting this right can single-handedly transform your extension's visibility and conversion rates.
 

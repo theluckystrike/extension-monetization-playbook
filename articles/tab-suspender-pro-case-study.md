@@ -1,12 +1,9 @@
-Tab Suspender Pro and Competing in a Crowded Market
 ---
 title: "Tab Suspender Pro and Competing in a Crowded Market"
 description: "I built Tab Suspender Pro to manage browser memory by suspending inactive tabs. It has 442 users. A smaller extension in the Zovo portfolio but one of the most "
 permalink: /tab-suspender-pro-and-competing-in-a-crowded-market
 layout: default
 ---
-
-
 
 I built Tab Suspender Pro to manage browser memory by suspending inactive tabs. It has 442 users. A smaller extension in the Zovo portfolio but one of the most instructive for anyone thinking about competing in a crowded category.
 

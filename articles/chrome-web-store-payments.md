@@ -1,12 +1,9 @@
-The Current State of Chrome Web Store Payments
 ---
 title: "The Current State of Chrome Web Store Payments"
 description: "The chrome.payments API was deprecated in 2020. Google has not shipped a replacement. If you are building a paid Chrome extension today, you are on your own for"
 permalink: /the-current-state-of-chrome-web-store-payments
 layout: default
 ---
-
-
 
 The chrome.payments API was deprecated in 2020. Google has not shipped a replacement. If you are building a paid Chrome extension today, you are on your own for payments. This is not a temporary gap. It has been years and there is no official timeline for anything new.
 

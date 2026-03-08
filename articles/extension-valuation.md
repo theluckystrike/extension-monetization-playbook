@@ -1,12 +1,9 @@
-How Chrome Extensions Are Valued as Real Businesses in the Acquisition Market
 ---
 title: "How Chrome Extensions Are Valued as Real Businesses in the Acquisition Market"
 description: "Chrome extensions are real businesses that can be valued, bought, and sold. Most indie developers never think about what their extension is worth, but there is "
 permalink: /how-chrome-extensions-are-valued-as-real-businesses-in-the-acquisition-market
 layout: default
 ---
-
-
 
 Chrome extensions are real businesses that can be valued, bought, and sold. Most indie developers never think about what their extension is worth, but there is an active acquisition market and understanding valuation helps you make better decisions even if you never sell. The ecosystem has matured significantly, and strategic buyers along with financial investors are actively looking for extensions to acquire. Whether you built your extension as a side project or a full-time venture, knowing its potential value gives you options. The market for buying and selling Chrome extensions has grown substantially over the past few years, with dedicated platforms emerging to facilitate transactions between buyers and sellers. This professionalization of the market means that extensions are now treated as legitimate business assets with established valuation frameworks.
 

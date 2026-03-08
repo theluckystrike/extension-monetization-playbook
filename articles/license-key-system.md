@@ -1,12 +1,9 @@
-License Keys for Chrome Extensions
 ---
 title: "License Keys for Chrome Extensions"
 description: "If you are building a Chrome extension and want to charge for premium features, license keys are the simplest path forward. Skip the login screen. Skip OAuth. S"
 permalink: /license-keys-for-chrome-extensions
 layout: default
 ---
-
-
 
 If you are building a Chrome extension and want to charge for premium features, license keys are the simplest path forward. Skip the login screen. Skip OAuth. Skip password resets and account recovery emails. The user buys, receives a key, enters it in your extension, and premium unlocks instantly.
 
