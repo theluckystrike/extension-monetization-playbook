@@ -151,3 +151,16 @@ Need help building the technical foundation for your Chrome Web Store extension?
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+## Related Articles
+
+- [Zero to 1000 Users](/articles/zero-to-1000-users/) — Early stage growth tactics
+- [Review Acquisition](/articles/review-acquisition/) — Building social proof
+- [Content Marketing](/articles/content-marketing/) — Organic traffic strategies
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

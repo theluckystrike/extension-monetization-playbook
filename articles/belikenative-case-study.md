@@ -125,3 +125,16 @@ This is just the beginning. The problem BeLikeNative solves isn't going away. If
 The team has grown from just me to several contributors. BeLikeNative taught us how to build, launch, and iterate on browser extensions. Those lessons apply to every new project.
 
 I'm building for them. And I'm just getting started.
+
+
+---
+
+## Related Articles
+
+- [Zovo Bundle Case Study](/articles/zovo-bundle-case-study/) — How bundling created $40K/month
+- [Pricing Strategies](/articles/pricing-strategies/) — Data-driven pricing guide
+- [Subscription Model](/articles/subscription-model/) — Recurring revenue strategies
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

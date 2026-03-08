@@ -99,3 +99,8 @@ Complete your monetization strategy with these essential guides.
 Choose a category above to dive deep into the strategy that matters most for your extension. Each article provides actionable insights, best practices, and real-world examples from successful Chrome extension developers.
 
 **Ready to monetize?** Start with our [Freemium Model](/articles/freemium-model) guide if you're just beginning, or jump to [Pricing Strategy](/articles/pricing-strategy) if you're ready to optimize your revenue.
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

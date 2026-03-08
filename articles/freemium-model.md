@@ -728,3 +728,8 @@ For more monetization strategies, see:
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -607,3 +607,16 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+## Related Articles
+
+- [Subscription Model](/articles/subscription-model/) — Recurring revenue
+- [Pricing Strategies](/articles/pricing-strategies/) — Data-driven pricing
+- [Paywall Patterns](/articles/paywall-patterns/) — Premium gating
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

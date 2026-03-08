@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Extension Monetization Playbook: Complete Guide"
+description: "A practical guide for monetizing browser extensions effectively with proven strategies from real-world case studies."
+---
+
 # Extension Monetization Playbook
 
 > A实战指南 for monetizing browser extensions effectively. Proven strategies from real-world case studies.
@@ -117,3 +123,8 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 *Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one)*
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

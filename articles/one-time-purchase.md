@@ -158,3 +158,8 @@ Need help building the technical foundation for your one-time purchase extension
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

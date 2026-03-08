@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Contributing to Extension Monetization Playbook"
+description: "Learn how to contribute new articles and resources to the Extension Monetization Playbook."
+---
+
 # Contributing to Extension Monetization Playbook
 
 Thank you for your interest in contributing to the Extension Monetization Playbook!
@@ -48,3 +54,8 @@ If you have questions about contributing, please open an issue in the repository
 ## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

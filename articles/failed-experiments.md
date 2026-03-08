@@ -103,3 +103,8 @@ Need help building the technical foundation for experimentation? The [Chrome Ext
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -44,7 +44,7 @@ We have A/B tested this extensively across our extensions. At four dollars month
 
 Implementing the Trial Timer
 
-Store the trial start date in [chrome.storage.sync](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) rather than chrome.storage.local. This ensures the trial state follows the user across devices. Someone might start a trial on their work computer and want to continue evaluation at home. Local storage would break this experience and create confusion about remaining time.
+Store the trial start date in chrome.storage.sync rather than chrome.storage.local. This ensures the trial state follows the user across devices. Someone might start a trial on their work computer and want to continue evaluation at home. Local storage would break this experience and create confusion about remaining time.
 
 Chrome.storage.sync has a storage limit of about one hundred kilobytes. Storing a timestamp uses a few bytes, so you have plenty of room. The sync behavior is the key benefit here. Users expect their data and preferences to follow them between devices.
 
@@ -166,28 +166,13 @@ This strategy has been our primary conversion method for over two years. We have
 
 The key to successful chrome extension free trial implementation lies in balancing user experience with business needs. When done correctly, trials become a powerful growth engine for your extension. Focus on letting users experience your product's value completely, then make conversion effortless. The numbers will follow.
 
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model/) — Balance free and paid features to maximize user acquisition
+- [Paywall Patterns](/articles/paywall-patterns/) — Premium gating strategies that convert
+- [Pricing Strategies](/articles/pricing-strategies/) — Data-driven pricing for maximum revenue
+
+
 ---
 
-## Technical Deep Dive
-
-For implementing trials in your extension, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
-
-### Storage & State Management
-- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Store trial state across sessions
-- [Storage Sync vs Local](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage-api-tutorial-sync-vs-local/) — When to use sync vs local storage
-- [Chrome Storage Sync Strategies](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-storage-sync-strategies/) — Cross-device state sync
-
-### Background Processing
-- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handle trial validation in background
-- [Alarms API](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-api/) — Schedule periodic trial checks
-- [Alarms Background Tasks](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-background-tasks/) — Scheduled validation
-
-### Authentication
-- [OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — Google identity verification
-- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md) — User identity management
-
-### Related Articles
-- [Server-Side Validation](articles/server-side-validation.md) — Secure trial validation
-- [License Key System](articles/license-key-system.md) — License activation after trial conversion
-
-All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

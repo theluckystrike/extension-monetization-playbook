@@ -890,3 +890,16 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+## Related Articles
+
+- [Stripe in Extensions](/docs/payments/stripe-in-extensions/) — Stripe payment setup
+- [Handling Refunds](/articles/handling-refunds/) — Refund policy best practices
+- [Chrome Web Store Payments](/articles/chrome-web-store-payments/) — Payment alternatives
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

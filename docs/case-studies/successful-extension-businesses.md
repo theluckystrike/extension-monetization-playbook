@@ -398,3 +398,16 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 ---
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
+
+
+---
+
+## Related Articles
+
+- [Zovo Bundle Case Study](/articles/zovo-bundle-case-study/) — Bundle monetization
+- [BelikeNative Case Study](/articles/belikenative-case-study/) — B2B approach
+- [Tab Suspender Pro Case Study](/articles/tab-suspender-pro-case-study/) — Market competition
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

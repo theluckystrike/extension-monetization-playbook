@@ -117,3 +117,16 @@ For code patterns, see the companion [Chrome Extension Guide](https://github.com
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+
+
+---
+
+## Related Articles
+
+- [Monetization Strategies Overview](/articles/monetization-strategies-overview/) — Choose your model
+- [Pricing Strategies](/articles/pricing-strategies/) — Data-driven pricing
+- [Zero to 1000 Users](/articles/zero-to-1000-users/) — Early stage growth
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -205,3 +205,16 @@ For analytics implementation patterns, see the companion [Chrome Extension Guide
 - [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
+
+
+---
+
+## Related Articles
+
+- [Analytics Without Tracking](/articles/analytics-without-tracking/) — Privacy-respecting analytics
+- [Server-Side Validation](/articles/server-side-validation/) — Secure data handling
+- [Extension Valuation](/articles/extension-valuation/) — Measuring business value
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

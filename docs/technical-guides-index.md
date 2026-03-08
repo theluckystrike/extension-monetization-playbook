@@ -153,3 +153,16 @@ Get a head start with production-ready project templates that include monetizati
 ---
 
 *Built by [theluckystrike](https://github.com/theluckystrike) at [Zovo](https://zovo.one). Open-source monetization guides and tools for Chrome extension developers. Visit [zovo.one](https://zovo.one) to explore starter templates, production extensions, and the complete developer resource ecosystem.*
+
+
+---
+
+## Related Articles
+
+- [Freemium Model](/articles/freemium-model/) — Implementation guide
+- [Subscription Model](/articles/subscription-model/) — Recurring revenue
+- [License Key System](/articles/license-key-system/) — Payment integration
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
