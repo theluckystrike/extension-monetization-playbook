@@ -1,0 +1,97 @@
+# Navigation structure for Extension Monetization Playbook
+
+main:
+  - title: "Home"
+    url: /
+  - title: "Getting Started"
+    url: /docs/getting-started/introduction.html
+  - title: "Growth Playbook"
+    url: /articles/growth-playbook-overview.html
+
+monetization:
+  - title: "Monetization Strategies Overview"
+    url: /articles/monetization-strategies-overview.html
+  - title: "Subscription Model"
+    url: /articles/subscription-model.html
+  - title: "Freemium Model"
+    url: /articles/freemium-model.html
+  - title: "One-Time Purchase"
+    url: /articles/one-time-purchase.html
+  - title: "Affiliate Model"
+    url: /articles/affiliate-model.html
+  - title: "Sponsorship Model"
+    url: /articles/sponsorship-model.html
+  - title: "Extension as a Service"
+    url: /articles/extension-as-a-service.html
+
+payments:
+  - title: "Payment Integration Overview"
+    url: /articles/payment-integration-overview.html
+  - title: "Stripe in Extensions"
+    url: /articles/stripe-in-extensions.html
+  - title: "Chrome Web Store Payments"
+    url: /articles/chrome-web-store-payments.html
+  - title: "License Key System"
+    url: /articles/license-key-system.html
+  - title: "Server-Side Validation"
+    url: /articles/server-side-validation.html
+  - title: "Trial Implementation"
+    url: /articles/trial-implementation.html
+  - title: "Handling Refunds"
+    url: /articles/handling-refunds.html
+
+pricing:
+  - title: "Pricing Strategies"
+    url: /articles/pricing-strategies.html
+  - title: "Paywall Patterns"
+    url: /articles/paywall-patterns.html
+
+growth:
+  - title: "Zero to 1000 Users"
+    url: /articles/zero-to-1000-users.html
+  - title: "Scaling Solo"
+    url: /articles/scaling-solo.html
+  - title: "Content Marketing"
+    url: /articles/content-marketing.html
+  - title: "Community Building"
+    url: /articles/community-building.html
+  - title: "Cross-Promotion"
+    url: /articles/cross-promotion.html
+  - title: "Review Acquisition"
+    url: /articles/review-acquisition.html
+
+marketing:
+  - title: "Chrome Web Store SEO"
+    url: /articles/chrome-web-store-seo.html
+  - title: "Analytics Without Tracking"
+    url: /articles/analytics-without-tracking.html
+  - title: "Update Monetization"
+    url: /articles/update-monetization.html
+
+case_studies:
+  - title: "Case Studies Overview"
+    url: /articles/case-studies-overview.html
+  - title: "BelikeNative Case Study"
+    url: /articles/belikenative-case-study.html
+  - title: "Tab Suspender Pro Case Study"
+    url: /articles/tab-suspender-pro-case-study.html
+  - title: "Zovo Bundle Case Study"
+    url: /articles/zovo-bundle-case-study.html
+
+advanced:
+  - title: "Legal Essentials"
+    url: /articles/legal-essentials.html
+  - title: "Extension Valuation"
+    url: /articles/extension-valuation.html
+  - title: "Selling Your Extension"
+    url: /articles/selling-your-extension.html
+  - title: "Failed Experiments"
+    url: /articles/failed-experiments.html
+
+resources:
+  - title: "Technical Implementation Links"
+    url: /articles/technical-implementation-links.html
+  - title: "README: Webext DNS"
+    url: /resources/improved-readmes/webext-dns.html
+  - title: "Contributing"
+    url: /contributing.html
