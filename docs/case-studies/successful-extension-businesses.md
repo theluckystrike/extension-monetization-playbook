@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chrome Extension Successful Extension Businesses"
-description: "Discover 10 Chrome extensions making $10K+/month. Revenue models, growth strategies, and lessons learned."
+description: "Discover 10 Chrome extensions earning $10K+/month. Revenue models, growth strategies, and lessons from successful extension businesses."
 ---
 # 10 Chrome Extensions Making $10K+/Month
 
