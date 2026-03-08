@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Chrome Web Store Payments: What Replaced Google's Deprecated API"
 description: "Google deprecated Chrome Web Store payments in 2020 with no replacement. Learn the current best practices for accepting payments in Chrome extensions using Stripe and alternatives."
 permalink: /articles/chrome-web-store-payments/
+
 ---
+
 
 The Current State of Chrome Web Store Payments
 

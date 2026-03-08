@@ -1,4 +1,5 @@
 ---
+
 layout: article
 title: "Paywall Patterns for Chrome Extensions: UX That Converts"
 description: "Design effective paywalls for browser extensions. Learn soft vs hard paywall patterns, modal design, and UX strategies that maximize conversions."
@@ -8,7 +9,9 @@ categories: [design, monetization]
 tags: [paywall, ux-design, conversion-optimization, chrome-extensions, paywall-patterns]
 author: theluckystrike
 canonical_url: "https://extensionmonetization.com/articles/paywall-patterns"
+
 ---
+
 
 Paywalls in Chrome extensions are fundamentally different from what you see on the web or mobile apps. I learned this the hard way after several failed attempts to port web monetization strategies into extensions. The popup is tiny, the user's attention span is measured in milliseconds, and they came for a specific task, not to make a purchasing decision. Everything changes when you accept this constraint.
 
@@ -243,15 +246,12 @@ The best paywall is one the user does not notice until they are ready. It fits i
 
 The key to successful extension paywall design is respecting user intelligence and demonstrating value before asking for payment. Extension users are task-focused and skeptical of manipulation. Meet them where they are, show them what your extension can do, and make the upgrade path natural and compelling.
 
-
 ---
+
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Freemium Model](/articles/freemium-model/) — Free to paid conversion strategies
-- [Trial Implementation](/articles/trial-implementation/) — Free trial best practices
-- [Pricing Strategies](/articles/pricing-strategies/) — Data-driven pricing
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+- [Freemium Model](articles/freemium-model.md)
+- [Trial Implementation](articles/trial-implementation.md)
+- [Subscription Model](articles/subscription-model.md)

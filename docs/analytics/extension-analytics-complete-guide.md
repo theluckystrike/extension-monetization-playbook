@@ -1,9 +1,12 @@
 ---
+
 title: "Complete Guide to Analytics for Chrome Extensions"
 description: "Learn how to implement analytics in Chrome extensions with GA4, Mixpanel, and custom solutions. Master privacy-compliant tracking, key metrics, funnel analysis, A/B testing, and attribution for sustainable extension growth."
 permalink: /docs/analytics/extension-analytics-complete-guide
 layout: default
+
 ---
+
 
 # Complete Guide to Analytics for Chrome Extensions
 
@@ -206,15 +209,12 @@ For analytics implementation patterns, see the companion [Chrome Extension Guide
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
-
 ---
+
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Analytics Without Tracking](/articles/analytics-without-tracking/) — Privacy-respecting analytics
-- [Server-Side Validation](/articles/server-side-validation/) — Secure data handling
-- [Extension Valuation](/articles/extension-valuation/) — Measuring business value
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+- [Analytics Without Tracking](articles/analytics-without-tracking.md)
+- [Stripe In Extensions](articles/stripe-in-extensions.md)
+- [Server Side Validation](articles/server-side-validation.md)

@@ -1,4 +1,5 @@
 ---
+
 title: "Getting Started with Extension Monetization"
 description: "Welcome to the Extension Monetization Playbook! This comprehensive guide covers everything you need to monetize your browser extension effectively—from choosing the right model to scaling to thousands of paying users."
 permalink: /getting-started-with-extension-monetization
@@ -6,7 +7,9 @@ layout: default
 title: "Getting Started with Extension Monetization"
 description: "Introduction to the Extension Monetization Playbook — learn proven strategies to make money from Chrome extensions."
 permalink: /docs/getting-started/
+
 ---
+
 
 Welcome to the Extension Monetization Playbook! This guide distills lessons learned from building and monetizing 17 browser extensions across the Chrome Web Store. The strategies here come from real experience, not theory—every recommendation has been tested with actual users and revenue.
 
@@ -118,15 +121,12 @@ For code patterns, see the companion [Chrome Extension Guide](https://github.com
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
-
 ---
+
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Monetization Strategies Overview](/articles/monetization-strategies-overview/) — Choose your model
-- [Pricing Strategies](/articles/pricing-strategies/) — Data-driven pricing
-- [Zero to 1000 Users](/articles/zero-to-1000-users/) — Early stage growth
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+- [Monetization Strategies Overview](articles/monetization-strategies-overview.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+- [Freemium Model](articles/freemium-model.md)

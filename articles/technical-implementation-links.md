@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Chrome Extension Monetization: Technical Implementation Guide"
 description: "Technical reference linking every monetization strategy to implementation guides. Payment integration, license gating, analytics, growth tools, and starter templates."
 permalink: /articles/technical-implementation-links/
+
 ---
+
 
 # Technical Implementation Reference
 

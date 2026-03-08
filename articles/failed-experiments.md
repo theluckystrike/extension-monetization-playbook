@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "9 Failed Chrome Extension Monetization Experiments"
 description: "Real data from failed monetization experiments: ads, donation buttons, tiered pricing, and more. What not to do when selling Chrome extensions."
 permalink: /articles/failed-experiments/
+
 ---
+
 
 Most monetization ideas fail. I have tried enough of them to know. Running 17 Chrome extensions with over 4,000 users means you have plenty of chances to get it wrong. The difference between a struggling extension studio and a profitable one is not finding the perfect strategy on the first try. It is eliminating the bad ideas quickly so you can focus on what actually works.
 
@@ -104,7 +107,6 @@ Need help building the technical foundation for experimentation? The [Chrome Ext
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
-
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*

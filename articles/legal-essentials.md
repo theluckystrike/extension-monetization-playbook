@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Legal Essentials for Chrome Extension Developers"
 description: "Privacy policies, terms of service, GDPR compliance, business structure, and tax guidance for Chrome extension developers who monetize their extensions."
 permalink: /articles/legal-essentials/
+
 ---
+
 
 Legal Essentials for Chrome Extension Developers
 

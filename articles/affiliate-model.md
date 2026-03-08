@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Affiliate Revenue for Browser Extensions"
 description: "Learn how to add affiliate revenue to your Chrome extension without alienating users. Covers program selection, implementation, compliance, and realistic income expectations."
 permalink: /articles/affiliate-model/
+
 ---
+
 
 Affiliate Revenue for Browser Extensions
 

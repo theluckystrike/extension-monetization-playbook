@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Chrome Extension Payment Integration: Complete 2026 Guide"
 description: "How to accept payments in Chrome extensions. Stripe, license keys, server validation, and paywall patterns explained."
 permalink: /articles/payment-integration-overview/
+
 ---
+
 
 # Chrome Extension Payment Integration: Complete 2026 Guide
 

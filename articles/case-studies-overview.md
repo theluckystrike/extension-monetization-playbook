@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Chrome Extension Case Studies: Real Revenue & Growth Data"
 description: "Real-world case studies of Chrome extension businesses. Revenue numbers, growth tactics, and lessons learned from solo developers."
 permalink: /articles/case-studies-overview/
+
 ---
+
 
 # Chrome Extension Case Studies: Real Revenue & Growth Data
 

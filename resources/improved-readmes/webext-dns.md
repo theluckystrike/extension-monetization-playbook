@@ -1,9 +1,8 @@
 ---
 layout: default
-title: "webext-dns: TypeScript DNS API Wrapper for Chrome Extensions"
-description: "A TypeScript wrapper for the Chrome DNS API providing type-safe DNS resolution in Chrome extensions."
+title: "Chrome Extension DNS API: TypeScript Wrapper Guide"
+description: "TypeScript wrapper for Chrome DNS API. Clean interface for DNS resolution in Chrome extensions with code examples."
 ---
-
 # webext-dns - Polished README
 
 ## Overview
@@ -174,7 +173,12 @@ MIT
 
 *This README was rewritten from source code to provide comprehensive documentation.*
 
-
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
+
+## Related Articles
+
+- [Server Side Validation](articles/server-side-validation.md)
+- [Technical Implementation Links](articles/technical-implementation-links.md)
+- [Technical Guides Index](docs/technical-guides-index.md)

@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Privacy-First Analytics for Chrome Extensions"
 description: "Get actionable product analytics without invasive user tracking. Privacy-friendly tools, custom event tracking, and ethical data collection for Chrome extension developers."
 permalink: /articles/analytics-without-tracking/
+
 ---
+
 
 Getting Useful Product Analytics Without Invasive User Tracking
 

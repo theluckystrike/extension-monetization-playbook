@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Extension as a Service: SaaS Model for Chrome Extensions"
 description: "Turn your Chrome extension into a SaaS business with recurring revenue. Architecture patterns, pricing strategies, and hybrid monetization for extension developers."
 permalink: /articles/extension-as-a-service/
+
 ---
+
 
 Treating your browser extension like SaaS is the mental shift that unlocks real revenue. Instead of thinking of the extension as the product, recognize that the extension is just the client. The backend is the product. The moment you make this switch, everything changes.
 

@@ -1,4 +1,5 @@
 ---
+
 layout: article
 title: "License Key System for Chrome Extensions: Implementation Guide"
 description: "Build a robust license key system for your Chrome extension. Key generation, validation, activation limits, and anti-piracy strategies."
@@ -8,7 +9,9 @@ categories: [technical, licensing]
 tags: [license-key, drm, chrome-extensions, activation, anti-piracy, licensing]
 author: theluckystrike
 canonical_url: "https://extensionmonetization.com/articles/license-key-system"
+
 ---
+
 
 If you are building a Chrome extension and want to charge for premium features, license keys are the simplest path forward. Skip the login screen. Skip OAuth. Skip password resets and account recovery emails. The user buys, receives a key, enters it in your extension, and premium unlocks instantly.
 
@@ -82,7 +85,7 @@ When a user hits the device limit, show a clear message explaining how to deacti
 
 The device registration flow should be invisible to the user on first activation. Store the device fingerprint locally and send it with each validation request. When a new device attempts validation, increment the count and return the current device list so the extension can display it to the user if needed.
 
-For Chrome extensions, the profile ID is available through [chrome.storage](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) or by reading from the profile directory. Combine multiple signals like the profile path, machine name, and a generated salt to create a stable fingerprint. Be aware that clearing extension storage will require re-registration, so communicate this clearly to users.
+For Chrome extensions, the profile ID is available through chrome.storage or by reading from the profile directory. Combine multiple signals like the profile path, machine name, and a generated salt to create a stable fingerprint. Be aware that clearing extension storage will require re-registration, so communicate this clearly to users.
 
 ### Activation and Device Limiting Strategies
 
@@ -194,26 +197,12 @@ zovo.one tested both custom and third-party license systems across its 17 extens
 
 ---
 
-## Technical Deep Dive
+## Technical Implementation
 
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
 
-### Storage & Security
-- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Persist license status locally
-- [Storage Encryption Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md) — Secure local storage
-- [Advanced Storage Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/advanced-storage-patterns/) — Caching and sync strategies
-
-### Authentication & Validation
-- [Authentication Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — User identity management
-- [Message Passing Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Secure communication between components
-- [Fetch Interceptor](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-interceptor.md) — API request handling
-
-### Background Processing
-- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handle validation in background
-- [Alarms API](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-api/) — Schedule periodic license checks
-
-### Reference Implementation
-- [extension-license-gate](https://github.com/theluckystrike/extension-license-gate) — Complete license validation library
+- [extension-license-gate](https://github.com/theluckystrike/extension-license-gate)
+- [Storage Encryption](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
@@ -223,15 +212,12 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 **Need help monetizing your extension?** [Get in touch →](https://zovo.one)
 
-
 ---
+
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
-- [Stripe in Extensions](/articles/stripe-in-extensions/) — Payment processing setup
-- [Server-Side Validation](/articles/server-side-validation/) — Secure license validation
-- [Handling Refunds](/articles/handling-refunds/) — Refund policy best practices
-
----
-
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+- [Server Side Validation](articles/server-side-validation.md)
+- [Stripe In Extensions](articles/stripe-in-extensions.md)
+- [Payment Integration Overview](articles/payment-integration-overview.md)

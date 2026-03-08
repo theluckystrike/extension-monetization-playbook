@@ -1,9 +1,12 @@
 ---
+
 layout: default
 title: "Subscription Pricing for Browser Extensions: Complete Guide"
 description: "How to implement subscription pricing for Chrome extensions. Covers monthly vs annual plans, churn reduction, Stripe integration, and the hybrid pricing model."
 permalink: /articles/subscription-model/
+
 ---
+
 
 # Making Subscription Pricing Work for Browser Extensions
 
@@ -57,7 +60,7 @@ Technical Implementation
 
 Stripe handles recurring billing well for extensions. Set up Stripe Checkout for the initial purchase, then use Stripe Customer Portal for subscription management. Webhooks notify your backend of payment events, enabling you to sync subscription status with your user database.
 
-Use [chrome.storage.sync](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) to store subscription status locally and across devices. This keeps the extension fast by avoiding unnecessary API calls on every load. However, always validate subscription status server-side before granting access to premium features. Client-side storage can be manipulated by users who know how to edit browser storage.
+Use chrome.storage.sync to store subscription status locally and across devices. This keeps the extension fast by avoiding unnecessary API calls on every load. However, always validate subscription status server-side before granting access to premium features. Client-side storage can be manipulated by users who know how to edit browser storage.
 
 Server-side validation prevents tampering. When a user requests premium content or features, your backend verifies their subscription is active before responding. This validation should be lightweight. Cache the result for short periods to avoid slowing down requests.
 
@@ -185,28 +188,12 @@ Start with the fundamentals: clear pricing, reliable license validation, and tho
 
 ---
 
-## Technical Deep Dive
+## Technical Implementation
 
-For implementing subscriptions in your extension, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
 
-### Storage & State
-- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Persist subscription status
-- [Storage Sync vs Local](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage-api-tutorial-sync-vs-local/) — Cross-device sync
-- [Chrome Storage Sync Strategies](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-storage-sync-strategies/) — Sync strategies
-
-### Background Processing
-- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handle periodic validation
-- [Alarms API](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-api/) — Schedule license checks
-- [Alarms Background Tasks](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-background-tasks/) — Scheduled validation
-
-### Authentication
-- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md) — User identity
-- [OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — Google account integration
-- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow) — Reference implementation
-
-### Messaging & API
-- [Message Passing Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Component communication
-- [Fetch Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Server requests
+- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
+- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
@@ -237,7 +224,6 @@ Need help building the technical foundation for your subscription extension? The
 
 Built by [Zovo](https://zovo.one) - Open-source tools and guides for extension developers.
 
-
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+*Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at [zovo.one](https://zovo.one).*
