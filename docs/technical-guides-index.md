@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chrome Extension Technical Guides Index"
-description: "# Technical Implementation Guides for Extension Monetization"
+description: "Complete technical implementation guides for Chrome extension monetization. Storage, authentication, payments, and more."
 ---
 # Technical Implementation Guides for Extension Monetization
 

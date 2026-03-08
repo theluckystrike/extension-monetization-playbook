@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chrome Extension Paypal Integration Extensions"
-description: "# How to Integrate PayPal Payments in Chrome Extensions"
+description: "Learn how to integrate PayPal payments in Chrome extensions. Checkout, webhooks, and subscription setup."
 ---
 # How to Integrate PayPal Payments in Chrome Extensions
 

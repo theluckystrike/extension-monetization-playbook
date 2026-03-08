@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chrome Extension Extension Analytics Complete Guide"
-description: "# Complete Guide to Analytics for Chrome Extensions"
+description: "Complete guide to analytics for Chrome extensions. Metrics, privacy compliance, and data-driven growth."
 ---
 # Complete Guide to Analytics for Chrome Extensions
 

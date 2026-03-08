@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chrome Extension webext-dns - Polished README"
-description: "# webext-dns - Polished README"
+description: "Chrome Extension DNS API wrapper. TypeScript interface for DNS resolution in Chrome extensions."
 ---
 # webext-dns - Polished README
 

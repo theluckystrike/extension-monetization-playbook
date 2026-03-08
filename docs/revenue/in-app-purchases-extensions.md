@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Chrome Extension In App Purchases Extensions"
-description: "# In-App Purchases for Chrome Extensions: Complete Implementation Guide"
+description: "Complete guide to in-app purchases for Chrome extensions. Implementation, premium features, and monetization."
 ---
 # In-App Purchases for Chrome Extensions: Complete Implementation Guide
 
