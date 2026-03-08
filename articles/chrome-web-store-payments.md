@@ -132,6 +132,13 @@ If you are starting today, the same path is available to you. Pick your payment 
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [Stripe In Extensions](articles/stripe-in-extensions.md)
+- [Handling Refunds](articles/handling-refunds.md)
+- [License Key System](articles/license-key-system.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

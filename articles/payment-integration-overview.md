@@ -98,6 +98,13 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [Chrome Web Store Payments](articles/chrome-web-store-payments.md)
+- [Stripe In Extensions](articles/stripe-in-extensions.md)
+- [Handling Refunds](articles/handling-refunds.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

@@ -153,14 +153,6 @@ zovo.one tested both custom and third-party license systems across its 17 extens
 
 ---
 
-## Related Articles
-
-- [Server-Side Validation](/articles/server-side-validation/) — Learn how to build a secure validation backend
-- [Stripe in Extensions](/articles/stripe-in-extensions/) — Accept payments directly in your extension
-- [Paywall Patterns](/articles/paywall-patterns/) — Design effective premium gates for your extension
-
----
-
 ## Technical Implementation
 
 For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
@@ -172,6 +164,13 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [Server Side Validation](articles/server-side-validation.md)
+- [One Time Purchase](articles/one-time-purchase.md)
+- [Subscription Model](articles/subscription-model.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

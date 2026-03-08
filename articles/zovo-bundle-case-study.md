@@ -88,3 +88,16 @@ The bundle transforms what could be a collection of small revenue streams into s
 This approach isn't for everyone. It requires patience to build up a portfolio before launching the bundle. It demands quality across all your products since one weak link affects the whole brand. But for solo developers willing to play the long game, the bundle model offers a path to sustainable income that wouldn't exist otherwise.
 
 If you're building browser extensions and feeling the pain of managing multiple billing systems, consider whether a bundle model could work for you. It changed everything for zovo.one.
+
+---
+
+## Related Articles
+
+- [Tab Suspender Pro Case Study](articles/tab-suspender-pro-case-study.md)
+- [Belikenative Case Study](articles/belikenative-case-study.md)
+- [Subscription Model](articles/subscription-model.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

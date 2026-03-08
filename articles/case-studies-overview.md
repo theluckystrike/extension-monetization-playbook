@@ -129,3 +129,16 @@ Share your story with the Zovo team and help grow the collection of extension ca
 ---
 
 *This page is part of the [Extension Monetization Playbook](/)—a free resource for developers building sustainable browser extension businesses. For more case studies, tools, and tactics, visit [zovo.one](https://zovo.one).*
+
+---
+
+## Related Articles
+
+- [Subscription Model](articles/subscription-model.md)
+- [Freemium Model](articles/freemium-model.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

@@ -123,6 +123,13 @@ Do not wait until you have significant revenue to address these requirements. By
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [Subscription Model](articles/subscription-model.md)
+- [Freemium Model](articles/freemium-model.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
