@@ -4,7 +4,7 @@
 
 Most extension developers build something useful but struggle to turn it into a business. You wrote the code. You solved a real problem. Now comes the hard part: monetization.
 
-This playbook contains every pricing mistake, billing system failure, and undervaluation trap I've encountered over three years running [zovo.one](https://zovo.one)—a solo developer studio with 17 extensions and over 4,000 paying subscribers. I've made the errors so you don't have to.
+This playbook contains every pricing mistake, billing system failure, and undervaluation trap encountered over three years running [zovo.one](https://zovo.one)—a solo developer studio with 17 extensions and over 4,000 paying subscribers. The errors have been made so you don't have to.
 
 ---
 
@@ -16,68 +16,252 @@ Browser extensions face unique monetization challenges that SaaS products don't:
 - **Invisible product**: Extensions live in the browser toolbar, often forgotten until something breaks
 - **One-click uninstall**: Churn is instantaneous—no cancellation flows, no retention calls
 - **No switching cost**: Users can switch extensions in seconds with no data loss
+- **Psychological anchor problem**: Users compare extension prices to consumer subscriptions like Netflix ($15) or Spotify ($10), making $5 feel "expensive"
 
 These challenges are real—but they're also solvable. The right monetization strategy, implemented correctly, can build a sustainable business from a quality extension.
 
 ---
 
-## What's Inside
+## Choosing Your Revenue Model
 
-### Revenue Models
+The most important decision you'll make is which revenue model fits your extension. Choose wrong, and you'll fight an uphill battle for every conversion.
 
-Choose the right monetization strategy for your extension:
+### Revenue Model Comparison
 
-| Model | Best For | Revenue Potential |
-|-------|----------|-------------------|
-| [Subscription](articles/subscription-model.md) | AI tools, sync, server-side processing | High (recurring) |
-| [Freemium](articles/freemium-model.md) | Wide audience, viral potential | Medium-High |
-| [One-time Purchase](articles/one-time-purchase.md) | Utility tools, one-time tasks | Medium |
-| [Affiliate](articles/affiliate-model.md) | Content-heavy extensions | Low-Medium |
-| [Sponsorship](articles/sponsorship-model.md) | High-traffic extensions | Variable |
+| Model | Best For | Revenue Potential | Complexity |
+|-------|----------|-------------------|------------|
+| [Subscription](articles/subscription-model.md) | AI tools, sync, server-side processing | High (recurring) | Medium |
+| [Freemium](articles/freemium-model.md) | Wide audience, viral potential | Medium-High | Low |
+| [One-time Purchase](articles/one-time-purchase.md) | Utility tools, one-time tasks | Medium | Low |
+| [Affiliate](articles/affiliate-model.md) | Content-heavy extensions | Low-Medium | Low |
+| [Sponsorship](articles/sponsorship-model.md) | High-traffic extensions | Variable | Medium |
+| [Extension as a Service](articles/extension-as-a-service.md) | B2B tools | High | High |
 
-### Payments & Infrastructure
+### When Subscriptions Make Sense
 
-Professional payment processing setup:
+Subscription pricing fits extensions that rely on backend connections or deliver ongoing value:
 
-- **[Stripe in Extensions](articles/stripe-in-extensions.md)** — Complete integration guide with code patterns
-- **[Chrome Web Store Payments](articles/chrome-web-store-payments.md)** — Native store transactions
-- **[License Key System](articles/license-key-system.md)** — Prevent piracy with robust validation
-- **[Server-side Validation](articles/server-side-validation.md)** — Secure subscription checking
-- **[Trial Implementation](articles/trial-implementation.md)** — Free trials that convert
+- **Server-side processing**: Extensions that do API calls, data transformation, or computation on your servers
+- **Cross-device sync**: Users expect their data everywhere, and maintaining infrastructure costs money
+- **Continuously updated content**: Data feeds, news aggregators, or content that changes regularly
+- **AI features**: Running models costs money per-request; subscriptions pass those costs to users
 
-### Growth Strategies
+**The key question**: Does my extension provide value every single month, or is it a tool users open occasionally to accomplish a one-time task?
 
-Scale from zero to thousands of users:
+For one-time tasks (tab managers, utility tools), lifetime pricing or one-time purchases make more sense. For ongoing value, subscriptions create sustainable revenue.
 
-- **[Pricing Strategies](articles/pricing-strategies.md)** — The $5 floor, anchoring, and launch pricing
-- **[Chrome Web Store SEO](articles/chrome-web-store-seo.md)** — Optimize listings for discovery
-- **[Zero to 1000 Users](articles/zero-to-1000-users.md)** — Early stage growth tactics
-- **[Review Acquisition](articles/review-acquisition.md)** — Build social proof that converts
-- **[Cross-promotion](articles/cross-promotion.md)** — Expand within your existing user base
+### Pricing Strategy: The $5 Floor
 
-### Case Studies
+Based on real data from the extension market:
 
-Real numbers from real extension developers:
+| Price Point | Conversion Rate | Revenue/User | Recommendation |
+|-------------|-----------------|--------------|----------------|
+| $2.99/mo    | Highest         | Lowest       | Avoid - can't support costs |
+| $4.99/mo    | Good            | Healthy      | Minimum viable price |
+| $9.99/mo    | Lower           | Best         | Best for premium tools |
 
-| Case Study | Key Insight |
-|------------|--------------|
-| [Zovo Bundle](articles/zovo-bundle-case-study.md) | How bundling 17 extensions under one subscription created a $200K/year business |
-| [Tab Suspender Pro](articles/tab-suspender-pro-case-study.md) | Solo developer success in a niche category |
-| [Belike Native](articles/belikenative-case-study.md) | B2B approach to extension revenue |
+**The $5 floor**: Unless you're selling a lifetime license, $4.99/month is the minimum viable price for a premium extension. Below that, you can't cover customer support costs.
 
-### Advanced Topics
+### Price Anchoring
 
-- **[Extension Valuation](articles/extension-valuation.md)** — What's your extension worth?
-- **[Selling Your Extension](articles/selling-your-extension.md)** — Exit strategies and preparation
-- **[Analytics Without Tracking](articles/analytics-without-tracking.md)** — Privacy-focused metrics
+Offer a lifetime option ($99) alongside monthly ($4.99). Users compare $4.99/month against $99 one-time and think "I'm saving $800 over five years by paying monthly." The lifetime option actually drives more monthly subscriptions because it provides context for the recurring cost.
 
 ---
 
-## Quick Start
+## Payment Processing & Infrastructure
+
+### Recommended: Stripe for Extensions
+
+[Stripe](articles/stripe-in-extensions.md) has become the dominant choice for extension monetization since Google deprecated Chrome Web Store payments in 2020.
+
+**Why Stripe:**
+- Complete control over payment experience
+- Full customer data ownership
+- Lower fees than marketplace payments (2.9% + 30¢ vs 30% on CWS)
+- Subscription management portal
+- Webhooks for automated billing
+- Excellent documentation and stable API
+
+**The basic payment flow:**
+1. User clicks upgrade in your extension
+2. Extension opens Stripe Checkout in new browser tab
+3. User enters payment info on Stripe's hosted page
+4. Stripe processes payment and fires webhook to your backend
+5. Your server validates webhook, updates subscription status
+6. Extension reads subscription status (cached locally, validated server-side)
+
+### Alternative: Chrome Web Store Payments
+
+[Chrome Web Store Payments](articles/chrome-web-store-payments.md) offers easier setup but comes with significant drawbacks:
+- 30% fee (compared to ~3% with Stripe)
+- Limited customer data access
+- No direct relationship with customers
+- Google's policies can change without warning
+
+Use CWS Payments if you need absolute simplicity and can accept the revenue share.
+
+### License Key System
+
+[Implement a license key system](articles/license-key-system.md) to:
+- Sell through third-party marketplaces
+- Offer lifetime licenses
+- Enable bulk/enterprise sales
+- Provide offline activation
+
+**Key implementation details:**
+- Generate unique license keys with prefix (e.g., `PRO-XXXX-XXXX-XXXX`)
+- Validate keys server-side on first use
+- Bind license to email or domain as needed
+- Store validation results in chrome.storage for offline access
+
+### Server-Side Validation
+
+[Never trust client-side validation alone](articles/server-side-validation.md):
+
+```javascript
+// ❌ WRONG: Client-side only - easily bypassed
+const isPremium = localStorage.getItem('premium');
+
+// ✅ CORRECT: Server-side validation
+async function checkPremiumStatus() {
+  const response = await fetch('https://your-api.com/validate', {
+    headers: { 'Authorization': `Bearer ${userToken}` }
+  });
+  return response.json();
+}
+```
+
+Always validate subscriptions server-side before granting access to premium features. Cache results for short periods to avoid slowing down requests.
+
+### Trial Implementation
+
+[Free trials](articles/trial-implementation.md) that convert:
+- 7-day trials work best for extensions
+- Show immediate value during trial (track feature usage)
+- Send reminder emails on day 3 and day 6
+- Implement grace periods (7 days) for failed payments
+
+---
+
+## Growth Strategies
+
+### Chrome Web Store SEO
+
+[Optimize your listing](articles/chrome-web-store-seo.md) for discovery:
+
+- **Title**: Include primary keyword + differentiation (e.g., "Tab Manager Pro - Organize Chaos")
+- **Short description**: 40-80 characters, include primary keyword
+- **Long description**: First 150 words are most important; repeat keywords naturally
+- **Screenshots**: Show the actual UI, not mockups; highlight key features
+- **Categories**: Choose the most relevant; don't spam
+
+### Zero to 1000 Users
+
+[Early stage growth tactics](articles/zero-to-1000-users.md):
+
+1. **Reddit**: Post in relevant subreddits (r/chrome, r/productivity)
+2. **Product Hunt**: Launch day one priority
+3. ** Hacker News**: Great for developer-focused extensions
+4. **Twitter/X**: Build presence before launch
+5. ** communities**: Slack groups, Discord servers, forums
+6. **Cold outreach**: Email bloggers and YouTubers in your niche
+
+### Review Acquisition
+
+[Build social proof](articles/review-acquisition.md) that converts:
+- Ask for reviews at peak usage moments (after successful actions)
+- Don't ask too early—users need time to see value
+- Make it easy: include direct link to review page
+- Respond to all reviews, positive and negative
+
+### Cross-promotion
+
+[Expand within your existing user base](articles/cross-promotion.md):
+- If users love one extension, they'll often try others
+- Include "from the makers of X" in your listings
+- Bundle multiple extensions under one subscription
+- Share user bases across your portfolio
+
+---
+
+## Case Studies
+
+### Zovo Bundle: $200K/Year from 17 Extensions
+
+[Full case study](articles/zovo-bundle-case-study.md)
+
+The single most important business decision was bundling 17 extensions under one subscription called **Zovo Pro** ($4.99/month or $99 lifetime).
+
+**Why it works:**
+1. **User simplicity**: One payment unlocks everything
+2. **Cross-adoption**: Subscribers try new extensions risk-free
+3. **Infrastructure savings**: One billing system, one database
+4. **Revenue stability**: If one extension loses ranking, others compensate
+
+**The numbers:**
+- **4,000+** total users across the portfolio
+- **3,300** users on BeLikeNative (flagship, anchors value)
+- **442** users on Tab Suspender Pro (different category)
+- **$99** lifetime pricing acts as an anchor (makes $4.99 feel cheap)
+
+> "What might seem expensive for a single niche extension becomes a no-brainer when it unlocks an entire toolkit."
+
+### Tab Suspender Pro: Niche Success
+
+[Full case study](articles/tab-suspender-pro-case-study.md)
+
+Solo developer success in a specialized category. Demonstrates that even narrow use cases can generate meaningful revenue with the right pricing and positioning.
+
+### BeLikeNative: B2B Approach
+
+[Full case study](articles/belikenative-case-study.md)
+
+B2B approach to extension revenue. Shows how positioning extensions as business tools rather than consumer products justifies higher price points.
+
+---
+
+## Advanced Topics
+
+### Extension Valuation
+
+[What's your extension worth?](articles/extension-valuation.md)
+
+Valuation multiples based on revenue type:
+- Subscription revenue: 3-5x annual recurring revenue (ARR)
+- One-time purchases: 1-2x annual revenue
+- Affiliate/sponsorship: 1x annual revenue
+
+### Selling Your Extension
+
+[Exit strategies and preparation](articles/selling-your-extension.md)
+
+- Get financials in order (revenue, growth, churn)
+- Clean up code and documentation
+- Transfer domains, accounts, and relationships
+- Prepare transition documentation
+
+### Analytics Without Tracking
+
+[Privacy-focused metrics](articles/analytics-without-tracking.md)
+
+Balance measurement with user privacy:
+- Use aggregate analytics where possible
+- Implement local-first analytics
+- Consider what data you actually need vs. what you want
+
+### Scaling Solo
+
+[Running a one-person extension business](articles/scaling-solo.md)
+
+- Automate everything: billing, onboarding, support
+- Build systems, not just features
+- Focus on high-impact work
+
+---
+
+## Quick Start Guide
 
 ### Step 1: Choose Your Model
-
-Match your revenue strategy to your extension type:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -112,49 +296,13 @@ Never trust client-side validation alone:
 
 The biggest mistake? Underpricing.
 
-Based on real data from the extension market:
-
-| Price Point | Conversion Rate | Revenue/User |
-|-------------|-----------------|--------------|
-| $2.99/mo    | Highest         | Lowest       |
-| $4.99/mo    | Good            | Healthy      |
-| $9.99/mo    | Lower           | Best         |
-
-**The $5 floor**: Unless you're selling a lifetime license, $4.99/month is the minimum viable price for a premium extension. Below that, you can't cover customer support costs.
+Start at $4.99/month minimum unless offering lifetime licenses. Test higher price points ($9.99, $14.99) after establishing baseline conversion rates.
 
 ---
 
-## The Bundle Strategy (Case Study)
+## Related Resources
 
-The single most important business decision I made was bundling 17 extensions under one subscription called **Zovo Pro** ($4.99/month or $99 lifetime).
-
-### Why It Works
-
-1. **User simplicity**: One payment unlocks everything
-2. **Cross-adoption**: Subscribers try new extensions risk-free
-3. **Infrastructure savings**: One billing system, one database
-4. **Revenue stability**: If one extension loses ranking, others compensate
-
-### The Numbers
-
-- **4,000+** total users across the portfolio
-- **3,300** users on BeLikeNative (flagship, anchors value)
-- **442** users on Tab Suspender Pro (different category)
-- **$99** lifetime pricing acts as an anchor (makes $4.99 feel cheap)
-
-### Bundle Economics
-
-The math is compelling: price based on the value of your best extension. Every additional extension costs essentially $0 to deliver to existing subscribers. Each new extension strengthens the value proposition for all users.
-
-> "What might seem expensive for a single niche extension becomes a no-brainer when it unlocks an entire toolkit."
-
----
-
-1. **[Introduction](docs/getting-started/introduction.md)** - Understand the fundamentals and choose your monetization model
-2. **[Pricing Strategies](articles/pricing-strategies.md)** - Learn how to price for maximum conversions
-3. **[Zero to 1000 Users](articles/zero-to-1000-users.md)** - Early stage growth tactics
-
-## Revenue Models
+Tools and libraries from the Zovo ecosystem:
 
 - [webext-storage](https://github.com/theluckystrike/webext-storage) — Type-safe chrome.storage wrapper
 - [webext-messaging](https://github.com/theluckystrike/webext-messaging) — Promise-based message passing
