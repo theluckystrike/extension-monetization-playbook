@@ -1,12 +1,25 @@
 # Extension Monetization Playbook
 
-A comprehensive, battle-tested guide to monetizing browser extensions. Learn proven strategies from real case studies—from zero users to sustainable revenue.
+> A battle-tested guide to turning browser extensions into sustainable revenue—from zero users to $200K+/year.
 
-## Why This Playbook Exists
+Most extension developers build something useful but struggle to turn it into a business. You wrote the code. You solved a real problem. Now comes the hard part: monetization.
 
-Most extension developers struggle with monetization. You built something useful, but turning it into a business feels like a different skill entirely. This playbook changes that.
+This playbook contains every pricing mistake, billing system failure, and undervaluation trap I've encountered over three years running [zovo.one](https://zovo.one)—a solo developer studio with 17 extensions and over 4,000 paying subscribers. I've made the errors so you don't have to.
 
-I've made every pricing mistake possible. Underpriced to the point of burnout. Built separate billing systems for each extension. Launched with discounts that trained users to expect cheap pricing. This playbook contains everything I wish I knew before starting.
+---
+
+## The Problem with Extension Monetization
+
+Browser extensions face unique monetization challenges that SaaS products don't:
+
+- **Perceived value gap**: Users think $5/month for an extension is expensive compared to $15/month for Netflix
+- **Invisible product**: Extensions live in the browser toolbar, often forgotten until something breaks
+- **One-click uninstall**: Churn is instantaneous—no cancellation flows, no retention calls
+- **No switching cost**: Users can switch extensions in seconds with no data loss
+
+These challenges are real—but they're also solvable. The right monetization strategy, implemented correctly, can build a sustainable business from a quality extension.
+
+---
 
 ## What's Inside
 
@@ -14,52 +27,128 @@ I've made every pricing mistake possible. Underpriced to the point of burnout. B
 
 Choose the right monetization strategy for your extension:
 
-- **[Subscription Model](articles/subscription-model.md)** — Recurring revenue for extensions that deliver ongoing value. Best for AI tools, cross-device sync, and server-side processing.
-- **[Freemium Model](articles/freemium-model.md)** — Free to paid conversion with clear feature differentiation
-- **[One-time Purchase](articles/one-time-purchase.md)** — Lifetime license approach for utility extensions
-- **[Affiliate Model](articles/affiliate-model.md)** — Commission-based earnings through recommendations
-- **[Sponsorship Model](articles/sponsorship-model.md)** — Sponsored content and partnerships
+| Model | Best For | Revenue Potential |
+|-------|----------|-------------------|
+| [Subscription](articles/subscription-model.md) | AI tools, sync, server-side processing | High (recurring) |
+| [Freemium](articles/freemium-model.md) | Wide audience, viral potential | Medium-High |
+| [One-time Purchase](articles/one-time-purchase.md) | Utility tools, one-time tasks | Medium |
+| [Affiliate](articles/affiliate-model.md) | Content-heavy extensions | Low-Medium |
+| [Sponsorship](articles/sponsorship-model.md) | High-traffic extensions | Variable |
 
 ### Payments & Infrastructure
 
-Set up professional payment processing:
+Professional payment processing setup:
 
-- **[Stripe in Extensions](articles/stripe-in-extensions.md)** — Complete integration guide
-- **[Chrome Web Store Payments](articles/chrome-web-store-payments.md)** — Native store payments
+- **[Stripe in Extensions](articles/stripe-in-extensions.md)** — Complete integration guide with code patterns
+- **[Chrome Web Store Payments](articles/chrome-web-store-payments.md)** — Native store transactions
 - **[License Key System](articles/license-key-system.md)** — Prevent piracy with robust validation
-- **[Server-side Validation](articles/server-side-validation.md)** — Secure license checking
+- **[Server-side Validation](articles/server-side-validation.md)** — Secure subscription checking
 - **[Trial Implementation](articles/trial-implementation.md)** — Free trials that convert
 
 ### Growth Strategies
 
-Scale your user base effectively:
+Scale from zero to thousands of users:
 
 - **[Pricing Strategies](articles/pricing-strategies.md)** — The $5 floor, anchoring, and launch pricing
-- **[Chrome Web Store SEO](articles/chrome-web-store-seo.md)** — Optimize your listing for discovery
+- **[Chrome Web Store SEO](articles/chrome-web-store-seo.md)** — Optimize listings for discovery
 - **[Zero to 1000 Users](articles/zero-to-1000-users.md)** — Early stage growth tactics
-- **[Review Acquisition](articles/review-acquisition.md)** — Build social proof
-- **[Cross-promotion](articles/cross-promotion.md)** — Expand within your user base
+- **[Review Acquisition](articles/review-acquisition.md)** — Build social proof that converts
+- **[Cross-promotion](articles/cross-promotion.md)** — Expand within your existing user base
 
 ### Case Studies
 
 Real numbers from real extension developers:
 
-- **[Zovo Bundle Case Study](articles/zovo-bundle-case-study.md)** — How bundling 17 extensions under one subscription changed everything
-- **[Tab Suspender Pro](articles/tab-suspender-pro-case-study.md)** — Solo developer success
-- **[Belike Native Case Study](articles/belikenative-case-study.md)** — B2B approach to extension revenue
+| Case Study | Key Insight |
+|------------|--------------|
+| [Zovo Bundle](articles/zovo-bundle-case-study.md) | How bundling 17 extensions under one subscription created a $200K/year business |
+| [Tab Suspender Pro](articles/tab-suspender-pro-case-study.md) | Solo developer success in a niche category |
+| [Belike Native](articles/belikenative-case-study.md) | B2B approach to extension revenue |
 
 ### Advanced Topics
 
 - **[Extension Valuation](articles/extension-valuation.md)** — What's your extension worth?
-- **[Selling Your Extension](articles/selling-your-extension.md)** — Exit strategies
+- **[Selling Your Extension](articles/selling-your-extension.md)** — Exit strategies and preparation
 - **[Analytics Without Tracking](articles/analytics-without-tracking.md)** — Privacy-focused metrics
+
+---
 
 ## Quick Start
 
-1. **Choose your model** — Match your revenue strategy to your extension type
-2. **Set up payments** — Stripe recommended for flexibility
-3. **Protect your revenue** — Implement license validation
-4. **Price correctly** — Don't undervalue your work
+### Step 1: Choose Your Model
+
+Match your revenue strategy to your extension type:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Does your extension provide ongoing value every month?        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  YES ──→ Subscription (AI tools, sync, server-side)           │
+│          Examples: BeLikeNative, AI writing assistants         │
+│                                                                 │
+│  NO ───→ One-time Purchase or Freemium                         │
+│          Examples: Tab managers, utility tools                  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Step 2: Set Up Payments
+
+**Stripe is recommended** for flexibility and control:
+- Full customer data ownership
+- Lower fees than marketplace payments
+- Subscription management portal
+- Webhooks for automated billing
+
+### Step 3: Protect Your Revenue
+
+Never trust client-side validation alone:
+- Validate licenses server-side before granting premium features
+- Implement grace periods for failed payments (7 days recommended)
+- Track usage to personalize churn prevention
+
+### Step 4: Price Correctly
+
+The biggest mistake? Underpricing.
+
+Based on real data from the extension market:
+
+| Price Point | Conversion Rate | Revenue/User |
+|-------------|-----------------|--------------|
+| $2.99/mo    | Highest         | Lowest       |
+| $4.99/mo    | Good            | Healthy      |
+| $9.99/mo    | Lower           | Best         |
+
+**The $5 floor**: Unless you're selling a lifetime license, $4.99/month is the minimum viable price for a premium extension. Below that, you can't cover customer support costs.
+
+---
+
+## The Bundle Strategy (Case Study)
+
+The single most important business decision I made was bundling 17 extensions under one subscription called **Zovo Pro** ($4.99/month or $99 lifetime).
+
+### Why It Works
+
+1. **User simplicity**: One payment unlocks everything
+2. **Cross-adoption**: Subscribers try new extensions risk-free
+3. **Infrastructure savings**: One billing system, one database
+4. **Revenue stability**: If one extension loses ranking, others compensate
+
+### The Numbers
+
+- **4,000+** total users across the portfolio
+- **3,300** users on BeLikeNative (flagship, anchors value)
+- **442** users on Tab Suspender Pro (different category)
+- **$99** lifetime pricing acts as an anchor (makes $4.99 feel cheap)
+
+### Bundle Economics
+
+The math is compelling: price based on the value of your best extension. Every additional extension costs essentially $0 to deliver to existing subscribers. Each new extension strengthens the value proposition for all users.
+
+> "What might seem expensive for a single niche extension becomes a no-brainer when it unlocks an entire toolkit."
+
+---
 
 ## Tools
 
@@ -68,11 +157,26 @@ Build faster with the Chrome Extension Toolkit:
 - [webext-storage](https://github.com/theluckystrike/webext-storage) — Type-safe chrome.storage wrapper
 - [webext-messaging](https://github.com/theluckystrike/webext-messaging) — Promise-based message passing
 - [webext-permissions](https://github.com/theluckystrike/webext-permissions) — Simplified optional permissions
+- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow) — Authentication patterns
+
+---
 
 ## Contributing
 
+This playbook is a living document. Contributions welcome:
+
+- Add new case studies
+- Share pricing experiments
+- Suggest new strategies
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add articles or improve existing content.
+
+---
 
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+*This playbook is part of the [Zovo](https://zovo.one) ecosystem. Built by a solo developer who learned monetization the hard way.*
