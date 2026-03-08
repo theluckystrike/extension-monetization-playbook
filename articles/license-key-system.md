@@ -82,7 +82,7 @@ When a user hits the device limit, show a clear message explaining how to deacti
 
 The device registration flow should be invisible to the user on first activation. Store the device fingerprint locally and send it with each validation request. When a new device attempts validation, increment the count and return the current device list so the extension can display it to the user if needed.
 
-For Chrome extensions, the profile ID is available through chrome.storage or by reading from the profile directory. Combine multiple signals like the profile path, machine name, and a generated salt to create a stable fingerprint. Be aware that clearing extension storage will require re-registration, so communicate this clearly to users.
+For Chrome extensions, the profile ID is available through [chrome.storage](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) or by reading from the profile directory. Combine multiple signals like the profile path, machine name, and a generated salt to create a stable fingerprint. Be aware that clearing extension storage will require re-registration, so communicate this clearly to users.
 
 ### Activation and Device Limiting Strategies
 
@@ -194,12 +194,26 @@ zovo.one tested both custom and third-party license systems across its 17 extens
 
 ---
 
-## Technical Implementation
+## Technical Deep Dive
 
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
 
-- [extension-license-gate](https://github.com/theluckystrike/extension-license-gate)
-- [Storage Encryption](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md)
+### Storage & Security
+- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Persist license status locally
+- [Storage Encryption Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md) — Secure local storage
+- [Advanced Storage Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/advanced-storage-patterns/) — Caching and sync strategies
+
+### Authentication & Validation
+- [Authentication Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — User identity management
+- [Message Passing Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Secure communication between components
+- [Fetch Interceptor](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-interceptor.md) — API request handling
+
+### Background Processing
+- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handle validation in background
+- [Alarms API](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-api/) — Schedule periodic license checks
+
+### Reference Implementation
+- [extension-license-gate](https://github.com/theluckystrike/extension-license-gate) — Complete license validation library
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 

@@ -145,7 +145,7 @@ export class FeatureGateService {
   constructor(private storageKey: string = 'user_tier') {}
 
   async initialize(): Promise<void> {
-    const result = await chrome.storage.sync.get(this.storageKey);
+    const result = await [chrome.storage.sync](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/).get(this.storageKey);
     const tier = (result[this.storageKey] as Tier) || 'free';
     this.tierCache.set('current', tier);
     await this.loadUsageFromStorage();
@@ -693,6 +693,29 @@ To maximize your free-to-paid conversion:
 - [ ] Implement win-back campaigns for users who dismissed prompts
 - [ ] Test different upgrade modal designs
 - [ ] Include social proof in every upgrade prompt
+
+---
+
+## Technical Deep Dive
+
+For implementing freemium features in your extension, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+
+### Feature Gating
+- [Feature Flags Guide](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/feature-flags.md) — Implement feature toggles
+- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handle premium feature validation
+
+### Storage & Caching
+- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Persist user tier and usage data
+- [Caching Strategies](https://theluckystrike.github.io/chrome-extension-guide/guides/caching-strategies/) — Cache subscription status
+- [Storage Quota Management](https://theluckystrike.github.io/chrome-extension-guide/guides/storage-quota-management/) — Handle storage limits
+
+### Messaging & Communication
+- [Message Passing Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Communicate between components
+- [Content Script Communication](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/content-script-communication-bridge.md) — UI to background messaging
+
+### API Integration
+- [Fetch Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Server requests for validation
+- [Authentication Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — User identity verification
 
 ## Related Articles
 

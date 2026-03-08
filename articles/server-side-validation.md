@@ -142,7 +142,7 @@ For more on implementing license keys in your extension, see our [License Key Sy
 
 Caching strategy
 
-Do not hit the server on every feature check. That would be slow and would burn through your rate limits quickly. Instead, cache the validation result in chrome.storage.local. Set a TTL between 4 and 24 hours. For basic features that are not high-value, 24 hours works well. For expensive features where you want tighter control, use 4 hours.
+Do not hit the server on every feature check. That would be slow and would burn through your rate limits quickly. Instead, cache the validation result in [chrome.storage.local](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/). Set a TTL between 4 and 24 hours. For basic features that are not high-value, 24 hours works well. For expensive features where you want tighter control, use 4 hours.
 
 The cache should store the complete server response including the signature. Store the expiration time separately so your extension can quickly check if the cache is stale without parsing the full response. Use chrome.storage.local.set with an object like { licenseData: { ... }, cachedAt: timestamp }.
 
@@ -178,7 +178,37 @@ Running at scale
 
 This system has been running at zovo.one for a while now. We handle server-side validation across 17 extensions through a single shared API endpoint. The endpoint accepts a license key and returns an extension-specific feature set based on which extension the request comes from. This keeps costs minimal because all extensions share the same infrastructure. We went from losing significant revenue to pirated keys to having a much smaller problem. Most importantly, our paying users have a consistent experience and we can revoke keys instantly when we need to.
 
-For implementing this validation in a Manifest V3 extension with background service workers, see the [Chrome Extension Guide](/articles/chrome-extension-guide/).
+For implementing this validation in a Manifest V3 extension with background service workers, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/).
+
+---
+
+## Technical Deep Dive
+
+For implementing server-side validation in your extension, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+
+### Background Processing
+- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — MV3 service worker implementation
+- [Background Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/background-patterns/) — Common background script patterns
+- [Service Worker Lifecycle](https://theluckystrike.github.io/chrome-extension-guide/guides/service-worker-lifecycle/) — Lifecycle management
+
+### API & Network
+- [Fetch Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Secure API calls from extensions
+- [Fetch Interceptor](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-interceptor.md) — Intercept and modify requests
+- [Message Passing](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Component communication
+
+### Storage & Caching
+- [Storage API](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Cache validation results
+- [Advanced Storage Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/advanced-storage-patterns/) — Caching strategies
+- [Storage Encryption](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md) — Secure local storage
+
+### Security
+- [Security Best Practices](https://theluckystrike.github.io/chrome-extension-guide/guides/security-best-practices/) — Extension security
+- [Content Security Policy](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/content-security-policy.md) — CSP configuration
+- [Extension Security Hardening](https://theluckystrike.github.io/chrome-extension-guide/guides/extension-security-hardening/) — Security hardening
+
+### Infrastructure
+- [Chrome Extension CI/CD](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-ci-cd-pipeline/) — Automated deployments
+- [Cloudflare Workers Setup](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/guides/serverless-workers.md) — Serverless validation API
 
 ---
 

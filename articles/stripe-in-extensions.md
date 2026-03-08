@@ -771,7 +771,7 @@ Set up environment variables for your Stripe keys: `STRIPE_SECRET_KEY` for serve
 
 **Phase 3: Extension Manifest and Permissions**
 
-Update your extension's `manifest.json` to include necessary permissions. You'll need at minimum the `storage` permission for caching subscription status and optionally `identity` for retrieving the user's Google email.
+Update your extension's `manifest.json` to include necessary permissions. You'll need at minimum the [storage permission](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) for caching subscription status and optionally [identity](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) for retrieving the user's Google email.
 
 ```json
 {
@@ -2318,14 +2318,32 @@ Track these metrics:
 
 ---
 
-## Technical Implementation
+## Technical Deep Dive
 
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+For the code behind these strategies, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
 
-- [Background Service Workers](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/service-workers.md) — Handling payment callbacks and background tasks in MV3
-- [Fetch API Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Making server requests from extensions securely
-- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
-- [Content Security Policy](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/content-security-policy.md)
+### Background Processing
+- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handling payment callbacks in MV3
+- [Background Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/background-patterns/) — Common background patterns
+- [Service Worker Lifecycle](https://theluckystrike.github.io/chrome-extension-guide/guides/service-worker-lifecycle/) — Lifecycle management
+
+### Network & API
+- [Fetch API Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Making server requests securely
+- [Fetch Interceptor](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-interceptor.md) — Intercept API calls
+- [Message Passing](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Communicate with backend
+
+### Storage & Caching
+- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Cache subscription status
+- [Storage Sync vs Local](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage-api-tutorial-sync-vs-local/) — Choose the right storage
+- [Advanced Storage Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/advanced-storage-patterns/) — Caching strategies
+
+### Authentication
+- [OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — Google identity
+- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md) — User identity management
+
+### Security
+- [Content Security Policy](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/content-security-policy.md) — CSP configuration
+- [Security Best Practices](https://theluckystrike.github.io/chrome-extension-guide/guides/security-best-practices/) — Extension security
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 

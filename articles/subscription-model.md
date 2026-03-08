@@ -57,7 +57,7 @@ Technical Implementation
 
 Stripe handles recurring billing well for extensions. Set up Stripe Checkout for the initial purchase, then use Stripe Customer Portal for subscription management. Webhooks notify your backend of payment events, enabling you to sync subscription status with your user database.
 
-Use chrome.storage.sync to store subscription status locally and across devices. This keeps the extension fast by avoiding unnecessary API calls on every load. However, always validate subscription status server-side before granting access to premium features. Client-side storage can be manipulated by users who know how to edit browser storage.
+Use [chrome.storage.sync](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) to store subscription status locally and across devices. This keeps the extension fast by avoiding unnecessary API calls on every load. However, always validate subscription status server-side before granting access to premium features. Client-side storage can be manipulated by users who know how to edit browser storage.
 
 Server-side validation prevents tampering. When a user requests premium content or features, your backend verifies their subscription is active before responding. This validation should be lightweight. Cache the result for short periods to avoid slowing down requests.
 
@@ -185,12 +185,28 @@ Start with the fundamentals: clear pricing, reliable license validation, and tho
 
 ---
 
-## Technical Implementation
+## Technical Deep Dive
 
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
+For implementing subscriptions in your extension, see the companion [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
 
-- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
-- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
+### Storage & State
+- [Storage API Tutorial](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/) — Persist subscription status
+- [Storage Sync vs Local](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage-api-tutorial-sync-vs-local/) — Cross-device sync
+- [Chrome Storage Sync Strategies](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-storage-sync-strategies/) — Sync strategies
+
+### Background Processing
+- [Background Service Workers](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-background-service-worker/) — Handle periodic validation
+- [Alarms API](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-api/) — Schedule license checks
+- [Alarms Background Tasks](https://theluckystrike.github.io/chrome-extension-guide/guides/alarms-background-tasks/) — Scheduled validation
+
+### Authentication
+- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md) — User identity
+- [OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/) — Google account integration
+- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow) — Reference implementation
+
+### Messaging & API
+- [Message Passing Patterns](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/) — Component communication
+- [Fetch Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Server requests
 
 All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
