@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chrome Extension Extension Analytics Complete Guide"
-description: "Complete guide to analytics for Chrome extensions. Implement tracking, measure metrics, and grow your extension with data."
+title: "Chrome Extension Analytics Guide"
+description: "Complete guide to analytics for Chrome extensions. Event tracking, metrics, and privacy-compliant data collection."
 ---
 # Complete Guide to Analytics for Chrome Extensions
 

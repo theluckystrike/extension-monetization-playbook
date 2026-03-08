@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chrome Extension Introduction"
-description: "Welcome to the Extension Monetization Playbook. This guide distills lessons learned from building and monetizing 17 browser extensions across the Chrome We"
+title: "Chrome Extension Monetization Introduction"
+description: "Welcome to the Extension Monetization Playbook. Learn proven strategies for monetizing Chrome extensions from 17 successful extensions."
 ---
 Welcome to the Extension Monetization Playbook! This guide distills lessons learned from building and monetizing 17 browser extensions across the Chrome Web Store. The strategies here come from real experience, not theory—every recommendation has been tested with actual users and revenue.
 

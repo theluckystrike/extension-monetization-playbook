@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chrome Extension In App Purchases Extensions"
-description: "Complete guide to in-app purchases for Chrome extensions. Implementation, best practices, and monetization strategies."
+title: "In-App Purchases for Chrome Extensions"
+description: "Learn how to implement in-app purchases in Chrome extensions. Feature gating, subscriptions, and monetization patterns."
 ---
 # In-App Purchases for Chrome Extensions: Complete Implementation Guide
 
