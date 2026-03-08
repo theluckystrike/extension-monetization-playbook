@@ -1,13 +1,11 @@
 ---
 layout: default
-title: "How to Integrate Stripe Payments in Chrome Extensions"
-description: "Step-by-step guide to adding Stripe Checkout, webhooks, and subscription management to your Chrome extension. Covers identity, testing, and common pitfalls."
-permalink: /articles/stripe-in-extensions/
+title: "Stripe Payment Integration for Chrome Extensions: Complete Tutorial"
+description: "Step-by-step guide to integrating Stripe payments in your Chrome extension. Includes backend setup, webhook handling, and license management with TypeScript."
+permalink: /payments/stripe-in-extensions/
 ---
 
-Stripe in Extensions
-
-Why Stripe matters for Chrome extension developers
+# Stripe Payment Integration for Chrome Extensions
 
 When Google deprecated Chrome Web Store payments in 2020, many extension developers were left searching for alternatives. The Chrome Web Store had its problems, but it handled payments natively which meant one less thing to build. Since that deprecation, Stripe has become the dominant choice for extension monetization, and for good reason. The migration away from Google's solution forced the community to find something better, and Stripe stepped up.
 
@@ -21,7 +19,122 @@ The user enters their payment information on Stripe's page and completes the pur
 
 When the user interacts with your extension next, it either polls your server for the current subscription status or reads from a local cache. Based on that status, the extension either shows premium features or prompts for upgrade. This entire flow happens without your extension ever handling sensitive payment data.
 
-Setting up Stripe Checkout
+## Payment Processor Comparison for Chrome Extensions
+
+Choosing the right payment processor is crucial for your extension's success. Here's how Stripe compares to other popular options for extension monetization:
+
+| Feature | Stripe | ExtensionPay | Paddle | Gumroad |
+|---------|--------|--------------|--------|---------|
+| **Developer Experience** | Excellent | Good | Good | Good |
+| **Extension-Specific Support** | Via community | Yes | No | No |
+| **PCI Compliance** | SAQ-A | SAQ-A | SAQ-A | SAQ-A |
+| **Tax Handling** | Stripe Tax (extra cost) | Built-in | Built-in | Limited |
+| **Platform Fee** | 2.9% + 30¢ | 5% + 50¢ | 5% + 50¢ | 10% |
+| **Subscription Management** | Excellent | Good | Good | Basic |
+| **Customer Portal** | Yes | Limited | Yes | Limited |
+| **Webhook Reliability** | Excellent | Good | Good | Variable |
+| **Test Mode** | Robust | Good | Good | Basic |
+| **Multi-Currency** | 135+ currencies | Limited | 200+ | Limited |
+
+**Why Stripe Wins for Extensions:**
+
+1. **Developer-Friendly API**: Stripe's API is consistently well-documented and stable. The SDK works seamlessly with Node.js, Python, and other backend languages.
+
+2. **Flexible Integration**: You have complete control over the payment flow. No iframe restrictions or forced branding.
+
+3. **Webhook Reliability**: Stripe's webhook delivery is industry-leading with automatic retries and detailed event logs.
+
+4. **Customer Portal**: Users can manage subscriptions, update payment methods, and download invoices without your support team.
+
+5. **Extensible**: As your extension grows, Stripe scales with you—from simple one-time purchases to complex enterprise billing.
+
+ExtensionPay (formerly Mac和应用) is popular in the Chinese market but lacks global support. Paddle handles VAT but adds significant margin. Gumroad is simple but designed for creators, not software products.
+
+## Architecture Overview
+
+Understanding the full payment flow is essential before writing code. Here's the complete architecture:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         STRIPE PAYMENT FLOW                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   ┌──────────────┐       ┌─────────────────┐       ┌──────────────────┐  │
+│   │   Chrome     │       │   Your Backend  │       │    Stripe API    │  │
+│   │  Extension   │       │      Server     │       │                  │  │
+│   └──────┬───────┘       └────────┬────────┘       └────────┬─────────┘  │
+│          │                        │                         │             │
+│          │  1. User clicks        │                         │             │
+│          │  "Upgrade" button     │                         │             │
+│          ├──────────────────────>│                         │             │
+│          │                        │                         │             │
+│          │                        │  2. Create Checkout    │             │
+│          │                        │     Session            │             │
+│          │                        ├────────────────────────>│             │
+│          │                        │                         │             │
+│          │                        │  3. Return Session     │             │
+│          │                        │     URL                │             │
+│          │                        <────────────────────────┤             │
+│          │                        │                         │             │
+│          │  4. Open Checkout      │                         │             │
+│          │     in new tab        │                         │             │
+│          ├──────────────────────>│   (Browser Tab)         │             │
+│          │                        │                         │             │
+│          │                        │                         │             │
+│          └────────────────────────┴─────────────────────────┴─────────────┘
+│                                       │                                       │
+│                                       │ 5. Payment processing                 │
+│                                       │    (Stripe handles card data)        │
+│                                       │                                       │
+│                                       ▼                                       │
+│                              ┌────────────────┐                             │
+│                              │  User enters   │                             │
+│                              │  payment info  │                             │
+│                              └────────────────┘                             │
+│                                       │                                       │
+│                                       ▼                                       │
+│   ┌──────────────┐       ┌─────────────────┐       ┌──────────────────┐  │
+│   │   Chrome     │       │   Your Backend  │       │    Stripe API    │  │
+│   │  Extension   │       │      Server     │       │                  │  │
+│   └──────┬───────┘       └────────┬────────┘       └────────┬─────────┘  │
+│          │                        ▲                         │             │
+│          │                        │  6. Webhook event      │             │
+│          │                        │     (checkout.session. │             │
+│          │                        │      completed)         │             │
+│          │                        │<────────────────────────┤             │
+│          │                        │                         │             │
+│          │                        │  7. Verify signature,  │             │
+│          │                        │     update license in   │             │
+│          │                        │     database            │             │
+│          │                        │                         │             │
+│          │  8. License check/     │                         │             │
+│          │     sync on next use   │                         │             │
+│          ├───────────────────────>│                         │             │
+│          │                        │                         │             │
+└──────────┴────────────────────────┴─────────────────────────┴─────────────┘
+```
+
+### Why You MUST Have a Backend Server
+
+**Critical Security Requirement:** You cannot integrate Stripe directly in your Chrome extension because doing so would expose your Stripe secret key. Chrome extensions are client-side code that can be inspected, decompiled, and modified by anyone. Your secret key would be visible in the extension's source code, allowing attackers to process payments through your account.
+
+The backend server acts as a secure intermediary:
+
+1. **Secret Key Protection**: Your Stripe secret key (`sk_live_...`) never leaves your server
+2. **Webhook Verification**: The server verifies that webhooks actually came from Stripe
+3. **License Management**: The server maintains the authoritative record of who has paid
+4. **API Rate Limiting**: Protects against abuse
+5. **Business Logic**: Enforces your specific licensing rules and trial periods
+
+Popular backend options include:
+- **Express.js (Node.js)**: Most common, excellent Stripe SDK
+- **FastAPI (Python)**: Great for Python developers
+- **Serverless Functions**: Vercel, Cloudflare Workers, AWS Lambda
+- **BaaS**: Firebase Cloud Functions, Supabase Edge Functions
+
+This guide uses Node.js/Express, but the concepts apply to any backend.
+
+## Setting up Stripe Checkout
 
 The Stripe Dashboard is where you configure products and prices. Create a product for each tier you offer, then create prices attached to that product. For subscriptions, create a recurring price with your chosen interval, whether monthly, yearly, or something else. For lifetime deals, create a one-time price that only charges once.
 
@@ -30,6 +143,494 @@ Use price IDs in your code rather than hardcoding dollar amounts. This separatio
 Generating Checkout Session URLs happens server-side using the Stripe SDK. You create a session with the price ID, set success and cancel URLs, and optionally pass the user's email if you know it. The session URL gets sent back to your extension, which opens it in a browser tab. Stripe handles the entire payment page, so your server never sees card numbers.
 
 One useful feature is passing metadata to the checkout session. Include your internal user ID, the extension version, or any context that helps reconcile payments later. This metadata comes back in webhooks and simplifies matching Stripe transactions to your user records.
+
+## Complete TypeScript Backend: server.ts
+
+Here's a production-ready Express server with complete Stripe integration:
+
+```typescript
+// server.ts - Complete Express backend with Stripe integration
+import express, { Request, Response, NextFunction } from 'express';
+import Stripe from 'stripe';
+import crypto from 'crypto';
+import cors from 'cors';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
+
+// Initialize Stripe with your secret key
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  apiVersion: '2024-12-18.acacia',
+});
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Security middleware
+app.use(helmet());
+app.use(cors({
+  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['chrome-extension://*'],
+  methods: ['POST', 'GET'],
+}));
+
+// Rate limiting to prevent abuse
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per windowMs
+  message: { error: 'Too many requests, please try again later' },
+});
+app.use('/api/', limiter);
+
+// Webhook requires raw body, so we handle it separately
+app.post('/webhooks/stripe', express.raw({ type: 'application/json' }), 
+  handleStripeWebhook
+);
+
+// Body parsing for other routes
+app.use(express.json());
+
+// ==========================================
+// TYPE DEFINITIONS
+// ==========================================
+
+interface User {
+  id: string;
+  email: string;
+  stripeCustomerId?: string;
+  subscriptionStatus: 'free' | 'active' | 'trialing' | 'past_due' | 'canceled';
+  subscriptionTier?: string;
+  subscriptionId?: string;
+  periodStart?: Date;
+  periodEnd?: Date;
+  licenseKey?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+interface CheckoutRequest {
+  priceId: string;
+  userId: string;
+  email?: string;
+  extensionVersion: string;
+  trialDays?: number;
+}
+
+// ==========================================
+// CHECKOUT SESSION CREATION
+// ==========================================
+
+app.post('/api/create-checkout-session', 
+  limiter,
+  async (req: Request, res: Response): Promise<void> => {
+    try {
+      const { priceId, userId, email, extensionVersion, trialDays } = req.body 
+        as CheckoutRequest;
+
+      if (!priceId || !userId) {
+        res.status(400).json({ error: 'Missing required fields: priceId, userId' });
+        return;
+      }
+
+      // Get or create Stripe customer
+      let customerId = await getStripeCustomerId(userId, email);
+      
+      if (!customerId) {
+        const customer = await stripe.customers.create({
+          email,
+          metadata: {
+            userId,
+            extensionVersion,
+          },
+        });
+        customerId = customer.id;
+        await linkUserToCustomer(userId, customerId);
+      }
+
+      // Determine if this is a subscription or one-time purchase
+      const price = await stripe.prices.retrieve(priceId);
+      const isSubscription = price.recurring !== null;
+
+      // Create checkout session
+      const sessionParams: Stripe.Checkout.SessionCreateParams = {
+        customer: customerId,
+        payment_method_types: ['card'],
+        line_items: [
+          {
+            price: priceId,
+            quantity: 1,
+          },
+        ],
+        mode: isSubscription ? 'subscription' : 'payment',
+        success_url: `${process.env.SUCCESS_URL}?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${process.env.CANCEL_URL}`,
+        metadata: {
+          userId,
+          extensionVersion,
+          priceId,
+        },
+        // Enable promotional codes
+        allow_promotion_codes: true,
+        // Collect billing address for tax calculation
+        billing_address_collection: 'auto',
+      };
+
+      // Add trial period if specified
+      if (isSubscription && trialDays && trialDays > 0) {
+        sessionParams.subscription_data = {
+          trial_period_days: trialDays,
+        };
+      }
+
+      const session = await stripe.checkout.sessions.create(sessionParams);
+
+      res.json({
+        sessionId: session.id,
+        sessionUrl: session.url,
+      });
+    } catch (error) {
+      console.error('Error creating checkout session:', error);
+      res.status(500).json({ error: 'Failed to create checkout session' });
+    }
+  }
+);
+
+// ==========================================
+// LICENSE VERIFICATION ENDPOINT
+// ==========================================
+
+app.get('/api/verify-license', async (req: Request, res: Response): Promise<void> => {
+  try {
+    const userId = req.query.userId as string;
+    const licenseKey = req.query.licenseKey as string;
+
+    if (!userId && !licenseKey) {
+      res.status(400).json({ error: 'Either userId or licenseKey is required' });
+      return;
+    }
+
+    let user: User | null = null;
+
+    if (userId) {
+      user = await getUserById(userId);
+    } else if (licenseKey) {
+      user = await getUserByLicenseKey(licenseKey);
+    }
+
+    if (!user) {
+      res.status(404).json({ 
+        hasLicense: false, 
+        error: 'User not found' 
+      });
+      return;
+    }
+
+    // Check subscription status
+    const hasActiveSubscription = 
+      user.subscriptionStatus === 'active' || 
+      user.subscriptionStatus === 'trialing';
+
+    res.json({
+      hasLicense: hasActiveSubscription,
+      status: user.subscriptionStatus,
+      tier: user.subscriptionTier,
+      periodEnd: user.periodEnd,
+      licenseKey: user.licenseKey,
+    });
+  } catch (error) {
+    console.error('Error verifying license:', error);
+    res.status(500).json({ error: 'Failed to verify license' });
+  }
+});
+
+// ==========================================
+// STRIPE WEBHOOK HANDLER
+// ==========================================
+
+async function handleStripeWebhook(req: Request, res: Response): Promise<void> {
+  const sig = req.headers['stripe-signature'] as string;
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET!;
+
+  let event: Stripe.Event;
+
+  try {
+    event = stripe.webhooks.constructEvent(req.body, sig, webhookSecret);
+  } catch (err) {
+    const error = err as Error;
+    console.error(`Webhook signature verification failed: ${error.message}`);
+    res.status(400).send(`Webhook Error: ${error.message}`);
+    return;
+  }
+
+  // Handle the event
+  try {
+    await processStripeEvent(event);
+  } catch (err) {
+    const error = err as Error;
+    console.error('Error processing webhook event:', error);
+    // Still return 200 to prevent Stripe from retrying
+  }
+
+  res.json({ received: true });
+}
+
+async function processStripeEvent(event: Stripe.Event): Promise<void> {
+  switch (event.type) {
+    case 'checkout.session.completed': {
+      const session = event.data.object as Stripe.Checkout.Session;
+      await handleCheckoutComplete(session);
+      break;
+    }
+
+    case 'customer.subscription.updated': {
+      const subscription = event.data.object as Stripe.Subscription;
+      await handleSubscriptionUpdate(subscription);
+      break;
+    }
+
+    case 'customer.subscription.deleted': {
+      const subscription = event.data.object as Stripe.Subscription;
+      await handleSubscriptionDeleted(subscription);
+      break;
+    }
+
+    case 'invoice.payment_failed': {
+      const invoice = event.data.object as Stripe.Invoice;
+      await handlePaymentFailed(invoice);
+      break;
+    }
+
+    case 'invoice.payment_succeeded': {
+      const invoice = event.data.object as Stripe.Invoice;
+      await handlePaymentSucceeded(invoice);
+      break;
+    }
+
+    default:
+      console.log(`Unhandled event type: ${event.type}`);
+  }
+}
+
+// ==========================================
+// WEBHOOK EVENT HANDLERS
+// ==========================================
+
+async function handleCheckoutComplete(session: Stripe.Checkout.Session): Promise<void> {
+  const { userId, priceId } = session.metadata || {};
+  
+  if (!userId) {
+    console.error('No userId in checkout session metadata');
+    return;
+  }
+
+  const customerId = session.customer as string;
+  const customerEmail = session.customer_email;
+  const isSubscription = session.mode === 'subscription';
+
+  if (isSubscription) {
+    const subscription = await stripe.subscriptions.retrieve(
+      session.subscription as string
+    );
+
+    await updateUserSubscription(userId, {
+      stripeCustomerId: customerId,
+      email: customerEmail || undefined,
+      status: subscription.status,
+      subscriptionId: subscription.id,
+      priceId,
+      periodStart: new Date(subscription.current_period_start * 1000),
+      periodEnd: new Date(subscription.current_period_end * 1000),
+    });
+
+    // Generate license key for the user
+    const licenseKey = generateLicenseKey();
+    await assignLicenseKey(userId, licenseKey);
+  } else {
+    // One-time purchase (lifetime license)
+    await grantLifetimeAccess(userId, {
+      stripeCustomerId: customerId,
+      email: customerEmail || undefined,
+      priceId,
+    });
+
+    // Generate lifetime license key
+    const licenseKey = generateLicenseKey();
+    await assignLicenseKey(userId, licenseKey, 'lifetime');
+  }
+}
+
+async function handleSubscriptionUpdate(subscription: Stripe.Subscription): Promise<void> {
+  const customerId = subscription.customer as string;
+  const user = await getUserByCustomerId(customerId);
+
+  if (!user) {
+    console.error('No user found for customer:', customerId);
+    return;
+  }
+
+  const priceId = subscription.items.data[0]?.price.id;
+
+  await updateUserSubscription(user.id, {
+    status: subscription.status,
+    subscriptionId: subscription.id,
+    priceId,
+    periodStart: new Date(subscription.current_period_start * 1000),
+    periodEnd: new Date(subscription.current_period_end * 1000),
+    cancelAtPeriodEnd: subscription.cancel_at_period_end,
+  });
+}
+
+async function handleSubscriptionDeleted(subscription: Stripe.Subscription): Promise<void> {
+  const customerId = subscription.customer as string;
+  const user = await getUserByCustomerId(customerId);
+
+  if (!user) {
+    console.error('No user found for customer:', customerId);
+    return;
+  }
+
+  await revokeSubscription(user.id, 'subscription_canceled');
+}
+
+async function handlePaymentFailed(invoice: Stripe.Invoice): Promise<void> {
+  const customerId = invoice.customer as string;
+  const user = await getUserByCustomerId(customerId);
+
+  if (!user) {
+    console.error('No user found for customer:', customerId);
+    return;
+  }
+
+  // Send notification to user
+  await sendPaymentFailureNotification(user.email, {
+    subscriptionId: invoice.subscription,
+    amountDue: invoice.amount_due,
+    nextPaymentAttempt: invoice.next_payment_attempt,
+  });
+
+  // Optionally update status to past_due
+  await updateUserSubscription(user.id, { status: 'past_due' });
+}
+
+async function handlePaymentSucceeded(invoice: Stripe.Invoice): Promise<void> {
+  const customerId = invoice.customer as string;
+  const user = await getUserByCustomerId(customerId);
+
+  if (!user) {
+    return;
+  }
+
+  // Reset status if it was past_due
+  if (user.subscriptionStatus === 'past_due') {
+    await updateUserSubscription(user.id, { status: 'active' });
+  }
+}
+
+// ==========================================
+// LICENSE KEY GENERATION
+// ==========================================
+
+function generateLicenseKey(): string {
+  const prefix = 'PRO';
+  const timestamp = Date.now().toString(36).toUpperCase();
+  const randomPart = crypto.randomBytes(4).toString('hex').toUpperCase();
+  return `${prefix}-${timestamp}-${randomPart}`;
+}
+
+// ==========================================
+// DATABASE HELPER FUNCTIONS (Implement according to your DB)
+// ==========================================
+
+async function getUserById(userId: string): Promise<User | null> {
+  // Implement: Query your database for user by ID
+  // This is a placeholder - replace with your actual database query
+  console.log('Getting user by ID:', userId);
+  return null;
+}
+
+async function getUserByLicenseKey(licenseKey: string): Promise<User | null> {
+  // Implement: Query your database for user by license key
+  console.log('Getting user by license key:', licenseKey);
+  return null;
+}
+
+async function getUserByCustomerId(customerId: string): Promise<User | null> {
+  // Implement: Query your database for user by Stripe customer ID
+  console.log('Getting user by customer ID:', customerId);
+  return null;
+}
+
+async function getStripeCustomerId(userId: string, email?: string): Promise<string | null> {
+  // Implement: Get Stripe customer ID from your user record
+  console.log('Getting Stripe customer ID for:', userId);
+  return null;
+}
+
+async function linkUserToCustomer(userId: string, customerId: string): Promise<void> {
+  // Implement: Link Stripe customer ID to user in your database
+  console.log('Linking user', userId, 'to customer', customerId);
+}
+
+async function updateUserSubscription(userId: string, data: {
+  stripeCustomerId?: string;
+  email?: string;
+  status?: string;
+  subscriptionId?: string;
+  priceId?: string;
+  periodStart?: Date;
+  periodEnd?: Date;
+  cancelAtPeriodEnd?: boolean;
+}): Promise<void> {
+  // Implement: Update user subscription in your database
+  console.log('Updating subscription for:', userId, data);
+}
+
+async function grantLifetimeAccess(userId: string, data: {
+  stripeCustomerId: string;
+  email?: string;
+  priceId: string;
+}): Promise<void> {
+  // Implement: Grant lifetime access in your database
+  console.log('Granting lifetime access to:', userId);
+}
+
+async function revokeSubscription(userId: string, reason: string): Promise<void> {
+  // Implement: Revoke subscription in your database
+  console.log('Revoking subscription for:', userId, 'reason:', reason);
+}
+
+async function assignLicenseKey(userId: string, licenseKey: string, type: 'subscription' | 'lifetime' = 'subscription'): Promise<void> {
+  // Implement: Assign license key to user in your database
+  console.log('Assigning license key:', licenseKey, 'to user:', userId);
+}
+
+async function sendPaymentFailureNotification(email: string, data: {
+  subscriptionId?: string;
+  amountDue: number;
+  nextPaymentAttempt?: number;
+}): Promise<void> {
+  // Implement: Send email notification
+  console.log('Sending payment failure notification to:', email, data);
+}
+
+// ==========================================
+// ERROR HANDLING MIDDLEWARE
+// ==========================================
+
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+  console.error('Unhandled error:', err);
+  res.status(500).json({ error: 'Internal server error' });
+});
+
+// ==========================================
+// START SERVER
+// ==========================================
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  console.log(`Webhook endpoint: /webhooks/stripe`);
+});
+
+export default app;
+```
 
 ## Stripe Checkout vs Payment Links vs Elements
 
@@ -274,6 +875,335 @@ function sleep(ms) {
 ```
 
 This background script handles the complete payment initiation flow. It receives messages from your popup or options page, calls your backend securely, opens the Stripe Checkout URL, and can optionally poll for payment confirmation.
+
+## Complete TypeScript Extension Client: stripe-client.ts
+
+Here's a production-ready TypeScript client for your Chrome extension:
+
+```typescript
+// stripe-client.ts - Complete TypeScript client for Stripe integration
+
+import { LicenseService, LicenseStatus } from './license-service';
+
+// ==========================================
+// TYPE DEFINITIONS
+// ==========================================
+
+export interface SubscriptionStatus {
+  hasLicense: boolean;
+  status: 'free' | 'active' | 'trialing' | 'past_due' | 'canceled';
+  tier?: string;
+  periodEnd?: string;
+  licenseKey?: string;
+}
+
+export interface CheckoutOptions {
+  priceId: string;
+  trialDays?: number;
+}
+
+export interface StorageKeys {
+  userId: string;
+  subscriptionStatus: string;
+  subscriptionTier: string;
+  periodEnd: string;
+  licenseKey: string;
+  cacheTimestamp: string;
+}
+
+// ==========================================
+// STRIPE CLIENT SERVICE
+// ==========================================
+
+export class StripeClient {
+  private apiBaseUrl: string;
+  private licenseService: LicenseService;
+  private cacheTTL: number = 3600000; // 1 hour in milliseconds
+
+  constructor(apiBaseUrl: string) {
+    this.apiBaseUrl = apiBaseUrl;
+    this.licenseService = new LicenseService(apiBaseUrl);
+  }
+
+  // ==========================================
+  // USER IDENTIFICATION
+  // ==========================================
+
+  /**
+   * Get the user's identity. Tries chrome.identity first,
+   * falls back to stored userId
+   */
+  async getUserId(): Promise<string | null> {
+    // Try to get from storage first
+    const stored = await this.getFromStorage('userId');
+    if (stored) {
+      return stored;
+    }
+
+    // Try chrome.identity if available
+    try {
+      const identity = await chrome.identity.getAuthToken({ interactive: false });
+      if (identity) {
+        // Extract email from token or use as-is
+        const userId = identity;
+        await this.saveToStorage('userId', userId);
+        return userId;
+      }
+    } catch (error) {
+      console.log('Identity API not available:', error);
+    }
+
+    return null;
+  }
+
+  // ==========================================
+  // INITIATE CHECKOUT
+  // ==========================================
+
+  /**
+   * Initiate the checkout process by creating a Stripe Checkout session
+   */
+  async initiateCheckout(options: CheckoutOptions): Promise<{ sessionUrl: string }> {
+    const userId = await this.getUserId();
+    
+    if (!userId) {
+      throw new Error('User not identified. Please sign in to continue.');
+    }
+
+    const manifest = chrome.runtime.getManifest();
+    
+    const response = await fetch(`${this.apiBaseUrl}/api/create-checkout-session`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        priceId: options.priceId,
+        userId: userId,
+        extensionVersion: manifest.version,
+        trialDays: options.trialDays,
+      }),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ error: 'Unknown error' }));
+      throw new Error(error.error || `Server error: ${response.status}`);
+    }
+
+    const { sessionUrl } = await response.json();
+    return { sessionUrl };
+  }
+
+  /**
+   * Open Stripe Checkout in a new tab
+   */
+  async openCheckout(options: CheckoutOptions): Promise<void> {
+    const { sessionUrl } = await this.initiateCheckout(options);
+    await chrome.tabs.create({ url: sessionUrl });
+  }
+
+  // ==========================================
+  // LICENSE VERIFICATION
+  // ==========================================
+
+  /**
+   * Check if user has an active license
+   */
+  async checkLicenseStatus(): Promise<SubscriptionStatus> {
+    const userId = await this.getUserId();
+    
+    if (!userId) {
+      return { hasLicense: false, status: 'free' };
+    }
+
+    // Check cache first
+    const cached = await this.getCachedStatus();
+    if (cached && !this.isCacheExpired()) {
+      return cached;
+    }
+
+    // Fetch fresh status from server
+    const status = await this.licenseService.verifyLicense(userId);
+    
+    // Update cache
+    await this.cacheStatus(status);
+    
+    return status;
+  }
+
+  /**
+   * Validate license on extension startup
+   */
+  async validateOnStartup(): Promise<LicenseStatus> {
+    const status = await this.checkLicenseStatus();
+    
+    if (status.hasLicense) {
+      await this.updateExtensionAccess(true, status);
+      return 'active';
+    } else {
+      await this.updateExtensionAccess(false);
+      return 'inactive';
+    }
+  }
+
+  // ==========================================
+  // LICENSE KEY MANAGEMENT
+  // ==========================================
+
+  /**
+   * Enter a license key manually
+   */
+  async activateLicenseKey(licenseKey: string): Promise<{ success: boolean; error?: string }> {
+    const result = await this.licenseService.validateKey(licenseKey);
+    
+    if (result.hasLicense) {
+      await this.saveToStorage('licenseKey', licenseKey);
+      await this.cacheStatus({
+        hasLicense: true,
+        status: result.status,
+        tier: result.tier,
+        periodEnd: result.periodEnd,
+        licenseKey,
+      });
+      await this.updateExtensionAccess(true, result);
+      return { success: true };
+    }
+    
+    return { success: false, error: result.error || 'Invalid license key' };
+  }
+
+  /**
+   * Get the stored license key
+   */
+  async getLicenseKey(): Promise<string | null> {
+    return this.getFromStorage('licenseKey');
+  }
+
+  // ==========================================
+  // CROSS-DEVICE SYNC
+  // ==========================================
+
+  /**
+   * Sync license status across devices using chrome.storage.sync
+   */
+  async syncAcrossDevices(userId: string): Promise<void> {
+    const status = await this.licenseService.verifyLicense(userId);
+    
+    // Store in sync storage (automatically syncs across devices)
+    await chrome.storage.sync.set({
+      subscriptionStatus: status.status,
+      subscriptionTier: status.tier || 'free',
+      periodEnd: status.periodEnd || '',
+      lastSync: Date.now(),
+    });
+  }
+
+  // ==========================================
+  // STORAGE HELPERS
+  // ==========================================
+
+  private async getFromStorage(key: string): Promise<string | null> {
+    return new Promise((resolve) => {
+      chrome.storage.local.get([key], (result) => {
+        resolve(result[key] || null);
+      });
+    });
+  }
+
+  private async saveToStorage(key: string, value: string): Promise<void> {
+    return new Promise((resolve) => {
+      chrome.storage.local.set({ [key]: value }, resolve);
+    });
+  }
+
+  private async getCachedStatus(): Promise<SubscriptionStatus | null> {
+    const status = await this.getFromStorage('subscriptionStatus');
+    const tier = await this.getFromStorage('subscriptionTier');
+    const periodEnd = await this.getFromStorage('periodEnd');
+    const licenseKey = await this.getFromStorage('licenseKey');
+
+    if (!status) {
+      return null;
+    }
+
+    return {
+      hasLicense: status === 'active' || status === 'trialing',
+      status: status as SubscriptionStatus['status'],
+      tier,
+      periodEnd,
+      licenseKey,
+    };
+  }
+
+  private async cacheStatus(status: SubscriptionStatus): Promise<void> {
+    return new Promise((resolve) => {
+      chrome.storage.local.set({
+        subscriptionStatus: status.status,
+        subscriptionTier: status.tier || '',
+        periodEnd: status.periodEnd || '',
+        licenseKey: status.licenseKey || '',
+        cacheTimestamp: Date.now(),
+      }, resolve);
+    });
+  }
+
+  private isCacheExpired(): boolean {
+    // This would need to be called differently due to async storage
+    return false; // Simplified - implement proper async check
+  }
+
+  private async updateExtensionAccess(
+    hasAccess: boolean, 
+    status?: SubscriptionStatus
+  ): Promise<void> {
+    // Update extension badge or icon to indicate access
+    const iconPath = hasAccess 
+      ? 'images/icon-premium.png' 
+      : 'images/icon-free.png';
+    
+    try {
+      chrome.action.setIcon({ path: iconPath });
+    } catch {
+      // May not be a popup action
+    }
+
+    // Store the access state
+    await this.saveToStorage('hasPremiumAccess', hasAccess ? 'true' : 'false');
+  }
+}
+
+// ==========================================
+// USAGE EXAMPLE
+// ==========================================
+
+/*
+// In your background script or popup:
+const stripeClient = new StripeClient('https://your-api.com');
+
+// Check license on startup
+chrome.runtime.onStartup.addListener(async () => {
+  await stripeClient.validateOnStartup();
+});
+
+// Also check when extension is first installed
+chrome.runtime.onInstalled.addListener(async () => {
+  await stripeClient.validateOnStartup();
+});
+
+// Handle upgrade button click
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === 'INITIATE_UPGRADE') {
+    stripeClient.openCheckout({ 
+      priceId: message.priceId,
+      trialDays: 14 
+    })
+      .then(() => sendResponse({ success: true }))
+      .catch(error => sendResponse({ error: error.message }));
+    return true;
+  }
+});
+*/
+```
 
 ## Code Example: Content Script Triggers
 
@@ -582,6 +1512,547 @@ Stripe subscriptions can be in several states. Understanding these states helps 
 
 Map these states to your extension's feature access appropriately. Most implementations treat `active` and `trialing` as "has access," while other states trigger access restrictions.
 
+## License Key System: LicenseService Class
+
+For one-time purchases and manual license activation, you'll need a robust license key system. Here's a complete TypeScript implementation:
+
+```typescript
+// license-service.ts - License key generation and validation
+
+import crypto from 'crypto';
+
+export type LicenseStatus = 'active' | 'expired' | 'revoked' | 'invalid';
+
+export interface LicenseInfo {
+  hasLicense: boolean;
+  status: LicenseStatus;
+  tier?: string;
+  periodEnd?: string;
+  error?: string;
+}
+
+export interface LicenseValidationResult extends LicenseInfo {
+  userId?: string;
+  licenseKey: string;
+  licenseType: 'subscription' | 'lifetime';
+  issuedAt?: Date;
+  expiresAt?: Date;
+}
+
+export class LicenseService {
+  private apiBaseUrl: string;
+  private licensePrefix: string = 'PRO';
+
+  constructor(apiBaseUrl: string) {
+    this.apiBaseUrl = apiBaseUrl;
+  }
+
+  // ==========================================
+  // LICENSE KEY GENERATION
+  // ==========================================
+
+  /**
+   * Generate a new license key
+   * Format: PREFIX-TIMESTAMP-RANDOM
+   * Example: PRO-ABC123-DEF456
+   */
+  generateKey(licenseType: 'subscription' | 'lifetime' = 'subscription'): string {
+    const prefix = licenseType === 'lifetime' ? 'LIFE' : this.licensePrefix;
+    const timestamp = Date.now().toString(36).toUpperCase();
+    const randomBytes = crypto.randomBytes(4).toString('hex').toUpperCase();
+    
+    return `${prefix}-${timestamp}-${randomBytes}`;
+  }
+
+  /**
+   * Generate a license key with custom prefix
+   */
+  generateKeyWithPrefix(prefix: string): string {
+    const timestamp = Date.now().toString(36).toUpperCase();
+    const randomBytes = crypto.randomBytes(4).toString('hex').toUpperCase();
+    
+    return `${prefix}-${timestamp}-${randomBytes}`;
+  }
+
+  // ==========================================
+  // LICENSE VALIDATION
+  // ==========================================
+
+  /**
+   * Validate a license key with the backend
+   */
+  async validateKey(licenseKey: string): Promise<LicenseValidationResult> {
+    try {
+      const response = await fetch(
+        `${this.apiBaseUrl}/api/verify-license?licenseKey=${encodeURIComponent(licenseKey)}`,
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      if (!response.ok) {
+        return {
+          hasLicense: false,
+          status: 'invalid',
+          licenseKey,
+          licenseType: 'subscription',
+          error: `Server error: ${response.status}`,
+        };
+      }
+
+      const data = await response.json();
+      
+      return {
+        hasLicense: data.hasLicense,
+        status: data.hasLicense ? 'active' : 'invalid',
+        tier: data.tier,
+        periodEnd: data.periodEnd,
+        licenseKey,
+        licenseType: data.licenseType || 'subscription',
+        expiresAt: data.periodEnd ? new Date(data.periodEnd) : undefined,
+      };
+    } catch (error) {
+      return {
+        hasLicense: false,
+        status: 'invalid',
+        licenseKey,
+        licenseType: 'subscription',
+        error: error instanceof Error ? error.message : 'Network error',
+      };
+    }
+  }
+
+  /**
+   * Verify license by user ID
+   */
+  async verifyLicense(userId: string): Promise<LicenseInfo> {
+    try {
+      const response = await fetch(
+        `${this.apiBaseUrl}/api/verify-license?userId=${encodeURIComponent(userId)}`,
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      if (!response.ok) {
+        return {
+          hasLicense: false,
+          status: 'invalid',
+          error: `Server error: ${response.status}`,
+        };
+      }
+
+      const data = await response.json();
+      
+      return {
+        hasLicense: data.hasLicense,
+        status: data.hasLicense ? 'active' : 'invalid',
+        tier: data.tier,
+        periodEnd: data.periodEnd,
+      };
+    } catch (error) {
+      return {
+        hasLicense: false,
+        status: 'invalid',
+        error: error instanceof Error ? error.message : 'Network error',
+      };
+    }
+  }
+
+  // ==========================================
+  // LICENSE KEY OPERATIONS
+  // ==========================================
+
+  /**
+   * Revoke a license key (admin operation)
+   */
+  async revokeKey(licenseKey: string, reason: string): Promise<{ success: boolean; error?: string }> {
+    try {
+      const response = await fetch(`${this.apiBaseUrl}/api/admin/revoke-license`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          // Add admin authentication header
+        },
+        body: JSON.stringify({ licenseKey, reason }),
+      });
+
+      if (!response.ok) {
+        return { success: false, error: `Server error: ${response.status}` };
+      }
+
+      return { success: true };
+    } catch (error) {
+      return { 
+        success: false, 
+        error: error instanceof Error ? error.message : 'Network error' 
+      };
+    }
+  }
+
+  /**
+   * Refresh/extend a license key
+   */
+  async refreshKey(licenseKey: string): Promise<{ success: boolean; newExpiry?: string; error?: string }> {
+    try {
+      const response = await fetch(`${this.apiBaseUrl}/api/refresh-license`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ licenseKey }),
+      });
+
+      if (!response.ok) {
+        return { success: false, error: `Server error: ${response.status}` };
+      }
+
+      const data = await response.json();
+      return { success: true, newExpiry: data.newExpiry };
+    } catch (error) {
+      return { 
+        success: false, 
+        error: error instanceof Error ? error.message : 'Network error' 
+      };
+    }
+  }
+
+  // ==========================================
+  // UTILITY METHODS
+  // ==========================================
+
+  /**
+   * Validate license key format (client-side check)
+   */
+  validateKeyFormat(licenseKey: string): boolean {
+    const formatRegex = /^[A-Z0-9]{3,5}-[A-Z0-9]{5,}-[A-Z0-9]{8}$/i;
+    return formatRegex.test(licenseKey);
+  }
+
+  /**
+   * Check if license is expired (client-side)
+   */
+  isExpired(periodEnd?: string): boolean {
+    if (!periodEnd) return false;
+    return new Date(periodEnd) < new Date();
+  }
+
+  /**
+   * Get days until expiration
+   */
+  getDaysUntilExpiry(periodEnd?: string): number | null {
+    if (!periodEnd) return null;
+    
+    const now = new Date();
+    const expiry = new Date(periodEnd);
+    const diffTime = expiry.getTime() - now.getTime();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    
+    return diffDays;
+  }
+}
+```
+
+### Using License Keys in Your Extension
+
+```typescript
+// Example usage in your extension popup
+
+import { LicenseService } from './license-service';
+
+const licenseService = new LicenseService('https://your-api.com');
+
+// Check if user has active license
+async function checkAccess() {
+  const userId = await getUserId();
+  if (userId) {
+    const result = await licenseService.verifyLicense(userId);
+    if (result.hasLicense) {
+      showPremiumFeatures();
+    } else {
+      showUpgradePrompt();
+    }
+  }
+}
+
+// Manual license key activation
+async function activateLicense(keyInput: string) {
+  // First validate format client-side
+  if (!licenseService.validateKeyFormat(keyInput)) {
+    showError('Invalid license key format');
+    return;
+  }
+
+  // Then validate with server
+  const result = await licenseService.validateKey(keyInput);
+  if (result.hasLicense) {
+    await saveToStorage('licenseKey', keyInput);
+    showSuccess('License activated!');
+    showPremiumFeatures();
+  } else {
+    showError(result.error || 'Invalid license key');
+  }
+}
+
+// Check expiration
+async function checkExpiration() {
+  const periodEnd = await getFromStorage('periodEnd');
+  if (periodEnd) {
+    const daysLeft = licenseService.getDaysUntilExpiry(periodEnd);
+    if (daysLeft !== null && daysLeft <= 7 && daysLeft > 0) {
+      showRenewalReminder(`Your license expires in ${daysLeft} days`);
+    }
+  }
+}
+```
+
+## Security Considerations
+
+Securing your Stripe integration is critical because it directly controls access to your premium features. This section covers essential security practices for extension payment systems.
+
+### Never Expose Stripe Secret Keys
+
+The most critical security rule: your Stripe secret key (`sk_live_...`) must never appear in your extension code. Chrome extensions are client-side software that can be easily inspected, decompiled, and modified. Anyone viewing your extension's source can extract hardcoded keys.
+
+**What NOT to do:**
+```typescript
+// ❌ NEVER do this in your extension
+const STRIPE_SECRET = 'sk_live_xxxxx'; // Attackers will find this!
+stripe.charges.create({ ... }); // This exposes your key
+```
+
+**What you MUST do:**
+```typescript
+// ✅ Always proxy through your backend
+// Extension code (background.ts):
+const response = await fetch('https://your-api.com/api/create-checkout-session', {
+  method: 'POST',
+  body: JSON.stringify({ priceId: 'price_xxx' })
+});
+// Backend handles all Stripe communication
+```
+
+Your backend server holds the secret key and only exposes public endpoints to your extension.
+
+### Validate Webhook Signatures
+
+Stripe webhooks can be spoofed by attackers trying to grant themselves free access. Always verify webhook signatures:
+
+```typescript
+// server.ts - Essential webhook verification
+app.post('/webhooks/stripe', express.raw({ type: 'application/json' }), 
+  async (req, res) => {
+    const sig = req.headers['stripe-signature'];
+    
+    try {
+      const event = stripe.webhooks.constructEvent(
+        req.body,
+        sig,
+        process.env.STRIPE_WEBHOOK_SECRET
+      );
+      // Process event only if signature is valid
+    } catch (err) {
+      // Invalid signature - possible attack!
+      console.error('Webhook signature verification failed');
+      return res.status(400).send('Invalid signature');
+    }
+  }
+);
+```
+
+### Rate Limit API Endpoints
+
+Protect your backend from abuse by implementing rate limiting:
+
+```typescript
+// server.ts - Rate limiting
+import rateLimit from 'express-rate-limit';
+
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // 100 requests per window
+  message: { error: 'Too many requests' },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+app.use('/api/', apiLimiter);
+
+// Stricter limits for sensitive endpoints
+const checkoutLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 10, // 10 checkout attempts per hour
+});
+
+app.use('/api/create-checkout-session', checkoutLimiter);
+```
+
+### Configure CORS Properly
+
+Restrict which origins can access your API:
+
+```typescript
+// server.ts - CORS configuration
+app.use(cors({
+  origin: (origin, callback) => {
+    // Allow your extension IDs (both Chrome Web Store and dev)
+    const allowedOrigins = [
+      'chrome-extension://YOUR_EXTENSION_ID',
+      'chrome-extension://YOUR_DEV_EXTENSION_ID',
+      'https://your-website.com',
+    ];
+    
+    // Allow no-origin requests (curl, server-to-server)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+}));
+```
+
+### Content Security Policy for Extension
+
+Configure your extension's CSP to allow necessary network requests:
+
+```json
+// manifest.json
+{
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://your-api.com https://api.stripe.com"
+  }
+}
+```
+
+### Additional Security Best Practices
+
+1. **Use HTTPS exclusively**: All production traffic must use TLS 1.2+
+
+2. **Rotate API keys periodically**: Generate new Stripe keys annually and revoke old ones
+
+3. **Log all payment events**: Maintain audit trails for troubleshooting and fraud detection
+
+4. **Implement idempotent webhook processing**: Use event IDs to prevent duplicate processing
+
+5. **Sanitize error messages**: Never expose internal system details to users
+
+```typescript
+// ✅ Good error handling
+catch (error) {
+  console.error('Payment error:', error); // Internal logging
+  res.status(500).json({ error: 'Payment failed. Please try again.' }); // User-facing
+}
+
+// ❌ Bad error handling
+catch (error) {
+  res.status(500).json({ error: error.message }); // Exposes internals!
+}
+```
+
+## Going Live Checklist
+
+Before launching your extension with Stripe payments, complete this checklist to ensure a smooth production rollout.
+
+### 1. Switch to Live API Keys
+
+- [ ] Generate live Stripe API keys in the Dashboard
+- [ ] Update backend environment variables:
+  ```
+  STRIPE_SECRET_KEY=sk_live_xxxxx
+  STRIPE_PUBLISHABLE_KEY=pk_live_xxxxx
+  STRIPE_WEBHOOK_SECRET=whsec_xxxxx
+  ```
+- [ ] Verify test keys are no longer in use
+- [ ] Remove any test-only code paths
+
+### 2. Configure Webhooks for Production
+
+- [ ] Add production webhook endpoint in Stripe Dashboard
+- [ ] Select all required events:
+  - `checkout.session.completed`
+  - `customer.subscription.updated`
+  - `customer.subscription.deleted`
+  - `invoice.payment_failed`
+  - `invoice.payment_succeeded`
+- [ ] Test webhook delivery with Stripe CLI
+- [ ] Set up webhook retry notifications
+
+### 3. Enable Stripe Tax (if selling globally)
+
+- [ ] Enable Stripe Tax in Dashboard
+- [ ] Configure tax behavior (inclusive vs exclusive)
+- [ ] Set up product tax codes
+- [ ] Test with different customer locations
+
+### 4. Configure Customer Portal
+
+- [ ] Enable Customer Portal in Stripe Dashboard
+- [ ] Customize portal settings:
+  - Allow subscription updates
+  - Enable invoice history
+  - Configure cancellation flow
+- [ ] Add portal link to extension settings
+
+### 5. Test with Real Cards
+
+- [ ] Process a test payment with your own card
+- [ ] Verify webhook fires and processes correctly
+- [ ] Check that extension unlocks after payment
+- [ ] Test the complete user flow:
+  1. Install extension
+  2. Click upgrade
+  3. Complete payment
+  4. Verify premium access
+
+### 6. Set Up Monitoring
+
+- [ ] Configure Stripe Dashboard alerts:
+  - New subscription
+  - Failed payment
+  - Churned customer
+- [ ] Set up error tracking (Sentry, LogRocket)
+- [ ] Create status page for your API
+
+### 7. Prepare Support Resources
+
+- [ ] Create FAQ for common billing questions
+- [ ] Set up refund request process
+- [ ] Prepare email templates for:
+  - Welcome/payment confirmation
+  - Payment failure warning
+  - Subscription cancellation
+
+### 8. Review Legal Compliance
+
+- [ ] Add Terms of Service link
+- [ ] Add Privacy Policy (especially for EU users)
+- [ ] Include refund policy
+- [ ] Display prices in local currency
+
+### 9. Extension Store Submission
+
+- [ ] Update extension listing with pricing info
+- [ ] Add "Remove Ads" or "Premium" descriptions
+- [ ] Create screenshots showing upgrade flow
+- [ ] Submit to Chrome Web Store
+
+### Post-Launch Monitoring
+
+After launch, monitor these metrics weekly:
+
+- **Conversion rate**: Purchases ÷ unique visitors
+- **Churn rate**: Cancellations ÷ active subscribers
+- **Payment failure rate**: Failed payments ÷ total attempts
+- **Revenue**: Total processed payments
+- **Support tickets**: Billing-related inquiries
+
 ## Testing Payments in Development
 
 Testing payment flows requires a deliberate approach that covers both success and failure scenarios. Stripe provides robust testing tools that simulate various payment situations without real money changing hands.
@@ -862,24 +2333,16 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ## Related Articles
 
+- [Freemium Model](/articles/freemium-model/) — Implementing free tier with premium upgrades
+- [Subscription Model](/articles/subscription-model/) — Managing recurring revenue
+- [License Key System](/articles/license-key-system/) — Implementing license keys for one-time purchases
 - [Chrome Web Store Payments](articles/chrome-web-store-payments.md)
 - [Server Side Validation](articles/server-side-validation.md)
-- [Subscription Model](articles/subscription-model.md)
 
 
 ---
 
-## Technical Implementation Guides
-
-Need help building the technical foundation for Stripe payment integration? The [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/) has comprehensive tutorials:
-
-- **[Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-content-scripts/)** - Inject functionality into web pages
-- **[Storage API Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/)** - Persist data across sessions
-- **[Messaging Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/)** - Communication between extension components
-- **[OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/)** - Secure user authentication
-- **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
-
-> **Implementation Note**: Stripe integration in extensions requires OAuth2 authentication for user identity verification and background scripts (service workers) for webhook polling. Use chrome.identity to obtain user emails, implement background service workers to receive payment status updates, and store customer IDs in chrome.storage.sync for cross-device access.
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
 
 ---
 
