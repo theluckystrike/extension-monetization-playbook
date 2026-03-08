@@ -4,6 +4,21 @@ title: Chrome Extension Monetization Playbook
 description: Complete guide to monetizing Chrome extensions - revenue models, payments, growth strategies
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title | escape }}",
+  "description": "{{ site.description | escape }}",
+  "url": "{{ site.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zovo",
+    "url": "https://zovo.one"
+  }
+}
+</script>
+
 # Chrome Extension Monetization Playbook
 
 Welcome to the definitive guide for monetizing your Chrome extensions. This comprehensive playbook covers everything you need to transform your extension into a sustainable revenue stream.
