@@ -133,13 +133,11 @@ Include social proof in the upgrade prompt. A line like "Join 10,000+ users who 
 
 ## Related Articles
 
-- [Freemium Model](/articles/freemium-model/) — Combining free features with trials for maximum conversion
-- [Subscription Model](/articles/subscription-model/) — Recurring billing strategies that work for extensions
-- [Paywall Patterns](/articles/paywall-patterns/) — Design patterns for requesting payment in extensions
-- [Stripe Integration](/articles/stripe-in-extensions/) — Implementing payments with Stripe in Chrome extensions
+- [Subscription Model](articles/subscription-model.md)
+- [Freemium Model](articles/freemium-model.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
-
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

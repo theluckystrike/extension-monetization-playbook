@@ -196,6 +196,13 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [Freemium Model](articles/freemium-model.md)
+- [Trial Implementation](articles/trial-implementation.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

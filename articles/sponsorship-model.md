@@ -154,6 +154,13 @@ The portfolio approach at zovo.one demonstrates the power of scale. With 17 exte
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [Affiliate Model](articles/affiliate-model.md)
+- [Community Building](articles/community-building.md)
+- [Subscription Model](articles/subscription-model.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

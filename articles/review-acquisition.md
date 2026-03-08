@@ -141,14 +141,11 @@ BeLikeNative at zovo.one maintains a 4.62 star rating across 3,300 users through
 
 ## Related Articles
 
-- [Chrome Web Store SEO](/articles/chrome-web-store-seo/) — Optimize your listing for discoverability
-- [Zero to 1000 Users](/articles/zero-to-1000-users/) — Growth strategies for new extensions
-- [Community Building](/articles/community-building/) — Build loyal用户群体 for long-term success
+- [Subscription Model](articles/subscription-model.md)
+- [Freemium Model](articles/freemium-model.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
 
-For technical implementation of review prompts, see the [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide).
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
-
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

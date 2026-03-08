@@ -134,6 +134,13 @@ For more on implementing one-time purchases and related strategies:
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+- [License Key System](articles/license-key-system.md)
+- [Pricing Strategies](articles/pricing-strategies.md)
+- [Subscription Model](articles/subscription-model.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one

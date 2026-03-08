@@ -125,6 +125,13 @@ For development guidance, explore our [Getting Started](/docs/getting-started/) 
 
 ---
 
-*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+## Related Articles
 
-**Need help growing your extension?** [Get in touch →](https://zovo.one)
+- [Zero To 1000 Users](articles/zero-to-1000-users.md)
+- [Cross Promotion](articles/cross-promotion.md)
+- [Community Building](articles/community-building.md)
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at zovo.one
