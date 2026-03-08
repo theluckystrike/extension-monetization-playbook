@@ -126,3 +126,13 @@ Premium support monetization represents a significant opportunity for Chrome ext
 The key to success lies in genuinely delivering premium value—not just charging more for the same service. When users perceive real benefits from premium support—faster resolutions, more personalized assistance, access to expertise—they become willing advocates who renew their subscriptions and recommend your extension to others. Premium support, when executed well, becomes not just a revenue stream but a competitive advantage that differentiates your extension in a crowded marketplace.
 
 Start with clear tier definitions, communicate value effectively, and remain responsive to customer needs. Your support monetization strategy will evolve over time, but the foundation of providing genuine value to users who need it most will ensure long-term success.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

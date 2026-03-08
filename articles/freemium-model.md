@@ -691,6 +691,11 @@ To maximize your free-to-paid conversion:
 - [ ] Implement win-back campaigns for users who dismissed prompts
 - [ ] Test different upgrade modal designs
 - [ ] Include social proof in every upgrade prompt
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for tracking user tier and usage limits
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

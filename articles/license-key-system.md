@@ -187,20 +187,17 @@ zovo.one tested both custom and third-party license systems across its 17 extens
 
 ---
 
-## Technical Implementation
-
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
-
-- [extension-license-gate](https://github.com/theluckystrike/extension-license-gate)
-- [Storage Encryption](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/storage-encryption.md)
-
-All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
 *Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
 
 **Need help monetizing your extension?** [Get in touch →](https://zovo.one)
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for secure license key storage
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

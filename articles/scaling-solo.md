@@ -262,6 +262,11 @@ The tools and guides in the [Chrome Extension Guide](https://theluckystrike.gith
 
 ---
 
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Subscription Model](/articles/subscription-model/)

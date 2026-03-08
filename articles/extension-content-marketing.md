@@ -152,3 +152,13 @@ Set up your blog using a static site generator, publish your first articles, and
 Remember that content marketing compounds over time. Each article you publish builds on previous work, creating a growing asset that continuously drives organic growth. The sooner you start, the sooner you'll see results—and the more those results will compound in the months and years ahead.
 
 Your extension deserves an audience beyond the Chrome Web Store. Content marketing provides the bridge between users actively searching for solutions and the remarkable tool you've built. Start creating content today, and watch your extension growth accelerate through the power of organic discovery.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/) — for feature injection
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

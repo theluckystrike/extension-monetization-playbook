@@ -152,6 +152,11 @@ Paying users become advocates. They recommend your product to colleagues. They f
 Price with confidence. Your work has value. The right price attracts the right users and builds a sustainable business. Underpricing attracts the wrong users and burns you out. Choose the price that lets you keep building.
 
 Do not apologize for your pricing. Do not explain why it costs what it costs. State the price confidently. Let the product speak for itself. Users who belong in your customer base will pay. Users who will never pay were never your customers anyway. Focus on the ones who see your value.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for pricing tier management
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

@@ -148,17 +148,11 @@ The portfolio approach at zovo.one demonstrates the power of scale. With 17 exte
 
 ---
 
-## Technical Implementation Guides
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
 
-Need help building the technical foundation for sponsorship integration? The [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/) has comprehensive tutorials:
-
-- **[Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-content-scripts/)** - Inject functionality into web pages
-- **[Storage API Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/)** - Persist data across sessions
-- **[Messaging Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/)** - Communication between extension components
-- **[OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/)** - Secure user authentication
-- **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
-
-> **Implementation Note**: Sponsorship integration often involves displaying sponsored content within the extension UI. Use content scripts to inject sponsored messages at appropriate moments, use chrome.storage to track sponsorship impression counts for reporting to sponsors, and implement the Messaging API to communicate between your popup and content scripts for dynamic ad loading.
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

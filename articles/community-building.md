@@ -149,17 +149,11 @@ Start building your community today. It is the only investment that will still b
 
 ---
 
-## Technical Implementation Guides
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
 
-Need help building the technical foundation for community features? The [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/) has comprehensive tutorials:
-
-- **[Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-content-scripts/)** - Inject functionality into web pages
-- **[Storage API Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/)** - Persist data across sessions
-- **[Messaging Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/)** - Communication between extension components
-- **[OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/)** - Secure user authentication
-- **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
-
-> **Implementation Note**: Community features often require user authentication and data sync across devices. Implement OAuth2 for secure user identity, use chrome.storage.sync to persist user preferences and community settings, and leverage the Messaging API for real-time notifications when users interact with community features.
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

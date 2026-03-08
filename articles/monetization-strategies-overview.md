@@ -115,17 +115,13 @@ The best answer may be a combination. Many successful extensions use freemium as
 
 ---
 
-## Technical Implementation
-
-Once you have chosen your monetization model, the next question is implementation. Payment processing, license validation, user authentication, and security all require careful attention. The Chrome Extension Guide provides implementation patterns for every aspect of monetization infrastructure.
-
-For payment integration, Stripe is the standard choice for extensions. Their extension-compatible libraries handle authentication flows, webhook processing, and subscription management. See the [Stripe in Extensions](/articles/stripe-in-extensions/) guide for detailed setup instructions.
-
-For license gating, you need to decide between client-side and server-side validation. Client-side is simpler but easier to bypass. Server-side is more secure but requires ongoing infrastructure. Most successful extensions use a hybrid approach. See [License Key System](/articles/license-key-system/) and [Server-Side Validation](/articles/server-side-validation/) for implementation patterns.
-
-For technical implementation resources across all monetization strategies, see the [Technical Implementation Links](/articles/technical-implementation-links/) guide, which maps every monetization model to its required infrastructure.
 
 ---
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

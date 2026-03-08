@@ -235,6 +235,11 @@ After testing these patterns across 17 extensions at zovo.one, the inline lock p
 The best paywall is one the user does not notice until they are ready. It fits into their workflow, respects their time, and offers value at the right moment. When done correctly, users feel like they discovered the premium features rather than being sold to.
 
 The key to successful extension paywall design is respecting user intelligence and demonstrating value before asking for payment. Extension users are task-focused and skeptical of manipulation. Meet them where they are, show them what your extension can do, and make the upgrade path natural and compelling.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for tracking feature access
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

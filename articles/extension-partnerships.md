@@ -40,20 +40,6 @@ For reciprocal arrangements, clarity about placement location and wording helps 
 
 Some partnerships warrant more formal arrangements, particularly when significant promotion budgets are involved or when one party has substantially larger reach. In these cases, consider structured deals such as guaranteed impression counts, performance-based compensation, or cross-licensing arrangements. Legal consultation helps for high-value partnerships, but many successful extension collaborations operate on handshake agreements built on mutual trust.
 
-## Technical Implementation of Cross-Promotion
-
-Implementing cross-promotion effectively requires attention to user experience and technical execution. The goal is creating promotion that feels helpful rather than intrusive, providing value to users while achieving your growth objectives.
-
-The settings or options page represents the highest-value placement location for cross-promotion. Users who visit settings have demonstrated meaningful engagement with your extension. They have invested time configuring your tool and have established a relationship with it. These users are significantly more receptive to recommendations than casual users who never move beyond basic functionality.
-
-Success screens and completion messages offer another effective promotion context. After users accomplish a meaningful task with your extension, they are in a positive frame of mind and may be receptive to learning about related tools. A user who just finished organizing their tabs might appreciate a recommendation for a bookmark management tool that complements their workflow.
-
-Onboarding flows present opportunities for contextual recommendations, particularly when introducing users to your broader portfolio. If a user is setting up your extension for the first time and you can demonstrate how related tools would enhance their experience, the recommendation feels like part of a comprehensive solution rather than an unrelated pitch.
-
-Avoid aggressive promotional tactics such as popup banners or interrupting users mid-task. These approaches consistently underperform contextual recommendations and can generate negative reviews. Users who feel bombarded will uninstall, and the damage to your reputation often exceeds the marginal acquisition benefit.
-
-Technical implementation should include tracking parameters for performance measurement. Append UTM parameters to your cross-promotion links, creating unique parameters for each placement location and each partner. This data enables you to optimize placement decisions based on actual conversion performance rather than assumptions.
-
 ## Cross-Promotion Best Practices and User Experience
 
 Successful cross-promotion respects user attention while providing genuine value. Every recommendation should solve a problem the user already has or help them accomplish a goal they are pursuing. Self-serving promotions that exist only for your growth benefit will generate poor results and damage user trust.
@@ -103,6 +89,11 @@ Extension partnerships and cross-promotion represent transformative growth oppor
 Start by evaluating your existing user base for partnership opportunities. Map the user journeys and identify complementary tools that serve similar needs. Reach out to developers whose quality standards match yours and propose mutually beneficial arrangements. With patience and persistence, your partnership network can become the most valuable acquisition channel in your growth strategy.
 
 Remember that successful partnerships are built on genuine value creation for users. When you help your users discover tools that genuinely improve their workflows, everyone benefits. The developer wins through growth, the partner wins through referral value, and most importantly, the user wins through discovering helpful tools they might never have found otherwise. This win-win-win philosophy underlies every successful extension partnership.
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
 
 ## Related Articles
 

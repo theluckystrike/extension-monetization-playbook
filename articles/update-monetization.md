@@ -65,17 +65,6 @@ Bundle discounts work well when you have multiple products or complementary offe
 
 Avoid perpetual discounts. If every version is always discounted, the discount becomes meaningless and regular price becomes a fiction users ignore. Create genuine value in the full price by making it clearly justified, then offer discounts as rewards for specific behaviors (early upgrade, multi-extension purchase, referral).
 
-## Technical Implementation of Version-Gated Features
-
-Implementing version-gated features requires balancing security with user experience. You need enough protection to make paid upgrades worthwhile, but not so much friction that it annoys legitimate users.
-
-The simplest approach checks the user's stored license against the current extension version on startup. If their license is older than the paid version threshold, premium features are disabled with a clear prompt to upgrade. This is easy to implement but can be bypassed by users who know how to clear local storage.
-
-Server-side validation provides stronger protection but requires ongoing infrastructure costs and creates dependency on external services. When the validation server is down, legitimate users may lose access to features they paid for. This creates support burden and potential [handling-refunds](/articles/handling-refunds) situations.
-
-A hybrid approach often works best: light local checking for immediate response, with periodic server validation to catch sophisticated bypass attempts. Most users won't attempt to bypass; those who do likely weren't going to pay anyway.
-
-Whatever implementation you choose, ensure grace periods for edge cases. Users who purchase should have time to receive the upgrade, and users experiencing temporary issues shouldn't lose access immediately. Build in enough flexibility that your technical implementation supports rather than undermines the customer relationship you're building.
 
 ---
 
@@ -182,6 +171,11 @@ An extension is never finished, it is just waiting for its next update. Each upd
 The update is the heartbeat of the product. Keep it beating strong, and the business follows. Treat every release as an event, write the changelog like marketing copy, and never forget that the free user base is the foundation of everything.
 
 Every update is a promise to your users. It says I am still here, I am still working on this, and I still care about your experience. That promise, delivered consistently over time, is what builds a sustainable extension business.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/) — for handling extension updates
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

@@ -164,3 +164,13 @@ Start with simple tests on high-impact elements like pricing and paywall design.
 The most successful extension developers don't just run occasional tests—they build testing into their culture, continuously questioning assumptions and looking for improvement opportunities. This mindset, combined with the technical infrastructure to support experimentation, creates sustainable competitive advantage that drives long-term revenue growth.
 
 Implement the strategies outlined in this guide, start testing systematically, and watch as data-driven optimization transforms your extension's monetization performance. The insights you gain will inform not just conversion optimization but product development, marketing, and overall business strategy.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/) — for A/B testing event tracking
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

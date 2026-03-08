@@ -170,3 +170,13 @@ The key is starting before you think you're ready. Even a basic welcome sequence
 Remember that email marketing is ultimately about building relationships. Every email should provide value to recipients, whether through useful information, helpful tips, or genuine assistance. Users who feel respected and valued will become loyal customers. Those who feel spammed will unsubscribe and potentially leave negative reviews.
 
 For more guidance on building and monetizing Chrome extensions, explore additional resources on extension distribution, conversion optimization, and advanced monetization strategies.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -150,6 +150,11 @@ Cross-promotion remains one of the most powerful yet underutilized growth strate
 Start by identifying natural connections between your extensions or potential partner extensions. Implement thoughtful cross-promotion placements in high-engagement areas like settings pages and success screens. Track your results carefully and continuously optimize based on data. With patience and persistence, cross-promotion can become the cornerstone of your extension marketing strategy.
 
 Remember that building a portfolio of related extensions creates compounding network effects. Each new extension becomes a marketing channel for your existing ones, creating a virtuous cycle of growth that becomes increasingly difficult for competitors to match.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

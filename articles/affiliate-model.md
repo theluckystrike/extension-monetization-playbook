@@ -229,6 +229,11 @@ Do not build an extension around affiliate revenue. Build a solid extension with
 
 ---
 
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Sponsorship Model](/articles/sponsorship-model/)

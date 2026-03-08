@@ -132,6 +132,11 @@ The key is approaching pricing as a strategic asset rather than a necessary chor
 
 Remember that optimal pricing comes from understanding your specific audience and continuously testing. What works for one extension may not work for another. Use these principles as a framework, adapt them to your context, and measure everything. With patience and experimentation, you will find the pricing strategy that maximizes your extension's revenue potential.
 
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for pricing display
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

@@ -129,6 +129,16 @@ Share your story with the Zovo team and help grow the collection of extension ca
 *This page is part of the [Extension Monetization Playbook](/)—a free resource for developers building sustainable browser extension businesses. For more case studies, tools, and tactics, visit [zovo.one](https://zovo.one).*
 
 ---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide):
+- [Enterprise Distribution Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/enterprise-chrome-extension-distribution/)
+- [CWS Listing Optimization](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/cws-listing-optimization/)
+- [Identity API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/identity-api/)
+- [Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/)
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/)
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/)
+
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

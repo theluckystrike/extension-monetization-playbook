@@ -108,6 +108,11 @@ Your users trust you with their browser experience, and analytics is how you hon
 
 ---
 
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/) — for analytics event tracking
+
 ## Related Articles
 
 - [Privacy-First Analytics for Chrome Extensions](/articles/analytics-without-tracking/) - Implement analytics while respecting user privacy

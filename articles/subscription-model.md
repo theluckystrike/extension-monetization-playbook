@@ -183,14 +183,6 @@ Start with the fundamentals: clear pricing, reliable license validation, and tho
 
 ---
 
-## Technical Implementation
-
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
-
-- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
-- [extension-auth-flow](https://github.com/theluckystrike/extension-auth-flow)
-
-All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
@@ -207,6 +199,11 @@ Need help building the technical foundation for your subscription extension? The
 - **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
 
 > **Implementation Note**: Subscriptions require the Chrome Alarms API for scheduled license re-validation and the Storage API for caching subscription status. Implement background alarms to periodically check subscription validity against your server, ensuring users maintain or lose access based on their current billing status.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for subscription status tracking
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

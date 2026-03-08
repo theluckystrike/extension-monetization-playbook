@@ -118,3 +118,13 @@ Successfully converting freemium chrome extension users to premium subscribers r
 Focus on genuinely valuable products, thoughtful feature gating, respectful upgrade timing, seamless payment experiences, and continuous measurement and improvement. These elements work together to create conversion systems that feel natural rather than pushy, that respect users while motivating action, and that build sustainable revenue while maintaining positive user relationships.
 
 The strategies outlined in this guide provide a comprehensive framework for optimizing your freemium to premium conversion. Start with the changes that address your biggest friction points, measure results consistently, and continue iterating toward ever-better conversion performance. Your premium subscribers are out there—your job is to create the conditions that make upgrading the obvious choice.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

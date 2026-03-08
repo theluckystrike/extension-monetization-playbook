@@ -141,3 +141,13 @@ A high-converting Chrome extension landing page is not optional if you are serio
 Focus on clarity, speed, and trust. Communicate your value proposition in seconds, remove every unnecessary friction point, and provide abundant social proof. Test continuously, measure rigorously, and iterate based on real data rather than assumptions.
 
 Your extension deserves a landing page that performs as well as the product itself. The time you invest in optimization will pay compounding returns as more visitors become users, reviews accumulate, and your extension gains the momentum it needs to succeed in an increasingly competitive marketplace.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

@@ -123,6 +123,11 @@ These approaches require more sophisticated engineering and different business m
 
 ---
 
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Privacy-First Analytics for Chrome Extensions](/articles/analytics-without-tracking/) - Implement analytics without tracking users

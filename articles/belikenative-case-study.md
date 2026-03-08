@@ -118,6 +118,11 @@ This is just the beginning. The problem BeLikeNative solves isn't going away. If
 The team has grown from just me to several contributors. BeLikeNative taught us how to build, launch, and iterate on browser extensions. Those lessons apply to every new project.
 
 I'm building for them. And I'm just getting started.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

@@ -66,20 +66,6 @@ Extensions that help users research products before purchasing can seamlessly in
 
 Ensure your product recommendations are genuinely helpful and unbiased. Users quickly detect promotional content, and negative reviews will destroy your extension's reputation faster than any affiliate revenue could compensate.
 
-## Technical Implementation: Tracking and Attribution
-
-Proper tracking implementation is crucial for accurate attribution and maximizing revenue. Most affiliate programs provide specific tracking codes or pixels that must be correctly implemented within your extension.
-
-The basic tracking flow works as follows: when a user clicks an affiliate link from your extension, your tracking code attaches a unique identifier to the link. This identifier tracks the user through their purchase journey, ensuring you receive credit for conversions. When a purchase occurs, the affiliate program validates the tracking and credits your account with the appropriate commission.
-
-For Chrome extensions, you'll need to implement this tracking carefully. Consider the following technical requirements:
-
-**Link redirection** through your own server provides the most control and accuracy. Instead of linking directly to affiliate URLs, direct users through a redirect on your server that adds tracking parameters before forwarding to the merchant. This approach also allows for click tracking and analytics within your extension.
-
-**PostMessage communication** may be necessary if your extension injects content into third-party pages. The Chrome extension messaging API allows your extension's different components to share conversion data reliably.
-
-**Local storage tracking** enables you to maintain user sessions and attribute conversions that occur days after the initial click. Store click timestamps and affiliate identifiers to validateattributions properly.
-
 ## Compliance and Best Practices
 
 Operating within legal and platform guidelines is non-negotiable for sustainable affiliate marketing through extensions. Several key compliance areas require attention:
@@ -137,3 +123,13 @@ The opportunity exists because the model benefits everyone involved—users rece
 Start with a single extension focused on solving one genuine problem, implement affiliate integration thoughtfully, measure your results obsessively, and scale gradually as you learn what works for your specific audience. The journey from initial concept to meaningful revenue takes effort, but the passive income potential makes it worth the investment.
 
 Remember that the Chrome extension ecosystem continues evolving, and staying current with platform policies, user expectations, and affiliate program requirements ensures long-term success. Commit to providing genuine value, and the affiliate revenue will follow naturally.
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

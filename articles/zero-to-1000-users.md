@@ -656,12 +656,6 @@ Focus on channels that compound. Everything else is noise.
 
 ---
 
-## Technical Implementation
-
-For code behind these strategies, see the [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
-
-- [Listing Optimization](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/publishing/listing-optimization.md)
-- [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide)
 
 ---
 
@@ -672,6 +666,11 @@ Getting to 1,000 users is hard. But it's also the most important milestone. The 
 The tactics are not secret. The advantage is in actually doing them consistently. Don't switch tactics every week. Give each channel at least a month before deciding whether it works for your specific extension.
 
 This is a long game. Consistency beats intensity every time.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

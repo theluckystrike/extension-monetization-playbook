@@ -80,3 +80,13 @@ For extensions targeting enterprise users, Windows-centric organizations, or tho
 Many developers ultimately choose to publish across all three platforms, accepting the additional maintenance burden in exchange for maximum distribution. If your extension has broad appeal and you have the bandwidth to support multiple listings, this approach offers the best overall results. The key is to start with a clear understanding of your primary platform and expand strategically as you gauge user response and refine your product.
 
 The browser extension market continues to evolve rapidly, with each platform regularly updating its policies, APIs, and marketplace features. Stay informed about changes that might affect your extension, and be prepared to adapt your strategy as the landscape shifts. Regardless of which platform you choose, building a quality extension that genuinely solves user problems remains the foundation of long-term success.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

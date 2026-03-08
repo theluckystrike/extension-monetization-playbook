@@ -154,6 +154,16 @@ If you are building extensions that handle user data or process payments for cli
 See our [legal essentials](/articles/legal-essentials/) guide for detailed requirements around GDPR compliance, data handling, and client contracts.
 
 ---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide):
+- [Enterprise Distribution Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/enterprise-chrome-extension-distribution/)
+- [CWS Listing Optimization](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/cws-listing-optimization/)
+- [Identity API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/identity-api/)
+- [Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/)
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/)
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/)
+
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

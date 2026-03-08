@@ -158,6 +158,11 @@ Our pricing is four dollars ninety-nine per month or ninety-nine dollars lifetim
 This strategy has been our primary conversion method for over two years. We have refined the trial experience based on data and user feedback. The results speak for themselves. Our paid user base has grown steadily while maintaining high satisfaction scores.
 
 The key to successful chrome extension free trial implementation lies in balancing user experience with business needs. When done correctly, trials become a powerful growth engine for your extension. Focus on letting users experience your product's value completely, then make conversion effortless. The numbers will follow.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for storing trial timestamps and license keys
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

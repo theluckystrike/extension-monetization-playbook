@@ -212,6 +212,11 @@ Our most effective content falls into two categories: technical tutorials that d
 
 ---
 
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/) — for feature injection
+
 ## Related Articles
 
 - [Chrome Web Store SEO](/articles/chrome-web-store-seo/)

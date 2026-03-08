@@ -73,18 +73,13 @@ Background service workers in Manifest V3 handle asynchronous tasks like checkin
 
 ---
 
-## Technical Implementation
-
-For the code behind these strategies, see the companion [Chrome Extension Guide](https://github.com/theluckystrike/chrome-extension-guide):
-
-- [Background Service Workers](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/service-workers.md) — Handling payment callbacks and background tasks in MV3
-- [Fetch API Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/fetch-patterns.md) — Making server requests from extensions securely
-- [Authentication Patterns](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/patterns/authentication-patterns.md)
-- [Content Security Policy](https://github.com/theluckystrike/chrome-extension-guide/blob/main/docs/mv3/content-security-policy.md)
-
-All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for payment state
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

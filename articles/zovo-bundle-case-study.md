@@ -101,18 +101,6 @@ Understanding which extensions drive revenue is crucial for portfolio decisions,
 
 **Expansion Revenue**: New extensions added to an existing bundle generate revenue without new acquisition costs. This is pure expansion revenue. I can release a new tool, and the 4,000 existing subscribers become potential users immediately. This is why the bundle economics get better with each new extension in the portfolio. I don't need to acquire new customers to generate more revenue from existing ones.
 
-## Technical Implementation of the Bundle
-
-The technical side is surprisingly straightforward.
-
-One Stripe subscription powers everything. I built a single license validation endpoint that every extension calls on startup. Each extension checks the same subscription status, looks for the same valid customer record, and unlocks the same premium features based on that single source of truth.
-
-Here's the elegant part: upgrading in any extension unlocks all of them instantly. If someone is using Tab Suspender Pro and decides they want to try BeLikeNative, they already have an active subscription. There's no additional purchase flow, no upsell friction, no moment where they might abandon the new tool because of a paywall.
-
-Adding a new extension to the bundle takes minutes, not days. I don't need to set up new billing infrastructure. I just point the new extension to the existing license endpoint and add it to the list of covered products. The marginal cost of adding another extension to the bundle is essentially zero from a systems perspective.
-
-One thing that surprised me is how the shared infrastructure improved overall quality. When I fix a bug in the license validation system, all 17 extensions benefit instantly. When I improve the caching layer, every extension runs faster. The portfolio approach creates genuine engineering efficiencies that wouldn't exist with separate products.
-
 ## The Economics of Bundling Extensions
 
 The numbers work out beautifully once you understand the dynamics. The average user installs two to three extensions from my portfolio. They're not using all 17. They found two or three tools that solved specific problems and kept them.
@@ -192,6 +180,11 @@ The bundle transforms what could be a collection of small revenue streams into s
 This approach isn't for everyone. It requires patience to build up a portfolio before launching the bundle. It demands quality across all your products since one weak link affects the whole brand. But for solo developers willing to play the long game, the bundle model offers a path to sustainable income that wouldn't exist otherwise.
 
 If you're building browser extensions and feeling the pain of managing multiple billing systems, consider whether a chrome extension bundle monetization approach could work for you. It changed everything for zovo.one.
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

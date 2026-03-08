@@ -129,6 +129,16 @@ The initial setup took more time than using a built-in system would have but the
 If you are starting today, the same path is available to you. Pick your payment provider, build your landing page, implement license validation, and ship. The gap left by Google is real but it is also an opportunity to own your business completely.
 
 ---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide):
+- [Enterprise Distribution Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/enterprise-chrome-extension-distribution/)
+- [CWS Listing Optimization](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/cws-listing-optimization/)
+- [Identity API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/identity-api/)
+- [Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/)
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/)
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/)
+
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

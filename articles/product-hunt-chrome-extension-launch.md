@@ -177,3 +177,13 @@ Your extension launch strategy should include optimizing your Chrome Web Store l
 With the right approach, Product Hunt can provide the initial traction that transforms your Chrome extension from a side project into a growing product with a loyal user base. The key is treating your launch as the beginning of a conversation with your users, not the end of your marketing efforts.
 
 Start preparing your launch today, and position your Chrome extension for the visibility and growth that a successful Product Hunt launch can provide.
+
+
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.

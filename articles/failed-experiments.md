@@ -79,17 +79,11 @@ Each failed experiment cost me time and money, but the knowledge gained was inva
 
 ---
 
-## Technical Implementation Guides
+---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/):
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/) — for user preferences and state
 
-Need help building the technical foundation for experimentation? The [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide/) has comprehensive tutorials:
-
-- **[Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-content-scripts/)** - Inject functionality into web pages
-- **[Storage API Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-storage/)** - Persist data across sessions
-- **[Messaging Guide](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-messaging/)** - Communication between extension components
-- **[OAuth2 Authentication](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-oauth2-authentication/)** - Secure user authentication
-- **[Manifest V3 Migration](https://theluckystrike.github.io/chrome-extension-guide/guides/chrome-extension-manifest-v3/)** - Upgrade to the latest platform
-
-> **Implementation Note**: Running monetization experiments requires A/B testing infrastructure and event tracking. Implement feature flags using chrome.storage to control which pricing models users see, track conversion events locally, and use the Storage API to persist experiment group assignments across sessions.
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion

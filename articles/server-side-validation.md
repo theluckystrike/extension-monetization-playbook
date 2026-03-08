@@ -179,6 +179,15 @@ This system has been running at zovo.one for a while now. We handle server-side 
 For implementing this validation in a Manifest V3 extension with background service workers, see the [Chrome Extension Guide](/articles/chrome-extension-guide/).
 
 ---
+## Technical Implementation
+For implementation details, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide):
+- [Enterprise Distribution Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/enterprise-chrome-extension-distribution/)
+- [Identity API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/identity-api/)
+- [Content Scripts Guide](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/)
+- [Chrome Extension Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/)
+- [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/)
+
+
 ## Related Articles
 
 - [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
