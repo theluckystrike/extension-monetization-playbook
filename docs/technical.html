@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Guide - Extension Monetization Playbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #e6edf3;
+            text-decoration: none;
+        }
+
+        nav .logo:hover {
+            color: #58a6ff;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        nav .nav-links a {
+            color: #8b949e;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        nav .nav-links a:hover {
+            color: #58a6ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 24px 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #8b949e;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 48px 0;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .content-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+        }
+
+        .section-header h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #e6edf3;
+        }
+
+        .section-header .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .badge-essential {
+            background-color: rgba(88, 166, 255, 0.15);
+            color: #58a6ff;
+        }
+
+        .badge-important {
+            background-color: rgba(63, 185, 80, 0.15);
+            color: #3fb950;
+        }
+
+        .badge-advanced {
+            background-color: rgba(210, 153, 34, 0.15);
+            color: #d29922;
+        }
+
+        .section-content p {
+            color: #8b949e;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .section-content ul {
+            margin-left: 24px;
+            margin-bottom: 20px;
+            color: #8b949e;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+        }
+
+        .section-content strong {
+            color: #e6edf3;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+
+        .code-block h3 {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #8b949e;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .code-block pre {
+            margin: 0;
+            font-family: "SF Mono", Monaco, Consolas, "Liberation Mono", monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .code-block code {
+            color: #e6edf3;
+        }
+
+        .code-comment { color: #8b949e; }
+        .code-keyword { color: #ff7b72; }
+        .code-string { color: #a5d6ff; }
+        .code-function { color: #d2a8ff; }
+        .code-number { color: #79c0ff; }
+        .code-property { color: #7ee787; }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #30363d;
+            padding: 32px 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+
+            .hero {
+                padding: 40px 16px 30px;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-section {
+                padding: 32px 0;
+            }
+
+            .section-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .code-block {
+                padding: 16px;
+            }
+
+            .code-block pre {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">← Extension Monetization Playbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="revenue-models.html">Revenue</a></li>
+                <li><a href="payments.html">Payments</a></li>
+                <li><a href="growth.html">Growth</a></li>
+                <li><a href="technical.html">Technical</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Technical Guide for Extension Monetization</h1>
+            <p>Build a robust technical foundation — analytics, testing, updates, monitoring, and validation for your monetization system.</p>
+        </section>
+
+        <!-- Analytics Integration -->
+        <section id="analytics" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-essential">Essential</span>
+                <h2>Analytics Integration</h2>
+            </div>
+            <div class="section-content">
+                <p>Understanding user behavior is critical for monetization success. Implement robust analytics to track feature usage, conversion funnels, and revenue-related events.</p>
+
+                <h3 id="google-analytics">Google Analytics 4</h3>
+                <p>GA4 provides powerful event-based tracking ideal for extensions. Use the measurement protocol for server-side validation.</p>
+                
+                <div class="code-block">
+                    <h3>manifest.json - Permissions</h3>
+                    <pre><code><span class="code-comment">// Add to manifest.json</span>
+{
+  <span class="code-property">"permissions"</span>: [
+    <span class="code-string">"storage"</span>,
+    <span class="code-string">"scripting"</span>
+  ],
+  <span class="code-property">"host_permissions"</span>: [
+    <span class="code-string">"https://www.google-analytics.com/*"</span>,
+    <span class="code-string">"https://analytics.google.com/*"</span>
+  ]
+}</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>analytics.js - Initialize GA4</h3>
+                    <pre><code><span class="code-comment">// background.js or dedicated analytics module</span>
+<span class="code-keyword">const</span> GA_MEASUREMENT_ID = <span class="code-string">'G-XXXXXXXXXX'</span>;
+
+<span class="code-keyword">function</span> <span class="code-function">initGA</span>() {
+  <span class="code-keyword">const</span> script = document.createElement(<span class="code-string">'script'</span>);
+  script.src = <span class="code-string">`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`</span>;
+  script.onload = () => {
+    window.dataLayer = window.dataLayer || [];
+    <span class="code-keyword">function</span> gtag(){dataLayer.push(arguments);}
+    gtag(<span class="code-string">'js'</span>, <span class="code-keyword">new</span> Date());
+    gtag(<span class="code-string">'config'</span>, GA_MEASUREMENT_ID, {
+      <span class="code-property">send_page_view</span>: <span class="code-keyword">false</span> <span class="code-comment">// Manual pageview tracking</span>
+    });
+  };
+  document.head.appendChild(script);
+}
+
+<span class="code-comment">// Track custom events</span>
+<span class="code-keyword">function</span> <span class="code-function">trackEvent</span>(eventName, params) {
+  <span class="code-keyword">if</span> (window.gtag) {
+    window.gtag(<span class="code-string">'event'</span>, eventName, params);
+  }
+}</code></pre>
+                </div>
+
+                <h3 id="mixpanel">Mixpanel</h3>
+                <p>Mixpanel offers advanced user journey analysis and is popular for product-led growth. It works well for tracking conversion funnels.</p>
+
+                <div class="code-block">
+                    <h3>mixpanel.js - Track Events</h3>
+                    <pre><code><span class="code-comment">// Background service worker</span>
+<span class="code-keyword">import</span> mp from <span class="code-string">'mixpanel-browser'</span>;
+
+mp.init(<span class="code-string">'YOUR_TOKEN'</span>, {
+  <span class="code-property">debug</span>: <span class="code-keyword">true</span>,
+  <span class="code-property">track_pageview</span>: <span class="code-keyword">false</span>
+});
+
+<span class="code-comment">// Track upgrade funnel</span>
+<span class="code-keyword">async function</span> <span class="code-function">trackUpgradeFunnel</span>(userId, step) {
+  mp.people.set(userId, {
+    <span class="code-property">$last_upgrade_step</span>: step,
+    <span class="code-property">$upgrade_started_at</span>: <span class="code-keyword">new</span> Date()
+  });
+  
+  mp.track(<span class="code-string">`upgrade_funnel_${step}`</span>, {
+    <span class="code-property">distinct_id</span>: userId,
+    <span class="code-property">timestamp</span>: <span class="code-keyword">new</span> Date().toISOString(),
+    <span class="code-property">extension_version</span>: chrome.runtime.getManifest().version
+  });
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- A/B Testing -->
+        <section id="ab-testing" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-important">Important</span>
+                <h2>A/B Testing in Extensions</h2>
+            </div>
+            <div class="section-content">
+                <p>Test different monetization strategies, pricing, and UI elements to optimize conversion rates. Use feature flags combined with analytics.</p>
+
+                <h3>Client-Side A/B Testing</h3>
+                <p>For simple UI tests, use client-side assignment with storage synchronization across extension contexts.</p>
+
+                <div class="code-block">
+                    <h3>ab-testing.js - Simple Implementation</h3>
+                    <pre><code><span class="code-keyword">const</span> EXPERIMENTS = {
+  <span class="code-property">pricing_page_v2</span>: {
+    <span class="code-property">variants</span>: [<span class="code-string">'control'</span>, <span class="code-string">'variant_a'</span>, <span class="code-string">'variant_b'</span>],
+    <span class="code-property">weights</span>: [<span class="code-number">0.5</span>, <span class="code-number">0.25</span>, <span class="code-number">0.25</span>]
+  },
+  <span class="code-property">cta_button_color</span>: {
+    <span class="code-property">variants</span>: [<span class="code-string">'blue'</span>, <span class="code-string">'green'</span>],
+    <span class="code-property">weights</span>: [<span class="code-number">0.5</span>, <span class="code-number">0.5</span>]
+  }
+};
+
+<span class="code-keyword">async function</span> <span class="code-function">getVariant</span>(experimentId) {
+  <span class="code-comment">// Check existing assignment</span>
+  <span class="code-keyword">const</span> stored = <span class="code-keyword">await</span> chrome.storage.local.get([<span class="code-string">`exp_${experimentId}`</span>]);
+  <span class="code-keyword">if</span> (stored[<span class="code-string">`exp_${experimentId}`</span>]) {
+    <span class="code-keyword">return</span> stored[<span class="code-string">`exp_${experimentId}`</span>];
+  }
+  
+  <span class="code-comment">// Assign new variant using weighted random</span>
+  <span class="code-keyword">const</span> exp = EXPERIMENTS[experimentId];
+  <span class="code-keyword">const</span> rand = Math.random();
+  <span class="code-keyword">let</span> cumulative = <span class="code-number">0</span>;
+  <span class="code-keyword">let</span> variant = exp.variants[<span class="code-number">0</span>];
+  
+  <span class="code-keyword">for</span> (<span class="code-keyword">let</span> i = <span class="code-number">0</span>; i < exp.variants.length; i++) {
+    cumulative += exp.weights[i];
+    <span class="code-keyword">if</span> (rand < cumulative) {
+      variant = exp.variants[i];
+      <span class="code-keyword">break</span>;
+    }
+  }
+  
+  <span class="code-comment">// Persist assignment</span>
+  <span class="code-keyword">await</span> chrome.storage.local.set({
+    [<span class="code-string">`exp_${experimentId}`</span>]: variant
+  });
+  
+  <span class="code-comment">// Track assignment event</span>
+  trackEvent(<span class="code-string">'experiment_assigned'</span>, {
+    <span class="code-property">experiment_id</span>: experimentId,
+    <span class="code-property">variant</span>: variant
+  });
+  
+  <span class="code-keyword">return</span> variant;
+}</code></pre>
+                </div>
+
+                <h3>Remote Config for A/B Tests</h3>
+                <p>For more sophisticated testing, fetch variant assignments from a remote server to enable dynamic updates.</p>
+
+                <div class="code-block">
+                    <h3>remote-config.js - Fetch Variants</h3>
+                    <pre><code><span class="code-keyword">async function</span> <span class="code-function">fetchExperimentConfig</span>() {
+  <span class="code-keyword">try</span> {
+    <span class="code-keyword">const</span> response = <span class="code-keyword">await</span> fetch(<span class="code-string">`https://api.yourdomain.com/v1/experiments?uid=${userId}`</span>, {
+      <span class="code-property">headers</span>: {
+        <span class="code-string">'Authorization'</span>: <span class="code-string">`Bearer ${apiKey}`</span>,
+        <span class="code-string">'Content-Type'</span>: <span class="code-string">'application/json'</span>
+      }
+    });
+    
+    <span class="code-keyword">if</span> (!response.ok) <span class="code-keyword">throw new</span> Error(<span class="code-string">'Failed to fetch experiments'</span>);
+    
+    <span class="code-keyword">const</span> data = <span class="code-keyword">await</span> response.json();
+    
+    <span class="code-comment">// Cache in storage with TTL</span>
+    <span class="code-keyword">await</span> chrome.storage.local.set({
+      <span class="code-property">experiments_cache</span>: {
+        <span class="code-property">data</span>: data,
+        <span class="code-property">expires</span>: Date.now() + (<span class="code-number">3600</span> * <span class="code-number">1000</span>) <span class="code-comment">// 1 hour</span>
+      }
+    });
+    
+    <span class="code-keyword">return</span> data;
+  } <span class="code-keyword">catch</span> (error) {
+    console.error(<span class="code-string">'Experiment config error:'</span>, error);
+    <span class="code-keyword">return</span> <span class="code-keyword">null</span>;
+  }
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update Strategies -->
+        <section id="updates" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-essential">Essential</span>
+                <h2>Update Strategies</h2>
+            </div>
+            <div class="section-content">
+                <p>Proper update management ensures your users have the latest monetization features while maintaining stability. Chrome provides built-in auto-update, but you need strategies for controlled rollouts.</p>
+
+                <h3 id="chrome-auto-update">Chrome Auto-Update</h3>
+                <p>Extensions auto-update by default from the Chrome Web Store. Configure update URL for enterprise distribution or testing.</p>
+
+                <div class="code-block">
+                    <h3>manifest.json - Update Configuration</h3>
+                    <pre><code>{
+  <span class="code-property">"manifest_version"</span>: <span class="code-number">3</span>,
+  <span class="code-property">"name"</span>: <span class="code-string">"My Extension"</span>,
+  <span class="code-property">"version"</span>: <span class="code-string">"1.2.0"</span>,
+  <span class="code-property">"update_url"</span>: <span class="code-string">"https://clients2.google.com/service/update2/crx"</span>,
+  <span class="code-property">"background"</span>: {
+    <span class="code-property">"service_worker"</span>: <span class="code-string">"background.js"</span>
+  }
+}</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>background.js - Listen for Updates</h3>
+                    <pre><code><span class="code-comment">// Listen for extension updates</span>
+chrome.runtime.onUpdateAvailable.addListener((details) => {
+  console.log(<span class="code-string">`Update available: ${details.version}`</span>);
+  
+  <span class="code-comment">// Track update availability</span>
+  trackEvent(<span class="code-string">'extension_update_available'</span>, {
+    <span class="code-property">current_version</span>: chrome.runtime.getManifest().version,
+    <span class="code-property">new_version</span>: details.version
+  });
+  
+  <span class="code-comment">// Auto-install the update</span>
+  chrome.runtime.reload();
+});
+
+<span class="code-comment">// Check for updates manually</span>
+<span class="code-keyword">function</span> <span class="code-function">checkForUpdates</span>() {
+  chrome.runtime.requestUpdateCheck((status, details) => {
+    <span class="code-keyword">if</span> (status === <span class="code-string">'update_available'</span>) {
+      console.log(<span class="code-string">`Update found: ${details.version}`</span>);
+    } <span class="code-keyword">else if</span> (status === <span class="code-string">'no_update'</span>) {
+      console.log(<span class="code-string">'No update available'</span>);
+    }
+  });
+}</code></pre>
+                </div>
+
+                <h3 id="staged-rollouts">Staged Rollouts</h3>
+                <p>Control the rate of update distribution to catch issues before affecting all users.</p>
+
+                <div class="code-block">
+                    <h3>staged-rollout.js - Gradual Distribution</h3>
+                    <pre><code><span class="code-keyword">const</span> STAGED_ROLLOUT = {
+  <span class="code-property">enabled</span>: <span class="code-keyword">true</span>,
+  <span class="code-property">percentage</span>: <span class="code-number">10</span>, <span class="code-comment">// Start with 10%</span>
+  <span class="code-property">min_version</span>: <span class="code-string">"1.0.0"</span>
+};
+
+<span class="code-keyword">async function</span> <span class="code-function">shouldAutoUpdate</span>() {
+  <span class="code-keyword">const</span> currentVersion = chrome.runtime.getManifest().version;
+  
+  <span class="code-comment">// Check if version meets minimum requirement</span>
+  <span class="code-keyword">if</span> (compareVersions(currentVersion, STAGED_ROLLOUT.min_version) < <span class="code-number">0</span>) {
+    <span class="code-keyword">return</span> <span class="code-keyword">true</span>; <span class="code-comment">// Always update critical versions</span>
+  }
+  
+  <span class="code-keyword">if</span> (!STAGED_ROLLOUT.enabled) {
+    <span class="code-keyword">return</span> <span class="code-keyword">false</span>; <span class="code-comment">// Staging disabled</span>
+  }
+  
+  <span class="code-comment">// Deterministic user assignment based on ID</span>
+  <span class="code-keyword">const</span> userId = <span class="code-keyword">await</span> getUserId();
+  <span class="code-keyword">const</span> hash = simpleHash(userId + currentVersion);
+  <span class="code-keyword">const</span> bucket = hash % <span class="code-number">100</span>;
+  
+  <span class="code-keyword">return</span> bucket < STAGED_ROLLOUT.percentage;
+}
+
+<span class="code-keyword">function</span> <span class="code-function">simpleHash</span>(str) {
+  <span class="code-keyword">let</span> hash = <span class="code-number">0</span>;
+  <span class="code-keyword">for</span> (<span class="code-keyword">let</span> i = <span class="code-number">0</span>; i < str.length; i++) {
+    hash = ((hash << <span class="code-number">5</span>) - hash) + str.charCodeAt(i);
+    hash |= <span class="code-number">0</span>;
+  }
+  <span class="code-keyword">return</span> Math.abs(hash);
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crash Reporting -->
+        <section id="crash-reporting" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-essential">Essential</span>
+                <h2>Crash Reporting</h2>
+            </div>
+            <div class="section-content">
+                <p>Monetization systems can fail in various ways. Implement comprehensive crash reporting to quickly identify and resolve issues affecting revenue.</p>
+
+                <h3>Sentry Integration</h3>
+                <p>Sentry provides excellent error tracking with context collection for extensions.</p>
+
+                <div class="code-block">
+                    <h3>sentry.js - Error Tracking</h3>
+                    <pre><code><span class="code-keyword">import</span> * as Sentry from <span class="code-string">"@sentry/browser"</span>;
+
+Sentry.init({
+  <span class="code-property">dsn</span>: <span class="code-string">"https://xxxxx@sentry.io/xxxxx"</span>,
+  <span class="code-property">environment</span>: chrome.runtime.id ? <span class="code-string">"production"</span> : <span class="code-string">"development"</span>,
+  <span class="code-property">release</span>: <span class="code-string">`extension@${chrome.runtime.getManifest().version}`</span>,
+  <span class="code-property">integrations</span>: [
+    <span class="code-keyword">new</span> Sentry.BrowserTracing()
+  ],
+  <span class="code-property">initialScope</span>: {
+    <span class="code-property">tags</span>: {
+      <span class="code-property">extension_id</span>: chrome.runtime.id
+    }
+  }
+});
+
+<span class="code-comment">// Capture errors in service worker</span>
+self.addEventListener(<span class="code-string">'error'</span>, (event) => {
+  Sentry.captureException(event.error, {
+    <span class="code-property">extra</span>: {
+      <span class="code-property">message</span>: event.message,
+      <span class="code-property">filename</span>: event.filename,
+      <span class="code-property">lineno</span>: event.lineno
+    }
+  });
+});
+
+<span class="code-comment">// Capture unhandled promise rejections</span>
+self.addEventListener(<span class="code-string">'unhandledrejection'</span>, (event) => {
+  Sentry.captureException(event.reason, {
+    <span class="code-property">tags</span>: { <span class="code-property">type</span>: <span class="code-string">'unhandled_rejection'</span> }
+  });
+});</code></pre>
+                </div>
+
+                <h3>Revenue-Specific Error Tracking</h3>
+                <p>Track monetization-specific errors separately for faster debugging.</p>
+
+                <div class="code-block">
+                    <h3>revenue-errors.js - Monetization Errors</h3>
+                    <pre><code><span class="code-keyword">const</span> RevenueErrorType = {
+  <span class="code-property">PAYMENT_FAILED</span>: <span class="code-string">'payment_failed'</span>,
+  <span class="code-property">LICENSE_INVALID</span>: <span class="code-string">'license_invalid'</span>,
+  <span class="code-property">API_ERROR</span>: <span class="code-string">'api_error'</span>,
+  <span class="code-property">WEBSTORE_ERROR</span>: <span class="code-string">'webstore_error'</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-function">trackRevenueError</span>(errorType, error, context = {}) {
+  <span class="code-keyword">const</span> errorData = {
+    <span class="code-property">type</span>: errorType,
+    <span class="code-property">message</span>: error.message || <span class="code-string">String(error)</span>,
+    <span class="code-property">stack</span>: error.stack,
+    <span class="code-property">context</span>: {
+      ...context,
+      <span class="code_property">timestamp</span>: Date.now(),
+      <span class="code_property">extension_version</span>: chrome.runtime.getManifest().version,
+      <span class="code_property">user_id</span>: context.userId
+    }
+  };
+  
+  <span class="code-comment">// Send to both error tracker and analytics</span>
+  Sentry.captureMessage(<span class="code_string">`Revenue Error: ${errorType}`</span>, <span class="code_string">'error'</span>, errorData);
+  trackEvent(<span class="code_string">'revenue_error'</span>, errorData);
+  
+  <span class="code-comment">// Store for retry</span>
+  <span class="code-keyword">await</span> storeFailedEvent(errorData);
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Monitoring -->
+        <section id="performance" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-important">Important</span>
+                <h2>Performance Monitoring</h2>
+            </div>
+            <div class="section-content">
+                <p>Slow extensions hurt conversion rates. Monitor performance metrics to ensure your monetization features don't degrade user experience.</p>
+
+                <h3>Core Web Vitals for Extensions</h3>
+                <p>Track paint timings and interaction latency in your extension's popups and pages.</p>
+
+                <div class="code-block">
+                    <h3>performance.js - Core Web Vitals</h3>
+                    <pre><code><span class="code-comment">// Track popup performance</span>
+<span class="code-keyword">function</span> <span class="code-function">measurePopupPerformance</span>() {
+  <span class="code-keyword">const</span> metrics = {
+    <span class="code-property">fcp</span>: <span class="code-keyword">null</span>,
+    <span class="code-property">lcp</span>: <span class="code-keyword">null</span>,
+    <span class="code_property">fid</span>: <span class="code-keyword">null</span>,
+    <span class="code_property">cls</span>: <span class="code-keyword">null</span>
+  };
+  
+  <span class="code-comment">// First Contentful Paint</span>
+  <span class="code-keyword">const</span> fcpEntry = performance.getEntriesByType(<span class="code-string">'paint'</span>)
+    .find(e => e.name === <span class="code-string">'first-contentful-paint'</span>);
+  <span class="code-keyword">if</span> (fcpEntry) metrics.fcp = fcpEntry.startTime;
+  
+  <span class="code-comment">// Largest Contentful Paint</span>
+  <span class="code-keyword">const</span> lcpEntry = performance.getEntriesByType(<span class="code-string">'largest-contentful-paint'</span>)
+    .pop();
+  <span class="code-keyword">if</span> (lcpEntry) metrics.lcp = lcpEntry.startTime;
+  
+  <span class="code-comment">// Cumulative Layout Shift</span>
+  <span class="code-keyword">const</span> clsEntries = performance.getEntriesByType(<span class="code-string">'layout-shift'</span>)
+    .filter(e => !e.hadRecentInput);
+  metrics.cls = clsEntries.reduce((sum, e) => sum + e.value, <span class="code-number">0</span>);
+  
+  <span class="code-comment">// Track metrics</span>
+  trackEvent(<span class="code_string">'popup_performance'</span>, {
+    <span class="code_property">fcp</span>: Math.round(metrics.fcp),
+    <span class="code_property">lcp</span>: Math.round(metrics.lcp),
+    <span class="code_property">cls</span>: metrics.cls.toFixed(<span class="code_number">3</span>)
+  });
+}
+
+<span class="code-comment">// Measure when popup loads</span>
+document.addEventListener(<span class="code_string">'DOMContentLoaded'</span>, measurePopupPerformance);</code></pre>
+                </div>
+
+                <h3>API Response Time Tracking</h3>
+                <p>Monitor latency for your license validation and payment APIs.</p>
+
+                <div class="code-block">
+                    <h3>api-monitoring.js - Track API Latency</h3>
+                    <pre><code><span class="code-keyword">async function</span> <span class="code-function">trackedFetch</span>(url, options = {}) {
+  <span class="code-keyword">const</span> startTime = performance.now();
+  <span class="code-keyword">const</span> endpoint = <span class="code_keyword">new</span> URL(url).pathname;
+  
+  <span class="code-keyword">try</span> {
+    <span class="code-keyword">const</span> response = <span class="code_keyword">await</span> fetch(url, options);
+    <span class="code-keyword">const</span> duration = performance.now() - startTime;
+    
+    <span class="code-comment">// Track API performance</span>
+    trackEvent(<span class="code_string">`api_${endpoint}_latency'</span>, {
+      <span class="code_property">duration</span>: Math.round(duration),
+      <span class="code_property">status</span>: response.status,
+      <span class="code_property">success</span>: response.ok
+    });
+    
+    <span class="code-keyword">return</span> response;
+  } <span class="code-keyword">catch</span> (error) {
+    <span class="code_keyword">const</span> duration = performance.now() - startTime;
+    
+    trackEvent(<span class="code_string">`api_${endpoint}_error'`</span>, {
+      <span class="code_property">duration</span>: Math.round(duration),
+      <span class="code_property">error</span>: error.message
+    });
+    
+    <span class="code_keyword">throw</span> error;
+  }
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Flags -->
+        <section id="feature-flags" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-advanced">Advanced</span>
+                <h2>Feature Flags</h2>
+            </div>
+            <div class="section-content">
+                <p>Feature flags enable granular control over monetization features, allowing you to toggle features per user, percentage, or segment without deploying new code.</p>
+
+                <h3>Local Feature Flags</h3>
+                <p>For simple on/off features, use local storage with caching.</p>
+
+                <div class="code-block">
+                    <h3>feature-flags.js - Local Implementation</h3>
+                    <pre><code><span class="code-keyword">const</span> DEFAULT_FLAGS = {
+  <span class="code_property">show_premium_upsell</span>: <span class="code_keyword">true</span>,
+  <span class="code_property">new_pricing_page</span>: <span class="code_number">false</span>,
+  <span class="code_property">annual_discount_banner</span>: <span class="code_number">true</span>,
+  <span class="code_property">minimum_version_required</span>: <span class="code_string">"1.0.0"</span>
+};
+
+<span class="code-keyword">async function</span> <span class="code-function">getFeatureFlags</span>() {
+  <span class="code_comment">// Try cache first</span>
+  <span class="code_keyword">const</span> cached = <span class="code_keyword">await</span> chrome.storage.local.get([<span class="code_string">'feature_flags'</span>]);
+  
+  <span class="code_keyword">if</span> (cached.feature_flags && cached.feature_flags.expires > Date.now()) {
+    <span class="code_keyword">return</span> cached.feature_flags.values;
+  }
+  
+  <span class="code_comment">// Fetch from server</span>
+  <span class="code_keyword">try</span> {
+    <span class="code_keyword">const</span> response = <span class="code_keyword">await</span> fetch(<span class="code_string">`https://api.yourdomain.com/v1/flags?uid=${userId}`</span>);
+    <span class="code_keyword">const</span> serverFlags = <span class="code_keyword">await</span> response.json();
+    
+    <span class="code_keyword">const</span> mergedFlags = { ...DEFAULT_FLAGS, ...serverFlags };
+    
+    <span class="code_comment">// Cache for 5 minutes</span>
+    <span class="code_keyword">await</span> chrome.storage.local.set({
+      <span class="code_property">feature_flags</span>: {
+        <span class="code_property">values</span>: mergedFlags,
+        <span class="code_property">expires</span>: Date.now() + (<span class="code_number">5</span> * <span class="code_number">60</span> * <span class="code_number">1000</span>)
+      }
+    });
+    
+    <span class="code_keyword">return</span> mergedFlags;
+  } <span class="code_keyword">catch</span> (error) {
+    <span class="code_keyword">return</span> DEFAULT_FLAGS;
+  }
+}
+
+<span class="code_keyword">async function</span> <span class="code-function">isFeatureEnabled</span>(flagName) {
+  <span class="code_keyword">const</span> flags = <span class="code_keyword">await</span> getFeatureFlags();
+  <span class="code_keyword">return</span> flags[flagName] === <span class="code_keyword">true</span>;
+}</code></pre>
+                </div>
+
+                <h3>Gradual Rollouts</h3>
+                <p>Use percentage-based rollouts to slowly introduce new monetization features.</p>
+
+                <div class="code-block">
+                    <h3>gradual-rollout.js - Percentage-Based</h3>
+                    <pre><code><span class="code_keyword">async function</span> <span class="code_function">checkFeatureRollout</span>(featureId, percentage) {
+  <span class="code_comment">// Get or create consistent user bucket</span>
+  <span class="code_keyword">const</span> userId = <span class="code_keyword">await</span> getOrCreateUserId();
+  <span class="code_keyword">const</span> bucket = hashString(userId + featureId) % <span class="code_number">100</span>;
+  
+  <span class="code_keyword">return</span> bucket < percentage;
+}
+
+<span class="code_keyword">async function</span> <span class="code_function">isPremiumFeatureEnabled</span>(featureName) {
+  <span class="code_comment">// Check if user is premium first</span>
+  <span class="code_keyword">const</span> isPremium = <span class="code_keyword">await</span> checkLicenseStatus();
+  <span class="code_keyword">if</span> (isPremium) <span class="code_keyword">return</span> <span class="code_keyword">true</span>;
+  
+  <span class="code_comment">// Check feature flag rollout</span>
+  <span class="code_keyword">const</span> rolloutPercentage = <span class="code_number">100</span>; <span class="code_comment">// 100% for free users</span>
+  <span class="code_keyword">return</span> checkFeatureRollout(featureName, rolloutPercentage);
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Server-Side License Validation -->
+        <section id="license-validation" class="content-section">
+            <div class="section-header">
+                <span class="badge badge-essential">Essential</span>
+                <h2>Server-Side License Validation</h2>
+            </div>
+            <div class="section-content">
+                <p>Robust license validation is critical for preventing piracy. Always validate licenses server-side and implement multiple layers of verification.</p>
+
+                <h3>License Validation Flow</h3>
+                
+                <div class="code-block">
+                    <h3>license-validation.js - Complete Flow</h3>
+                    <pre><code><span class="code_comment">// Step 1: Generate license key client-side</span>
+<span class="code_keyword">function</span> <span class="code_function">generateLicenseRequest</span>(licenseKey) {
+  <span class="code_keyword">const</span> request = {
+    <span class="code_property">license_key</span>: licenseKey,
+    <span class="code_property">extension_id</span>: chrome.runtime.id,
+    <span class="code_property">extension_version</span>: chrome.runtime.getManifest().version,
+    <span class="code_property">timestamp</span>: Date.now(),
+    <span class="code_property">machine_id</span>: <span class="code_keyword">await</span> getMachineId()
+  };
+  
+  <span class="code_comment">// Sign request to prevent tampering</span>
+  request.signature = signRequest(request);
+  
+  <span class="code_keyword">return</span> request;
+}
+
+<span class="code_comment">// Step 2: Validate on server</span>
+<span class="code_keyword">async function</span> <span class="code_function">validateLicenseServer</span>(request) {
+  <span class="code_keyword">const</span> response = <span class="code_keyword">await</span> fetch(<span class="code_string">'https://api.yourdomain.com/v1/license/validate'</span>, {
+    <span class="code_property">method</span>: <span class="code_string">'POST'</span>,
+    <span class="code_property">headers</span>: {
+      <span class="code_string">'Content-Type'</span>: <span class="code_string">'application/json'</span>
+    },
+    <span class="code_property">body</span>: JSON.stringify(request)
+  });
+  
+  <span class="code_keyword">if</span> (!response.ok) {
+    <span class="code_keyword">throw new</span> Error(<span class="code_string">`License validation failed: ${response.status}`</span>);
+  }
+  
+  <span class="code_keyword">const</span> result = <span class="code_keyword">await</span> response.json();
+  
+  <span class="code_comment">// Verify server response signature</span>
+  <span class="code_keyword">if</span> (!verifyResponse(result)) {
+    <span class="code_keyword">throw new</span> Error(<span class="code_string">'Invalid server response'</span>);
+  }
+  
+  <span class="code_keyword">return</span> result;
+}
+
+<span class="code_comment">// Step 3: Cache with TTL</span>
+<span class="code_keyword">const</span> LICENSE_CACHE_TTL = <span class="code_number">3600</span>; <span class="code_comment">// 1 hour</span>
+
+<span class="code_keyword">async function</span> <span class="code_function">getCachedLicenseStatus</span>(forceRefresh = <span class="code_keyword">false</span>) {
+  <span class="code_keyword">const</span> cached = <span class="code_keyword">await</span> chrome.storage.local.get([<span class="code_string">'license_status'</span>]);
+  
+  <span class="code_keyword">if</span> (!forceRefresh && cached.license_status) {
+    <span class="code_keyword">const</span> { status, expires } = cached.license_status;
+    <span class="code_keyword">if</span> (Date.now() < expires) {
+      <span class="code_keyword">return</span> status;
+    }
+  }
+  
+  <span class="code_comment">// Refresh from server</span>
+  <span class="code_keyword">const</span> licenseKey = <span class="code_keyword">await</span> getStoredLicenseKey();
+  <span class="code_keyword">const</span> status = <span class="code_keyword">await</span> validateLicenseServer(generateLicenseRequest(licenseKey));
+  
+  <span class="code_keyword">await</span> chrome.storage.local.set({
+    <span class="code_property">license_status</span>: {
+      <span class="code_property">status</span>,
+      <span class="code_property">expires</span>: Date.now() + (LICENSE_CACHE_TTL * <span class="code_number">1000</span>)
+    }
+  });
+  
+  <span class="code_keyword">return</span> status;
+}</code></pre>
+                </div>
+
+                <h3>Webhook for License Events</h3>
+                <p>Listen for license status changes via webhooks for real-time revocation.</p>
+
+                <div class="code-block">
+                    <h3>webhook-handler.js - Server Endpoint</h3>
+                    <pre><code><span class="code_comment">// Server-side webhook endpoint (Node.js example)</span>
+app.post(<span class="code_string">'/webhooks/license'</span>, <span class="code_keyword">async</span> (req, res) => {
+  <span class="code_comment">// Verify webhook signature</span>
+  <span class="code_keyword">const</span> signature = req.headers[<span class="code_string">'x-webhook-signature'</span>];
+  <span class="code_keyword">if</span> (!verifyWebhookSignature(signature, req.body)) {
+    <span class="code_keyword">return</span> res.status(<span class="code_number">401</span>).json({ error: <span class="code_string">'Invalid signature'</span> });
+  }
+  
+  <span class="code_keyword">const</span> { event_type, license_key, new_status } = req.body;
+  
+  <span class="code_keyword">switch</span> (event_type) {
+    <span class="code_keyword">case</span> <span class="code_string">'license_revoked'</span>:
+    <span class="code_keyword">case</span> <span class="code_string">'license_expired'</span>:
+    <span class="code_keyword">case</span> <span class="code_string">'license_refunded'</span>:
+      <span class="code_comment">// Push update to all users with this license</span>
+      <span class="code_keyword">await</span> pushLicenseUpdate(license_key, { <span class="code_property">status</span>: new_status });
+      <span class="code_keyword">break</span>;
+      
+    <span class="code_keyword">case</span> <span class="code_string">'license_upgraded'</span>:
+      <span class="code_keyword">await</span> pushLicenseUpdate(license_key, { 
+        <span class="code_property">status</span>: new_status,
+        <span class="code_property">tier</span>: req.body.new_tier 
+      });
+      <span class="code_keyword">break</span>;
+  }
+  
+  res.json({ received: <span class="code_keyword">true</span> });
+});
+
+<span class="code_comment">// Client-side: Listen for push updates</span>
+chrome.runtime.onMessage.addListener((message) => {
+  <span class="code_keyword">if</span> (message.type === <span class="code_string">'license_update'</span>) {
+    <span class="code_keyword">await</span> chrome.storage.local.set({ <span class="code_property">license_status</span>: message.status });
+    
+    <span class="code_comment">// Notify user if license was revoked</span>
+    <span class="code_keyword">if</span> (message.status.active === <span class="code_keyword">false</span>) {
+      showNotification(<span class="code_string">'Your license has been revoked.'</span>);
+    }
+  }
+});</code></pre>
+                </div>
+
+                <h3>Rate Limiting & Abuse Prevention</h3>
+                <p>Protect your validation endpoints from abuse.</p>
+
+                <div class="code-block">
+                    <h3>rate-limit.js - Client-Side Protection</h3>
+                    <pre><code><span class="code_comment">// Implement client-side rate limiting</span>
+<span class="code_keyword">const</span> RATE_LIMIT = {
+  <span class="code_property">max_requests</span>: <span class="code_number">10</span>,
+  <span class="code_property">window_ms</span>: <span class="code_number">60000</span> <span class="code_comment">// 1 minute</span>
+};
+
+<span class="code_keyword">const</span> requestHistory = <span class="code_keyword">new</span> Map();
+
+<span class="code_keyword">async function</span> <span class="code_function">rateLimitedFetch</span>(url, options) {
+  <span class="code_keyword">const</span> now = Date.now();
+  <span class="code_keyword">const</span> key = url;
+  
+  <span class="code_comment">// Clean old requests</span>
+  <span class="code_keyword">const</span> history = requestHistory.get(key) || [];
+  <span class="code_keyword">const</span> recentRequests = history.filter(t => now - t < RATE_LIMIT.window_ms);
+  
+  <span class="code_keyword">if</span> (recentRequests.length >= RATE_LIMIT.max_requests) {
+    <span class="code_keyword">throw new</span> Error(<span class="code_string">`Rate limited. Try again in ${RATE_LIMIT.window_ms / 1000}s`</span>);
+  }
+  
+  recentRequests.push(now);
+  requestHistory.set(key, recentRequests);
+  
+  <span class="code_keyword">return</span> fetch(url, options);
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Built by <a href="https://github.com/theluckystrike">theluckystrike</a> | <a href="https://zovo.one">zovo.one</a></p>
+    </footer>
+</body>
+</html>
