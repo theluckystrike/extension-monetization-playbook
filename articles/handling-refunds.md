@@ -1,9 +1,11 @@
 ---
-title: "Handling Refunds for Chrome Extension Payments"
-description: "Refunds are an inevitable part of selling anything online. No matter how good your extension is, some users will want their money back. The key insight that mos"
-permalink: /handling-refunds-for-chrome-extension-payments
 layout: default
+title: "Chrome Extension Refund Policy: Reduce Chargebacks"
+description: "Set up a refund policy that builds trust and prevents costly chargebacks. Stripe integration, partial refunds, and handling common refund reasons explained."
+permalink: /articles/handling-refunds/
 ---
+
+Handling Refunds for Chrome Extension Payments
 
 Refunds are an inevitable part of selling anything online. No matter how good your extension is, some users will want their money back. The key insight that most developers miss is that a generous refund policy actually reduces the total number of refund requests. When users know they can get their money back easily, they feel safe making the purchase in the first place. That psychological safety converts more visitors into paying customers than any aggressive sales tactic ever could.
 
@@ -90,3 +92,9 @@ Why This Approach Works
 Zovo.one maintains a generous 30-day refund policy across all 17 extensions in the portfolio. This approach keeps chargebacks near zero while building the kind of trust that turns one-time buyers into users who try multiple extensions. The small revenue lost to refunds is far less than what would be lost to chargeback fees, negative reviews, and lost customer lifetime value.
 
 Make it easy to get a refund and users will trust you enough to buy in the first place. Trust is the foundation of any sustainable extension business. Users who feel respected become advocates. Users who feel cheated become critics. The choice is simple.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

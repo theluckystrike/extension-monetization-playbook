@@ -1,9 +1,11 @@
 ---
-title: "Legal Essentials for Chrome Extension Developers"
-description: "Most indie developers ignore legal requirements until something goes wrong. A Chrome Web Store takedown, a GDPR complaint, or a tax audit are not fun ways to le"
-permalink: /legal-essentials-for-chrome-extension-developers
 layout: default
+title: "Legal Essentials for Chrome Extension Developers"
+description: "Privacy policies, terms of service, GDPR compliance, business structure, and tax guidance for Chrome extension developers who monetize their extensions."
+permalink: /articles/legal-essentials/
 ---
+
+Legal Essentials for Chrome Extension Developers
 
 Most indie developers ignore legal requirements until something goes wrong. A Chrome Web Store takedown, a GDPR complaint, or a tax audit are not fun ways to learn these lessons. The basics are not complicated and getting them right early prevents real headaches down the road. This guide covers the legal foundations every extension developer needs before launching.
 
@@ -118,3 +120,9 @@ This is especially important as your user base grows. Business customers and ent
 Do not let the legal aspects become a bottleneck to launching. The basics are straightforward and you can refine them over time. The key is having something in place from the start, not perfection from day one.
 
 Do not wait until you have significant revenue to address these requirements. By then you will have more users to notify about policy changes, more data to manage, and more complexity to unwind. The low cost of doing things right early compounds into massive savings over time. Treat your extension business like a real business from day one and it will reward you accordingly.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

@@ -1,9 +1,11 @@
 ---
-title: "Most monetization ideas fail. I have tried enough of them to know. Running 17 Chrome extensions with over 4,000 users means you have plenty of chances to get it wrong. The difference between a struggling extension studio and a profitable one is not finding the perfect strategy on the first try. It is eliminating the bad ideas quickly so you can focus on what actually works."
-description: "Sharing failures is more useful than sharing successes because it saves other developers time and money. This article is about the experiments that did not work"
-permalink: /most-monetization-ideas-fail-i-have-tried-enough-of-them-to-know-running-17-chrome-extensions-with-over-4000-users-means-you-have-plenty-of-chances-to-get-it-wrong-the-difference-between-a-struggling-extension-studio-and-a-profitable-one-is-not-finding-the-perfect-strategy-on-the-first-try-it-is-eliminating-the-bad-ideas-quickly-so-you-can-focus-on-what-actually-works
 layout: default
+title: "9 Failed Chrome Extension Monetization Experiments"
+description: "Real data from failed monetization experiments: ads, donation buttons, tiered pricing, and more. What not to do when selling Chrome extensions."
+permalink: /articles/failed-experiments/
 ---
+
+Most monetization ideas fail. I have tried enough of them to know. Running 17 Chrome extensions with over 4,000 users means you have plenty of chances to get it wrong. The difference between a struggling extension studio and a profitable one is not finding the perfect strategy on the first try. It is eliminating the bad ideas quickly so you can focus on what actually works.
 
 Sharing failures is more useful than sharing successes because it saves other developers time and money. This article is about the experiments that did not work. Every bad idea tested became part of the learning that shaped the current Zovo Pro model.
 
@@ -74,3 +76,9 @@ The Zovo Pro model at zovo.one emerged from all these failures. The current $4.9
 Running experiments is the only way to find what works. Failing fast is part of the process. The key is to fail, learn, and move on rather than doubling down on ideas that do not resonate with users.
 
 Each failed experiment cost me time and money, but the knowledge gained was invaluable. I have now run enough tests to know what works for browser extension monetization. The path to a sustainable business is paved with failed experiments, and I have the scars to prove it. The current Zovo Pro model at zovo.one represents the culmination of everything I learned from these failures.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)

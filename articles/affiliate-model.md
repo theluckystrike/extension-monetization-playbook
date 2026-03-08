@@ -1,9 +1,11 @@
 ---
-title: "Affiliate Revenue for Browser Extensions"
-description: "Affiliate revenue works best as a passive supplement to your primary monetization strategy, not as the foundation of your business model. Layer it on top of an "
-permalink: /affiliate-revenue-for-browser-extensions
 layout: default
+title: "Affiliate Revenue for Browser Extensions"
+description: "Learn how to add affiliate revenue to your Chrome extension without alienating users. Covers program selection, implementation, compliance, and realistic income expectations."
+permalink: /articles/affiliate-model/
 ---
+
+Affiliate Revenue for Browser Extensions
 
 Affiliate revenue works best as a passive supplement to your primary monetization strategy, not as the foundation of your business model. Layer it on top of an already-monetized extension, freemium or paid, and it becomes nearly free money. On its own, affiliate commissions rarely generate enough to sustain ongoing development, maintenance, and support.
 
@@ -80,3 +82,9 @@ Our analysis at zovo.one consistently shows that affiliate revenue works best as
 For example, our shopping-focused extensions generate $150-400 monthly from Amazon Associates with minimal promotion. Our developer tool extensions generate $300-800 monthly from SaaS referrals. The variance depends on user base size and how naturally the recommendations fit into the workflow.
 
 Do not build an extension around affiliate revenue. Build a solid extension with a clear monetization strategy, then layer affiliate links on top as a bonus. That is how you turn attention into sustainable income without compromising user trust.
+
+---
+
+*Built by [theluckystrike](https://github.com/theluckystrike) at [zovo.one](https://zovo.one) — Chrome extension development, publishing, and growth services.*
+
+**Need help monetizing your extension?** [Get in touch →](https://zovo.one)
