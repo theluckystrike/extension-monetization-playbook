@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Affiliate Marketing Through Chrome Extensions: Complete Revenue Guide"
-description: "Learn how to monetize Chrome extensions through affiliate marketing. Complete guide to building, launching, and scaling an affiliate business with browser extensions."
+description: "Master affiliate marketing for Chrome extensions. Learn how to build, launch, and scale a profitable affiliate business with browser extensions."
+date: 2025-01-15
+categories: [Monetization, Affiliate Marketing]
+tags: [affiliate marketing chrome extension, chrome extension revenue, browser extension monetization, passive income extensions]
 ---
 # Affiliate Marketing Through Chrome Extensions: Complete Revenue Guide
 

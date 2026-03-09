@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Chrome Extension Community Building"
-description: "Build an engaged community around your Chrome extension. User groups, feedback loops, and advocacy programs."
+description: "Build a thriving community around your Chrome extension to create a lasting competitive moat. Learn user engagement strategies, feedback loops, and advocacy programs that drive growth."
+date: 2025-01-19
+categories: [Growth, Community, Marketing]
+tags: [chrome extension community, user engagement, community building, feedback loops, advocacy program]
 ---
 Building and Nurturing a Community Around Your Chrome Extensions as a Long-Term Competitive Moat
 

@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Affiliate Revenue for Browser Extensions"
-description: "Learn how to add affiliate revenue to your Chrome extension. Covers program selection, implementation, and optimization."
+description: "Complete guide to adding affiliate revenue to Chrome extensions. Learn program selection, implementation best practices, and optimization strategies for maximizing passive income."
+date: 2025-01-16
+categories: [Monetization, Affiliate Marketing]
+tags: [affiliate revenue chrome extension, chrome extension monetization, passive income, affiliate programs]
 permalink: /articles/affiliate-model/
 ---
 
@@ -244,4 +247,4 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Professional Chrome extension development at [zovo.one](https://zovo.one)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*

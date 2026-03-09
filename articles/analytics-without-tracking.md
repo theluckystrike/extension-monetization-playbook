@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Privacy-First Analytics for Chrome Extensions"
-description: "Implement analytics in Chrome extensions without tracking users. Privacy-compliant analytics solutions."
+description: "Learn how to implement analytics in Chrome extensions without invasive tracking. Discover privacy-compliant solutions that provide actionable product insights while respecting user trust."
+date: 2025-01-17
+categories: [Analytics, Privacy, Growth]
+tags: [chrome extension analytics, privacy first analytics, user tracking, product analytics, GDPR analytics]
 ---
 Getting Useful Product Analytics Without Invasive User Tracking
 
