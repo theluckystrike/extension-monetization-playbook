@@ -111,3 +111,6 @@ Remember that success on AppSumo is not simply about making a quick sale but abo
 - [Failed Experiments](./failed-experiments.md)
 - [White Label Chrome Extension Business Model](./white-label-chrome-extension-business-model.md)
 
+---
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
+

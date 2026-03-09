@@ -158,3 +158,6 @@ For more strategies on growing your Chrome extension business, explore our other
 - [Subscription Model](./subscription-model.md)
 - [Handling Refunds](./handling-refunds.md)
 
+---
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
+

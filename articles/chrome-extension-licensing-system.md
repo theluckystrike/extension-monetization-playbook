@@ -593,3 +593,6 @@ The licensing system you build today should handle 10x your current scale withou
 - [Reducing Churn Chrome Extension Subscriptions](./reducing-churn-chrome-extension-subscriptions.md)
 - [Chrome Extension User Retention](./chrome-extension-user-retention.md)
 
+---
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
+

@@ -295,3 +295,6 @@ This outcome is increasingly common and increasingly respected. Building a profi
 - [Paywall Patterns](./paywall-patterns.md)
 - [Chrome Web Store Payments](./chrome-web-store-payments.md)
 
+---
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
+
