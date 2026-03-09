@@ -31,6 +31,16 @@ That feedback loop drove the roadmap. Tone adjustment was added. Context awarene
 - **Growth approach:** Relentless iteration based on user feedback, focused on a specific pain point for a clearly defined audience
 - **Lesson:** Start ugly, ship fast, listen to every negative review
 
+**Revenue Model:**
+BeLikeNative launched with a freemium model offering 50 free rewrites per month and unlimited premium access at $9.99/month. After testing different price points, the developer found that $7.99/month optimized for conversion while maintaining revenue. The subscription model provided predictable recurring revenue that funded ongoing development.
+
+**Technical Stack:**
+- Frontend: Vanilla JavaScript with React components in the popup
+- Backend: Node.js with Express, hosted on Vercel
+- Database: PostgreSQL via Supabase for user data and subscription management
+- Payments: Stripe Checkout for subscription management
+- Analytics: Plausible for privacy-focused usage tracking
+
 [Read the full BeLikeNative case study →](/articles/belikenative-case-study/)
 
 ---
@@ -69,6 +79,41 @@ The strategy wasn't to compete on features—you can't out-feature an incumbent 
 - **Lesson:** Crowded markets have gaps. When a dominant player stumbles, the opportunity is immediate—but you must demonstrate trustworthiness quickly.
 
 [Read the full Tab Suspender Pro case study →](/articles/tab-suspender-pro-case-study/)
+
+---
+
+## Case Study 4: QuickNote — Finding Success in a Tiny Niche
+
+QuickNote demonstrates that you don't need a massive addressable market to build a sustainable extension business. This simple note-taking tool for browser tabs found its audience and thrived without competing in crowded productivity categories.
+
+The extension allows users to save text snippets, links, and notes directly from any webpage. What differentiates QuickNote is its seamless integration with the browser workflow—users select text, right-click, and save to QuickNote without switching contexts. This frictionless design earned passionate users who relied on it daily.
+
+**Key Metrics:**
+- **Users:** 850 active users
+- **Revenue:** $800/month at $2.99/month
+- **Rating:** 4.8 stars
+- **Growth approach:** Product Hunt launch followed by Reddit promotions in niche communities
+- **Lesson:** Depth of usage matters more than breadth of reach
+
+**What Made QuickNote Work:**
+
+The niche focus was intentional. Rather than building a "universal note-taking app," QuickNote focused exclusively on browser-based snippet capture. This narrow scope meant fewer potential users but higher engagement among those who adopted it. Users didn't just install QuickNote—they integrated it into their daily workflow.
+
+The developer invested heavily in the onboarding experience. A 3-minute setup wizard guided new users through configuration, explaining how to use keyboard shortcuts and right-click options. This upfront investment paid dividends in retention—users who completed onboarding had 3x higher 30-day retention than those who skipped it.
+
+QuickNote also benefited from network effects within teams. When one person in an office discovered QuickNote, word spread naturally to colleagues who shared the same workflow frustrations. Enterprise referrals drove consistent growth without marketing spend.
+
+**Revenue Journey:**
+
+Initial launches used PayPAl for simple payment processing. After hitting 200 paying users, the developer migrated to Stripe for better analytics and automated subscription management. The migration took a weekend but provided immediate insights into churn patterns, upgrade rates, and customer lifetime value.
+
+The pricing strategy evolved over time. Initial testing showed that $4.99/month had higher conversion than $2.99, but $2.99 attracted more annual subscriptions (users preferred committing longer at the lower price point). The final model offered monthly at $2.99 and annual at $24.99 (equivalent to $2.08/month), with approximately 60% of users choosing the annual plan.
+
+**Lessons for Your Extension:**
+
+QuickNote's success offers several transferable insights. First, specificity in problem-solving creates passionate users even in small markets. Second, investment in onboarding pays long-term returns through improved retention. Third, teams and enterprises can drive organic growth that paid marketing cannot match.
+
+[Read similar case studies →](/articles/case-studies-overview/)
 
 ---
 

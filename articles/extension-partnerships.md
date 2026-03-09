@@ -34,9 +34,73 @@ Reaching out to potential partners requires a professional yet friendly approach
 
 When you do reach out, lead with the value you can provide to their users. Explain specifically why your extension complements theirs and how the recommendation would benefit their user base. Avoid generic proposals that could apply to any partnership. Demonstrate that you understand their users and their product deeply.
 
+### Outreach Templates
+
+**Initial Contact Email:**
+
+```
+Subject: Partnership Opportunity - Complementary Extensions
+
+Hi [Developer Name],
+
+I've been using [Their Extension] for [time period] and really appreciate 
+how it solves [specific problem]. As a fellow extension developer, I 
+wanted to reach out because I think our tools could benefit each 
+other's users.
+
+[Your Extension] helps users with [use case], which complements 
+[Their Extension] because [connection point].
+
+I'd love to explore a simple cross-promotion partnership. Something 
+like:
+- A mention in your settings page → [link to your extension]
+- A mention in your README → [link to their extension]
+
+No financial commitment required - just a simple reciprocal arrangement.
+
+Would you be open to chatting? Happy to discuss further or adjust 
+the proposal to work better for your users.
+
+Best,
+[Your Name]
+[Your Extension Link]
+```
+
+**Follow-Up Template:**
+
+If you don't hear back within a week, send a friendly follow-up:
+
+```
+Subject: Following Up - Extension Partnership
+
+Hi [Developer Name],
+
+Just wanted to follow up on my earlier email about a potential 
+partnership between [Your Extension] and [Their Extension].
+
+I understand you're busy, so no worries if now isn't the right time.
+If you're interested, I'd be happy to chat or answer any questions.
+
+Either way, best of luck with your extension!
+
+Best,
+[Your Name]
+```
+
+### Structuring Partnership Agreements
+
 The structure of partnership agreements varies based on mutual needs and preferences. The simplest arrangement involves reciprocal link placements in each extension's settings page or description. This requires no ongoing management and provides equal value to both parties. However, more sophisticated arrangements can include featured placements, dedicated promotion campaigns, or even revenue sharing.
 
 For reciprocal arrangements, clarity about placement location and wording helps prevent misunderstandings. Specify exactly where the link will appear, what text will be used, and how prominent the placement will be. Document any limitations, such as maximum impressions per day or restrictions on promotional timing. Written agreements, even informal ones, prevent disputes as partnerships evolve.
+
+**Partnership Tiers:**
+
+| Tier | Commitment | Typical Arrangement |
+|------|------------|---------------------|
+| Basic | Link exchange | Settings page or README |
+| Standard | Featured placement | Onboarding flow or welcome screen |
+| Premium | Revenue share | Affiliate tracking with commission |
+| Strategic | Full integration | Bundle or co-marketing campaigns |
 
 Some partnerships warrant more formal arrangements, particularly when significant promotion budgets are involved or when one party has substantially larger reach. In these cases, consider structured deals such as guaranteed impression counts, performance-based compensation, or cross-licensing arrangements. Legal consultation helps for high-value partnerships, but many successful extension collaborations operate on handshake agreements built on mutual trust.
 
