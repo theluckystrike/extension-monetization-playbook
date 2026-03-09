@@ -238,7 +238,9 @@ Remember that extension influencer marketing is fundamentally about trust transf
 
 ## Related Articles
 
-- [Sponsorship Model](./sponsorship-model.md)
-- [Data Business Models Chrome Extensions](./data-business-models-chrome-extensions.md)
-- [Subscription Revenue Chrome Extensions](./subscription-revenue-chrome-extensions.md)
+- [Sponsorship Model](/articles/sponsorship-model/) - Alternative revenue through sponsorships
+- [Data Business Models Chrome Extensions](/articles/data-business-models-chrome-extensions/) - Data-driven monetization
+- [Subscription Revenue Chrome Extensions](/articles/subscription-revenue-chrome-extensions/) - Building recurring revenue
+
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 

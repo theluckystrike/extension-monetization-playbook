@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Viral Growth Mechanics for Chrome Extensions"
 description: "Master viral growth mechanics for Chrome extensions. Learn how to build powerful referral loops, create organic growth through network effects, and scale your extension with proven viral marketing strategies."
+date: 2025-02-10
+categories: [Growth, Marketing, Acquisition]
+tags: [viral growth, referral marketing, network effects, organic growth]
 ---
 # Viral Growth Mechanics for Chrome Extensions: Building Self-Sustaining Growth Engines
 
@@ -94,7 +97,9 @@ Your viral growth strategy should evolve as your extension matures. Early-stage 
 
 ## Related Articles
 
-- [Extension Content Marketing](./extension-content-marketing.md)
-- [Stripe In Extensions](./stripe-in-extensions.md)
-- [Content Marketing](./content-marketing.md)
+- [Extension Content Marketing](/articles/extension-content-marketing/) - Content-driven growth strategies
+- [Stripe In Extensions](/articles/stripe-in-extensions/) - Payment infrastructure for scaling
+- [Content Marketing](/articles/content-marketing/) - Comprehensive content marketing guide
+
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 

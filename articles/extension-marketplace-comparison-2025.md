@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Chrome Web Store vs Firefox Add-ons vs Edge Add-ons: Marketplace Comparison 2025"
 description: "Compare Chrome Web Store, Firefox Add-ons, and Microsoft Edge Add-ons marketplaces. Learn where to publish your browser extension for maximum reach and revenue."
+date: 2025-01-25
+categories: [Distribution, Strategy, Platform]
+tags: [chrome web store, firefox addons, edge addons, marketplace, distribution]
 ---
 # Chrome Web Store vs Firefox Add-ons vs Edge Add-ons: Marketplace Comparison 2025
 
@@ -91,14 +94,8 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Extension Press Coverage](./extension-press-coverage.md)
-- [Viral Growth Mechanics Chrome Extensions](./viral-growth-mechanics-chrome-extensions.md)
-- [Scaling Solo](./scaling-solo.md)
+- [Extension Press Coverage](/articles/extension-press-coverage/) - Getting media attention for your extension
+- [Viral Growth Mechanics Chrome Extensions](/articles/viral-growth-mechanics-chrome-extensions/) - Driving organic growth
+- [Scaling Solo](/articles/scaling-solo/) - Growing your extension business single-handedly
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Extension Landing Page Optimization: The Complete Guide](extension-landing-page-optimization)
-- [Getting Funding for Your Chrome Extension Startup](chrome-extension-funding-investors)
-- [Building a Community Around Your Chrome Extension: The Complete Guide](building-community-chrome-extension)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*

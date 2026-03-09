@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "GitHub SEO Optimization for Extension Repos"
 description: "Master GitHub repo SEO to boost your extension's discoverability. Learn how to optimize for GitHub search, improve repository visibility, and attract more users."
+date: 2025-02-01
+categories: [Growth, Marketing, Distribution]
+tags: [github seo, repo optimization, extension marketing, organic growth]
 ---
 # GitHub SEO Optimization for Extension Repos: The Complete Guide
 
@@ -130,7 +133,9 @@ Start with the elements you can control immediately: your repository name, descr
 
 ## Related Articles
 
-- [Social Proof Marketing Chrome Extensions](./social-proof-marketing-chrome-extensions.md)
-- [Case Studies Overview](./case-studies-overview.md)
-- [Review Acquisition](./review-acquisition.md)
+- [Social Proof Marketing Chrome Extensions](/articles/social-proof-marketing-chrome-extensions/) - Building trust and credibility
+- [Case Studies Overview](/articles/case-studies-overview/) - Learn from real-world examples
+- [Review Acquisition](/articles/review-acquisition/) - Getting more positive reviews
+
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 

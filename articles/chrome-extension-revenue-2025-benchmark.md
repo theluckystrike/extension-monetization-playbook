@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Chrome Extension Revenue Benchmarks 2025: What Developers Actually Earn"
 description: "Real revenue data for Chrome extension developers in 2025. Benchmarks by category, pricing analysis, conversion rates, ARPU, and what separates top earners from the rest."
+date: 2025-01-15
+categories: [Monetization, Business, Revenue]
+tags: [chrome extension revenue, extension benchmarks, extension income, extension monetization]
 ---
 # Chrome Extension Revenue Benchmarks 2025: What Developers Actually Earn
 
@@ -263,7 +266,9 @@ The extension market in 2025 rewards developers who approach their products as b
 
 ## Related Articles
 
-- [Belikenative Case Study](./belikenative-case-study.md)
-- [Subscription Revenue Chrome Extensions](./subscription-revenue-chrome-extensions.md)
-- [Community Building](./community-building.md)
+- [Freemium Model](/articles/freemium-model/) - Understanding freemium vs premium conversion strategies
+- [Subscription Revenue Chrome Extensions](/articles/subscription-revenue-chrome-extensions/) - Building sustainable subscription revenue
+- [Pricing Psychology Chrome Extensions](/articles/pricing-psychology-chrome-extensions/) - Strategic pricing tactics
+
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 
