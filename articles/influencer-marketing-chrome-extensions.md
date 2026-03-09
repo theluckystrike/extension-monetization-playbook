@@ -233,8 +233,12 @@ The keys to success lie in thorough influencer research, authentic relationship 
 
 Remember that extension influencer marketing is fundamentally about trust transfer. When a respected creator introduces your extension to their audience, they're lending you their credibility. Honor that trust by ensuring your extension delivers genuine value—because the ultimate measure of campaign success isn't just installations, but engaged, retained users who find real benefit in what you've built.
 
+
+---
+
 ## Related Articles
 
-- [Extension Partnerships and Cross-Promotion: A Strategic Guide](extension-partnerships)
-- [Chrome Extension Growth Playbook](growth-playbook-overview)
-- [Building a License Key System for Chrome Extensions](chrome-extension-licensing-system)
+- [Sponsorship Model](./sponsorship-model.md)
+- [Data Business Models Chrome Extensions](./data-business-models-chrome-extensions.md)
+- [Subscription Revenue Chrome Extensions](./subscription-revenue-chrome-extensions.md)
+

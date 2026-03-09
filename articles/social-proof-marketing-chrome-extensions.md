@@ -159,6 +159,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Appsumo Chrome Extension Launch](./appsumo-chrome-extension-launch.md)
+- [One Time Purchase](./one-time-purchase.md)
+- [Chrome Extension Funding Investors](./chrome-extension-funding-investors.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

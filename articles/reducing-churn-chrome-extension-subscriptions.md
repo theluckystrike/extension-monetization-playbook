@@ -163,6 +163,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Selling Your Extension](./selling-your-extension.md)
+- [Pricing Strategies](./pricing-strategies.md)
+- [Stripe In Extensions](./stripe-in-extensions.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

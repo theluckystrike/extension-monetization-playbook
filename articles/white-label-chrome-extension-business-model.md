@@ -150,6 +150,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Setting Up Analytics For Chrome Extensions](./setting-up-analytics-for-chrome-extensions.md)
+- [Extension As A Service](./extension-as-a-service.md)
+- [Growth Playbook Overview](./growth-playbook-overview.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

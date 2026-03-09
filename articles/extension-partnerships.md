@@ -97,9 +97,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Cross-Promotion](/articles/cross-promotion) - Technical implementation and best practices for cross-promoting your extensions
-- [Community Building](/articles/community-building) - Building engaged user communities that drive organic growth
-- [Growth Hacking Strategies](/articles/growth-hacking-strategies-chrome-extensions) - Creative tactics for scaling your extension user base
+- [Cross-Promotion](./cross-promotion.md) - Technical implementation and best practices for cross-promoting your extensions
+- [Community Building](./community-building.md) - Building engaged user communities that drive organic growth
+- [Growth Hacking Strategies](./growth-hacking-strategies-chrome-extensions.md) - Creative tactics for scaling your extension user base
 
 ---
 

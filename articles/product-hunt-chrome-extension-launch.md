@@ -186,6 +186,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Extension Partnerships](./extension-partnerships.md)
+- [Extension Landing Page Optimization](./extension-landing-page-optimization.md)
+- [License Key System](./license-key-system.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

@@ -219,11 +219,11 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Chrome Web Store SEO](/articles/chrome-web-store-seo/)
-- [Zero to 1,000 Users](/articles/zero-to-1000-users/)
-- [Review Acquisition](/articles/review-acquisition/)
-- [Cross-Promotion](/articles/cross-promotion/)
-- [Growth Playbook Overview](/articles/growth-playbook-overview/)
+- [Chrome Web Store SEO](./chrome-web-store-seo.md)
+- [Zero to 1,000 Users](./zero-to-1000-users.md)
+- [Review Acquisition](./review-acquisition.md)
+- [Cross-Promotion](./cross-promotion.md)
+- [Growth Playbook Overview](./growth-playbook-overview.md)
 
 ---
 

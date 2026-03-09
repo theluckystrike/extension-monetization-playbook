@@ -173,6 +173,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Chrome Web Store Seo](./chrome-web-store-seo.md)
+- [Appsumo Chrome Extension Launch](./appsumo-chrome-extension-launch.md)
+- [Handling Refunds](./handling-refunds.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

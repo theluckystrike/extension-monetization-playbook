@@ -236,11 +236,11 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Sponsorship Model](/articles/sponsorship-model/)
-- [Content Marketing](/articles/content-marketing/)
-- [Subscription Model](/articles/subscription-model/)
-- [Freemium Model](/articles/freemium-model/)
-- [Chrome Web Store SEO](/articles/chrome-web-store-seo/)
+- [Sponsorship Model](./sponsorship-model.md)
+- [Content Marketing](./content-marketing.md)
+- [Subscription Model](./subscription-model.md)
+- [Freemium Model](./freemium-model.md)
+- [Chrome Web Store SEO](./chrome-web-store-seo.md)
 
 ---
 

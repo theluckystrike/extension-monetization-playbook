@@ -125,8 +125,12 @@ The key is to think about what potential users would search for when looking for
 
 Start with the elements you can control immediately: your repository name, description, topics, and README structure. Then build toward long-term authority through consistent updates, quality support, and genuine community engagement. Your extension deserves to be discovered, and proper GitHub SEO optimization ensures it will be.
 
+
+---
+
 ## Related Articles
 
-- [Influencer Marketing for Chrome Extensions: The Complete Strategy Guide](influencer-marketing-chrome-extensions)
-- [Chrome Extension Monetization Technical Implementation](technical-implementation-links)
-- [Reducing Churn in Chrome Extension Subscriptions](reducing-churn-chrome-extension-subscriptions)
+- [Social Proof Marketing Chrome Extensions](./social-proof-marketing-chrome-extensions.md)
+- [Case Studies Overview](./case-studies-overview.md)
+- [Review Acquisition](./review-acquisition.md)
+

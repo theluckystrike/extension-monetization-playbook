@@ -150,6 +150,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Case Studies Overview](./case-studies-overview.md)
+- [Extension Press Coverage](./extension-press-coverage.md)
+- [Monetizing Chrome Extension Apis](./monetizing-chrome-extension-apis.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

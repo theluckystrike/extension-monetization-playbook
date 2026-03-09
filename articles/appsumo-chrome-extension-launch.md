@@ -102,8 +102,12 @@ Launching your Chrome extension on AppSumo represents a significant opportunity 
 
 Remember that success on AppSumo is not simply about making a quick sale but about building relationships with customers who will support your ongoing development and potentially become advocates for your brand. Approach your launch with genuine commitment to delivering value, and the rewards will follow.
 
+
+---
+
 ## Related Articles
 
-- [GitHub SEO Optimization for Extension Repos](github-repo-seo-optimization)
-- [Chrome Extension Monetization Failures](failed-experiments)
-- [Customer Support Strategy for Chrome Extensions](customer-support-strategy-chrome-extensions)
+- [Extension Press Coverage](./extension-press-coverage.md)
+- [Failed Experiments](./failed-experiments.md)
+- [White Label Chrome Extension Business Model](./white-label-chrome-extension-business-model.md)
+

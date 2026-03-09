@@ -89,6 +89,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Extension Press Coverage](./extension-press-coverage.md)
+- [Viral Growth Mechanics Chrome Extensions](./viral-growth-mechanics-chrome-extensions.md)
+- [Scaling Solo](./scaling-solo.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

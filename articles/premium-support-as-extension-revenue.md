@@ -135,6 +135,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Failed Experiments](./failed-experiments.md)
+- [Chrome Extension Licensing System](./chrome-extension-licensing-system.md)
+- [Update Monetization](./update-monetization.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

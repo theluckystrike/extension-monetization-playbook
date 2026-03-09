@@ -149,8 +149,12 @@ Remember that community building is a long-term endeavor. Results will not appea
 
 For more strategies on growing your Chrome extension business, explore our other guides on [user retention](/articles/chrome-extension-user-retention/), [content marketing](/articles/content-marketing/), and [referral programs](/articles/building-referral-program-chrome-extensions/).
 
+
+---
+
 ## Related Articles
 
-- [Chrome Web Store SEO Guide](chrome-web-store-seo)
-- [User Retention Strategies for Chrome Extensions: From Install to Power User](chrome-extension-user-retention)
-- [Stripe Integration for Chrome Extensions](stripe-in-extensions)
+- [Extension Valuation](./extension-valuation.md)
+- [Subscription Model](./subscription-model.md)
+- [Handling Refunds](./handling-refunds.md)
+

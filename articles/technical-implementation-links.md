@@ -305,11 +305,11 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Stripe in Extensions](/articles/stripe-in-extensions/)
-- [License Key System](/articles/license-key-system/)
-- [Paywall Patterns](/articles/paywall-patterns/)
-- [Analytics Without Tracking](/articles/analytics-without-tracking/)
-- [Server-Side Validation](/articles/server-side-validation/)
+- [Stripe in Extensions](./stripe-in-extensions.md)
+- [License Key System](./license-key-system.md)
+- [Paywall Patterns](./paywall-patterns.md)
+- [Analytics Without Tracking](./analytics-without-tracking.md)
+- [Server-Side Validation](./server-side-validation.md)
 
 ---
 

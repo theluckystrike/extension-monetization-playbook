@@ -451,8 +451,12 @@ Each improvement at any point in this cycle amplifies every other point. This is
 
 *For technical implementation of the patterns described here, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide) for [Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/), [Alarms API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/alarms-api/), [Notifications API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/notifications/), and [Content Scripts](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/content-scripts/).*
 
+
+---
+
 ## Related Articles
 
-- [Influencer Marketing for Chrome Extensions: The Complete Strategy Guide](influencer-marketing-chrome-extensions)
-- [Email Marketing Automation for Chrome Extensions](email-marketing-automation)
-- [Chrome Extension Valuation Guide](extension-valuation)
+- [Reducing Churn Chrome Extension Subscriptions](./reducing-churn-chrome-extension-subscriptions.md)
+- [Chrome Extension Licensing System](./chrome-extension-licensing-system.md)
+- [Legal Essentials](./legal-essentials.md)
+

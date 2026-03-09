@@ -130,9 +130,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Privacy-First Analytics for Chrome Extensions](/articles/analytics-without-tracking/) - Implement analytics without tracking users
-- [Freemium Model](/articles/freemium-model/) - Balance free and paid features to maximize conversion
-- [Legal Essentials for Chrome Extensions](/articles/legal-essentials/) - Comprehensive guide to privacy compliance requirements
+- [Privacy-First Analytics for Chrome Extensions](./analytics-without-tracking.md) - Implement analytics without tracking users
+- [Freemium Model](./freemium-model.md) - Balance free and paid features to maximize conversion
+- [Legal Essentials for Chrome Extensions](./legal-essentials.md) - Comprehensive guide to privacy compliance requirements
 
 ---
 

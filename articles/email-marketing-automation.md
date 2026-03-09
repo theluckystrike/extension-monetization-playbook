@@ -179,6 +179,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Data Business Models Chrome Extensions](./data-business-models-chrome-extensions.md)
+- [Tab Suspender Pro Case Study](./tab-suspender-pro-case-study.md)
+- [Reducing Churn Chrome Extension Subscriptions](./reducing-churn-chrome-extension-subscriptions.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

@@ -127,6 +127,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Pricing Psychology Chrome Extensions](./pricing-psychology-chrome-extensions.md)
+- [Extension Partnerships](./extension-partnerships.md)
+- [Growth Playbook Overview](./growth-playbook-overview.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

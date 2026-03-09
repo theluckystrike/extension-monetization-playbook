@@ -127,6 +127,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Chrome Web Store Payments](./chrome-web-store-payments.md)
+- [Customer Support Strategy Chrome Extensions](./customer-support-strategy-chrome-extensions.md)
+- [Data Business Models Chrome Extensions](./data-business-models-chrome-extensions.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

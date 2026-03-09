@@ -236,6 +236,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Ab Testing Chrome Extension Revenue](./ab-testing-chrome-extension-revenue.md)
+- [Email Marketing Automation](./email-marketing-automation.md)
+- [Social Proof Marketing Chrome Extensions](./social-proof-marketing-chrome-extensions.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

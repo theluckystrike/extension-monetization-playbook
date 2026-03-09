@@ -89,8 +89,12 @@ Remember that viral growth amplifies underlying product quality. An excellent ex
 
 Your viral growth strategy should evolve as your extension matures. Early-stage extensions might focus on early adopter referrals and community building, while mature extensions might emphasize network effects and enterprise adoption. Continuously reassessing your viral mechanics against your current stage and growth goals ensures you're always optimizing for the right outcomes. With patience, testing, and genuine commitment to user value, your extension can develop the kind of viral engine that drives organic growth for years to come.
 
+
+---
+
 ## Related Articles
 
-- [Getting Press Coverage for Your Chrome Extension](extension-press-coverage)
-- [Chrome Extension One-Time Purchase Model](one-time-purchase)
-- [Zovo Bundle Case Study](zovo-bundle-case-study)
+- [Extension Content Marketing](./extension-content-marketing.md)
+- [Stripe In Extensions](./stripe-in-extensions.md)
+- [Content Marketing](./content-marketing.md)
+

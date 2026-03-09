@@ -242,9 +242,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
-- [Subscription Model](/articles/subscription-model) - Recurring revenue strategies for extensions
-- [Stripe Integration](/articles/stripe-in-extensions) - Complete payment processing guide
+- [Freemium Model](./freemium-model.md) - Balance free and paid features to maximize conversion
+- [Subscription Model](./subscription-model.md) - Recurring revenue strategies for extensions
+- [Stripe Integration](./stripe-in-extensions.md) - Complete payment processing guide
 
 
 ---

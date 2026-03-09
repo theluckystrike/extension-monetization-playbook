@@ -115,9 +115,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Privacy-First Analytics for Chrome Extensions](/articles/analytics-without-tracking/) - Implement analytics while respecting user privacy
-- [Chrome Web Store SEO](/articles/chrome-web-store-seo/) - Optimize your extension listing for discoverability
-- [Freemium Model](/articles/freemium-model) - Balance free and paid features to maximize conversion
+- [Privacy-First Analytics for Chrome Extensions](./analytics-without-tracking.md) - Implement analytics while respecting user privacy
+- [Chrome Web Store SEO](./chrome-web-store-seo.md) - Optimize your extension listing for discoverability
+- [Freemium Model](./freemium-model.md) - Balance free and paid features to maximize conversion
 
 ---
 

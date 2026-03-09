@@ -132,6 +132,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Freemium To Premium Conversion](./freemium-to-premium-conversion.md)
+- [Extension Valuation](./extension-valuation.md)
+- [Cross Promotion](./cross-promotion.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles

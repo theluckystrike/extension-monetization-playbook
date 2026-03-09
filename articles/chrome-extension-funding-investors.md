@@ -286,8 +286,12 @@ This outcome is increasingly common and increasingly respected. Building a profi
 
 *For implementation guidance on building the features that attract investor interest, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide) for technical references on [Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/), [Identity API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/identity-api/), and [Enterprise Distribution](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/enterprise-chrome-extension-distribution/).*
 
+
+---
+
 ## Related Articles
 
-- [Chrome Extension Valuation Guide](extension-valuation)
-- [Chrome Extension Freemium Model Guide](freemium-model)
-- [Complete Guide to Launching Your Chrome Extension on AppSumo: Strategies for a Successful Lifetime Deal](appsumo-chrome-extension-launch)
+- [Extension Press Coverage](./extension-press-coverage.md)
+- [Paywall Patterns](./paywall-patterns.md)
+- [Chrome Web Store Payments](./chrome-web-store-payments.md)
+

@@ -269,11 +269,11 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Subscription Model](/articles/subscription-model/)
-- [Freemium Model](/articles/freemium-model/)
-- [Pricing Strategies](/articles/pricing-strategies/)
-- [Content Marketing](/articles/content-marketing/)
-- [Chrome Web Store SEO](/articles/chrome-web-store-seo/)
+- [Subscription Model](./subscription-model.md)
+- [Freemium Model](./freemium-model.md)
+- [Pricing Strategies](./pricing-strategies.md)
+- [Content Marketing](./content-marketing.md)
+- [Chrome Web Store SEO](./chrome-web-store-seo.md)
 
 ---
 

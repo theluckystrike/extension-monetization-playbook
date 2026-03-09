@@ -192,6 +192,12 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
+## Related Articles
+
+- [Content Marketing](./content-marketing.md)
+- [Freemium To Premium Conversion](./freemium-to-premium-conversion.md)
+- [Growth Hacking Strategies Chrome Extensions](./growth-hacking-strategies-chrome-extensions.md)
+
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
 
 ## Related Articles
