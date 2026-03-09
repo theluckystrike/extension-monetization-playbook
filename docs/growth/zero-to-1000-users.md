@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Grow Your Chrome Extension to 1000 Users"
+title: "Zero to 1000 Users: Chrome Extension Launch Playbook"
 description: "Proven strategies to grow your Chrome extension from zero to 1000 users. Organic growth and user acquisition."
+permalink: /growth/zero-to-1000-users/
 ---
 # Zero to 1,000 Users: The Chrome Extension Launch Playbook
 
@@ -803,4 +804,4 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one.**

@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "PayPal Integration for Chrome Extensions"
+title: "PayPal Integration for Chrome Extensions: Complete Guide"
 description: "Complete guide to integrating PayPal payments in Chrome extensions. Checkout, subscriptions, and webhook handling."
+permalink: /payments/paypal-integration-extensions/
 ---
 # How to Integrate PayPal Payments in Chrome Extensions
 
@@ -886,4 +887,4 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one.**

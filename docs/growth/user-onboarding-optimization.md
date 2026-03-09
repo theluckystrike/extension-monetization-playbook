@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Chrome Extension Onboarding: Turn Installs Into Active Users"
-description: "Master Chrome extension onboarding. Learn first-run experiences, welcome page design, progressive disclosure, permission timing, tooltips, retention metrics, and re-engagement strategies."
+description: "Master Chrome extension onboarding with first-run experiences, welcome page design, progressive disclosure, and retention metrics."
+permalink: /growth/user-onboarding-optimization/
 ---
 # Chrome Extension Onboarding: Turn Installs Into Active Users
 
@@ -379,4 +380,4 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one.**

@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Stripe Integration for Chrome Extensions"
+title: "Stripe Integration for Chrome Extensions: Complete Guide"
 description: "Complete guide to integrating Stripe payments in Chrome extensions. Checkout, subscriptions, and webhooks."
+permalink: /payments/stripe-in-extensions/
 ---
 # How to Integrate Stripe Payments in Chrome Extensions
 
@@ -997,4 +998,4 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one.**
