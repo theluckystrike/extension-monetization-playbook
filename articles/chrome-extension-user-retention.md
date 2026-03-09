@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "User Retention Strategies for Chrome Extensions: From Install to Power User"
 description: "Proven retention strategies for Chrome extensions. Onboarding flows, engagement loops, feature discovery, re-engagement campaigns, and reducing churn at every stage."
 ---
@@ -459,4 +459,6 @@ Each improvement at any point in this cycle amplifies every other point. This is
 - [Reducing Churn Chrome Extension Subscriptions](./reducing-churn-chrome-extension-subscriptions.md)
 - [Chrome Extension Licensing System](./chrome-extension-licensing-system.md)
 - [Legal Essentials](./legal-essentials.md)
+
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 

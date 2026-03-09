@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Getting Funding for Your Chrome Extension Startup"
 description: "How to raise funding for a Chrome extension startup. Angel investors, VCs interested in browser tools, bootstrapping vs funding decisions, and building your pitch deck."
 ---
@@ -294,4 +294,6 @@ This outcome is increasingly common and increasingly respected. Building a profi
 - [Extension Press Coverage](./extension-press-coverage.md)
 - [Paywall Patterns](./paywall-patterns.md)
 - [Chrome Web Store Payments](./chrome-web-store-payments.md)
+
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 
