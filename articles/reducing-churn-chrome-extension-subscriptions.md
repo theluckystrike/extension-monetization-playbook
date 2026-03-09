@@ -164,3 +164,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Chrome Extension Valuation Guide](extension-valuation)
+- [Chrome Extension Payment Integration Guide](payment-integration-overview)
+- [Chrome Extension Monetization Case Studies](case-studies-overview)

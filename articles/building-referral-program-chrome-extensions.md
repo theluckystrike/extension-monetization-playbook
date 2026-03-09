@@ -237,3 +237,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Belike Native Case Study](belikenative-case-study)
+- [Complete Guide to Launching Your Chrome Extension on AppSumo: Strategies for a Successful Lifetime Deal](appsumo-chrome-extension-launch)
+- [User Retention Strategies for Chrome Extensions: From Install to Power User](chrome-extension-user-retention)

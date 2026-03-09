@@ -237,3 +237,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Chrome Extension Server-Side Validation](server-side-validation)
+- [Chrome Extension Growth Playbook](growth-playbook-overview)
+- [Getting Funding for Your Chrome Extension Startup](chrome-extension-funding-investors)

@@ -406,3 +406,9 @@ At every stage, the Chrome Web Store remains your primary consumer distribution 
 ---
 
 *For technical implementation of cross-browser extensions and enterprise features, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide) for [Publishing guides](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/cws-listing-optimization/), [Enterprise Distribution](https://theluckystrike.github.io/chrome-extension-guide/docs/publishing/enterprise-chrome-extension-distribution/), and [Manifest configuration](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/manifest-v3-migration/).*
+
+## Related Articles
+
+- [Tab Suspender Pro Case Study](tab-suspender-pro-case-study)
+- [Influencer Marketing for Chrome Extensions: The Complete Strategy Guide](influencer-marketing-chrome-extensions)
+- [A/B Testing for Chrome Extensions Revenue: The Complete Guide](ab-testing-chrome-extension-revenue)

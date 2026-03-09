@@ -583,3 +583,9 @@ The licensing system you build today should handle 10x your current scale withou
 ---
 
 *For technical implementation details on building Chrome extension features that interact with license systems, see the [Chrome Extension Guide](https://theluckystrike.github.io/chrome-extension-guide) for [Storage API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/storage/), [Runtime API](https://theluckystrike.github.io/chrome-extension-guide/docs/api-reference/runtime-api/), and [Service Worker patterns](https://theluckystrike.github.io/chrome-extension-guide/docs/guides/service-workers/). For payment integration approaches, see our [Stripe integration guide](/articles/stripe-in-extensions/) and [payment integration overview](/articles/payment-integration-overview/).*
+
+## Related Articles
+
+- [Extension Partnerships and Cross-Promotion: A Strategic Guide](extension-partnerships)
+- [Chrome Extension Sponsorship Monetization](sponsorship-model)
+- [Chrome Extension Monetization Failures](failed-experiments)

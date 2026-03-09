@@ -187,3 +187,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Free Trial Implementation for Chrome Extensions](trial-implementation)
+- [Solo Chrome Extension Business: Scale Without a Team](scaling-solo)
+- [Chrome Extension Growth Playbook](growth-playbook-overview)

@@ -151,3 +151,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Beyond Chrome Web Store: Alternative Distribution for Extensions](chrome-extension-marketplace-alternatives)
+- [Chrome Extension License Key System](license-key-system)
+- [Reducing Churn in Chrome Extension Subscriptions](reducing-churn-chrome-extension-subscriptions)

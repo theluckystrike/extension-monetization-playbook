@@ -133,3 +133,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Chrome Extension Freemium Model Guide](freemium-model)
+- [Chrome Extension Subscription Pricing Guide](subscription-model)
+- [Chrome Extension One-Time Purchase Model](one-time-purchase)

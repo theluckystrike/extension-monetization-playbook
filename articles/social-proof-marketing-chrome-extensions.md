@@ -160,3 +160,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Chrome Extension Monetization Failures](failed-experiments)
+- [Belike Native Case Study](belikenative-case-study)
+- [Chrome Extension One-Time Purchase Model](one-time-purchase)

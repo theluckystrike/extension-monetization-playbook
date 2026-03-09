@@ -174,3 +174,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Chrome Extension Community Building](community-building)
+- [Belike Native Case Study](belikenative-case-study)
+- [Influencer Marketing for Chrome Extensions: The Complete Strategy Guide](influencer-marketing-chrome-extensions)

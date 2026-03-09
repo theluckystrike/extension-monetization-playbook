@@ -136,3 +136,9 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 ---
 
 Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+
+## Related Articles
+
+- [Enterprise Chrome Extension Distribution Guide: Complete Deployment Strategies for IT Teams](enterprise-chrome-extension-distribution)
+- [Freemium to Premium Conversion for Chrome Extensions: The Complete Strategy Guide](freemium-to-premium-conversion)
+- [Email Marketing Automation for Chrome Extensions](email-marketing-automation)
