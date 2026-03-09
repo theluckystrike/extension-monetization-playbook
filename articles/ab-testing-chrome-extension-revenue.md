@@ -175,14 +175,8 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Chrome Web Store Seo](./chrome-web-store-seo.md)
-- [Appsumo Chrome Extension Launch](./appsumo-chrome-extension-launch.md)
-- [Handling Refunds](./handling-refunds.md)
+- [Chrome Web Store SEO](./chrome-web-store-seo.md) - Optimize your extension listing for discoverability
+- [AppSumo Chrome Extension Launch](./appsumo-chrome-extension-launch.md) - Launch strategies for volume deals
+- [Handling Refunds](./handling-refunds.md) - Best practices for refund management
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Extension Community Building](community-building)
-- [Belike Native Case Study](belikenative-case-study)
-- [Influencer Marketing for Chrome Extensions: The Complete Strategy Guide](influencer-marketing-chrome-extensions)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*

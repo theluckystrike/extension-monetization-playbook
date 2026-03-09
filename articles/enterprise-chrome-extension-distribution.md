@@ -151,14 +151,8 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Growth Playbook Overview](./growth-playbook-overview.md)
-- [Extension Valuation](./extension-valuation.md)
-- [One Time Purchase](./one-time-purchase.md)
+- [Growth Playbook Overview](./growth-playbook-overview.md) - Comprehensive growth strategies for extensions
+- [Extension Valuation](./extension-valuation.md) - How to value your extension business
+- [One-Time Purchase](./one-time-purchase.md) - Lifetime license revenue model
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Extension Pricing Strategies](pricing-strategies)
-- [Chrome Extension Growth Playbook](growth-playbook-overview)
-- [Building a Community Around Your Chrome Extension: The Complete Guide](building-community-chrome-extension)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*

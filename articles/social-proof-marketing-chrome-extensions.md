@@ -161,14 +161,8 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Appsumo Chrome Extension Launch](./appsumo-chrome-extension-launch.md)
-- [One Time Purchase](./one-time-purchase.md)
-- [Chrome Extension Funding Investors](./chrome-extension-funding-investors.md)
+- [AppSumo Chrome Extension Launch](./appsumo-chrome-extension-launch.md) - Launch strategies for volume deals
+- [One-Time Purchase](./one-time-purchase.md) - Lifetime license model for extensions
+- [Chrome Extension Funding for Investors](./chrome-extension-funding-investors.md) - Raising capital for your extension
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Extension Monetization Failures](failed-experiments)
-- [Belike Native Case Study](belikenative-case-study)
-- [Chrome Extension One-Time Purchase Model](one-time-purchase)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*

@@ -194,14 +194,8 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Content Marketing](./content-marketing.md)
-- [Freemium To Premium Conversion](./freemium-to-premium-conversion.md)
-- [Growth Hacking Strategies Chrome Extensions](./growth-hacking-strategies-chrome-extensions.md)
+- [Content Marketing](./content-marketing.md) - Create content that drives organic growth
+- [Freemium to Premium Conversion](./freemium-to-premium-conversion.md) - Strategies to convert free users to paid
+- [Growth Hacking Strategies](./growth-hacking-strategies-chrome-extensions.md) - Creative tactics for rapid growth
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Extension Freemium Model Guide](freemium-model)
-- [Chrome Extension License Key System](license-key-system)
-- [Beyond Chrome Web Store: Alternative Distribution for Extensions](chrome-extension-marketplace-alternatives)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*

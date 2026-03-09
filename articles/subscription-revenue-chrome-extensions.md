@@ -238,14 +238,8 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ## Related Articles
 
-- [Extension Content Marketing](./extension-content-marketing.md)
-- [Chrome Extension Revenue 2025 Benchmark](./chrome-extension-revenue-2025-benchmark.md)
-- [Social Proof Marketing Chrome Extensions](./social-proof-marketing-chrome-extensions.md)
+- [Extension Content Marketing](./extension-content-marketing.md) - Drive organic traffic to your extension
+- [Chrome Extension Revenue 2025 Benchmark](./chrome-extension-revenue-2025-benchmark.md) - Industry benchmarks and metrics
+- [Social Proof Marketing](./social-proof-marketing-chrome-extensions.md) - Build trust with potential users
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
-
-## Related Articles
-
-- [Chrome Extension Server-Side Validation](server-side-validation)
-- [Chrome Extension Growth Playbook](growth-playbook-overview)
-- [Getting Funding for Your Chrome Extension Startup](chrome-extension-funding-investors)
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
