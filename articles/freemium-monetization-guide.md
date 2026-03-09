@@ -279,3 +279,15 @@ Remember these core principles:
 4. **Optimize continuously**: Test, measure, iterate, and improve
 
 By following these strategies and learning from successful examples, you can build a freemium model that grows your user base while converting a meaningful percentage into paying customers—creating a sustainable, profitable Chrome extension business.
+
+---
+
+## Related Articles
+
+- [Freemium Model](./freemium-model.md) - Deep dive into freemium monetization strategies
+- [Subscription Model](./subscription-model.md) - Recurring revenue strategies for extensions
+- [Freemium to Premium Conversion](./freemium-to-premium-conversion.md) - Optimizing your conversion funnel
+
+---
+
+Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
