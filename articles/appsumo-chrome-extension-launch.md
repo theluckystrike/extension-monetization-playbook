@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Complete Guide to Launching Your Chrome Extension on AppSumo: Strategies for a Successful Lifetime Deal"
 description: "Learn how to successfully launch your Chrome extension on AppSumo with a lifetime deal. Discover the strategies, preparation steps, and best practices for maximizing your launch performance."
 ---
@@ -111,6 +111,5 @@ Remember that success on AppSumo is not simply about making a quick sale but abo
 - [Failed Experiments](./failed-experiments.md)
 - [White Label Chrome Extension Business Model](./white-label-chrome-extension-business-model.md)
 
----
 *Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 

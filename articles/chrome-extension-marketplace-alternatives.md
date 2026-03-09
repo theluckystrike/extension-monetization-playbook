@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Beyond Chrome Web Store: Alternative Distribution for Extensions"
 description: "Complete guide to distributing Chrome extensions outside the Chrome Web Store. Direct distribution, enterprise deployment, Firefox/Edge/Safari porting, and self-hosted update servers."
 ---
@@ -416,6 +416,5 @@ At every stage, the Chrome Web Store remains your primary consumer distribution 
 - [Premium Support As Extension Revenue](./premium-support-as-extension-revenue.md)
 - [Growth Hacking Strategies Chrome Extensions](./growth-hacking-strategies-chrome-extensions.md)
 
----
 *Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 
