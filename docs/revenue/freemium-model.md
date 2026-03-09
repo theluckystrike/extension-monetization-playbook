@@ -2,6 +2,7 @@
 layout: default
 title: "Chrome Extension Freemium Model Guide"
 description: "Build a successful freemium model for your Chrome extension. Feature gating, conversion optimization, and usage limits."
+permalink: /revenue/freemium-model/
 ---
 # The Freemium Model for Chrome Extensions
 
@@ -610,4 +611,4 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one.**
