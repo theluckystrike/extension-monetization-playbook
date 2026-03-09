@@ -242,7 +242,7 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 - [Email Marketing Automation](./email-marketing-automation.md)
 - [Social Proof Marketing Chrome Extensions](./social-proof-marketing-chrome-extensions.md)
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 

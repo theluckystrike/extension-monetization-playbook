@@ -143,7 +143,7 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 - [Extension Valuation](./extension-valuation.md)
 - [Cross Promotion](./cross-promotion.md)
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
 
 ## Related Articles
 
