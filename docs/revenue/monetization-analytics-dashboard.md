@@ -2,6 +2,7 @@
 layout: default
 title: "Building a Monetization Analytics Dashboard for Your Chrome Extension"
 description: "Learn how to build a comprehensive monetization analytics dashboard for Chrome extensions. Track revenue events, calculate LTV, analyze cohorts, and optimize your subscription business."
+permalink: /revenue/monetization-analytics-dashboard/
 ---
 # Building a Monetization Analytics Dashboard for Your Chrome Extension
 
@@ -232,4 +233,4 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one**

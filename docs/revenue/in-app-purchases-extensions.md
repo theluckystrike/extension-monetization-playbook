@@ -2,6 +2,7 @@
 layout: default
 title: "In-App Purchases for Chrome Extensions"
 description: "Learn how to implement in-app purchases in Chrome extensions. Feature gating, subscriptions, and monetization patterns."
+permalink: /revenue/in-app-purchases-extensions/
 ---
 # In-App Purchases for Chrome Extensions: Complete Implementation Guide
 
@@ -783,4 +784,4 @@ For implementation details, see the [Chrome Extension Guide](https://theluckystr
 
 ---
 
-Part of the Extension Monetization Playbook by theluckystrike. Chrome extension development services at zovo.one.
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one**

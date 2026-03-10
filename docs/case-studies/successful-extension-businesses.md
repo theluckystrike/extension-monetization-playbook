@@ -2,6 +2,7 @@
 layout: default
 title: "Successful Chrome Extension Businesses Making $10K+/Month"
 description: "Learn from 10 successful Chrome extensions generating $10K+ monthly. Revenue models and growth strategies from real case studies."
+permalink: /case-studies/successful-extension-businesses/
 ---
 # 10 Chrome Extensions Making $10K+/Month
 
@@ -393,4 +394,4 @@ All tools and guides are part of the [Zovo](https://zovo.one) ecosystem.
 
 ---
 
-*Part of the [Extension Monetization Playbook](https://theluckystrike.github.io/extension-monetization-playbook/) by [theluckystrike](https://github.com/theluckystrike). Built at [zovo.one](https://zovo.one).*
+**Part of the Extension Monetization Playbook by theluckystrike. More at zovo.one**
